@@ -164,7 +164,8 @@ def get_bank_id_from_city(bank_name, city_name, apikey=apikey):
 
     else:
         if 'message' in data.keys():
-            logging.info(f'{data['message']}')
+            # logging.info(f'{data['message']}')
+            pass
             # exit()
         logging.info(f'There are no banks in {city_name} city')
         
