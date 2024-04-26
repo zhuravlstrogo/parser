@@ -169,9 +169,9 @@ if __name__ == "__main__":
             # time.sleep(1800)
             continue
 
-merge_all_info(bank_name)
-logging.info(f'I finished at {datetime.now()}')
-logging.info(f'Pipeline worked {datetime.now() - start} seconds')
+    merge_all_info(bank_name)
+    logging.info(f'I finished at {datetime.now()}')
+    logging.info(f'Pipeline worked {datetime.now() - start} seconds')
 
 
     
