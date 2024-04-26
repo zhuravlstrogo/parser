@@ -120,7 +120,8 @@ def merge_all_info(bank_name, drop_errors=False):
         final_df = pd.concat(frames)
 
     # TODO: если нужно тянуть дополнительную ифно по банку - добавить соответствующее поле
-    final_df = final_df[['city', 'address', 'rating', 'lat', 'lon']].sort_values(['city', 'address'])
+    # final_df = final_df[['city', 'address', 'rating', 'lat', 'lon']].sort_values(['city', 'address'])
+    # final_df = final_df[['city', 'address', 'rating', 'lat', 'lon']].sort_values(['city', 'address'])
 
     final_df['lat'] = final_df['lat'].astype('str')
     final_df['lon'] = final_df['lon'].astype('str')
