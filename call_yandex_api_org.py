@@ -43,6 +43,14 @@ def remove_cities(cities, bank_name):
     logging.info(f'{links_counter} links was removed')
 
 
+def custom_handle(roman_city):
+    if (roman_city.startswith('novyi') or  roman_city.startswith('novyy') or roman_city.startswith('p.')) and ' ' in roman_city:
+        roman_city = roman_city.split(' ')[1]
+    ended = ['nyy', 'goi', 'nyi', 'koi', 'kiy', 'kyy', 'noe', 'goy']
+    if roman_city[-3:] in ended:
+        roman_city = roman_city[:-2]
+    return roman_city
+
 
 class Russian_romanizer(object):
 
@@ -91,7 +99,7 @@ class Russian_romanizer(object):
         u'\u0436': u'zh',
         u'\u0437': u'z',
         u'\u0438': u'i',
-        u'\u0439': u'i', 
+        u'\u0439': u'y', # 
         u'\u043a': u'k',
         u'\u043b': u'l',
         u'\u043c': u'm',
@@ -110,7 +118,7 @@ class Russian_romanizer(object):
         u'\u0449': u'shch',
         u'\u044a': u"", 
         u'\u044b': u'y',
-        u'\u044c': u"", 
+        u'\u044c': u"y", 
         u'\u044d': u'e', 
         u'\u044e': u'yu',
         u'\u044f': u'ya',
@@ -150,13 +158,22 @@ def get_bank_id_from_city(bank_name, city_name, apikey=apikey):
     resp = requests.get(url=url, params=params)
     data = resp.json()
     if 'features' in data.keys() and len(data['features']) > 0:
+        city_name = city_name.lower()
         rom = Russian_romanizer(city_name)
         roman_city = rom.transliterate()
-        roman_city = roman_city.lower().split(' ')[-1]
+        roman_city = custom_handle(roman_city)
+
+        exception = ['Тимашевск', 'Иантеевка', 'Москва', 'Петергоф']
 
         address = data['features'][0]['properties']['CompanyMetaData']['address'].lower()
 
-        if similar(roman_city, address) > 0.3 or roman_city in address or city_name.lower() in address:
+        print('city_name ', city_name)
+        print('roman_city ', roman_city)
+        print('address ', address)
+
+        print(roman_city in address)
+
+        if (similar(roman_city, address) > 0.3) or (roman_city in address) or (city_name in address) or (city_name in exception):
             yndx_id = data['features'][0]['properties']['CompanyMetaData']['id']
         else:
             logging.info(f"where is no {bank_name} in {city_name}")
@@ -292,7 +309,8 @@ def get_cities_dict(bank_name, check_existing=True):
     # TODO: добавить проверки
     # while len(input_cities) - 30 > len(cities_dict):
     if check_existing:
-        cities=  [k for k in cities if k not in cities_dict.keys()]
+        not_null_cities_dict = {k: v for k, v in cities_dict.items() if v != 0}
+        cities= [k for k in cities if k not in not_null_cities_dict.keys()]
     update_cities_dict(cities, bank_name)
 
 
@@ -301,10 +319,10 @@ if __name__ == "__main__":
     setup_logging()
     bank_name = 'sberbank'
 
-    # cities_list = ['Ярцево']
-    # update_cities_dict(cities_list, bank_name)
+    cities_list = ['Петергоф']
+    update_cities_dict(cities_list, bank_name)
 
-    get_cities_dict(bank_name, check_existing=True)
+    # get_cities_dict(bank_name, check_existing=True)
 
 
 

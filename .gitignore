@@ -172,3 +172,5 @@ config.py
 *.xlsx
 
 readme.md
+pickle
+pkl
