@@ -41,9 +41,6 @@ def remove_cities(cities, bank_name):
 
     logging.info(f'{info_counter} info was removed')
     logging.info(f'{links_counter} links was removed')
-    logging.info(f'Updating SCHEMA {TEMPUS_STG_SCHEMA} finished at {finish}'
-                 f' in {finish - start} seconds'
-)
 
 
 
@@ -167,7 +164,7 @@ def get_bank_id_from_city(bank_name, city_name, apikey=apikey):
 
     else:
         if 'message' in data.keys():
-            logging.info(data['message'])
+            logging.info(f'{data['message']}')
             # exit()
         logging.info(f'There are no banks in {city_name} city')
         
@@ -180,6 +177,7 @@ def update_cities_dict(cities_list, bank_name, limit=500):
     """добавляет в словарь город-id яндекс карт города из cities_list
     используя yandex api по организациям"""
     today = datetime.today().strftime('%Y_%m_%d') 
+    # print('today ', today)
 
     existing_limit_file = Path(f'api_limit_{today}_{bank_name}.txt')
 
@@ -195,12 +193,15 @@ def update_cities_dict(cities_list, bank_name, limit=500):
     with open(f'cities_dict_{bank_name}.pickle', 'rb') as handle:
         cities = pickle.load(handle)
 
+    # print('cities_list ', cities_list)
+
     cities_dict = {}
     for c in cities_list:
         
         yndx_id = get_bank_id_from_city(bank_name=bank_name, city_name=c)
 
-        logging.info(f"{c} yndx_id ", yndx_id)
+        logging.info(f"{c} yndx_id {yndx_id}")
+
         if len(cities_dict) > 0:
             last_el = list(cities_dict.items())[-1]
         else:
@@ -256,7 +257,7 @@ def get_duplicated_ids(bank_name, remove_files=False):
         #     os.remove(links_path + 'link_' + f + '.pkl')
         # logging.info(f'{N} files was removed')
 
-    logging.info('duplicated_values in dict ', N)
+    logging.info('duplicated_values in dict {N}')
     return duplicated_values
 
 
@@ -275,6 +276,8 @@ def handle_duplicates(bank_name, N = 21):
 def get_cities_dict(bank_name):
 
     cities_dict_path = Path(f'cities_dict_{bank_name}.pickle')
+    logging.info('cities_dict_path')
+    logging.info(cities_dict_path)
     if not cities_dict_path.is_file():
         cities_dict = {}
         with open(cities_dict_path, 'wb') as handle:
@@ -283,13 +286,17 @@ def get_cities_dict(bank_name):
         with open(cities_dict_path, 'rb') as handle:
             cities_dict = pickle.load(handle)
 
-    with open('cities.txt') as f:
-        input_cities = [x.strip('\n') for x in f ]
+    
+
+    with open(f'cities_dict_{bank_name}.pickle', 'rb') as handle:
+        cities = pickle.load(handle)
 
     # TODO: добавить проверки
     # while len(input_cities) - 30 > len(cities_dict):
 
-    cities_list =  [k for k in input_cities if k not in cities_dict.keys()]
+    # cities_list =  [k for k in input_cities if k not in cities_dict.keys()]
+    cities_list = list(cities_dict.keys())
+    print(cities_list)
     update_cities_dict(cities_list, bank_name)
 
 
@@ -297,7 +304,10 @@ def get_cities_dict(bank_name):
 if __name__ == "__main__":
     setup_logging()
     bank_name = 'sberbank'
-    get_cities_dict(bank_name)
+    # get_cities_dict(bank_name)
+    cities_list = ['Ярцево']
+
+    update_cities_dict(cities_list, bank_name)
 
 
 

@@ -7,3 +7,32 @@
 [2024-04-26 10:57:35,081] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
 [2024-04-26 10:57:35,082] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - 
 [2024-04-26 10:57:35,095] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:191} INFO - error in get info for Рыбинск: name 'business_aspect' is not defined
+[2024-04-26 12:20:10,904] p6557 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:194} INFO - current limit is 500
+[2024-04-26 12:20:13,120] p6557 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 310, in <module>
+    update_cities_dict(cities_list, bank_name)
+  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 225, in update_cities_dict
+    cities.update(cities_dict)
+NameError: name 'cities' is not defined
+[2024-04-26 12:20:27,698] p6586 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:194} INFO - current limit is 499
+[2024-04-26 12:20:29,893] p6586 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 310, in <module>
+    update_cities_dict(cities_list, bank_name)
+  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 225, in update_cities_dict
+    cities.update(cities_dict)
+NameError: name 'cities' is not defined
+[2024-04-26 12:21:53,130] p6641 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:194} INFO - current limit is 498
+[2024-04-26 12:21:55,357] p6641 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 313, in <module>
+    update_cities_dict(cities_list, bank_name)
+  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 225, in update_cities_dict
+    cities.update(cities_dict)
+NameError: name 'cities' is not defined
+[2024-04-26 12:22:15,101] p6670 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:194} INFO - current limit is 497
+[2024-04-26 12:22:17,350] p6670 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 1 cities updated in cities dictionary
+[2024-04-26 12:23:25,021] p6706 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:194} INFO - current limit is 496
+[2024-04-26 12:23:25,213] p6706 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:206} INFO - Ярцево yndx_id 1217811066
+[2024-04-26 12:23:27,220] p6706 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 1 cities updated in cities dictionary
