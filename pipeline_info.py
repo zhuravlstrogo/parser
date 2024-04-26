@@ -51,7 +51,7 @@ def get_all_links(cities, bank_name):
             existing_links.append(key)
             del cities_copy[key]
         else:
-            logging.info(existing_link)
+            print(existing_link)
     logging.info(f'{len(existing_links)} links already exists')
     
     get_bank_links(cities_copy, bank_name)

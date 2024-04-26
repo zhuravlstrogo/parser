@@ -41,7 +41,7 @@ def get_all_reviews(cities, bank_name):
         city_name = f[5:-4]
         city_with_links.append(city_name)
 
-    logging.info('len cities ' , len(cities))
+    logging.info(f'len cities {len(cities)}')
 
     # оставляем только города, для которых есть links       
     available_links =  list(set(cities).intersection(set(city_with_links)))
@@ -101,7 +101,7 @@ if __name__ == "__main__":
             func(cities, bank_name)
             break
         except Exception as e:
-            logging.info(f'Error in {func}: ', e)
+            logging.info(f'Error in {func}: {e}')
             logging.info(f'worked {datetime.now() - st} seconds')
             # TODO: раскомментить
             time.sleep(1800)

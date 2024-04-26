@@ -32,8 +32,8 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name):
         # df.drop('icon_href', axis=1, inplace=True)
 
         df['date'] = df['date'].apply(unix_ts_to_readable)
-        logging.info(df.head())
-        logging.info(df.shape)
+        print(df.head())
+        print(df.shape)
 
         today = datetime.today().strftime('%Y_%m_%d') # ('%Y_%m_%d_%H_%M_%S')
         directory_name = f'reviews_outputs/{bank_name}/{city_name}'
@@ -45,7 +45,7 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name):
         logging.info(f'Saved {len(df)} reviews for {id_ya}')
     else:
         logging.info('Error in get reviews :(')
-        logging.info(reviews)
+        print(reviews)
 
 
 def get_cities_reviews(cities, bank_name):
@@ -91,7 +91,7 @@ def get_cities_reviews(cities, bank_name):
                     logging.info(f'review for {yandex_bank_id} in {city_name} already exists')  
                 
             except Exception as e:
-                logging.info('error ', e)
+                logging.info(f'error {e}')
                 logging.info(f'{yandex_bank_id} not handled')
                 not_handled.append(yandex_bank_id)
                 
