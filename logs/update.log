@@ -1,0 +1,9 @@
+[2024-04-26 10:56:24,692] p4374 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-04-26 10:56:38,509] p4374 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
+[2024-04-26 10:56:38,510] p4374 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - 
+[2024-04-26 10:56:38,522] p4374 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:191} INFO - error in get info for Рыбинск: name 'business_aspect' is not defined
+[2024-04-26 10:57:19,929] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:159} INFO - all links length for Рыбинск city 1
+[2024-04-26 10:57:20,815] p4472 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-04-26 10:57:35,081] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
+[2024-04-26 10:57:35,082] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - 
+[2024-04-26 10:57:35,095] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:191} INFO - error in get info for Рыбинск: name 'business_aspect' is not defined
