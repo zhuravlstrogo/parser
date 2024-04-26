@@ -194,6 +194,6 @@ def get_cities_info(cities, bank_name):
 
 if __name__ == "__main__":
     setup_logging()
-    bank_name = 'alfa_bank'
-    cities = {'Рыбинск':23974976351}
+    bank_name = 'sberbank'
+    # cities = {'Рыбинск':23974976351}
     get_cities_info(cities, bank_name)

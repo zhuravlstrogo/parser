@@ -164,6 +164,7 @@ def get_bank_id_from_city(bank_name, city_name, apikey=apikey):
 
     else:
         if 'message' in data.keys():
+            # TODO: починить 
             # logging.info(f'{data['message']}')
             pass
             # exit()
@@ -305,10 +306,7 @@ def get_cities_dict(bank_name):
 if __name__ == "__main__":
     setup_logging()
     bank_name = 'sberbank'
-    # get_cities_dict(bank_name)
-    cities_list = ['Ярцево']
-
-    update_cities_dict(cities_list, bank_name)
+    get_cities_dict(bank_name)
 
 
 
