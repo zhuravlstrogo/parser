@@ -1,12 +1,13 @@
  # -*- coding: utf-8 -*-
+import os
+import re
+import datetime
+import json
 import time
 import random
 import pickle
 import logging
 import undetected_chromedriver
-import re
-import datetime
-import json
 from selenium.webdriver.common.by import By
 
 from log import setup_logging
@@ -92,7 +93,6 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
 def get_bank_links(cities, bank_name):
     
     new_handled_links = {}
-
 
     directory_name = f'links/{bank_name}'
     if not os.path.exists(directory_name):

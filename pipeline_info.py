@@ -33,7 +33,7 @@ from log import setup_logging
 
 
 # @timing
-def get_all_links(cities, bank_name):       
+def get_all_links(cities, bank_name, check_existing=False):       
     """формирует список банков-ссылок для всех городов и сохраняет в /links/bank_name/"""     
     start = datetime.now()
     logging.info(f"start get links at {start}")
@@ -41,26 +41,26 @@ def get_all_links(cities, bank_name):
     cities_copy = deepcopy(cities)
     cities_keys = list(cities_copy.keys())
     
-
-    existing_links = []
-    for key in cities_keys:
-        # проверка на то, что файл links для этого города уже существует 
-        existing_link = Path(f'links/{bank_name}/link_{key}.pkl')
+    if check_existing:
+        existing_links = []
+        for key in cities_keys:
+            # проверка на то, что файл links для этого города уже существует 
+            existing_link = Path(f'links/{bank_name}/link_{key}.pkl')
+            
+            if existing_link.is_file():
+                existing_links.append(key)
+                del cities_copy[key]
+            else:
+                print(existing_link)
+        logging.info(f'{len(existing_links)} links already exists')
         
-        if existing_link.is_file():
-            existing_links.append(key)
-            del cities_copy[key]
-        else:
-            print(existing_link)
-    logging.info(f'{len(existing_links)} links already exists')
-    
     get_bank_links(cities_copy, bank_name)
     logging.info(f'Got links in {datetime.now() - start} seconds')
 
     
 
 # @timing
-def get_all_info(cities, bank_name):
+def get_all_info(cities, bank_name, check_existing=False):
     """формирует datafram-ы с информацией по всем банкам по всем городам в /info_output/bank_name/""" 
     start = datetime.now()
     logging.info(f"start get info at {start}")
@@ -83,7 +83,6 @@ def get_all_info(cities, bank_name):
         if k in city_names: # города с существующими links
             already_available_links.append(k)
 
-    
     # оставляем только города, для которых есть links      
     cities_copy = dict([(key, cities_copy[key]) for key in already_available_links])
     
@@ -91,34 +90,35 @@ def get_all_info(cities, bank_name):
     logging.info(f'{links_to_habdle} links are not available')
     logging.info(f'{len(already_available_links)} links are available')
 
-    # проверяем, что информация по городу не создана ранее    
-    cities_keys  = list(cities_copy.keys())
-    already_exist_info = []
-    for key in cities_keys:
-        # TODO: файлы могут записываться не полностью 
-        existing_link = Path(f'info_output/{bank_name}/{key}_info.csv')
-        if existing_link.is_file():
-            already_exist_info.append(key)
-            del cities_copy[key]
-    logging.info(f'{len(already_exist_info)} info   already exists')  
+    if check_existing:
+        # проверяем, что информация по городу не создана ранее    
+        cities_keys  = list(cities_copy.keys())
+        already_exist_info = []
+        for key in cities_keys:
+            # TODO: файлы могут записываться не полностью 
+            existing_link = Path(f'info_output/{bank_name}/{key}_info.csv')
+            if existing_link.is_file():
+                already_exist_info.append(key)
+                del cities_copy[key]
+        logging.info(f'{len(already_exist_info)} info   already exists')  
 
-    # TODO: не всегда правда
-    if len_cities_input == len(already_exist_info):
-        logging.info('no info to handle')
-        raise
+        # TODO: не всегда правда
+        if len_cities_input == len(already_exist_info):
+            logging.info('no info to handle')
+            raise
+
     logging.info(f"start get info at {start}")
     get_cities_info(cities_copy, bank_name)
     
     logging.info(f'Got info for in {datetime.now() - start} seconds')
 
 
-
-
-if __name__ == "__main__":
-    setup_logging()
+def launch_info_pipeline(bank_name, cities_list=None):
     start = datetime.now()
     logging.info(f"start pipeline at {start}")
-    bank_name = 'alfa_bank'
+
+    bank_name = 'sberbank'
+    check_existing = False
     
     # server = 'second'
     # if server == 'first':
@@ -140,9 +140,7 @@ if __name__ == "__main__":
 
     # while len(info_files) - 20 < len(input_cities):
     #     logging.info("I have work ")
-
-    #     cities = {k: v for k, v in cities.items() if v != 0}
-    #     logging.info(f'{len(cities)} not null cities')
+    
 
         # cities = {k: v for k, v in cities.items() if k in cities_list}
         # TODO: сначала инициализировать список городов
@@ -153,14 +151,18 @@ if __name__ == "__main__":
         #     N = len(duplicated_values)
         #     logging.info(f'duplicated_values: {N}')
         #     update_cities_dict(duplicated_values, bank_name)
+    if cities_list:
+        cities = {k: v for k, v in cities.items() if k in cities_list}
 
+    cities = {k: v for k, v in cities.items() if v != 0}
+    print(f'{len(cities)} not null cities')
     
-    funcs = get_all_links(cities, bank_name), get_all_info(cities, bank_name)
-    # funcs =  get_all_info(cities, bank_name)
+    funcs = get_all_links(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
+
     for func in funcs:
         try:
             st = datetime.now()
-            func(cities, bank_name)
+            func(cities, bank_name, check_existing)
             break
         except Exception as e:
             logging.info(f'Error in {func}: ', e)
@@ -174,5 +176,11 @@ if __name__ == "__main__":
     logging.info(f'Pipeline worked {datetime.now() - start} seconds')
 
 
-    
+if __name__ == "__main__":
+    setup_logging()
+    bank_name = 'sberbank'
+    # launch_info_pipeline(bank_name)
 
+    # можно передавать ограниченный список городов, будут обрабатываться только они 
+    cities_list = ['Рославль', 'Сарапул', 'Ульяновск']
+    launch_info_pipeline(bank_name, cities_list)

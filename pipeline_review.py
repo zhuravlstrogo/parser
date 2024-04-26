@@ -60,8 +60,10 @@ def get_all_reviews(cities, bank_name):
 if __name__ == "__main__":
     setup_logging()
     start = datetime.now()
-    logging.info(f"start pipeline at {start}")
     bank_name = 'sberbank'
+
+    logging.info(f"start pipeline at {start}")
+    
 
     cities_path = f'cities_dict_{bank_name}.pickle'
     with open(cities_path, 'rb') as handle:
@@ -82,7 +84,7 @@ if __name__ == "__main__":
     logging.info(f'{len(cities)} not null cities')
 
     # cities = {k: v for k, v in cities.items() if k in cities_list}
-    # TODO: сначала инициализировать список городов
+
     # TODO: раскоментить 
     # N = 21
     # while N > 20:

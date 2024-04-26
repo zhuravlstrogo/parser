@@ -305,9 +305,7 @@ def get_cities_dict(bank_name):
 if __name__ == "__main__":
     setup_logging()
     bank_name = 'sberbank'
-    # get_cities_dict(bank_name)
-    cities_list = ['Ярцево']
-
+    # cities_list = ['Ярцево']
     update_cities_dict(cities_list, bank_name)
 
 

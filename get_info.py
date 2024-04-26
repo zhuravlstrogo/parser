@@ -44,18 +44,6 @@ class Parser:
         website = self.soup_parser.get_website(soup)
         opening_hours = self.soup_parser.get_opening_hours(soup)
         business_aspect = self.soup_parser.get_business_aspect(soup)
-        logging.info('business_aspect')
-        logging.info(business_aspect)
-    
-
-        # service = business_aspect['Обслуживание']
-        # staff = business_aspect['Персонал']
-        # attitude_to_clients = business_aspect['Отношение к клиентам']
-        # waiting_time = business_aspect['Время ожидания']
-        # atm = business_aspect['Банкомат']
-
-
-
         ypage = self.driver.current_url
         try:
             idx = re.search(f"{'ll='}.*?(\d+)", ypage).start(1)
@@ -70,12 +58,9 @@ class Parser:
         rating = self.soup_parser.get_rating(soup)
         social = self.soup_parser.get_social(soup)
         phone = self.soup_parser.get_phone(soup)
-        
-        # TODO: вернуть поля, если нужны 
-        ypage = None
 
-        output = json_pattern.into_json(yandex_bank_id, name, address, website, opening_hours, ypage, lat, 
-                                        lon, rating, phone, social)
+        output = json_pattern.into_json(yandex_bank_id, name, address, website, opening_hours, lat, 
+                                        lon, rating, phone, social, business_aspect)
         outputs.append(output)
         
         return outputs, is_captcha
@@ -195,5 +180,5 @@ def get_cities_info(cities, bank_name):
 if __name__ == "__main__":
     setup_logging()
     bank_name = 'alfa_bank'
-    cities = {'Рыбинск':23974976351}
+    cities = {'Кострома':99532788218}
     get_cities_info(cities, bank_name)
