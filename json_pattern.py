@@ -1,4 +1,4 @@
-def into_json(org_id, name, address, website, opening_hours, ypage, lat, lon, rating, phone, social):
+def into_json(org_id, name, address, website, opening_hours, lat, lon, rating, phone, social, business_aspect):
     """ Шаблон файла OUTPUT.json"""
 
     opening_hours_new = []
@@ -14,6 +14,10 @@ def into_json(org_id, name, address, website, opening_hours, ypage, lat, lon, ra
         if i not in opening_hours_new:
             opening_hours.insert(days.index(i), '   выходной')
 
+    business_aspect_dict = {}
+    for i, aspect in enumerate(business_aspect):
+        business_aspect_dict[business_aspect[i][0]] = business_aspect[i][1] 
+
     data_grabbed = {
         "ID": org_id,
         "name": name,
@@ -27,29 +31,11 @@ def into_json(org_id, name, address, website, opening_hours, ypage, lat, lon, ra
         f"'fri': {opening_hours[4][3:]}, "
         f"'sat': {opening_hours[5][3:]}, "
         f"'sun': {opening_hours[6][3:]}",
-        "ypage": ypage,
         "lat": lat,
         "lon": lon,
         "rating": rating,
         "phone": phone,
         "social": social,
-        # "business_aspect": business_aspect,
-
-         "business_aspect": 
-            {
-                "service": business_aspect['Обслуживание'],
-                "staff": business_aspect['Персонал'],
-                "attitude_to_clients": business_aspect['Отношение к клиентам'],
-                "waiting_time": business_aspect['Время ожидания'],
-                "atm": business_aspect['Банкомат'],
-              
-            }
-
-            # service = business_aspect['Обслуживание']
-        # staff = business_aspect['Персонал']
-        # attitude_to_clients = business_aspect['Отношение к клиентам']
-        # waiting_time = business_aspect['Время ожидания']
-        # atm = business_aspect['Банкомат']
-
     }
+    data_grabbed.update(business_aspect_dict)
     return data_grabbed

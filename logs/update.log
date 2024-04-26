@@ -39,3 +39,28 @@ NameError: name 'cities' is not defined
 [2024-04-26 12:32:21,152] p7312 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 495
 [2024-04-26 12:32:21,340] p7312 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Ярцево yndx_id 1217811066
 [2024-04-26 12:32:23,346] p7312 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:225} INFO - 1 cities updated in cities dictionary
+[2024-04-26 13:45:51,009] p9349 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:158} INFO - get info for banks in Рыбинск length of 1
+[2024-04-26 13:45:51,821] p9349 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-04-26 13:46:11,140] p9349 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
+[2024-04-26 13:46:11,142] p9349 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - 
+[2024-04-26 13:46:11,158] p9349 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:190} INFO - Error in get info for banks in Рыбинск, error: name 'business_aspect' is not defined
+[2024-04-26 13:47:43,190] p9485 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:158} INFO - get info for banks in Рыбинск length of 1
+[2024-04-26 13:47:43,939] p9485 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-04-26 13:48:01,389] p9485 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
+[2024-04-26 13:48:01,390] p9485 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - 
+[2024-04-26 13:48:01,403] p9485 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:190} INFO - Error in get info for banks in Рыбинск, error: name 'business_aspect' is not defined
+[2024-04-26 13:50:24,774] p9632 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:158} INFO - get info for banks in Рыбинск length of 1
+[2024-04-26 13:50:25,547] p9632 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-04-26 13:50:40,690] p9632 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
+[2024-04-26 13:50:40,691] p9632 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - []
+[2024-04-26 13:50:40,698] p9632 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:65} INFO - CAPTCHA CAPTCHA CAPTCHA CAPTCHA CAPTCHA CAPTCHA CAPTCHA CAPTCHA 
+[2024-04-26 13:50:40,698] p9632 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:190} INFO - Error in get info for banks in Рыбинск, error: 'NoneType' object has no attribute 'start'
+[2024-04-26 15:32:37,535] p13141 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 494
+[2024-04-26 15:34:39,634] p13193 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 494
+[2024-04-26 15:34:45,893] p13210 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 494
+[2024-04-26 15:34:46,097] p13210 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Абакан yndx_id 1657685442
+[2024-04-26 15:34:48,105] p13210 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:225} INFO - 1 cities updated in cities dictionary
+[2024-04-26 15:34:48,334] p13210 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Азов yndx_id 1198153462
+[2024-04-26 15:35:33,450] p13245 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 493
+[2024-04-26 15:35:33,683] p13245 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Ярцево yndx_id 1217811066
+[2024-04-26 15:35:35,688] p13245 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:225} INFO - 1 cities updated in cities dictionary

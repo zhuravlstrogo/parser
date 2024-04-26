@@ -182,7 +182,6 @@ def update_cities_dict(cities_list, bank_name, limit=500):
     # print('today ', today)
 
     existing_limit_file = Path(f'api_limit_{today}_{bank_name}.txt')
-
     if not existing_limit_file.is_file():
         limit = 500
         with open(existing_limit_file, 'w') as f:
@@ -259,7 +258,7 @@ def get_duplicated_ids(bank_name, remove_files=False):
         #     os.remove(links_path + 'link_' + f + '.pkl')
         # logging.info(f'{N} files was removed')
 
-    logging.info('duplicated_values in dict {N}')
+    logging.info(f'duplicated_values in dict {N}')
     return duplicated_values
 
 
@@ -275,11 +274,10 @@ def handle_duplicates(bank_name, N = 21):
         update_cities_dict(duplicated_values, bank_name)
 
 
-def get_cities_dict(bank_name):
-
+def get_cities_dict(bank_name, check_existing=True):
+    """основная функция"""
     cities_dict_path = Path(f'cities_dict_{bank_name}.pickle')
-    logging.info('cities_dict_path')
-    logging.info(cities_dict_path)
+
     if not cities_dict_path.is_file():
         cities_dict = {}
         with open(cities_dict_path, 'wb') as handle:
@@ -288,25 +286,25 @@ def get_cities_dict(bank_name):
         with open(cities_dict_path, 'rb') as handle:
             cities_dict = pickle.load(handle)
 
-    
-
     with open(f'cities_dict_{bank_name}.pickle', 'rb') as handle:
         cities = pickle.load(handle)
 
     # TODO: добавить проверки
     # while len(input_cities) - 30 > len(cities_dict):
-
-    # cities_list =  [k for k in input_cities if k not in cities_dict.keys()]
-    cities_list = list(cities_dict.keys())
-    print(cities_list)
-    update_cities_dict(cities_list, bank_name)
+    if check_existing:
+        cities=  [k for k in cities if k not in cities_dict.keys()]
+    update_cities_dict(cities, bank_name)
 
 
 
 if __name__ == "__main__":
     setup_logging()
     bank_name = 'sberbank'
-    get_cities_dict(bank_name)
+
+    # cities_list = ['Ярцево']
+    # update_cities_dict(cities_list, bank_name)
+
+    get_cities_dict(bank_name, check_existing=True)
 
 
 

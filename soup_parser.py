@@ -1,3 +1,4 @@
+import re
 from bs4 import BeautifulSoup
 from selenium.common.exceptions import NoSuchElementException, MoveTargetOutOfBoundsException
 from selenium.webdriver import ActionChains
@@ -12,14 +13,10 @@ def find_between(s, first, last):
     except ValueError:
         return -1
 
-def handle_business_aspect(business_aspect):
-    d = {}
-
-    for aspect in business_aspect:
-        k = find_between(aspect, '', ' • ')[0]
-        v = find_between(aspect, ' • ', '%')[0]
-        d[k] = v
-    return d
+def handle_business_aspects(aspect):
+    k = find_between(aspect, '', ' • ')[0]
+    v = find_between(aspect, ' • ', '%')[0]
+    return [k, v]
 
 
 class SoupContentParser(object):
@@ -74,7 +71,6 @@ class SoupContentParser(object):
             for data in soup_content.find_all("meta", {"itemprop": "openingHours"}):
                 opening_hours.append(data.get('content'))
             return opening_hours
-            print('opening_hours ', opening_hours)
         except Exception:
             return ""
 
@@ -119,14 +115,14 @@ class SoupContentParser(object):
 
     def get_business_aspect(self, soup_content):
 
-        print('I try get_business_aspect')
+        
         business_aspect = []
+
         try:
             for data in soup_content.find_all("div", {"class": "business-aspect-view__text"}):
-                print(" I am here")
-                # TODO: business_aspect += 
-                # business_aspect = handle_business_aspect(data)
-                business_aspect.append(handle_business_aspect(data)) # data.get('content')
+                aspect = handle_business_aspects(data.getText())
+                business_aspect.append(aspect)
+       
             return business_aspect
         except Exception:
             return ""
