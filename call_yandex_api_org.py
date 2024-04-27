@@ -303,14 +303,16 @@ def get_cities_dict(bank_name, check_existing=True):
         with open(cities_dict_path, 'rb') as handle:
             cities_dict = pickle.load(handle)
 
-    with open(f'cities_dict_{bank_name}.pickle', 'rb') as handle:
-        cities = pickle.load(handle)
+    with open('cities.txt') as f:
+        cities = [x.strip('\n') for x in f ]
 
     # TODO: добавить проверки
     # while len(input_cities) - 30 > len(cities_dict):
     if check_existing:
-        not_null_cities_dict = {k: v for k, v in cities_dict.items() if v != 0}
-        cities= [k for k in cities if k not in not_null_cities_dict.keys()]
+        with open(f'cities_dict_{bank_name}.pickle', 'rb') as handle:
+            cities = pickle.load(handle)
+        cities= [k for k in cities if k not in cities_dict.keys()]
+
     update_cities_dict(cities, bank_name)
 
 
