@@ -64,3 +64,7 @@ NameError: name 'cities' is not defined
 [2024-04-26 15:35:33,450] p13245 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 493
 [2024-04-26 15:35:33,683] p13245 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Ярцево yndx_id 1217811066
 [2024-04-26 15:35:35,688] p13245 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:225} INFO - 1 cities updated in cities dictionary
+[2024-04-27 10:56:21,215] p23961 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 499
+[2024-04-27 10:56:21,425] p23961 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Абакан yndx_id 1657685442
+[2024-04-27 10:56:23,431] p23961 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:225} INFO - 1 cities updated in cities dictionary
+[2024-04-27 10:56:23,636] p23961 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Азов yndx_id 1198153462

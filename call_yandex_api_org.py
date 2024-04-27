@@ -304,7 +304,7 @@ if __name__ == "__main__":
     # cities_list = ['Ярцево']
     # update_cities_dict(cities_list, bank_name)
 
-    get_cities_dict(bank_name, check_existing=True)
+    get_cities_dict(bank_name, check_existing=False)
 
 
 
