@@ -319,10 +319,10 @@ if __name__ == "__main__":
     setup_logging()
     bank_name = 'sberbank'
 
-    cities_list = ['Петергоф']
-    update_cities_dict(cities_list, bank_name)
+    # cities_list = ['Петергоф']
+    # update_cities_dict(cities_list, bank_name)
 
-    # get_cities_dict(bank_name, check_existing=True)
+    get_cities_dict(bank_name, check_existing=False)
 
 
 

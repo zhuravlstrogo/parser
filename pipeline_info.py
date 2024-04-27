@@ -113,12 +113,12 @@ def get_all_info(cities, bank_name, check_existing=False):
     logging.info(f'Got info for in {datetime.now() - start} seconds')
 
 
-def launch_info_pipeline(bank_name, cities_list=None):
+def launch_info_pipeline(bank_name, cities_list=None, check_existing=False):
     start = datetime.now()
     logging.info(f"start pipeline at {start}")
 
     bank_name = 'sberbank'
-    check_existing = False
+     
     
     # server = 'second'
     # if server == 'first':
@@ -179,8 +179,8 @@ def launch_info_pipeline(bank_name, cities_list=None):
 if __name__ == "__main__":
     setup_logging()
     bank_name = 'sberbank'
-    # launch_info_pipeline(bank_name)
+    launch_info_pipeline(bank_name=bank_name, check_existing=True)
 
     # можно передавать ограниченный список городов, будут обрабатываться только они 
-    cities_list = ['Рославль', 'Сарапул', 'Ульяновск']
-    launch_info_pipeline(bank_name, cities_list)
+    # cities_list = ['Рославль', 'Сарапул', 'Ульяновск']
+    # launch_info_pipeline(bank_name, cities_list)

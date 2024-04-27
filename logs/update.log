@@ -1,174 +1,40 @@
-[2024-04-26 10:56:24,692] p4374 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-04-26 10:56:38,509] p4374 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
-[2024-04-26 10:56:38,510] p4374 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - 
-[2024-04-26 10:56:38,522] p4374 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:191} INFO - error in get info for Рыбинск: name 'business_aspect' is not defined
-[2024-04-26 10:57:19,929] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:159} INFO - all links length for Рыбинск city 1
-[2024-04-26 10:57:20,815] p4472 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-04-26 10:57:35,081] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
-[2024-04-26 10:57:35,082] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - 
-[2024-04-26 10:57:35,095] p4472 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:191} INFO - error in get info for Рыбинск: name 'business_aspect' is not defined
-[2024-04-26 12:20:10,904] p6557 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:194} INFO - current limit is 500
-[2024-04-26 12:20:13,120] p6557 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+[2024-04-27 09:06:10,507] p20632 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:118} INFO - start pipeline at 2024-04-27 09:06:10.507977
+[2024-04-27 09:06:10,508] p20632 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:39} INFO - start get links at 2024-04-27 09:06:10.508737
+[2024-04-27 09:06:10,509] p20632 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:102} INFO - I will get links for 371 cities
+[2024-04-27 09:06:10,509] p20632 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:107} INFO - sleeping for 33.23 seconds
+[2024-04-27 09:07:22,145] p20686 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:118} INFO - start pipeline at 2024-04-27 09:07:22.145747
+[2024-04-27 09:07:22,146] p20686 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:39} INFO - start get links at 2024-04-27 09:07:22.146114
+[2024-04-27 09:07:22,149] p20686 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:55} INFO - 318 links already exists
+[2024-04-27 09:07:22,149] p20686 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:102} INFO - I will get links for 53 cities
+[2024-04-27 09:07:22,149] p20686 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:107} INFO - sleeping for 36.26 seconds
+[2024-04-27 09:07:58,414] p20686 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:110} INFO - get links for bank: sberbank, city: Алексеевка, yndx id: 1226123722
+[2024-04-27 09:07:59,330] p20686 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-04-27 09:08:04,001] p20686 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:65} INFO - sleep for 196.8
+[2024-04-27 09:09:07,373] p20810 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:118} INFO - start pipeline at 2024-04-27 09:09:07.373268
+[2024-04-27 09:09:07,373] p20810 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:39} INFO - start get links at 2024-04-27 09:09:07.373651
+[2024-04-27 09:09:07,377] p20810 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:55} INFO - 318 links already exists
+[2024-04-27 09:09:07,377] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:102} INFO - I will get links for 53 cities
+[2024-04-27 09:09:07,377] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:107} INFO - sleeping for 29.91 seconds
+[2024-04-27 09:09:37,291] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:110} INFO - get links for bank: sberbank, city: Алексеевка, yndx id: 1226123722
+[2024-04-27 09:09:38,074] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-04-27 09:09:43,167] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:83} INFO - driver stopped
+[2024-04-27 09:09:43,466] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c9d3a0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdd863805dd18fbacbeabc2ff27f189e/window
+[2024-04-27 09:09:43,467] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c8c4c0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdd863805dd18fbacbeabc2ff27f189e/window
+[2024-04-27 09:09:43,468] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c8c9a0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdd863805dd18fbacbeabc2ff27f189e/window
+[2024-04-27 09:09:43,469] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:114} INFO - Error in get links for bank: sberbank, city: Алексеевка, yndx id: 1226123722, error: HTTPConnectionPool(host='localhost', port=58566): Max retries exceeded with url: /session/fdd863805dd18fbacbeabc2ff27f189e/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c8caf0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+[2024-04-27 09:09:43,469] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:107} INFO - sleeping for 33.17 seconds
+[2024-04-27 09:10:08,927] p20810 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
 Traceback (most recent call last):
-  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 310, in <module>
-    update_cities_dict(cities_list, bank_name)
-  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 225, in update_cities_dict
-    cities.update(cities_dict)
-NameError: name 'cities' is not defined
-[2024-04-26 12:20:27,698] p6586 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:194} INFO - current limit is 499
-[2024-04-26 12:20:29,893] p6586 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
-Traceback (most recent call last):
-  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 310, in <module>
-    update_cities_dict(cities_list, bank_name)
-  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 225, in update_cities_dict
-    cities.update(cities_dict)
-NameError: name 'cities' is not defined
-[2024-04-26 12:21:53,130] p6641 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:194} INFO - current limit is 498
-[2024-04-26 12:21:55,357] p6641 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
-Traceback (most recent call last):
-  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 313, in <module>
-    update_cities_dict(cities_list, bank_name)
-  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 225, in update_cities_dict
-    cities.update(cities_dict)
-NameError: name 'cities' is not defined
-[2024-04-26 12:22:15,101] p6670 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:194} INFO - current limit is 497
-[2024-04-26 12:22:17,350] p6670 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 1 cities updated in cities dictionary
-[2024-04-26 12:23:25,021] p6706 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:194} INFO - current limit is 496
-[2024-04-26 12:23:25,213] p6706 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:206} INFO - Ярцево yndx_id 1217811066
-[2024-04-26 12:23:27,220] p6706 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 1 cities updated in cities dictionary
-[2024-04-26 12:32:21,152] p7312 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 495
-[2024-04-26 12:32:21,340] p7312 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Ярцево yndx_id 1217811066
-[2024-04-26 12:32:23,346] p7312 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:225} INFO - 1 cities updated in cities dictionary
-[2024-04-26 13:45:51,009] p9349 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:158} INFO - get info for banks in Рыбинск length of 1
-[2024-04-26 13:45:51,821] p9349 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-04-26 13:46:11,140] p9349 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
-[2024-04-26 13:46:11,142] p9349 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - 
-[2024-04-26 13:46:11,158] p9349 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:190} INFO - Error in get info for banks in Рыбинск, error: name 'business_aspect' is not defined
-[2024-04-26 13:47:43,190] p9485 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:158} INFO - get info for banks in Рыбинск length of 1
-[2024-04-26 13:47:43,939] p9485 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-04-26 13:48:01,389] p9485 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
-[2024-04-26 13:48:01,390] p9485 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - 
-[2024-04-26 13:48:01,403] p9485 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:190} INFO - Error in get info for banks in Рыбинск, error: name 'business_aspect' is not defined
-[2024-04-26 13:50:24,774] p9632 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:158} INFO - get info for banks in Рыбинск length of 1
-[2024-04-26 13:50:25,547] p9632 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-04-26 13:50:40,690] p9632 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:47} INFO - business_aspect
-[2024-04-26 13:50:40,691] p9632 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:48} INFO - []
-[2024-04-26 13:50:40,698] p9632 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:65} INFO - CAPTCHA CAPTCHA CAPTCHA CAPTCHA CAPTCHA CAPTCHA CAPTCHA CAPTCHA 
-[2024-04-26 13:50:40,698] p9632 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:190} INFO - Error in get info for banks in Рыбинск, error: 'NoneType' object has no attribute 'start'
-[2024-04-26 15:32:37,535] p13141 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 494
-[2024-04-26 15:34:39,634] p13193 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 494
-[2024-04-26 15:34:45,893] p13210 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 494
-[2024-04-26 15:34:46,097] p13210 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Абакан yndx_id 1657685442
-[2024-04-26 15:34:48,105] p13210 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:225} INFO - 1 cities updated in cities dictionary
-[2024-04-26 15:34:48,334] p13210 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Азов yndx_id 1198153462
-[2024-04-26 15:35:33,450] p13245 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:192} INFO - current limit is 493
-[2024-04-26 15:35:33,683] p13245 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:204} INFO - Ярцево yndx_id 1217811066
-[2024-04-26 15:35:35,688] p13245 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:225} INFO - 1 cities updated in cities dictionary
-[2024-04-26 16:47:42,302] p15383 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:199} INFO - current limit is 492
-[2024-04-26 16:49:08,857] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:199} INFO - current limit is 492
-[2024-04-26 16:49:09,095] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Альметьевск
-[2024-04-26 16:49:09,095] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Альметьевск yndx_id 0
-[2024-04-26 16:49:11,103] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 1 cities updated in cities dictionary
-[2024-04-26 16:49:11,324] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Арсеньев
-[2024-04-26 16:49:11,324] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Арсеньев yndx_id 0
-[2024-04-26 16:49:13,331] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 2 cities updated in cities dictionary
-[2024-04-26 16:49:13,707] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Артем
-[2024-04-26 16:49:13,708] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Артем yndx_id 0
-[2024-04-26 16:49:15,713] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 3 cities updated in cities dictionary
-[2024-04-26 16:49:15,912] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Батайск yndx_id 1244972296
-[2024-04-26 16:49:17,919] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 4 cities updated in cities dictionary
-[2024-04-26 16:49:18,106] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Бийск yndx_id 1119398610
-[2024-04-26 16:49:20,112] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 5 cities updated in cities dictionary
-[2024-04-26 16:49:20,324] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Буденновск
-[2024-04-26 16:49:20,324] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Буденновск yndx_id 0
-[2024-04-26 16:49:22,331] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 6 cities updated in cities dictionary
-[2024-04-26 16:49:22,540] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Валуйки yndx_id 1169384714
-[2024-04-26 16:49:24,547] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 7 cities updated in cities dictionary
-[2024-04-26 16:49:24,783] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Видное
-[2024-04-26 16:49:24,783] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Видное yndx_id 0
-[2024-04-26 16:49:26,790] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 8 cities updated in cities dictionary
-[2024-04-26 16:49:27,027] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Волжский
-[2024-04-26 16:49:27,028] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Волжский yndx_id 0
-[2024-04-26 16:49:29,035] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 9 cities updated in cities dictionary
-[2024-04-26 16:49:29,251] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Горно-Алтайск yndx_id 1018588620
-[2024-04-26 16:49:31,257] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 10 cities updated in cities dictionary
-[2024-04-26 16:49:31,629] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Грозный
-[2024-04-26 16:49:31,630] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Грозный yndx_id 0
-[2024-04-26 16:49:33,636] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 11 cities updated in cities dictionary
-[2024-04-26 16:49:33,900] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Донской yndx_id 1226357870
-[2024-04-26 16:49:35,907] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 12 cities updated in cities dictionary
-[2024-04-26 16:49:36,142] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Ейск yndx_id 170782357487
-[2024-04-26 16:49:38,146] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 13 cities updated in cities dictionary
-[2024-04-26 16:49:38,324] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Жуковский yndx_id 99662294143
-[2024-04-26 16:49:40,330] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 14 cities updated in cities dictionary
-[2024-04-26 16:49:40,507] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Заволжье
-[2024-04-26 16:49:40,507] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Заволжье yndx_id 0
-[2024-04-26 16:49:42,514] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 15 cities updated in cities dictionary
-[2024-04-26 16:49:42,805] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Заречный yndx_id 1326857915
-[2024-04-26 16:49:44,812] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 16 cities updated in cities dictionary
-[2024-04-26 16:49:45,041] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Ивантеевка
-[2024-04-26 16:49:45,042] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Ивантеевка yndx_id 0
-[2024-04-26 16:49:47,048] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 17 cities updated in cities dictionary
-[2024-04-26 16:49:47,280] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Каспийск yndx_id 1598394418
-[2024-04-26 16:49:49,286] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 18 cities updated in cities dictionary
-[2024-04-26 16:49:49,524] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Киселевск
-[2024-04-26 16:49:49,524] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Киселевск yndx_id 0
-[2024-04-26 16:49:51,531] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 19 cities updated in cities dictionary
-[2024-04-26 16:49:51,723] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Копейск yndx_id 1161064106
-[2024-04-26 16:49:53,729] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 20 cities updated in cities dictionary
-[2024-04-26 16:49:53,995] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Лесной yndx_id 1546166782
-[2024-04-26 16:49:56,002] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 21 cities updated in cities dictionary
-[2024-04-26 16:49:56,247] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Майкоп yndx_id 1014430546
-[2024-04-26 16:49:58,254] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 22 cities updated in cities dictionary
-[2024-04-26 16:49:58,524] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Мирный
-[2024-04-26 16:49:58,525] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Мирный yndx_id 0
-[2024-04-26 16:50:00,531] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 23 cities updated in cities dictionary
-[2024-04-26 16:50:00,739] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Москва
-[2024-04-26 16:50:00,739] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Москва yndx_id 0
-[2024-04-26 16:50:02,745] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 24 cities updated in cities dictionary
-[2024-04-26 16:50:02,967] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Новый Уренгой
-[2024-04-26 16:50:02,968] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Новый Уренгой yndx_id 0
-[2024-04-26 16:50:04,975] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 25 cities updated in cities dictionary
-[2024-04-26 16:50:05,215] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Отрадный
-[2024-04-26 16:50:05,216] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Отрадный yndx_id 0
-[2024-04-26 16:50:07,223] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 26 cities updated in cities dictionary
-[2024-04-26 16:50:07,442] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:169} INFO - where is no sberbank in Петергоф
-[2024-04-26 16:50:07,443] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Петергоф yndx_id 0
-[2024-04-26 16:50:09,446] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:232} INFO - 27 cities updated in cities dictionary
-[2024-04-26 16:50:09,640] p15432 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:211} INFO - Полевской yndx_id 1053753968
-[2024-04-26 17:21:53,574] p16155 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:203} INFO - current limit is 465
-[2024-04-26 17:21:53,808] p16155 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:215} INFO - Видное yndx_id 1252510678
-[2024-04-26 17:21:55,816] p16155 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:236} INFO - 1 cities updated in cities dictionary
-[2024-04-26 17:22:06,050] p16177 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:203} INFO - current limit is 464
-[2024-04-26 17:22:06,253] p16177 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:173} INFO - where is no sberbank in заволжье
-[2024-04-26 17:22:06,253] p16177 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:215} INFO - Заволжье yndx_id 0
-[2024-04-26 17:22:08,260] p16177 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:236} INFO - 1 cities updated in cities dictionary
-[2024-04-26 17:25:10,422] p16262 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:209} INFO - current limit is 463
-[2024-04-26 17:25:10,612] p16262 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:179} INFO - where is no sberbank in заволжье
-[2024-04-26 17:25:10,612] p16262 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Заволжье yndx_id 0
-[2024-04-26 17:25:12,619] p16262 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
-[2024-04-26 17:27:05,078] p16316 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:209} INFO - current limit is 462
-[2024-04-26 17:27:05,277] p16316 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:179} INFO - where is no sberbank in заволжье
-[2024-04-26 17:27:05,277] p16316 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Заволжье yndx_id 0
-[2024-04-26 17:27:07,285] p16316 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
-[2024-04-26 17:27:30,190] p16344 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:209} INFO - current limit is 461
-[2024-04-26 17:27:30,381] p16344 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Заволжье yndx_id 1104687596
-[2024-04-26 17:27:32,387] p16344 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
-[2024-04-26 17:27:56,838] p16377 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:209} INFO - current limit is 460
-[2024-04-26 17:27:57,038] p16377 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Мирный yndx_id 1655753138
-[2024-04-26 17:27:59,045] p16377 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
-[2024-04-26 17:28:05,103] p16395 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:209} INFO - current limit is 459
-[2024-04-26 17:28:05,312] p16395 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:179} INFO - where is no sberbank in новый уренгой
-[2024-04-26 17:28:05,312] p16395 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Новый Уренгой yndx_id 0
-[2024-04-26 17:28:07,319] p16395 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
-[2024-04-26 17:29:24,326] p16447 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:209} INFO - current limit is 458
-[2024-04-26 17:29:24,529] p16447 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:179} INFO - where is no sberbank in новый уренгой
-[2024-04-26 17:29:24,530] p16447 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Новый Уренгой yndx_id 0
-[2024-04-26 17:29:26,531] p16447 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
-[2024-04-26 17:30:00,052] p16474 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:209} INFO - current limit is 457
-[2024-04-26 17:30:00,261] p16474 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Новый Уренгой yndx_id 1124090847
-[2024-04-26 17:30:02,268] p16474 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
-[2024-04-26 17:30:17,122] p16498 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:209} INFO - current limit is 456
-[2024-04-26 17:30:17,337] p16498 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:179} INFO - where is no sberbank in петергоф
-[2024-04-26 17:30:17,338] p16498 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Петергоф yndx_id 0
-[2024-04-26 17:30:19,344] p16498 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 182, in <module>
+    launch_info_pipeline(bank_name=bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 160, in launch_info_pipeline
+    funcs = get_all_links(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 57, in get_all_links
+    get_bank_links(cities_copy, bank_name)
+  File "/Users/anyarulina/yandex-info-reviews-parser/get_links.py", line 108, in get_bank_links
+    time.sleep(N)
+KeyboardInterrupt
+[2024-04-27 10:55:35,692] p23764 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:209} INFO - current limit is 500
+[2024-04-27 10:55:35,914] p23764 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Абакан yndx_id 1657685442
+[2024-04-27 10:55:37,921] p23764 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
+[2024-04-27 10:55:38,188] p23764 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Азов yndx_id 1198153462
