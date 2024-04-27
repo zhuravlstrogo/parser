@@ -164,25 +164,51 @@ def merge_all_info(bank_name, drop_errors=False):
     print(f'not handled {len(not_handled_cities)} cities: {not_handled_cities}')
 
 
+def search_end_of_str(start_with, full_str):
+    end_with = re.search(f"{start_with}.*?(\d+)", full_str).group(1)
+    return end_with
+
+
 def merge_all_reviews(bank_name, drop_errors=False):
     """соединяет отдельные datafram-ы с банками по городам в один dataframe"""
-    reviews_path  =f'reviews_outputs/{bank_name}'
+    reviews_path  =f'reviews_outputs/{bank_name}/'
 
+    existing_reviews = {}
     for root, dirs, files in os.walk(reviews_path, topdown=False):
-        for name in files:
-            print(name)  # файлики 
-            yndx_id = find_between(f, first='reviews_', last='_info.csv')[0]
-        # for name in dirs:
-        #     print(name) # название города
+        try:
+            k = root.replace(reviews_path, '')
+            v = [find_between(f, first=f'reviews_', last='.csv')[0] for f in files]
+            existing_reviews[k] = v
+        except:
+            print('error ')
+    # print(existing_reviews)
+    del existing_reviews['']
 
-    # d = {}
-    # for f in only_info_files:
-    #     try:
-    #         city_name = find_between(f, first='', last='_info.csv')[0]
+    links_path  =f'links/{bank_name}/'
+    only_links_files = [f for f in listdir(links_path) if isfile(join(links_path, f))]
 
-    #         d[city_name] = info_path + f
-    #     except:
-    #         print(f'error {city_name}')
+    existing_links = []
+    for f in only_links_files:
+        print(f)
+        
+        try:
+            k = find_between(f, first=f'link_', last='.pkl')[0]
+
+            with open(links_path + f, 'rb') as handle:
+                citiy_links = pickle.load(handle)
+            # v = [f for f in citiy_links]
+            for f in citiy_links:
+                print(find_between(f, first=f'link_', last='.pkl')[0])
+      
+            # v = [ for f in citiy_links]
+            existing_links[k] = v 
+        except:
+            print('error ')
+
+    print(existing_links)
+
+
+
 
 
     # frames = []
