@@ -281,6 +281,6 @@ def merge_all_reviews(bank_name, drop_errors=False):
 if __name__ == "__main__":
     # bank_name = 'alfa_bank'
     bank_name = 'sberbank'
-    # merge_all_info(bank_name, drop_errors=False)
+    merge_all_info(bank_name, drop_errors=False)
 
-    merge_all_reviews(bank_name, drop_errors=False)
+    # merge_all_reviews(bank_name, drop_errors=False)
