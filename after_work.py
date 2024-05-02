@@ -10,15 +10,7 @@ from datetime import datetime
 import re
 
 from call_yandex_api_org import remove_cities
-
-
-def find_between(s, first, last):
-    """находит строку между символами first и last"""
-    try:
-        regex = rf'{first}(.*?){last}'
-        return re.findall(regex, s)
-    except ValueError:
-        return -1
+from utils import find_between, search_end_of_str
 
 
 def handle_C_lon(lon):
@@ -131,16 +123,16 @@ def merge_all_info(bank_name, drop_errors=False):
         cities_dict = pickle.load(handle)
     cities_without_bank = {key:val for key, val in cities_dict.items() if val == 0}
 
-    print('cities_without_bank ', len(cities_without_bank))
+    logging.info(f'cities_without_bank {len(cities_without_bank)}')
 
     # for k, v in cities_without_bank.items():
     #     new_row = {'city': k, 'address': 'банк не найден', 'rating': None, 'lat' : None, 'lon': None}
     #     final_df = final_df.append(new_row, ignore_index=True)
 
 
-    print('final df')
-    print(final_df.sample(5))
-    print(final_df.shape)
+    logging.info('final df')
+    print(final_df.head())
+    logging.info(f'final_df.shape {final_df.shape}')
 
 
     # TODO: добавлять города, в которых нет банков из cities_dict_{bank_name}.pickle
@@ -154,133 +146,66 @@ def merge_all_info(bank_name, drop_errors=False):
     final_df.to_excel(f'info_all/{bank_name}_info_{today}.xlsx', index=False)  
 
     unique_cities = set(np.unique(final_df['city']))
-    print(f'{len(unique_cities)} unique cities saved')
+    logging.info(f'{len(unique_cities)} unique cities saved')
 
     with open('cities.txt') as f:
         input_cities = [x.strip('\n') for x in f ]
 
     not_handled_cities = set(input_cities).difference(unique_cities)
 
-    print(f'not handled {len(not_handled_cities)} cities: {not_handled_cities}')
-
-
-def search_end_of_str(start_with, full_str):
-    end_with = re.search(f"{start_with}.*?(\d+)", full_str).group(1)
-    return end_with
+    logging.info(f'not handled {len(not_handled_cities)} cities: {not_handled_cities}')
 
 
 def merge_all_reviews(bank_name, drop_errors=False):
     """соединяет отдельные datafram-ы с банками по городам в один dataframe"""
+
     reviews_path  =f'reviews_outputs/{bank_name}/'
 
-    existing_reviews = {}
+    frames = []
     for root, dirs, files in os.walk(reviews_path, topdown=False):
         try:
-            k = root.replace(reviews_path, '')
-            v = [find_between(f, first=f'reviews_', last='.csv')[0] for f in files]
-            existing_reviews[k] = v
+   
+            k = root.replace(reviews_path, '') # имя города
+
+            for f in files:
+                # print('f ', f)
+                idx = find_between(f, first=f'reviews_', last='.csv')[0] 
+                df = pd.read_csv(f'{root}/{f}', index_col=0)
+                df['city'] = k
+                df['id'] = idx
+                frames.append(df)
+   
         except:
-            print('error ')
-    # print(existing_reviews)
-    del existing_reviews['']
+            pass
 
-    links_path  =f'links/{bank_name}/'
-    only_links_files = [f for f in listdir(links_path) if isfile(join(links_path, f))]
+    if all(v is None for v in frames):
+        final_df = None
+    else:
+        final_df = pd.concat(frames)
 
-    existing_links = []
-    for f in only_links_files:
-        print(f)
-        
-        try:
-            k = find_between(f, first=f'link_', last='.pkl')[0]
+    directory_name = f'reviews_all/{bank_name}'
+    if not os.path.exists(directory_name):
+        os.makedirs(directory_name) 
 
-            with open(links_path + f, 'rb') as handle:
-                citiy_links = pickle.load(handle)
-            # v = [f for f in citiy_links]
-            for f in citiy_links:
-                print(find_between(f, first=f'link_', last='.pkl')[0])
-      
-            # v = [ for f in citiy_links]
-            existing_links[k] = v 
-        except:
-            print('error ')
+    logging.info(f"I will save reviews length of {len(final_df)}")
+    logging.info(f"final_df.shap {final_df.shape}") # 339 814
+    final_df_sample = final_df.sample(100000)
 
-    print(existing_links)
+    today = datetime.today().strftime('%Y_%m_%d') 
+    final_df.to_csv(f'reviews_all/{bank_name}_reviews_all_{today}.csv', index=False)
+    final_df.to_excel(f'reviews_all/{bank_name}_reviews_{today}.xlsx', index=False)  
+    final_df_sample.to_excel(f'reviews_all/{bank_name}_reviews_sample_{today}.xlsx', index=False)  
 
+    logging.info(f"I saved reviews length of {len(final_df)}")
 
+    unique_cities = set(np.unique(final_df['city']))
+    logging.info(f'{len(unique_cities)} unique cities saved')
 
-
-
-    # frames = []
-    # for city_name, file_path in d.items():
-    #     try:
-    #         df = pd.read_csv(file_path, index_col=0)
-    #         # проверка на то, что количество банков-ссылок для этого города
-    #         # соответсвует количеству информации по банкам для этого города
-    #         # link_path_name = links_path +  f'link_{city_name}.pkl'
-    # #         with open(link_path_name, 'rb') as handle:
-    # #             city_links = pickle.load(handle)
-    # #         if len(city_links) != df.shape:
-    # #             print(city_name)
-        
-    #         df['city'] = city_name
-    #         frames.append(df)
-    #     except:
-    #         print(f'error in city {city_name}')
-
-    # if all(v is None for v in frames):
-    #     final_df = None
-    # else:
-    #     final_df = pd.concat(frames)
-
-    # final_df['lat'] = final_df['lat'].astype('str')
-    # final_df['lon'] = final_df['lon'].astype('str')
-
-    # final_df['lon'] = final_df.apply(lambda x: handle_C_lat(x.lon), axis=1)
-    # final_df['lat'] = final_df.apply(lambda x: handle_C_lat(x.lat), axis=1)
-
-    # final_df = clean_rows(df=final_df, bank_name=bank_name, drop_errors=drop_errors)
-
-    # with open(f'cities_dict_{bank_name}.pickle', 'rb') as handle:
-    #     cities_dict = pickle.load(handle)
-    # cities_without_bank = {key:val for key, val in cities_dict.items() if val == 0}
-
-    # print('cities_without_bank ', len(cities_without_bank))
-
-    # # for k, v in cities_without_bank.items():
-    # #     new_row = {'city': k, 'address': 'банк не найден', 'rating': None, 'lat' : None, 'lon': None}
-    # #     final_df = final_df.append(new_row, ignore_index=True)
-
-
-    # print('final df')
-    # print(final_df.sample(5))
-    # print(final_df.shape)
-
-
-    # # TODO: добавлять города, в которых нет банков из cities_dict_{bank_name}.pickle
-
-    # directory_name = f'info_all/{bank_name}'
-    # if not os.path.exists(directory_name):
-    #     os.makedirs(directory_name) 
-
-    # today = datetime.today().strftime('%Y_%m_%d') 
-    # final_df.to_csv(f'info_all/{bank_name}_info_all_{today}.csv', index=False)
-    # final_df.to_excel(f'info_all/{bank_name}_info_{today}.xlsx', index=False)  
-
-    # unique_cities = set(np.unique(final_df['city']))
-    # print(f'{len(unique_cities)} unique cities saved')
-
-    # with open('cities.txt') as f:
-    #     input_cities = [x.strip('\n') for x in f ]
-
-    # not_handled_cities = set(input_cities).difference(unique_cities)
-
-    # print(f'not handled {len(not_handled_cities)} cities: {not_handled_cities}')
 
 
 if __name__ == "__main__":
     # bank_name = 'alfa_bank'
     bank_name = 'sberbank'
-    merge_all_info(bank_name, drop_errors=False)
+    # merge_all_info(bank_name, drop_errors=True)
 
-    # merge_all_reviews(bank_name, drop_errors=False)
+    merge_all_reviews(bank_name, drop_errors=False)

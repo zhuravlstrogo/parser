@@ -1,40 +1,1111 @@
-[2024-04-27 09:06:10,507] p20632 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:118} INFO - start pipeline at 2024-04-27 09:06:10.507977
-[2024-04-27 09:06:10,508] p20632 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:39} INFO - start get links at 2024-04-27 09:06:10.508737
-[2024-04-27 09:06:10,509] p20632 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:102} INFO - I will get links for 371 cities
-[2024-04-27 09:06:10,509] p20632 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:107} INFO - sleeping for 33.23 seconds
-[2024-04-27 09:07:22,145] p20686 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:118} INFO - start pipeline at 2024-04-27 09:07:22.145747
-[2024-04-27 09:07:22,146] p20686 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:39} INFO - start get links at 2024-04-27 09:07:22.146114
-[2024-04-27 09:07:22,149] p20686 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:55} INFO - 318 links already exists
-[2024-04-27 09:07:22,149] p20686 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:102} INFO - I will get links for 53 cities
-[2024-04-27 09:07:22,149] p20686 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:107} INFO - sleeping for 36.26 seconds
-[2024-04-27 09:07:58,414] p20686 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:110} INFO - get links for bank: sberbank, city: Алексеевка, yndx id: 1226123722
-[2024-04-27 09:07:59,330] p20686 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-04-27 09:08:04,001] p20686 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:65} INFO - sleep for 196.8
-[2024-04-27 09:09:07,373] p20810 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:118} INFO - start pipeline at 2024-04-27 09:09:07.373268
-[2024-04-27 09:09:07,373] p20810 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:39} INFO - start get links at 2024-04-27 09:09:07.373651
-[2024-04-27 09:09:07,377] p20810 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:55} INFO - 318 links already exists
-[2024-04-27 09:09:07,377] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:102} INFO - I will get links for 53 cities
-[2024-04-27 09:09:07,377] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:107} INFO - sleeping for 29.91 seconds
-[2024-04-27 09:09:37,291] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:110} INFO - get links for bank: sberbank, city: Алексеевка, yndx id: 1226123722
-[2024-04-27 09:09:38,074] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-04-27 09:09:43,167] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:83} INFO - driver stopped
-[2024-04-27 09:09:43,466] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c9d3a0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdd863805dd18fbacbeabc2ff27f189e/window
-[2024-04-27 09:09:43,467] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c8c4c0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdd863805dd18fbacbeabc2ff27f189e/window
-[2024-04-27 09:09:43,468] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c8c9a0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdd863805dd18fbacbeabc2ff27f189e/window
-[2024-04-27 09:09:43,469] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:114} INFO - Error in get links for bank: sberbank, city: Алексеевка, yndx id: 1226123722, error: HTTPConnectionPool(host='localhost', port=58566): Max retries exceeded with url: /session/fdd863805dd18fbacbeabc2ff27f189e/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c8caf0>: Failed to establish a new connection: [Errno 61] Connection refused'))
-[2024-04-27 09:09:43,469] p20810 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:107} INFO - sleeping for 33.17 seconds
-[2024-04-27 09:10:08,927] p20810 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+[2024-05-02 08:10:23,236] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:193} INFO - current limit is 500
+[2024-05-02 08:10:23,466] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Абакан yndx_id 95773847314
+[2024-05-02 08:10:25,472] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 1 cities updated in cities dictionary
+[2024-05-02 08:10:25,708] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Абинск yndx_id 147054140486
+[2024-05-02 08:10:27,715] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 2 cities updated in cities dictionary
+[2024-05-02 08:10:27,969] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Агинское city
+[2024-05-02 08:10:27,969] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Агинское yndx_id 0
+[2024-05-02 08:10:29,976] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 3 cities updated in cities dictionary
+[2024-05-02 08:10:30,211] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Агрыз
+[2024-05-02 08:10:30,211] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Агрыз yndx_id 0
+[2024-05-02 08:10:32,218] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 4 cities updated in cities dictionary
+[2024-05-02 08:10:32,431] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Азов yndx_id 168163292243
+[2024-05-02 08:10:34,437] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 5 cities updated in cities dictionary
+[2024-05-02 08:10:34,613] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Аксай
+[2024-05-02 08:10:34,613] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Аксай yndx_id 0
+[2024-05-02 08:10:36,619] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 6 cities updated in cities dictionary
+[2024-05-02 08:10:36,828] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Алапаевск yndx_id 212468307450
+[2024-05-02 08:10:38,831] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 7 cities updated in cities dictionary
+[2024-05-02 08:10:39,099] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Алатырь yndx_id 59932277658
+[2024-05-02 08:10:41,106] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 8 cities updated in cities dictionary
+[2024-05-02 08:10:41,493] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Алдан yndx_id 110135344497
+[2024-05-02 08:10:43,500] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 9 cities updated in cities dictionary
+[2024-05-02 08:10:43,744] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Алейск
+[2024-05-02 08:10:43,744] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Алейск yndx_id 0
+[2024-05-02 08:10:45,751] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 10 cities updated in cities dictionary
+[2024-05-02 08:10:46,089] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Александров yndx_id 1063178633
+[2024-05-02 08:10:48,096] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 11 cities updated in cities dictionary
+[2024-05-02 08:10:48,291] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Алексеевка
+[2024-05-02 08:10:48,292] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Алексеевка yndx_id 0
+[2024-05-02 08:10:50,297] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 12 cities updated in cities dictionary
+[2024-05-02 08:10:50,490] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Алексин yndx_id 80786529404
+[2024-05-02 08:10:52,497] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 13 cities updated in cities dictionary
+[2024-05-02 08:10:52,689] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Альметьевск
+[2024-05-02 08:10:52,690] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Альметьевск yndx_id 0
+[2024-05-02 08:10:54,696] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 14 cities updated in cities dictionary
+[2024-05-02 08:10:54,908] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Амурск
+[2024-05-02 08:10:54,908] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Амурск yndx_id 0
+[2024-05-02 08:10:56,914] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 15 cities updated in cities dictionary
+[2024-05-02 08:10:57,132] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Анадырь
+[2024-05-02 08:10:57,133] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Анадырь yndx_id 0
+[2024-05-02 08:10:59,139] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 16 cities updated in cities dictionary
+[2024-05-02 08:10:59,341] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Анапа yndx_id 64937522549
+[2024-05-02 08:11:01,348] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 17 cities updated in cities dictionary
+[2024-05-02 08:11:01,544] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Ангарск yndx_id 208219863240
+[2024-05-02 08:11:03,550] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 18 cities updated in cities dictionary
+[2024-05-02 08:11:03,784] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Анжеро-Судженск yndx_id 63863222480
+[2024-05-02 08:11:05,790] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 19 cities updated in cities dictionary
+[2024-05-02 08:11:05,987] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Апрелевка yndx_id 92682113592
+[2024-05-02 08:11:07,994] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 20 cities updated in cities dictionary
+[2024-05-02 08:11:08,187] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Апшеронск yndx_id 168410569003
+[2024-05-02 08:11:10,194] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 21 cities updated in cities dictionary
+[2024-05-02 08:11:10,384] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Аргун yndx_id 184927413377
+[2024-05-02 08:11:12,389] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 22 cities updated in cities dictionary
+[2024-05-02 08:11:12,581] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Арзамас yndx_id 164389531646
+[2024-05-02 08:11:14,588] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 23 cities updated in cities dictionary
+[2024-05-02 08:11:14,825] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Армавир yndx_id 33524583785
+[2024-05-02 08:11:16,832] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 24 cities updated in cities dictionary
+[2024-05-02 08:11:17,046] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Арсеньев
+[2024-05-02 08:11:17,047] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Арсеньев yndx_id 0
+[2024-05-02 08:11:19,053] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 25 cities updated in cities dictionary
+[2024-05-02 08:11:19,333] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Арск yndx_id 1298024506
+[2024-05-02 08:11:21,340] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 26 cities updated in cities dictionary
+[2024-05-02 08:11:21,528] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Артем
+[2024-05-02 08:11:21,529] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Артем yndx_id 0
+[2024-05-02 08:11:23,535] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 27 cities updated in cities dictionary
+[2024-05-02 08:11:23,790] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Артемовский
+[2024-05-02 08:11:23,790] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Артемовский yndx_id 0
+[2024-05-02 08:11:25,796] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 28 cities updated in cities dictionary
+[2024-05-02 08:11:25,980] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Архангельск yndx_id 183559953327
+[2024-05-02 08:11:27,986] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 29 cities updated in cities dictionary
+[2024-05-02 08:11:28,177] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Асбест yndx_id 163505448051
+[2024-05-02 08:11:30,184] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 30 cities updated in cities dictionary
+[2024-05-02 08:11:30,367] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Асино yndx_id 239193896655
+[2024-05-02 08:11:32,374] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 31 cities updated in cities dictionary
+[2024-05-02 08:11:32,552] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Астрахань yndx_id 97853639834
+[2024-05-02 08:11:34,554] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 32 cities updated in cities dictionary
+[2024-05-02 08:11:34,722] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Аткарск yndx_id 53457794128
+[2024-05-02 08:11:36,723] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 33 cities updated in cities dictionary
+[2024-05-02 08:11:36,924] p1453 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Ахтубинск yndx_id 27538496275
+[2024-05-02 08:11:49,259] p1591 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:193} INFO - current limit is 467
+[2024-05-02 08:13:28,688] p1739 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:193} INFO - current limit is 467
+[2024-05-02 08:21:52,823] p2149 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
 Traceback (most recent call last):
-  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 182, in <module>
-    launch_info_pipeline(bank_name=bank_name, check_existing=True)
-  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 160, in launch_info_pipeline
-    funcs = get_all_links(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
-  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 57, in get_all_links
-    get_bank_links(cities_copy, bank_name)
-  File "/Users/anyarulina/yandex-info-reviews-parser/get_links.py", line 108, in get_bank_links
-    time.sleep(N)
-KeyboardInterrupt
-[2024-04-27 10:55:35,692] p23764 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:209} INFO - current limit is 500
-[2024-04-27 10:55:35,914] p23764 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Абакан yndx_id 1657685442
-[2024-04-27 10:55:37,921] p23764 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
-[2024-04-27 10:55:38,188] p23764 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:221} INFO - Азов yndx_id 1198153462
+  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 325, in <module>
+    get_cities_dict(bank_name, path, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py", line 305, in get_cities_dict
+    print(cities_[:5])
+NameError: name 'cities_' is not defined
+[2024-05-02 08:23:02,129] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:193} INFO - current limit is 467
+[2024-05-02 08:23:02,343] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Баксан
+[2024-05-02 08:23:02,343] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Баксан yndx_id 0
+[2024-05-02 08:23:04,350] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 1 cities updated in cities dictionary
+[2024-05-02 08:23:04,594] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Балабаново
+[2024-05-02 08:23:04,595] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Балабаново yndx_id 0
+[2024-05-02 08:23:06,600] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 2 cities updated in cities dictionary
+[2024-05-02 08:23:06,837] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Белая Калитва yndx_id 72421910879
+[2024-05-02 08:23:08,844] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 3 cities updated in cities dictionary
+[2024-05-02 08:23:09,048] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Белебей
+[2024-05-02 08:23:09,048] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Белебей yndx_id 0
+[2024-05-02 08:23:11,053] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 4 cities updated in cities dictionary
+[2024-05-02 08:23:11,262] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Белорецк yndx_id 154054968298
+[2024-05-02 08:23:13,268] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 5 cities updated in cities dictionary
+[2024-05-02 08:23:13,449] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Белоярский
+[2024-05-02 08:23:13,450] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Белоярский yndx_id 0
+[2024-05-02 08:23:15,456] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 6 cities updated in cities dictionary
+[2024-05-02 08:23:15,732] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Березово
+[2024-05-02 08:23:15,733] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Березово yndx_id 0
+[2024-05-02 08:23:17,737] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 7 cities updated in cities dictionary
+[2024-05-02 08:23:18,012] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Бирск
+[2024-05-02 08:23:18,012] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Бирск yndx_id 0
+[2024-05-02 08:23:20,019] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 8 cities updated in cities dictionary
+[2024-05-02 08:23:20,238] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Боготол yndx_id 54627694553
+[2024-05-02 08:23:22,241] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 9 cities updated in cities dictionary
+[2024-05-02 08:23:22,494] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Бологое
+[2024-05-02 08:23:22,495] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Бологое yndx_id 0
+[2024-05-02 08:23:24,502] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 10 cities updated in cities dictionary
+[2024-05-02 08:23:24,766] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Болотное
+[2024-05-02 08:23:24,766] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Болотное yndx_id 0
+[2024-05-02 08:23:26,769] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 11 cities updated in cities dictionary
+[2024-05-02 08:23:27,376] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Большой Камень yndx_id 174017852883
+[2024-05-02 08:23:29,383] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 12 cities updated in cities dictionary
+[2024-05-02 08:23:29,634] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Борзя city
+[2024-05-02 08:23:29,635] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Борзя yndx_id 0
+[2024-05-02 08:23:31,641] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 13 cities updated in cities dictionary
+[2024-05-02 08:23:31,820] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Бронницы
+[2024-05-02 08:23:31,820] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Бронницы yndx_id 0
+[2024-05-02 08:23:33,823] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 14 cities updated in cities dictionary
+[2024-05-02 08:23:34,005] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Бугуруслан yndx_id 22484035004
+[2024-05-02 08:23:36,011] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 15 cities updated in cities dictionary
+[2024-05-02 08:23:36,236] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Буинск city
+[2024-05-02 08:23:36,237] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Буинск yndx_id 0
+[2024-05-02 08:23:38,242] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 16 cities updated in cities dictionary
+[2024-05-02 08:23:38,467] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Буй
+[2024-05-02 08:23:38,467] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Буй yndx_id 0
+[2024-05-02 08:23:40,474] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 17 cities updated in cities dictionary
+[2024-05-02 08:23:40,672] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Верещагино yndx_id 218780154555
+[2024-05-02 08:23:42,678] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 18 cities updated in cities dictionary
+[2024-05-02 08:23:42,863] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Вилючинск
+[2024-05-02 08:23:42,864] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Вилючинск yndx_id 0
+[2024-05-02 08:23:44,865] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 19 cities updated in cities dictionary
+[2024-05-02 08:23:45,068] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Вихоревка
+[2024-05-02 08:23:45,069] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Вихоревка yndx_id 0
+[2024-05-02 08:23:47,070] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 20 cities updated in cities dictionary
+[2024-05-02 08:23:47,253] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Волоколамск yndx_id 18505157966
+[2024-05-02 08:23:49,260] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 21 cities updated in cities dictionary
+[2024-05-02 08:23:49,449] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Вышний Волочек
+[2024-05-02 08:23:49,450] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Вышний Волочек yndx_id 0
+[2024-05-02 08:23:51,452] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 22 cities updated in cities dictionary
+[2024-05-02 08:23:51,685] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Вязники yndx_id 123031138887
+[2024-05-02 08:23:53,687] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 23 cities updated in cities dictionary
+[2024-05-02 08:23:53,871] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Гагарин yndx_id 114949527086
+[2024-05-02 08:23:55,875] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 24 cities updated in cities dictionary
+[2024-05-02 08:23:56,110] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Горноправдинск city
+[2024-05-02 08:23:56,110] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Горноправдинск yndx_id 0
+[2024-05-02 08:23:58,115] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 25 cities updated in cities dictionary
+[2024-05-02 08:23:58,366] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Горячий Ключ yndx_id 168209905158
+[2024-05-02 08:24:00,368] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 26 cities updated in cities dictionary
+[2024-05-02 08:24:00,577] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Губкинский
+[2024-05-02 08:24:00,578] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Губкинский yndx_id 0
+[2024-05-02 08:24:02,584] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 27 cities updated in cities dictionary
+[2024-05-02 08:24:03,080] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Гуково yndx_id 139069485516
+[2024-05-02 08:24:05,084] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 28 cities updated in cities dictionary
+[2024-05-02 08:24:05,298] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Гурьевск
+[2024-05-02 08:24:05,299] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Гурьевск yndx_id 0
+[2024-05-02 08:24:07,306] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 29 cities updated in cities dictionary
+[2024-05-02 08:24:07,513] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Гусев yndx_id 136477653590
+[2024-05-02 08:24:09,520] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 30 cities updated in cities dictionary
+[2024-05-02 08:24:09,719] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Гусиноозерск
+[2024-05-02 08:24:09,719] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Гусиноозерск yndx_id 0
+[2024-05-02 08:24:11,726] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 31 cities updated in cities dictionary
+[2024-05-02 08:24:11,917] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Дальнегорск yndx_id 219270464821
+[2024-05-02 08:24:13,924] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 32 cities updated in cities dictionary
+[2024-05-02 08:24:14,214] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Дальнереченск
+[2024-05-02 08:24:14,215] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Дальнереченск yndx_id 0
+[2024-05-02 08:24:16,218] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 33 cities updated in cities dictionary
+[2024-05-02 08:24:16,439] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Дедовск
+[2024-05-02 08:24:16,440] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Дедовск yndx_id 0
+[2024-05-02 08:24:18,446] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 34 cities updated in cities dictionary
+[2024-05-02 08:24:18,659] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Дербент yndx_id 70549324753
+[2024-05-02 08:24:20,666] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 35 cities updated in cities dictionary
+[2024-05-02 08:24:20,913] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Десногорск yndx_id 21848882592
+[2024-05-02 08:24:22,919] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 36 cities updated in cities dictionary
+[2024-05-02 08:24:23,455] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Дивногорск yndx_id 78650178492
+[2024-05-02 08:24:25,462] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 37 cities updated in cities dictionary
+[2024-05-02 08:24:25,645] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Донецк
+[2024-05-02 08:24:25,646] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Донецк yndx_id 0
+[2024-05-02 08:24:27,652] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 38 cities updated in cities dictionary
+[2024-05-02 08:24:27,874] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Дюртюли yndx_id 35579811257
+[2024-05-02 08:24:29,880] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 39 cities updated in cities dictionary
+[2024-05-02 08:24:30,113] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Дятьково yndx_id 48271979900
+[2024-05-02 08:24:32,119] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 40 cities updated in cities dictionary
+[2024-05-02 08:24:32,306] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Ершов yndx_id 1080456150
+[2024-05-02 08:24:34,313] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 41 cities updated in cities dictionary
+[2024-05-02 08:24:34,529] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Железногорск-Илимский yndx_id 1113782012
+[2024-05-02 08:24:36,535] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 42 cities updated in cities dictionary
+[2024-05-02 08:24:36,734] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Жирновск yndx_id 44325351386
+[2024-05-02 08:24:38,739] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 43 cities updated in cities dictionary
+[2024-05-02 08:24:38,914] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Жуков yndx_id 79774878340
+[2024-05-02 08:24:40,918] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 44 cities updated in cities dictionary
+[2024-05-02 08:24:41,126] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in ЗАТО Сибирский
+[2024-05-02 08:24:41,126] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - ЗАТО Сибирский yndx_id 0
+[2024-05-02 08:24:43,133] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 45 cities updated in cities dictionary
+[2024-05-02 08:24:43,317] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Завитинск
+[2024-05-02 08:24:43,317] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Завитинск yndx_id 0
+[2024-05-02 08:24:45,323] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 46 cities updated in cities dictionary
+[2024-05-02 08:24:45,527] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Заводоуковск yndx_id 125927577792
+[2024-05-02 08:24:47,534] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 47 cities updated in cities dictionary
+[2024-05-02 08:24:47,753] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Заинск
+[2024-05-02 08:24:47,753] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Заинск yndx_id 0
+[2024-05-02 08:24:49,759] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 48 cities updated in cities dictionary
+[2024-05-02 08:24:49,941] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Заозерск
+[2024-05-02 08:24:49,942] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Заозерск yndx_id 0
+[2024-05-02 08:24:51,948] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 49 cities updated in cities dictionary
+[2024-05-02 08:24:52,163] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Заполярный
+[2024-05-02 08:24:52,164] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Заполярный yndx_id 0
+[2024-05-02 08:24:54,170] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 50 cities updated in cities dictionary
+[2024-05-02 08:24:54,413] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Зарайск
+[2024-05-02 08:24:54,413] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Зарайск yndx_id 0
+[2024-05-02 08:24:56,416] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 51 cities updated in cities dictionary
+[2024-05-02 08:24:56,602] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Звенигово
+[2024-05-02 08:24:56,603] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Звенигово yndx_id 0
+[2024-05-02 08:24:58,609] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 52 cities updated in cities dictionary
+[2024-05-02 08:24:58,840] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Зубова Поляна yndx_id 1527160500
+[2024-05-02 08:25:00,847] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 53 cities updated in cities dictionary
+[2024-05-02 08:25:01,465] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Игрим
+[2024-05-02 08:25:01,466] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Игрим yndx_id 0
+[2024-05-02 08:25:03,469] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 54 cities updated in cities dictionary
+[2024-05-02 08:25:03,909] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Избербаш
+[2024-05-02 08:25:03,909] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Избербаш yndx_id 0
+[2024-05-02 08:25:05,916] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 55 cities updated in cities dictionary
+[2024-05-02 08:25:06,117] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Изобильный yndx_id 61299976990
+[2024-05-02 08:25:08,122] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 56 cities updated in cities dictionary
+[2024-05-02 08:25:08,342] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Иланский
+[2024-05-02 08:25:08,342] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Иланский yndx_id 0
+[2024-05-02 08:25:10,346] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 57 cities updated in cities dictionary
+[2024-05-02 08:25:10,524] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Ирбит yndx_id 116918127170
+[2024-05-02 08:25:12,526] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 58 cities updated in cities dictionary
+[2024-05-02 08:25:12,743] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Исилькуль yndx_id 20701278046
+[2024-05-02 08:25:14,745] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 59 cities updated in cities dictionary
+[2024-05-02 08:25:15,002] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Ишимбай
+[2024-05-02 08:25:15,002] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Ишимбай yndx_id 0
+[2024-05-02 08:25:17,008] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 60 cities updated in cities dictionary
+[2024-05-02 08:25:17,225] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Калачинск yndx_id 210005706723
+[2024-05-02 08:25:19,230] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 61 cities updated in cities dictionary
+[2024-05-02 08:25:19,436] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Каменка yndx_id 176079913766
+[2024-05-02 08:25:21,443] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 62 cities updated in cities dictionary
+[2024-05-02 08:25:21,612] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Камень-на-Оби yndx_id 164880606154
+[2024-05-02 08:25:23,617] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 63 cities updated in cities dictionary
+[2024-05-02 08:25:23,797] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Камышлов yndx_id 201594100291
+[2024-05-02 08:25:25,803] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 64 cities updated in cities dictionary
+[2024-05-02 08:25:26,005] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кандалакша yndx_id 232252556470
+[2024-05-02 08:25:28,012] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 65 cities updated in cities dictionary
+[2024-05-02 08:25:28,207] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Карабулак
+[2024-05-02 08:25:28,208] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Карабулак yndx_id 0
+[2024-05-02 08:25:30,213] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 66 cities updated in cities dictionary
+[2024-05-02 08:25:30,430] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Карасук yndx_id 92574324061
+[2024-05-02 08:25:32,435] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 67 cities updated in cities dictionary
+[2024-05-02 08:25:32,623] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Карталы
+[2024-05-02 08:25:32,623] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Карталы yndx_id 0
+[2024-05-02 08:25:34,627] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 68 cities updated in cities dictionary
+[2024-05-02 08:25:34,818] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Касимов yndx_id 108683066405
+[2024-05-02 08:25:36,824] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 69 cities updated in cities dictionary
+[2024-05-02 08:25:37,036] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Кемь
+[2024-05-02 08:25:37,038] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кемь yndx_id 0
+[2024-05-02 08:25:39,040] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 70 cities updated in cities dictionary
+[2024-05-02 08:25:39,224] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Кизляр
+[2024-05-02 08:25:39,224] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кизляр yndx_id 0
+[2024-05-02 08:25:41,232] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 71 cities updated in cities dictionary
+[2024-05-02 08:25:41,400] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кимовск yndx_id 124370769093
+[2024-05-02 08:25:43,404] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 72 cities updated in cities dictionary
+[2024-05-02 08:25:43,587] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кимры yndx_id 116696384969
+[2024-05-02 08:25:45,598] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 73 cities updated in cities dictionary
+[2024-05-02 08:25:45,805] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Киреевск yndx_id 153873352164
+[2024-05-02 08:25:47,810] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 74 cities updated in cities dictionary
+[2024-05-02 08:25:48,007] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кировск yndx_id 181515262565
+[2024-05-02 08:25:50,012] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 75 cities updated in cities dictionary
+[2024-05-02 08:25:50,202] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Козьмодемьянск
+[2024-05-02 08:25:50,202] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Козьмодемьянск yndx_id 0
+[2024-05-02 08:25:52,207] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 76 cities updated in cities dictionary
+[2024-05-02 08:25:52,402] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Колпашево
+[2024-05-02 08:25:52,402] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Колпашево yndx_id 0
+[2024-05-02 08:25:54,409] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 77 cities updated in cities dictionary
+[2024-05-02 08:25:54,623] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кольчугино yndx_id 17356003333
+[2024-05-02 08:25:56,625] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 78 cities updated in cities dictionary
+[2024-05-02 08:25:56,853] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Комсомольск-на-Амуре yndx_id 1140909772
+[2024-05-02 08:25:58,855] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 79 cities updated in cities dictionary
+[2024-05-02 08:25:59,037] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Коркино yndx_id 106741823103
+[2024-05-02 08:26:01,043] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 80 cities updated in cities dictionary
+[2024-05-02 08:26:01,242] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Коряжма
+[2024-05-02 08:26:01,242] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Коряжма yndx_id 0
+[2024-05-02 08:26:03,247] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 81 cities updated in cities dictionary
+[2024-05-02 08:26:03,427] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Котельнич
+[2024-05-02 08:26:03,428] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Котельнич yndx_id 0
+[2024-05-02 08:26:05,434] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 82 cities updated in cities dictionary
+[2024-05-02 08:26:05,686] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Красноармейск
+[2024-05-02 08:26:05,686] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Красноармейск yndx_id 0
+[2024-05-02 08:26:07,692] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 83 cities updated in cities dictionary
+[2024-05-02 08:26:07,946] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Краснознаменск
+[2024-05-02 08:26:07,947] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Краснознаменск yndx_id 0
+[2024-05-02 08:26:09,950] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 84 cities updated in cities dictionary
+[2024-05-02 08:26:10,154] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Краснотурьинск yndx_id 48204584871
+[2024-05-02 08:26:12,160] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 85 cities updated in cities dictionary
+[2024-05-02 08:26:12,392] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Красный Сулин yndx_id 29392646953
+[2024-05-02 08:26:14,398] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 86 cities updated in cities dictionary
+[2024-05-02 08:26:14,627] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Крымск yndx_id 80658617132
+[2024-05-02 08:26:16,629] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 87 cities updated in cities dictionary
+[2024-05-02 08:26:16,814] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Куйбышев
+[2024-05-02 08:26:16,815] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Куйбышев yndx_id 0
+[2024-05-02 08:26:18,816] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 88 cities updated in cities dictionary
+[2024-05-02 08:26:19,000] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Кукмор city
+[2024-05-02 08:26:19,001] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кукмор yndx_id 0
+[2024-05-02 08:26:21,004] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 89 cities updated in cities dictionary
+[2024-05-02 08:26:21,198] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кулебаки yndx_id 184554463592
+[2024-05-02 08:26:23,204] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 90 cities updated in cities dictionary
+[2024-05-02 08:26:23,430] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Курганинск yndx_id 124062317462
+[2024-05-02 08:26:25,431] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 91 cities updated in cities dictionary
+[2024-05-02 08:26:25,676] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Куровское
+[2024-05-02 08:26:25,677] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Куровское yndx_id 0
+[2024-05-02 08:26:27,681] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 92 cities updated in cities dictionary
+[2024-05-02 08:26:27,872] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кызыл yndx_id 131534853509
+[2024-05-02 08:26:29,878] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 93 cities updated in cities dictionary
+[2024-05-02 08:26:30,346] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Кяхта city
+[2024-05-02 08:26:30,346] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Кяхта yndx_id 0
+[2024-05-02 08:26:32,350] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 94 cities updated in cities dictionary
+[2024-05-02 08:26:32,578] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Лабинск yndx_id 221711167733
+[2024-05-02 08:26:34,584] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 95 cities updated in cities dictionary
+[2024-05-02 08:26:34,761] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Лангепас yndx_id 48058903906
+[2024-05-02 08:26:36,768] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 96 cities updated in cities dictionary
+[2024-05-02 08:26:36,971] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Лебедянь yndx_id 71903869733
+[2024-05-02 08:26:38,973] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 97 cities updated in cities dictionary
+[2024-05-02 08:26:39,149] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Ленск yndx_id 63596792116
+[2024-05-02 08:26:41,153] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 98 cities updated in cities dictionary
+[2024-05-02 08:26:41,340] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Лотошино
+[2024-05-02 08:26:41,340] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Лотошино yndx_id 0
+[2024-05-02 08:26:43,342] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 99 cities updated in cities dictionary
+[2024-05-02 08:26:43,592] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Луга yndx_id 67256750996
+[2024-05-02 08:26:45,596] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 100 cities updated in cities dictionary
+[2024-05-02 08:26:45,799] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Луховицы
+[2024-05-02 08:26:45,799] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Луховицы yndx_id 0
+[2024-05-02 08:26:47,805] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 101 cities updated in cities dictionary
+[2024-05-02 08:26:47,993] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Лучегорск
+[2024-05-02 08:26:47,993] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Лучегорск yndx_id 0
+[2024-05-02 08:26:49,999] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 102 cities updated in cities dictionary
+[2024-05-02 08:26:50,174] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Лыткарино yndx_id 1795225222
+[2024-05-02 08:26:52,181] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 103 cities updated in cities dictionary
+[2024-05-02 08:26:52,354] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Льгов
+[2024-05-02 08:26:52,354] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Льгов yndx_id 0
+[2024-05-02 08:26:54,360] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 104 cities updated in cities dictionary
+[2024-05-02 08:26:54,571] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Лянтор yndx_id 233116781352
+[2024-05-02 08:26:56,577] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 105 cities updated in cities dictionary
+[2024-05-02 08:26:56,790] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Малгобек
+[2024-05-02 08:26:56,790] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Малгобек yndx_id 0
+[2024-05-02 08:26:58,794] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 106 cities updated in cities dictionary
+[2024-05-02 08:26:59,017] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Малиновский yndx_id 1018656978
+[2024-05-02 08:27:01,022] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 107 cities updated in cities dictionary
+[2024-05-02 08:27:01,252] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Малоярославец yndx_id 233103818317
+[2024-05-02 08:27:03,253] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 108 cities updated in cities dictionary
+[2024-05-02 08:27:04,038] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Мелеуз yndx_id 12540973360
+[2024-05-02 08:27:06,044] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 109 cities updated in cities dictionary
+[2024-05-02 08:27:06,243] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Минеральные воды yndx_id 172876765173
+[2024-05-02 08:27:08,248] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 110 cities updated in cities dictionary
+[2024-05-02 08:27:08,474] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Минусинск yndx_id 121768233075
+[2024-05-02 08:27:10,480] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 111 cities updated in cities dictionary
+[2024-05-02 08:27:10,684] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Михайловка yndx_id 129670419776
+[2024-05-02 08:27:12,690] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 112 cities updated in cities dictionary
+[2024-05-02 08:27:12,895] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Могоча
+[2024-05-02 08:27:12,896] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Могоча yndx_id 0
+[2024-05-02 08:27:14,898] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 113 cities updated in cities dictionary
+[2024-05-02 08:27:15,093] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Можга yndx_id 236569593098
+[2024-05-02 08:27:17,100] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 114 cities updated in cities dictionary
+[2024-05-02 08:27:17,312] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Моршанск yndx_id 123532173786
+[2024-05-02 08:27:19,318] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 115 cities updated in cities dictionary
+[2024-05-02 08:27:19,562] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Мценск yndx_id 116343066898
+[2024-05-02 08:27:21,567] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 116 cities updated in cities dictionary
+[2024-05-02 08:27:21,750] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Назарово yndx_id 15713061429
+[2024-05-02 08:27:23,752] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 117 cities updated in cities dictionary
+[2024-05-02 08:27:23,942] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Назрань
+[2024-05-02 08:27:23,942] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Назрань yndx_id 0
+[2024-05-02 08:27:25,947] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 118 cities updated in cities dictionary
+[2024-05-02 08:27:26,162] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Нарьян-Мар city
+[2024-05-02 08:27:26,162] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Нарьян-Мар yndx_id 0
+[2024-05-02 08:27:28,166] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 119 cities updated in cities dictionary
+[2024-05-02 08:27:28,430] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Нижнесортымский
+[2024-05-02 08:27:28,431] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Нижнесортымский yndx_id 0
+[2024-05-02 08:27:30,438] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 120 cities updated in cities dictionary
+[2024-05-02 08:27:30,696] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Новошахтинск yndx_id 219592418341
+[2024-05-02 08:27:32,703] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 121 cities updated in cities dictionary
+[2024-05-02 08:27:32,907] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Новый Оскол yndx_id 17524977842
+[2024-05-02 08:27:34,914] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 122 cities updated in cities dictionary
+[2024-05-02 08:27:35,097] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Нурлат yndx_id 114133178947
+[2024-05-02 08:27:37,103] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 123 cities updated in cities dictionary
+[2024-05-02 08:27:37,299] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Октябрьский yndx_id 102972445308
+[2024-05-02 08:27:39,305] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 124 cities updated in cities dictionary
+[2024-05-02 08:27:39,524] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Оса
+[2024-05-02 08:27:39,525] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Оса yndx_id 0
+[2024-05-02 08:27:41,532] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 125 cities updated in cities dictionary
+[2024-05-02 08:27:41,768] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Первомайск yndx_id 135056254576
+[2024-05-02 08:27:43,770] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 126 cities updated in cities dictionary
+[2024-05-02 08:27:44,059] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Переславль-Залесский yndx_id 171477803625
+[2024-05-02 08:27:46,065] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 127 cities updated in cities dictionary
+[2024-05-02 08:27:46,302] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Петровск-Забайкальский yndx_id 85396781417
+[2024-05-02 08:27:48,309] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 128 cities updated in cities dictionary
+[2024-05-02 08:27:48,514] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Печора yndx_id 48111066686
+[2024-05-02 08:27:50,517] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 129 cities updated in cities dictionary
+[2024-05-02 08:27:50,729] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Пойковский
+[2024-05-02 08:27:50,730] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Пойковский yndx_id 0
+[2024-05-02 08:27:52,732] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 130 cities updated in cities dictionary
+[2024-05-02 08:27:52,978] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Покачи
+[2024-05-02 08:27:52,978] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Покачи yndx_id 0
+[2024-05-02 08:27:54,981] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 131 cities updated in cities dictionary
+[2024-05-02 08:27:55,220] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Полярные зори
+[2024-05-02 08:27:55,221] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Полярные зори yndx_id 0
+[2024-05-02 08:27:57,222] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 132 cities updated in cities dictionary
+[2024-05-02 08:27:57,429] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Полярный
+[2024-05-02 08:27:57,430] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Полярный yndx_id 0
+[2024-05-02 08:27:59,438] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 133 cities updated in cities dictionary
+[2024-05-02 08:27:59,612] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Прохладный
+[2024-05-02 08:27:59,613] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Прохладный yndx_id 0
+[2024-05-02 08:28:01,619] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 134 cities updated in cities dictionary
+[2024-05-02 08:28:01,817] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Пущино
+[2024-05-02 08:28:01,818] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Пущино yndx_id 0
+[2024-05-02 08:28:03,821] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 135 cities updated in cities dictionary
+[2024-05-02 08:28:03,990] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Райчихинск
+[2024-05-02 08:28:03,990] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Райчихинск yndx_id 0
+[2024-05-02 08:28:05,992] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 136 cities updated in cities dictionary
+[2024-05-02 08:28:06,204] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Рассказово yndx_id 134295325323
+[2024-05-02 08:28:08,206] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 137 cities updated in cities dictionary
+[2024-05-02 08:28:08,396] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Реж yndx_id 71702481444
+[2024-05-02 08:28:10,402] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 138 cities updated in cities dictionary
+[2024-05-02 08:28:10,606] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Ростов-на-Дону yndx_id 1120444285
+[2024-05-02 08:28:12,609] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 139 cities updated in cities dictionary
+[2024-05-02 08:28:12,815] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Ряжск yndx_id 1092522565
+[2024-05-02 08:28:14,822] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 140 cities updated in cities dictionary
+[2024-05-02 08:28:15,018] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Сасово yndx_id 113577470881
+[2024-05-02 08:28:17,025] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 141 cities updated in cities dictionary
+[2024-05-02 08:28:17,223] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Сатка yndx_id 136332649496
+[2024-05-02 08:28:19,229] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 142 cities updated in cities dictionary
+[2024-05-02 08:28:19,398] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Саяногорск yndx_id 240752037888
+[2024-05-02 08:28:21,405] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 143 cities updated in cities dictionary
+[2024-05-02 08:28:21,597] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Светлоград
+[2024-05-02 08:28:21,598] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Светлоград yndx_id 0
+[2024-05-02 08:28:23,600] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 144 cities updated in cities dictionary
+[2024-05-02 08:28:23,833] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Северобайкальск
+[2024-05-02 08:28:23,834] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Северобайкальск yndx_id 0
+[2024-05-02 08:28:25,840] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 145 cities updated in cities dictionary
+[2024-05-02 08:28:26,231] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Североуральск
+[2024-05-02 08:28:26,232] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Североуральск yndx_id 0
+[2024-05-02 08:28:28,238] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 146 cities updated in cities dictionary
+[2024-05-02 08:28:28,421] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Семенов
+[2024-05-02 08:28:28,422] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Семенов yndx_id 0
+[2024-05-02 08:28:30,429] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 147 cities updated in cities dictionary
+[2024-05-02 08:28:30,598] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Сердобск yndx_id 217788762815
+[2024-05-02 08:28:32,605] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 148 cities updated in cities dictionary
+[2024-05-02 08:28:32,849] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Сертолово yndx_id 172085389551
+[2024-05-02 08:28:34,855] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 149 cities updated in cities dictionary
+[2024-05-02 08:28:35,055] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Сковородино
+[2024-05-02 08:28:35,056] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Сковородино yndx_id 0
+[2024-05-02 08:28:37,060] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 150 cities updated in cities dictionary
+[2024-05-02 08:28:37,339] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Славгород yndx_id 1209421078
+[2024-05-02 08:28:39,344] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 151 cities updated in cities dictionary
+[2024-05-02 08:28:39,588] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Славянск-на-Кубани yndx_id 9753800044
+[2024-05-02 08:28:41,590] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 152 cities updated in cities dictionary
+[2024-05-02 08:28:41,764] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Слободской yndx_id 109162952202
+[2024-05-02 08:28:43,771] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 153 cities updated in cities dictionary
+[2024-05-02 08:28:43,958] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Слюдянка yndx_id 22087709860
+[2024-05-02 08:28:45,965] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 154 cities updated in cities dictionary
+[2024-05-02 08:28:46,177] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Советский
+[2024-05-02 08:28:46,177] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Советский yndx_id 0
+[2024-05-02 08:28:48,180] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 155 cities updated in cities dictionary
+[2024-05-02 08:28:48,387] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Соль-Илецк yndx_id 109805736525
+[2024-05-02 08:28:50,394] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 156 cities updated in cities dictionary
+[2024-05-02 08:28:50,644] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Сортавала yndx_id 140344565076
+[2024-05-02 08:28:52,647] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 157 cities updated in cities dictionary
+[2024-05-02 08:28:52,829] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Сосновоборск yndx_id 179390576117
+[2024-05-02 08:28:54,836] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 158 cities updated in cities dictionary
+[2024-05-02 08:28:55,039] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Старая Русса
+[2024-05-02 08:28:55,040] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Старая Русса yndx_id 0
+[2024-05-02 08:28:57,044] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 159 cities updated in cities dictionary
+[2024-05-02 08:28:57,625] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Стрежевой yndx_id 244127214978
+[2024-05-02 08:28:59,632] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 160 cities updated in cities dictionary
+[2024-05-02 08:28:59,847] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Строитель yndx_id 174414604547
+[2024-05-02 08:29:01,850] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 161 cities updated in cities dictionary
+[2024-05-02 08:29:02,079] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Суворов yndx_id 178328508628
+[2024-05-02 08:29:04,087] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 162 cities updated in cities dictionary
+[2024-05-02 08:29:04,290] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Тайга
+[2024-05-02 08:29:04,291] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Тайга yndx_id 0
+[2024-05-02 08:29:06,293] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 163 cities updated in cities dictionary
+[2024-05-02 08:29:06,529] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Талдом yndx_id 89979811152
+[2024-05-02 08:29:08,534] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 164 cities updated in cities dictionary
+[2024-05-02 08:29:08,750] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Тамань yndx_id 37994098732
+[2024-05-02 08:29:10,753] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 165 cities updated in cities dictionary
+[2024-05-02 08:29:10,941] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Тара yndx_id 44659184075
+[2024-05-02 08:29:12,947] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 166 cities updated in cities dictionary
+[2024-05-02 08:29:13,160] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Тарко-Сале yndx_id 148571890406
+[2024-05-02 08:29:15,165] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 167 cities updated in cities dictionary
+[2024-05-02 08:29:15,503] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Татарск yndx_id 156103305337
+[2024-05-02 08:29:17,510] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 168 cities updated in cities dictionary
+[2024-05-02 08:29:17,748] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Таштагол yndx_id 196891560924
+[2024-05-02 08:29:19,752] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 169 cities updated in cities dictionary
+[2024-05-02 08:29:19,992] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Тербуны city
+[2024-05-02 08:29:19,993] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Тербуны yndx_id 0
+[2024-05-02 08:29:21,999] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 170 cities updated in cities dictionary
+[2024-05-02 08:29:22,188] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Топки yndx_id 179692758600
+[2024-05-02 08:29:24,190] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 171 cities updated in cities dictionary
+[2024-05-02 08:29:24,382] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Торжок yndx_id 117513460002
+[2024-05-02 08:29:26,387] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 172 cities updated in cities dictionary
+[2024-05-02 08:29:26,548] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Тутаев
+[2024-05-02 08:29:26,548] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Тутаев yndx_id 0
+[2024-05-02 08:29:28,554] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 173 cities updated in cities dictionary
+[2024-05-02 08:29:28,752] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Ува
+[2024-05-02 08:29:28,753] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Ува yndx_id 0
+[2024-05-02 08:29:30,759] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 174 cities updated in cities dictionary
+[2024-05-02 08:29:31,015] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Удачный
+[2024-05-02 08:29:31,015] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Удачный yndx_id 0
+[2024-05-02 08:29:33,022] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 175 cities updated in cities dictionary
+[2024-05-02 08:29:33,199] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Урай
+[2024-05-02 08:29:33,200] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Урай yndx_id 0
+[2024-05-02 08:29:35,207] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 176 cities updated in cities dictionary
+[2024-05-02 08:29:35,413] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Урус-Мартан yndx_id 1416300758
+[2024-05-02 08:29:37,420] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 177 cities updated in cities dictionary
+[2024-05-02 08:29:37,588] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Урюпинск city
+[2024-05-02 08:29:37,589] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Урюпинск yndx_id 0
+[2024-05-02 08:29:39,593] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 178 cities updated in cities dictionary
+[2024-05-02 08:29:39,789] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Усть-Лабинск yndx_id 85437735837
+[2024-05-02 08:29:41,796] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 179 cities updated in cities dictionary
+[2024-05-02 08:29:41,983] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Федоровский
+[2024-05-02 08:29:41,984] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Федоровский yndx_id 0
+[2024-05-02 08:29:43,986] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 180 cities updated in cities dictionary
+[2024-05-02 08:29:44,159] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Фокино
+[2024-05-02 08:29:44,159] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Фокино yndx_id 0
+[2024-05-02 08:29:46,166] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 181 cities updated in cities dictionary
+[2024-05-02 08:29:46,361] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Фролово
+[2024-05-02 08:29:46,361] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Фролово yndx_id 0
+[2024-05-02 08:29:48,368] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 182 cities updated in cities dictionary
+[2024-05-02 08:29:48,568] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Хасавюрт
+[2024-05-02 08:29:48,569] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Хасавюрт yndx_id 0
+[2024-05-02 08:29:50,570] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 183 cities updated in cities dictionary
+[2024-05-02 08:29:50,766] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Хилок
+[2024-05-02 08:29:50,767] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Хилок yndx_id 0
+[2024-05-02 08:29:52,773] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 184 cities updated in cities dictionary
+[2024-05-02 08:29:52,998] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Хотьково yndx_id 108754044004
+[2024-05-02 08:29:55,001] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 185 cities updated in cities dictionary
+[2024-05-02 08:29:55,222] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Чапаевск
+[2024-05-02 08:29:55,222] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Чапаевск yndx_id 0
+[2024-05-02 08:29:57,225] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 186 cities updated in cities dictionary
+[2024-05-02 08:29:57,405] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Черепаново yndx_id 65339816136
+[2024-05-02 08:29:59,407] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 187 cities updated in cities dictionary
+[2024-05-02 08:29:59,621] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Черкесск yndx_id 91855693534
+[2024-05-02 08:30:01,627] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 188 cities updated in cities dictionary
+[2024-05-02 08:30:01,818] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Черноголовка city
+[2024-05-02 08:30:01,819] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Черноголовка yndx_id 0
+[2024-05-02 08:30:03,824] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 189 cities updated in cities dictionary
+[2024-05-02 08:30:04,065] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Чернушка yndx_id 242580843517
+[2024-05-02 08:30:06,071] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 190 cities updated in cities dictionary
+[2024-05-02 08:30:06,310] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in Шали city
+[2024-05-02 08:30:06,310] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Шали yndx_id 0
+[2024-05-02 08:30:08,317] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 191 cities updated in cities dictionary
+[2024-05-02 08:30:08,548] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Шарыпово yndx_id 31167473605
+[2024-05-02 08:30:10,557] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 192 cities updated in cities dictionary
+[2024-05-02 08:30:10,715] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Шаховская yndx_id 1010392315
+[2024-05-02 08:30:12,721] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 193 cities updated in cities dictionary
+[2024-05-02 08:30:12,920] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Шахунья yndx_id 1247681394
+[2024-05-02 08:30:14,926] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 194 cities updated in cities dictionary
+[2024-05-02 08:30:15,149] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Шилка yndx_id 1199888040
+[2024-05-02 08:30:17,151] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 195 cities updated in cities dictionary
+[2024-05-02 08:30:17,405] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Шимановск
+[2024-05-02 08:30:17,405] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Шимановск yndx_id 0
+[2024-05-02 08:30:19,407] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 196 cities updated in cities dictionary
+[2024-05-02 08:30:19,609] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Шуя yndx_id 87968752993
+[2024-05-02 08:30:21,613] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 197 cities updated in cities dictionary
+[2024-05-02 08:30:21,965] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Элиста yndx_id 1014172124
+[2024-05-02 08:30:23,967] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 198 cities updated in cities dictionary
+[2024-05-02 08:30:24,142] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Южноуральск yndx_id 127519502671
+[2024-05-02 08:30:26,149] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 199 cities updated in cities dictionary
+[2024-05-02 08:30:26,445] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in Ясный
+[2024-05-02 08:30:26,445] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - Ясный yndx_id 0
+[2024-05-02 08:30:28,451] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 200 cities updated in cities dictionary
+[2024-05-02 08:30:28,659] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in д. Жуковка
+[2024-05-02 08:30:28,660] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - д. Жуковка yndx_id 0
+[2024-05-02 08:30:30,667] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 201 cities updated in cities dictionary
+[2024-05-02 08:30:30,930] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in п. Айхал
+[2024-05-02 08:30:30,931] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Айхал yndx_id 0
+[2024-05-02 08:30:32,935] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 202 cities updated in cities dictionary
+[2024-05-02 08:30:33,128] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in п. Ванино
+[2024-05-02 08:30:33,129] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Ванино yndx_id 0
+[2024-05-02 08:30:35,136] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 203 cities updated in cities dictionary
+[2024-05-02 08:30:35,328] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Голышманово yndx_id 1086180283
+[2024-05-02 08:30:37,333] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 204 cities updated in cities dictionary
+[2024-05-02 08:30:37,537] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Ерофей Павлович yndx_id 106033057701
+[2024-05-02 08:30:39,543] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 205 cities updated in cities dictionary
+[2024-05-02 08:30:39,736] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Излучинск yndx_id 1127532610
+[2024-05-02 08:30:41,743] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 206 cities updated in cities dictionary
+[2024-05-02 08:30:41,931] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in п. Магдагачи
+[2024-05-02 08:30:41,932] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Магдагачи yndx_id 0
+[2024-05-02 08:30:43,937] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 207 cities updated in cities dictionary
+[2024-05-02 08:30:44,170] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in п. Междуреченский
+[2024-05-02 08:30:44,171] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Междуреченский yndx_id 0
+[2024-05-02 08:30:46,178] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 208 cities updated in cities dictionary
+[2024-05-02 08:30:46,404] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Мурино yndx_id 94867480539
+[2024-05-02 08:30:48,406] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 209 cities updated in cities dictionary
+[2024-05-02 08:30:48,604] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Новоорск yndx_id 163954713747
+[2024-05-02 08:30:50,611] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 210 cities updated in cities dictionary
+[2024-05-02 08:30:50,795] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in п. Новый Ургал
+[2024-05-02 08:30:50,796] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Новый Ургал yndx_id 0
+[2024-05-02 08:30:52,799] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 211 cities updated in cities dictionary
+[2024-05-02 08:30:53,002] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in п. Придорожный
+[2024-05-02 08:30:53,002] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Придорожный yndx_id 0
+[2024-05-02 08:30:55,004] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 212 cities updated in cities dictionary
+[2024-05-02 08:30:55,210] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in п. Светлый
+[2024-05-02 08:30:55,210] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Светлый yndx_id 0
+[2024-05-02 08:30:57,217] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 213 cities updated in cities dictionary
+[2024-05-02 08:30:57,428] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in п. Свободный
+[2024-05-02 08:30:57,428] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Свободный yndx_id 0
+[2024-05-02 08:30:59,435] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 214 cities updated in cities dictionary
+[2024-05-02 08:30:59,659] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in п. Тазовский
+[2024-05-02 08:30:59,660] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Тазовский yndx_id 0
+[2024-05-02 08:31:01,667] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 215 cities updated in cities dictionary
+[2024-05-02 08:31:01,881] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in п. Таксимо
+[2024-05-02 08:31:01,882] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - п. Таксимо yndx_id 0
+[2024-05-02 08:31:03,889] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 216 cities updated in cities dictionary
+[2024-05-02 08:31:04,098] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - пгт. Забайкальск yndx_id 1061931093
+[2024-05-02 08:31:06,105] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 217 cities updated in cities dictionary
+[2024-05-02 08:31:06,323] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in пгт. Карымское
+[2024-05-02 08:31:06,324] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - пгт. Карымское yndx_id 0
+[2024-05-02 08:31:08,328] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 218 cities updated in cities dictionary
+[2024-05-02 08:31:08,540] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - пгт. Новая Чара yndx_id 1000273433
+[2024-05-02 08:31:10,546] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 219 cities updated in cities dictionary
+[2024-05-02 08:31:10,773] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - пгт. Промышленная yndx_id 26543531787
+[2024-05-02 08:31:12,780] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 220 cities updated in cities dictionary
+[2024-05-02 08:31:13,154] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - пгт. Чернышевск yndx_id 1084735874
+[2024-05-02 08:31:15,161] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 221 cities updated in cities dictionary
+[2024-05-02 08:31:15,376] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in пос. Персиановский
+[2024-05-02 08:31:15,376] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - пос. Персиановский yndx_id 0
+[2024-05-02 08:31:17,381] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 222 cities updated in cities dictionary
+[2024-05-02 08:31:17,585] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:172} INFO - There are no banks in пос. Саянский city
+[2024-05-02 08:31:17,586] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - пос. Саянский yndx_id 0
+[2024-05-02 08:31:19,587] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 223 cities updated in cities dictionary
+[2024-05-02 08:31:19,826] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - р.п. Кольцово yndx_id 65647753272
+[2024-05-02 08:31:21,830] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 224 cities updated in cities dictionary
+[2024-05-02 08:31:22,071] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - р.п. Краснообск yndx_id 163290531692
+[2024-05-02 08:31:24,078] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 225 cities updated in cities dictionary
+[2024-05-02 08:31:24,266] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in р.п. Сенной
+[2024-05-02 08:31:24,267] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - р.п. Сенной yndx_id 0
+[2024-05-02 08:31:26,270] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 226 cities updated in cities dictionary
+[2024-05-02 08:31:26,508] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in с. Красноселькуп
+[2024-05-02 08:31:26,508] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - с. Красноселькуп yndx_id 0
+[2024-05-02 08:31:28,515] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 227 cities updated in cities dictionary
+[2024-05-02 08:31:28,766] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in ст. Павловская
+[2024-05-02 08:31:28,767] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - ст. Павловская yndx_id 0
+[2024-05-02 08:31:30,774] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 228 cities updated in cities dictionary
+[2024-05-02 08:31:31,019] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:163} INFO - where is no alfa_bank in ст. Талица
+[2024-05-02 08:31:31,020] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:205} INFO - ст. Талица yndx_id 0
+[2024-05-02 08:31:33,027] p2230 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:226} INFO - 229 cities updated in cities dictionary
+[2024-05-02 08:32:03,753] p3113 {/Users/anyarulina/yandex-info-reviews-parser/call_yandex_api_org.py:193} INFO - current limit is 238
+[2024-05-02 10:32:26,862] p6808 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:133} INFO - start pipeline at 2024-05-02 10:32:26.862385
+[2024-05-02 10:32:26,862] p6808 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 135, in <module>
+    get_not_handled_reviews(bank_name)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 27, in get_not_handled_reviews
+    for root, dirs, files in os.walk(reviews_path, topdown=False):
+NameError: name 'os' is not defined
+[2024-05-02 10:32:45,976] p6847 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:134} INFO - start pipeline at 2024-05-02 10:32:45.976246
+[2024-05-02 10:33:33,535] p6907 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:136} INFO - start pipeline at 2024-05-02 10:33:33.535717
+[2024-05-02 10:34:14,303] p6948 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:137} INFO - start pipeline at 2024-05-02 10:34:14.303814
+[2024-05-02 10:34:31,136] p6984 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:137} INFO - start pipeline at 2024-05-02 10:34:31.136903
+[2024-05-02 10:35:51,350] p7054 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:138} INFO - start pipeline at 2024-05-02 10:35:51.350471
+[2024-05-02 10:38:00,554] p7210 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:137} INFO - start pipeline at 2024-05-02 10:38:00.554481
+[2024-05-02 10:39:42,886] p7285 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:137} INFO - start pipeline at 2024-05-02 10:39:42.886397
+[2024-05-02 10:40:14,339] p7332 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:133} INFO - start pipeline at 2024-05-02 10:40:14.339724
+[2024-05-02 10:41:10,330] p7375 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:133} INFO - start pipeline at 2024-05-02 10:41:10.330209
+[2024-05-02 10:44:11,822] p7461 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:133} INFO - start pipeline at 2024-05-02 10:44:11.822903
+[2024-05-02 10:47:00,769] p7529 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:136} INFO - start pipeline at 2024-05-02 10:47:00.769310
+[2024-05-02 10:47:44,543] p7571 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:139} INFO - start pipeline at 2024-05-02 10:47:44.543579
+[2024-05-02 10:55:26,021] p7741 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:138} INFO - start pipeline at 2024-05-02 10:55:26.021264
+[2024-05-02 10:56:15,277] p7786 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:141} INFO - start pipeline at 2024-05-02 10:56:15.277673
+[2024-05-02 10:56:53,846] p7832 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:141} INFO - start pipeline at 2024-05-02 10:56:53.846681
+[2024-05-02 10:57:57,925] p7880 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:134} INFO - start pipeline at 2024-05-02 10:57:57.925553
+[2024-05-02 10:58:49,945] p7931 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:134} INFO - start pipeline at 2024-05-02 10:58:49.945749
+[2024-05-02 11:02:26,883] p8072 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:134} INFO - start pipeline at 2024-05-02 11:02:26.883245
+[2024-05-02 11:02:26,883] p8072 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:87} INFO - start get info at 2024-05-02 11:02:26.883392
+[2024-05-02 11:02:26,914] p8072 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Россошь city
+[2024-05-02 11:02:26,915] p8072 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 1 banks for city Россошь
+[2024-05-02 11:02:26,915] p8072 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 137, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 123, in get_all_reviews
+    get_cities_reviews(cities_dict, bank_name)
+  File "/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py", line 87, in get_cities_reviews
+    yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
+AttributeError: 'NoneType' object has no attribute 'group'
+[2024-05-02 11:03:02,167] p8113 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:134} INFO - start pipeline at 2024-05-02 11:03:02.167385
+[2024-05-02 11:03:02,167] p8113 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:87} INFO - start get info at 2024-05-02 11:03:02.167534
+[2024-05-02 11:03:02,195] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Великий Новгород city
+[2024-05-02 11:03:02,196] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 15 banks for city Великий Новгород
+[2024-05-02 11:03:02,196] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1038292489 in Великий Новгород already exists
+[2024-05-02 11:03:02,196] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 14 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1012449974 in Великий Новгород already exists
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 13 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1128084497 in Великий Новгород already exists
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 12 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1077624829 in Великий Новгород already exists
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 11 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 104791946543 in Великий Новгород already exists
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 10 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 26862157786 in Великий Новгород already exists
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 9 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 179097401724 in Великий Новгород already exists
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 8 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 224509163371 in Великий Новгород already exists
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 7 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1039699930 in Великий Новгород already exists
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 6 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 66682758098 in Великий Новгород already exists
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 5 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1114143823 in Великий Новгород already exists
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 4 items left
+[2024-05-02 11:03:02,197] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 181751883242 in Великий Новгород already exists
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 3 items left
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1073049438 in Великий Новгород already exists
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 2 items left
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 15355590423 in Великий Новгород already exists
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 1 items left
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1089169454 in Великий Новгород already exists
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 0 items left
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:113} INFO - where ara no handled banks in city Великий Новгород lentgh of 0: {}
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Пушкино city
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 25 banks for city Пушкино
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1129094066 in Пушкино already exists
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 24 items left
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1057437267 in Пушкино already exists
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 23 items left
+[2024-05-02 11:03:02,198] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1201572576 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 22 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1192524051 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 21 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1059341981 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 20 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1055110223 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 19 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1045546947 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 18 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1088434062 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 17 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1007816467 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 16 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1044542810 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 15 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1153685529 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 14 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1026986685 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 13 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 81518982420 in Пушкино already exists
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 12 items left
+[2024-05-02 11:03:02,199] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1040448865 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 11 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 232963480833 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 10 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1067539093 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 9 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1014122716 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 8 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1392554061 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 7 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1129812322 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 6 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1228327522 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 5 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1056708824 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 4 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1135349766 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 3 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1228254849 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 2 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1015728560 in Пушкино already exists
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 1 items left
+[2024-05-02 11:03:02,200] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1177691513 in Пушкино already exists
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 0 items left
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:113} INFO - where ara no handled banks in city Пушкино lentgh of 0: {}
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Шадринск city
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 6 banks for city Шадринск
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1179673445 in Шадринск already exists
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 5 items left
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 44425068923 in Шадринск already exists
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 4 items left
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1142168486 in Шадринск already exists
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 3 items left
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1086056122 in Шадринск already exists
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 2 items left
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1022091159 in Шадринск already exists
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 1 items left
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 152255461830 in Шадринск already exists
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 0 items left
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:113} INFO - where ara no handled banks in city Шадринск lentgh of 0: {}
+[2024-05-02 11:03:02,201] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Пушкин city
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 19 banks for city Пушкин
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1083219383 in Пушкин already exists
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 18 items left
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1380413951 in Пушкин already exists
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 17 items left
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 73428355628 in Пушкин already exists
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 16 items left
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1088875426 in Пушкин already exists
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 15 items left
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1106436481 in Пушкин already exists
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 14 items left
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1341964770 in Пушкин already exists
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 13 items left
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1108097113 in Пушкин already exists
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 12 items left
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1097129714 in Пушкин already exists
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 11 items left
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 105806000333 in Пушкин already exists
+[2024-05-02 11:03:02,202] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 10 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1059140325 in Пушкин already exists
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 9 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1054708182 in Пушкин already exists
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 8 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1387252252 in Пушкин already exists
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 7 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1217823132 in Пушкин already exists
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 6 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1030729845 in Пушкин already exists
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 5 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1088397659 in Пушкин already exists
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 4 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1066169108 in Пушкин already exists
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 3 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 89068644446 in Пушкин already exists
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 2 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1115805676 in Пушкин already exists
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 1 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1024828149 in Пушкин already exists
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 0 items left
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:113} INFO - where ara no handled banks in city Пушкин lentgh of 0: {}
+[2024-05-02 11:03:02,203] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Наро-Фоминск city
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 4 banks for city Наро-Фоминск
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1026078275 in Наро-Фоминск already exists
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 3 items left
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1122996771 in Наро-Фоминск already exists
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 2 items left
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1132491207 in Наро-Фоминск already exists
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 1 items left
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1118196651 in Наро-Фоминск already exists
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 0 items left
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:113} INFO - where ara no handled banks in city Наро-Фоминск lentgh of 0: {}
+[2024-05-02 11:03:02,204] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Энгельс city
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 24 banks for city Энгельс
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1170603788 in Энгельс already exists
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 23 items left
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1064332937 in Энгельс already exists
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 22 items left
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1022761070 in Энгельс already exists
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 21 items left
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1089517189 in Энгельс already exists
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 20 items left
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1151917778 in Энгельс already exists
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 19 items left
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1031016506 in Энгельс already exists
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 18 items left
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1132924533 in Энгельс already exists
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 17 items left
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 93809395572 in Энгельс already exists
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 16 items left
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1017497223 in Энгельс already exists
+[2024-05-02 11:03:02,205] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 15 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1266781516 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 14 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1088636507 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 13 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1026124151 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 12 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1232477855 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 11 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1161017577 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 10 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1084908866 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 9 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1085204776 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 8 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1623650106 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 7 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1103331312 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 6 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 36077115938 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 5 items left
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 150423214147 in Энгельс already exists
+[2024-05-02 11:03:02,206] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 4 items left
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1117440216 in Энгельс already exists
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 3 items left
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1064202705 in Энгельс already exists
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 2 items left
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1246081141 in Энгельс already exists
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 1 items left
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1013531796 in Энгельс already exists
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 0 items left
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:113} INFO - where ara no handled banks in city Энгельс lentgh of 0: {}
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Бузулук city
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 7 banks for city Бузулук
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1056036929 in Бузулук already exists
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 6 items left
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 147237383027 in Бузулук already exists
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 5 items left
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1247222686 in Бузулук already exists
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 4 items left
+[2024-05-02 11:03:02,207] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 164555326415 in Бузулук already exists
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 3 items left
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 147166109958 in Бузулук already exists
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 2 items left
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1189476725 in Бузулук already exists
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 1 items left
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1371304216 in Бузулук already exists
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 0 items left
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:113} INFO - where ara no handled banks in city Бузулук lentgh of 0: {}
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Россошь city
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 11 banks for city Россошь
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1290485972 in Россошь already exists
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 10 items left
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 149503081047 in Россошь already exists
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 9 items left
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1105388440 in Россошь already exists
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 8 items left
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 1130983149 in Россошь already exists
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 7 items left
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:99} INFO - review for 197256589513 in Россошь already exists
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:110} INFO - 6 items left
+[2024-05-02 11:03:02,208] p8113 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:94} INFO - starting get reviews for id 97017180197
+[2024-05-02 11:03:04,740] p8113 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-05-02 11:03:45,270] p8177 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:134} INFO - start pipeline at 2024-05-02 11:03:45.270374
+[2024-05-02 11:03:45,270] p8177 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:87} INFO - start get info at 2024-05-02 11:03:45.270739
+[2024-05-02 11:03:45,302] p8177 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:125} INFO - Got info for in 0:00:00.031598 seconds
+[2024-05-02 12:17:42,740] p9890 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:130} INFO - start pipeline at 2024-05-02 12:17:42.740305
+[2024-05-02 12:17:42,740] p9890 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:83} INFO - start get info at 2024-05-02 12:17:42.740603
+[2024-05-02 12:17:42,801] p9890 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:121} INFO - Got info for in 0:00:00.061029 seconds
+[2024-05-02 12:23:03,497] p10157 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:130} INFO - start pipeline at 2024-05-02 12:23:03.497480
+[2024-05-02 12:23:03,497] p10157 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:83} INFO - start get info at 2024-05-02 12:23:03.497639
+[2024-05-02 12:23:03,531] p10157 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:121} INFO - Got info for in 0:00:00.033924 seconds
+[2024-05-02 12:23:41,476] p10180 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:130} INFO - start pipeline at 2024-05-02 12:23:41.476528
+[2024-05-02 12:23:41,476] p10180 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:83} INFO - start get info at 2024-05-02 12:23:41.476685
+[2024-05-02 12:23:41,506] p10180 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:121} INFO - Got info for in 0:00:00.030001 seconds
+[2024-05-02 12:24:52,748] p10231 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:130} INFO - start pipeline at 2024-05-02 12:24:52.748822
+[2024-05-02 12:24:52,748] p10231 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:83} INFO - start get info at 2024-05-02 12:24:52.748991
+[2024-05-02 12:24:52,778] p10231 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:121} INFO - Got info for in 0:00:00.029939 seconds
+[2024-05-02 12:26:36,470] p10286 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:131} INFO - start pipeline at 2024-05-02 12:26:36.470591
+[2024-05-02 12:26:36,470] p10286 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:84} INFO - start get info at 2024-05-02 12:26:36.470748
+[2024-05-02 12:26:36,505] p10286 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:122} INFO - Got info for in 0:00:00.034645 seconds
+[2024-05-02 12:28:47,862] p10343 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:137} INFO - start pipeline at 2024-05-02 12:28:47.862077
+[2024-05-02 12:28:47,862] p10343 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:90} INFO - start get info at 2024-05-02 12:28:47.862232
+[2024-05-02 12:28:47,896] p10343 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:128} INFO - Got info for in 0:00:00.034266 seconds
+[2024-05-02 12:30:12,242] p10401 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:144} INFO - start pipeline at 2024-05-02 12:30:12.242279
+[2024-05-02 12:30:12,242] p10401 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:97} INFO - start get info at 2024-05-02 12:30:12.242433
+[2024-05-02 12:30:12,273] p10401 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:135} INFO - Got info for in 0:00:00.030952 seconds
+[2024-05-02 12:32:42,148] p10457 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:152} INFO - start pipeline at 2024-05-02 12:32:42.148886
+[2024-05-02 12:32:42,149] p10457 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:105} INFO - start get info at 2024-05-02 12:32:42.149035
+[2024-05-02 12:32:42,179] p10457 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:143} INFO - Got info for in 0:00:00.030754 seconds
+[2024-05-02 12:34:08,364] p10508 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:155} INFO - start pipeline at 2024-05-02 12:34:08.364272
+[2024-05-02 12:34:08,364] p10508 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:105} INFO - start get info at 2024-05-02 12:34:08.364423
+[2024-05-02 12:34:08,393] p10508 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 158, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 127, in get_all_reviews
+    cities_dict = get_not_handled_reviews(bank_name)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 90, in get_not_handled_reviews
+    print(not_handled_reviews[city])
+KeyError: 'Александров'
+[2024-05-02 12:34:39,052] p10546 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:146} INFO - start pipeline at 2024-05-02 12:34:39.052504
+[2024-05-02 12:34:39,052] p10546 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:96} INFO - start get info at 2024-05-02 12:34:39.052662
+[2024-05-02 12:34:39,081] p10546 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 149, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 132, in get_all_reviews
+    print(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
+AttributeError: 'list' object has no attribute 'items'
+[2024-05-02 12:35:30,563] p10584 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:138} INFO - start pipeline at 2024-05-02 12:35:30.563283
+[2024-05-02 12:35:30,563] p10584 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:88} INFO - start get info at 2024-05-02 12:35:30.563435
+[2024-05-02 12:35:30,593] p10584 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 141, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 124, in get_all_reviews
+    print(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
+AttributeError: 'list' object has no attribute 'items'
+[2024-05-02 12:35:39,448] p10606 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:138} INFO - start pipeline at 2024-05-02 12:35:39.448524
+[2024-05-02 12:35:39,448] p10606 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:88} INFO - start get info at 2024-05-02 12:35:39.448676
+[2024-05-02 12:35:39,482] p10606 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 141, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 124, in get_all_reviews
+    print(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
+AttributeError: 'list' object has no attribute 'items'
+[2024-05-02 12:36:58,118] p10681 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:141} INFO - start pipeline at 2024-05-02 12:36:58.118195
+[2024-05-02 12:36:58,118] p10681 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:91} INFO - start get info at 2024-05-02 12:36:58.118359
+[2024-05-02 12:36:58,151] p10681 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 144, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 113, in get_all_reviews
+    cities_dict = get_not_handled_reviews(bank_name)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 63, in get_not_handled_reviews
+    print(set(existing_reviews.keys()).difference(set(existing_links_diff.keys())))
+UnboundLocalError: local variable 'existing_links_diff' referenced before assignment
+[2024-05-02 12:37:23,377] p10707 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:141} INFO - start pipeline at 2024-05-02 12:37:23.376990
+[2024-05-02 12:37:23,377] p10707 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:91} INFO - start get info at 2024-05-02 12:37:23.377148
+[2024-05-02 12:37:23,406] p10707 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 144, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 113, in get_all_reviews
+    cities_dict = get_not_handled_reviews(bank_name)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 63, in get_not_handled_reviews
+    print(set(existing_reviews.keys()).difference(set(existing_links_diff.keys())))
+NameError: name 'existing_links_diff' is not defined
+[2024-05-02 12:37:30,259] p10726 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:141} INFO - start pipeline at 2024-05-02 12:37:30.259938
+[2024-05-02 12:37:30,260] p10726 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:91} INFO - start get info at 2024-05-02 12:37:30.260096
+[2024-05-02 12:37:30,289] p10726 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 144, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 127, in get_all_reviews
+    print(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
+AttributeError: 'list' object has no attribute 'items'
+[2024-05-02 12:37:51,236] p10745 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:142} INFO - start pipeline at 2024-05-02 12:37:51.236594
+[2024-05-02 12:37:51,236] p10745 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:92} INFO - start get info at 2024-05-02 12:37:51.236740
+[2024-05-02 12:37:51,265] p10745 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 145, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 128, in get_all_reviews
+    print(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
+AttributeError: 'list' object has no attribute 'items'
+[2024-05-02 12:38:23,600] p10808 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:142} INFO - start pipeline at 2024-05-02 12:38:23.599982
+[2024-05-02 12:38:23,600] p10808 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:92} INFO - start get info at 2024-05-02 12:38:23.600134
+[2024-05-02 12:38:23,630] p10808 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 145, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 128, in get_all_reviews
+    print(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
+AttributeError: 'list' object has no attribute 'items'
+[2024-05-02 12:39:30,238] p10853 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:144} INFO - start pipeline at 2024-05-02 12:39:30.238822
+[2024-05-02 12:39:30,238] p10853 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:92} INFO - start get info at 2024-05-02 12:39:30.238982
+[2024-05-02 12:39:30,266] p10853 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 147, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 130, in get_all_reviews
+    print(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
+AttributeError: 'list' object has no attribute 'items'
+[2024-05-02 12:44:04,403] p10942 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:148} INFO - start pipeline at 2024-05-02 12:44:04.403459
+[2024-05-02 12:44:04,403] p10942 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:92} INFO - start get info at 2024-05-02 12:44:04.403667
+[2024-05-02 12:44:04,438] p10942 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:139} INFO - Got info for in 0:00:00.034326 seconds
+[2024-05-02 12:44:55,997] p10980 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:151} INFO - start pipeline at 2024-05-02 12:44:55.997523
+[2024-05-02 12:44:55,997] p10980 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:92} INFO - start get info at 2024-05-02 12:44:55.997672
+[2024-05-02 12:44:56,026] p10980 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 154, in <module>
+    get_all_reviews(cities, bank_name, check_existing=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 118, in get_all_reviews
+    for k, v in cities_dict:
+ValueError: too many values to unpack (expected 2)
+[2024-05-02 12:45:09,282] p11006 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:151} INFO - start pipeline at 2024-05-02 12:45:09.282737
+[2024-05-02 12:45:09,282] p11006 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:92} INFO - start get info at 2024-05-02 12:45:09.282892
+[2024-05-02 12:45:09,312] p11006 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:142} INFO - Got info for in 0:00:00.029789 seconds
+[2024-05-02 12:45:41,133] p11055 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:144} INFO - start pipeline at 2024-05-02 12:45:41.133678
+[2024-05-02 12:45:41,133] p11055 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:92} INFO - start get info at 2024-05-02 12:45:41.133828
+[2024-05-02 12:45:41,166] p11055 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:135} INFO - Got info for in 0:00:00.033117 seconds
+[2024-05-02 12:48:19,851] p11140 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:150} INFO - start pipeline at 2024-05-02 12:48:19.851247
+[2024-05-02 12:48:19,851] p11140 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:98} INFO - start get info at 2024-05-02 12:48:19.851420
+[2024-05-02 12:48:19,884] p11140 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:141} INFO - Got info for in 0:00:00.032683 seconds
+[2024-05-02 12:53:11,731] p11287 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:130} INFO - start pipeline at 2024-05-02 12:53:11.731731
+[2024-05-02 12:53:11,732] p11287 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:134} INFO - 638 cities in input
+[2024-05-02 12:53:11,732] p11287 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py", line 152, in <module>
+    funcs = get_all_reviews(cities, bank_name, check_existing=True)
+NameError: name 'cities' is not defined
+[2024-05-02 12:53:27,513] p11309 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:130} INFO - start pipeline at 2024-05-02 12:53:27.513758
+[2024-05-02 12:53:27,514] p11309 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:134} INFO - 638 cities in input
+[2024-05-02 12:53:27,514] p11309 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:98} INFO - start get info at 2024-05-02 12:53:27.514184
+[2024-05-02 12:53:27,548] p11309 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Россошь city
+[2024-05-02 12:53:27,549] p11309 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 1 banks for city Россошь
+[2024-05-02 12:53:27,549] p11309 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:94} INFO - starting get reviews for id 97017180197
+[2024-05-02 12:55:06,186] p11367 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:130} INFO - start pipeline at 2024-05-02 12:55:06.186673
+[2024-05-02 12:55:06,187] p11367 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:134} INFO - 638 cities in input
+[2024-05-02 12:55:06,187] p11367 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:98} INFO - start get info at 2024-05-02 12:55:06.187073
+[2024-05-02 12:55:06,218] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Россошь city
+[2024-05-02 12:55:06,219] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 1 banks for city Россошь
+[2024-05-02 12:55:06,219] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:95} INFO - starting get reviews for id 97017180197
+[2024-05-02 12:55:08,575] p11367 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-05-02 12:55:17,070] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:27} INFO - I finish parse.parse 
+[2024-05-02 12:55:17,071] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:47} INFO - Error in get reviews :(
+[2024-05-02 12:55:17,072] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:103} INFO - error 'dict' object has no attribute 'append'
+[2024-05-02 12:55:17,072] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:104} INFO - 97017180197 not handled
+[2024-05-02 12:55:17,072] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:111} INFO - 0 items left
+[2024-05-02 12:55:17,072] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:114} INFO - where ara no handled banks in city Россошь lentgh of 1: {'Россошь': '97017180197'}
+[2024-05-02 12:55:17,072] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Геленджик city
+[2024-05-02 12:55:17,072] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 1 banks for city Геленджик
+[2024-05-02 12:55:17,072] p11367 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:95} INFO - starting get reviews for id 12167612670
+[2024-05-02 12:55:19,397] p11367 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-05-02 12:55:32,663] p11466 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:130} INFO - start pipeline at 2024-05-02 12:55:32.663440
+[2024-05-02 12:55:32,663] p11466 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:134} INFO - 638 cities in input
+[2024-05-02 12:55:32,663] p11466 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_review.py:98} INFO - start get info at 2024-05-02 12:55:32.663825
+[2024-05-02 12:55:32,698] p11466 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:62} INFO - starting get reviews for Россошь city
+[2024-05-02 12:55:32,699] p11466 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:78} INFO - I will handle 1 banks for city Россошь
+[2024-05-02 12:55:32,699] p11466 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:79} INFO - links: ['https://yandex.ru/maps/org/sberbank/97017180197']
+[2024-05-02 12:55:32,699] p11466 {/Users/anyarulina/yandex-info-reviews-parser/get_reviews.py:95} INFO - starting get reviews for id 97017180197
+[2024-05-02 12:55:35,161] p11466 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver

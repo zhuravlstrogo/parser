@@ -32,8 +32,8 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name):
         # df.drop('icon_href', axis=1, inplace=True)
 
         df['date'] = df['date'].apply(unix_ts_to_readable)
-        print(df.head())
-        print(df.shape)
+        logging.info(df.head())
+        logging.info((df.shape)
 
         today = datetime.today().strftime('%Y_%m_%d') # ('%Y_%m_%d_%H_%M_%S')
         directory_name = f'reviews_outputs/{bank_name}/{city_name}'
@@ -45,36 +45,44 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name):
         logging.info(f'Saved {len(df)} reviews for {id_ya}')
     else:
         logging.info('Error in get reviews :(')
-        print(reviews)
 
 
 def get_cities_reviews(cities, bank_name):
-
-    """получаем отзывы для всех банков во всех городах из cities_dict
+    """
         Args:
-            cities (list): 
+            cities (dict): город - список id банков
             bank_name (str): 
     
         Returns:
             - 
     """
     
-    for city_name in cities:
+    for city_name, links in cities.items():
         logging.info(f'starting get reviews for {city_name} city')
 
-        links_path = Path(f'links/{bank_name}/link_{city_name}.pkl')
-        with open(links_path, 'rb') as f:
-            bank_links = pickle.load(f)
+        not_handled_path = Path(f'not_handled_reviews_{bank_name}.pkl')
+        if not not_handled_path.is_file():
+            not_handled_reviews = {}
+            with open(not_handled_path, 'wb') as handle:
+                pickle.dump(not_handled_reviews, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-        counter = len(bank_links)
+        with open(not_handled_path, 'rb') as f:
+            not_handled_reviews = pickle.load(f)
+
+        # links_path = Path(f'links/{bank_name}/link_{city_name}.pkl')
+        # with open(links_path, 'rb') as f:
+        #     bank_links = pickle.load(f)
+
+        counter = len(links)
         logging.info(f"I will handle {counter} banks for city {city_name}")
+        logging.info(f'links: {links}')
 
-        not_handled = []
+        not_handled = {}
         # TODO: если не обработанных больше, чем не обработанных - 
-        handled = []
+        handled = {}
         
         # для каждого банка получаем список отзывов 
-        for organization_url in bank_links:
+        for organization_url in links:
             main_url = f'https://yandex.ru/maps/org/{bank_name}'
             yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
             try:
@@ -93,19 +101,20 @@ def get_cities_reviews(cities, bank_name):
             except Exception as e:
                 logging.info(f'error {e}')
                 logging.info(f'{yandex_bank_id} not handled')
-                not_handled.append(yandex_bank_id)
+                not_handled[city_name] = yandex_bank_id
+                not_handled_reviews.update(not_handled)
+                with open(not_handled_path, 'wb') as f:
+                    pickle.dump(not_handled_reviews, f)
                 
             counter -= 1
             logging.info(f'{counter} items left')
 
+        
         logging.info(f'where ara no handled banks in city {city_name} lentgh of {len(not_handled)}: {not_handled}')
         
-        # # TODO: в логи
-        # with open(f'not_handled_for_chain_{city_name}_{bank_name}.pkl', 'wb') as f:
-        #     pickle.dump(not_handled, f)
+
+
     
-        # with open(f'handled_for_chain_{city_name}_{bank_name}.pkl', 'wb') as f:
-        #     pickle.dump(handled, f)
             
             
     #     logging.info(f'{len(not_handled)} ids isn"t handled')

@@ -138,26 +138,18 @@ class Parser:
             self.__scroll_to_bottom(elements[-1])
             time.sleep(10)
             elements = self.driver.find_elements(By.CLASS_NAME, "business-reviews-card-view__review")
-            # print('last element')
-            # print(elements[-1].get_attribute('innerHTML'))
             # elements - набор всех отзывов 
-
             last_len = len(elements)
             seen.append(last_len)
 
-            print(f'last len {last_len}')
-            print(f'last seen {seen[-1]}')
-
             if len(set(seen)) < len(seen):
-            
-            # counter = len(elements)
-            # was here
                 print(f"I will handle {last_len} reviews")
                 for elem in elements:
                     reviews.append(self.__get_data_item(elem))
                     last_len -= 1
-                    if last_len % 30 == 0:
-                        print(f'left {last_len} review')
+                    # TODO: можно раскомментить 
+                    # if last_len % 30 == 0:
+                    #     print(f'left {last_len} review')
                     if last_len == 0:
                             available_reviews = False 
         return reviews

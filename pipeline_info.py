@@ -155,7 +155,7 @@ def launch_info_pipeline(bank_name, cities_list=None, check_existing=False):
         cities = {k: v for k, v in cities.items() if k in cities_list}
 
     cities = {k: v for k, v in cities.items() if v != 0}
-    print(f'{len(cities)} not null cities')
+    logging.info(f'{len(cities)} not null cities')
     
     funcs = get_all_links(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
 
@@ -178,7 +178,8 @@ def launch_info_pipeline(bank_name, cities_list=None, check_existing=False):
 
 if __name__ == "__main__":
     setup_logging()
-    bank_name = 'sberbank'
+    # bank_name = 'sberbank'
+    bank_name = 'alfa_bank'
     launch_info_pipeline(bank_name=bank_name, check_existing=True)
 
     # можно передавать ограниченный список городов, будут обрабатываться только они 

@@ -131,6 +131,8 @@ class Russian_romanizer(object):
         return ''.join([self.from_cyrillic(val) for val in self.txt])
 
 
+
+
 def get_bank_id_from_city(bank_name, city_name, apikey=apikey):
     """запрос в yandex api по организациям для получения id банка в яндекс картах
     по названию гороода и банка"""
@@ -153,6 +155,7 @@ def get_bank_id_from_city(bank_name, city_name, apikey=apikey):
     if 'features' in data.keys() and len(data['features']) > 0:
         rom = Russian_romanizer(city_name)
         roman_city = rom.transliterate()
+        # TODO: только для Новый? ст. обрабатываются корректно 
         roman_city = roman_city.lower().split(' ')[-1]
 
         address = data['features'][0]['properties']['CompanyMetaData']['address'].lower()
@@ -180,7 +183,6 @@ def update_cities_dict(cities_list, bank_name, path, limit=500):
     """добавляет в словарь город-id яндекс карт города из cities_list
     используя yandex api по организациям"""
     today = datetime.today().strftime('%Y_%m_%d') 
-    # print('today ', today)
 
     existing_limit_file = Path(f'{path}api_limit_{today}_{bank_name}.txt')
     if not existing_limit_file.is_file():
@@ -194,8 +196,6 @@ def update_cities_dict(cities_list, bank_name, path, limit=500):
 
     with open(f'{path}cities_dict_{bank_name}.pickle', 'rb') as handle:
         cities = pickle.load(handle)
-
-    # print('cities_list ', cities_list)
 
     cities_dict = {}
     for c in cities_list:
@@ -283,20 +283,21 @@ def get_cities_dict(bank_name, path, check_existing=True):
         cities_dict = {}
         with open(cities_dict_path, 'wb') as handle:
             pickle.dump(cities_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    else:
-        with open(cities_dict_path, 'rb') as handle:
-            cities_dict = pickle.load(handle)
 
+    with open(cities_dict_path, 'rb') as handle:
+        cities_dict = pickle.load(handle)
+
+    logging.info(f'cities_dict length for {bank_name} {len(cities_dict)}')
     with open(f'{path}cities.txt') as f:
         cities = [x.strip('\n') for x in f ]
+    logging.info(f'input cities length {len(cities)}')
 
     # TODO: добавить проверки
     # while len(input_cities) - 30 > len(cities_dict):
     if check_existing:
-        with open(f'{path}cities_dict_{bank_name}.pickle', 'rb') as handle:
-            cities = pickle.load(handle)
-        cities= [k for k in cities if k not in cities_dict.keys()]
+        cities= [k for k in cities if k not in list(cities_dict.keys())]
 
+    logging.info(f'I will update {len(cities)} cities for {bank_name}')
     update_cities_dict(cities, bank_name, path)
 
 
@@ -314,4 +315,7 @@ if __name__ == "__main__":
     path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
 
 
-    get_cities_dict(bank_name, path, check_existing=False)
+    get_cities_dict(bank_name, path, check_existing=True)
+
+    # python3 call_yandex_api_org.py -path_type 0 -bank_name sberbank 
+    # python3 call_yandex_api_org.py -path_type 0 -bank_name alfa_bank 
