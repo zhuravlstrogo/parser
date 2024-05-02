@@ -72,7 +72,7 @@ def get_not_handled_reviews(bank_name):
 
         not_handled_reviews[city_name] = links
 
-    logging.ingo(f'len not_handled_reviews  {sum(len(v) for k,v in not_handled_reviews.items())}')
+    logging.info(f'len not_handled_reviews  {sum(len(v) for k,v in not_handled_reviews.items())}')
     
     return not_handled_reviews
 
@@ -88,7 +88,7 @@ def get_all_reviews(cities, bank_name, check_existing=True):
             - 
     """ 
     start = datetime.now()
-    logging.info(f"start get info at {start}")
+    logging.info(f"start get info for {bank_name} at {start}")
 
     if check_existing:
         cities_dict = get_not_handled_reviews(bank_name)
@@ -120,7 +120,7 @@ if __name__ == "__main__":
     start = datetime.now()
     bank_name = 'sberbank'
 
-    logging.info(f"start pipeline at {start}")
+    logging.info(f"start pipeline for {bank_name} at {start}")
 
     with open('cities.txt') as f:
         cities = [x.strip('\n') for x in f ]

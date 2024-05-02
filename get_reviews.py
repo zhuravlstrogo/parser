@@ -33,7 +33,7 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name):
 
         df['date'] = df['date'].apply(unix_ts_to_readable)
         logging.info(df.head())
-        logging.info((df.shape)
+        logging.info(df.shape)
 
         today = datetime.today().strftime('%Y_%m_%d') # ('%Y_%m_%d_%H_%M_%S')
         directory_name = f'reviews_outputs/{bank_name}/{city_name}'

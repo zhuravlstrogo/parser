@@ -36,7 +36,7 @@ from log import setup_logging
 def get_all_links(cities, bank_name, check_existing=False):       
     """формирует список банков-ссылок для всех городов и сохраняет в /links/bank_name/"""     
     start = datetime.now()
-    logging.info(f"start get links at {start}")
+    logging.info(f"start get links for {bank_name} at {start}")
 
     cities_copy = deepcopy(cities)
     cities_keys = list(cities_copy.keys())
@@ -63,7 +63,7 @@ def get_all_links(cities, bank_name, check_existing=False):
 def get_all_info(cities, bank_name, check_existing=False):
     """формирует datafram-ы с информацией по всем банкам по всем городам в /info_output/bank_name/""" 
     start = datetime.now()
-    logging.info(f"start get info at {start}")
+    logging.info(f"start get info for {bank_name} at {start}")
     
     # проверяем, что список links для городов есть 
     mypath =f'links/{bank_name}/'
@@ -107,7 +107,6 @@ def get_all_info(cities, bank_name, check_existing=False):
             logging.info('no info to handle')
             raise
 
-    logging.info(f"start get info at {start}")
     get_cities_info(cities_copy, bank_name)
     
     logging.info(f'Got info for in {datetime.now() - start} seconds')
@@ -115,18 +114,8 @@ def get_all_info(cities, bank_name, check_existing=False):
 
 def launch_info_pipeline(bank_name, cities_list=None, check_existing=False):
     start = datetime.now()
-    logging.info(f"start pipeline at {start}")
+    logging.info(f"launch info pipeline for {bank_name} at {start}")
 
-    bank_name = 'sberbank'
-     
-    
-    # server = 'second'
-    # if server == 'first':
-    #     cities_path = 'pupa.pickle'
-    # elif server == 'second':
-    #     cities_path = 'lupa.pickle'
-    # # elif server == 'my':
-    # #     cities_path = 'tuta.pickle'
     cities_path = f'cities_dict_{bank_name}.pickle'
     with open(cities_path, 'rb') as handle:
         cities = pickle.load(handle)
@@ -174,6 +163,7 @@ def launch_info_pipeline(bank_name, cities_list=None, check_existing=False):
     merge_all_info(bank_name)
     logging.info(f'I finished at {datetime.now()}')
     logging.info(f'Pipeline worked {datetime.now() - start} seconds')
+
 
 
 if __name__ == "__main__":
