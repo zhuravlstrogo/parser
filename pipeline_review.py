@@ -9,7 +9,7 @@ from datetime import datetime
 import requests
 from os import listdir
 from os.path import isfile, join
-
+import argparse
 from functools import wraps
 
 from log import setup_logging
@@ -32,6 +32,9 @@ def get_not_handled_reviews(bank_name):
         except:
             pass
 
+    # print("Абинск' in existing_reviews.keys()")
+    # print('Абинск' in existing_reviews.keys())
+
     logging.info(f'len existing_reviews  {sum(len(v) for k,v in existing_reviews.items())}')
 
     links_path  =f'links/{bank_name}/'
@@ -51,6 +54,9 @@ def get_not_handled_reviews(bank_name):
             existing_links[k] = v
         except:
             pass
+
+    # print("Абинск' in existing_links.keys()")
+    # print('Абинск' in existing_links.keys())
 
     logging.info(f'len existing_links  {sum(len(v) for k,v in existing_links.items())}')
 
@@ -72,6 +78,9 @@ def get_not_handled_reviews(bank_name):
 
         not_handled_reviews[city_name] = links
 
+    # print("Абинск' in not_handled_reviews.keys()")
+    # print('Абинск' in not_handled_reviews.keys())
+
     logging.info(f'len not_handled_reviews  {sum(len(v) for k,v in not_handled_reviews.items())}')
     
     return not_handled_reviews
@@ -92,10 +101,17 @@ def get_all_reviews(cities, bank_name, check_existing=True):
 
     if check_existing:
         cities_dict = get_not_handled_reviews(bank_name)
+
+        print("Абинск' in cities_dict")
+        print('Абинск' in cities_dict.keys())
+
+        cities_dict = {k:v for k,v in cities_dict.items() if k in cities and v != []}
+
         main_url = f'https://yandex.ru/maps/org/{bank_name}/'
 
         for k, v in cities_dict.items():
             cities_dict[k] = [main_url + i for i in v] 
+
     else:
         # default-ный список 
         cities_dict = {}
@@ -111,20 +127,40 @@ def get_all_reviews(cities, bank_name, check_existing=True):
 
     # передаём словарь город - список адресов банков
     get_cities_reviews(cities_dict, bank_name)
+
+    print("Абинск' in cities_dict 2")
+    print('Абинск' in cities_dict.keys())
     
     logging.info(f'Got info for in {datetime.now() - start} seconds')
 
 
 if __name__ == "__main__":
+    # python3 pipeline_review.py -path_type 0 -bank_name alfa_bank 
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-bank_name', type=str)
+    parser.add_argument('-path_type', type=int)
+    args = parser.parse_args()
+
+    bank_name = args.bank_name
+    print(f"bank_name {bank_name}")
+    path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
+
     setup_logging()
     start = datetime.now()
-    bank_name = 'sberbank'
 
     logging.info(f"start pipeline for {bank_name} at {start}")
 
+
+
     with open('cities.txt') as f:
         cities = [x.strip('\n') for x in f ]
+
+    # print("Абинск' in cities?")
+    # print('Абинск' in cities)
+
+    # cities = ['Абинск']
     logging.info(f'{len(cities)} cities in input')
+
 
 #     # review_path  =f'info_output/{bank_name}/'
 #     # review_files = [f for f in listdir(info_path) if isfile(join(info_path, f))]
@@ -142,7 +178,9 @@ if __name__ == "__main__":
 
     
 #     # TODO: раскомментить
-    funcs = get_all_reviews(cities, bank_name, check_existing=True)
+    funcs = get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True)
+
+    
 
     for func in funcs:
         try:

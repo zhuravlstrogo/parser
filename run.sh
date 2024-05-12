@@ -5,5 +5,5 @@ yes Y | sudo apt --fix-broken install &&
 yes Y | sudo apt install python3-pip && 
 cat requirements.txt | xargs -n 1 pip install &&
 pip3 install selenium &&
-limit -n 1000000
+ulimit -n 1000000
 # google-chrome --version

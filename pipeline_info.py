@@ -8,6 +8,8 @@ from datetime import datetime
 import requests
 from os import listdir
 from os.path import isfile, join
+import sys
+import argparse
 
 from get_links import get_bank_links
 from get_info import get_cities_info
@@ -50,8 +52,8 @@ def get_all_links(cities, bank_name, check_existing=False):
             if existing_link.is_file():
                 existing_links.append(key)
                 del cities_copy[key]
-            else:
-                print(existing_link)
+            # else:
+                # print(existing_link)
         logging.info(f'{len(existing_links)} links already exists')
         
     get_bank_links(cities_copy, bank_name)
@@ -100,12 +102,12 @@ def get_all_info(cities, bank_name, check_existing=False):
             if existing_link.is_file():
                 already_exist_info.append(key)
                 del cities_copy[key]
-        logging.info(f'{len(already_exist_info)} info   already exists')  
+        logging.info(f'{len(already_exist_info)} info already exists')  
 
         # TODO: не всегда правда
-        if len_cities_input == len(already_exist_info):
-            logging.info('no info to handle')
-            raise
+        # if len_cities_input == len(already_exist_info):
+        #     logging.info('no info to handle')
+        #     raise
 
     get_cities_info(cities_copy, bank_name)
     
@@ -114,6 +116,7 @@ def get_all_info(cities, bank_name, check_existing=False):
 
 def launch_info_pipeline(bank_name, cities_list=None, check_existing=False):
     start = datetime.now()
+    logging.info('*********************************************************')
     logging.info(f"launch info pipeline for {bank_name} at {start}")
 
     cities_path = f'cities_dict_{bank_name}.pickle'
@@ -142,11 +145,15 @@ def launch_info_pipeline(bank_name, cities_list=None, check_existing=False):
         #     update_cities_dict(duplicated_values, bank_name)
     if cities_list:
         cities = {k: v for k, v in cities.items() if k in cities_list}
+        print(f'len cities_list {len(cities_list)}')
 
     cities = {k: v for k, v in cities.items() if v != 0}
     logging.info(f'{len(cities)} not null cities')
     
-    funcs = get_all_links(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
+    # TODO: раскоментить 
+    # funcs = get_all_links(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
+    funcs = get_all_info(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
+
 
     for func in funcs:
         try:
@@ -167,11 +174,23 @@ def launch_info_pipeline(bank_name, cities_list=None, check_existing=False):
 
 
 if __name__ == "__main__":
+    # python3 pipeline_info.py -path_type 0 -bank_name alfa_bank 
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-bank_name', type=str)
+    parser.add_argument('-path_type', type=int)
+    args = parser.parse_args()
+
+    bank_name = args.bank_name
+    
+    path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
+
     setup_logging()
-    # bank_name = 'sberbank'
-    bank_name = 'alfa_bank'
-    launch_info_pipeline(bank_name=bank_name, check_existing=True)
+    # launch_info_pipeline(bank_name=bank_name, check_existing=True)
 
     # можно передавать ограниченный список городов, будут обрабатываться только они 
-    # cities_list = ['Рославль', 'Сарапул', 'Ульяновск']
-    # launch_info_pipeline(bank_name, cities_list)
+    # сбер
+    cities_list = ['Сосновый Бор', 'Новый Оскол', 'пгт. Чернышевск', 'с. Красноселькуп', 'п. Новый Ургал', 'Великий Новгород', 'п. Ерофей Павлович', 'п. Излучинск', 'Советская Гавань', 'Нижний Новгород', 'п. Тазовский', 'Белая Калитва', 'пгт. Промышленная', 'Старая Русса', 'Великие Луки', 'пгт. Забайкальск', 'Зубова Поляна', 'Комсомольск-на-Амуре', 'Горячий Ключ', 'Королев', 'п. Таксимо', 'ст. Талица', 'п. Свободный', 'Новый Уренгой', 'Верхняя Салда', 'п. Междуреченский', 'ЗАТО Сибирский', 'Полярные зори', 'п. Светлый', 'п. Магдагачи', 'Минеральные воды', 'пос. Саянский', 'п. Ванино', 'Верхняя Пышма', 'Семёнов', 'Набережные Челны', 'ст. Павловская', 'пгт. Новая Чара', 'д. Жуковка', 'р.п. Краснообск', 'п. Новоорск', 'Старый Оскол', 'Красный Сулин',  'р.п. Кольцово', 'Гусиноозерск', 'п. Айхал', 'Вышний Волочек', 'Сергиев Посад',  'Большой Камень', 'п. Голышманово', 'Павловский Посад', 'пгт. Карымское', 'Нижний Тагил', 'п. Мурино', 'Лысьва', 'Славянск-на-Кубани']
+    # alfa
+    # cities_list = ['Железнодорожный', 'Красноармейск', 'Малгобек', 'д. Жуковка', 'п. Мурино', 'Белоярский', 'Берёзово', 'с. Красноселькуп', 'р.п. Кольцово', 'Льгов', 'Дедовск', 'Гусиноозерск', 'р.п. Краснообск', 'п. Тазовский', 'Зубова Поляна', 'Полярные зори', 'Старая Русса', 'Куровское', 'Урюпинск', 'п. Свободный', 'Завитинск', 'Московский', 'Федоровский', 'Заполярный', 'Шумерля', 'Заозёрск', 'Фролово', 'п. Новоорск', 'Бологое', 'Гудермес', 'Иланский', 'пгт. Карымское', 'Могоча', 'Нарьян-Мар', 'Карталы', 'Оса', 'Вихоревка', 'п. Таксимо', 'Луховицы', 'п. Придорожный', 'Удачный', 'Суворов', 'Бирск', 'Губаха', 'Назрань', 'Покачи', 'п. Новый Ургал', 'Миллерово', 'п. Междуреченский', 'Фокино', 'Лесной', 'Сегежа', 'Жуков', 'Алексеевка', 'Советский', 'пос. Персиановский', 'Донецк', 'п. Излучинск', 'пос. Саянский', 'Мыски', 'Козьмодемьянск', 'пгт. Промышленная', 'Кизляр', 'Коряжма', 'Тербуны', 'Шали', 'Избербаш', 'Большой Камень', 'Ноябрьск', 'Семенов', 'Белая Калитва', 'Красный Сулин', 'Малиновский', 'Нижний Новгород', 'п. Магдагачи', 'Пущино', 'Баксан', 'Заинск', 'Звенигово', 'Набережные Челны', 'Сосногорск', 'Горячий Ключ', 'Прохладный', 'Гагарин', 'п. Голышманово', 'Кукмор', 'Великий Новгород', 'Саров', 'п. Айхал', 'р.п. Сенной', 'п. Ерофей Павлович', 'Павловский Посад', 'Вышний Волочек', 'Балабаново', 'Озерск', 'Сeвероуральск', 'Лотошино', 'Великие Луки', 'Дзержинский', 'пгт. Чернышевск', 'ст. Талица', 'Верхняя Салда', 'Райчихинск', 'п. Светлый', 'Каспийск', 'Кяхта', 'Агинское', 'Буй', 'Советская Гавань', 'пгт. Забайкальск', 'Ейск', 'Хилок', 'Кемь', 'Полярный', 'Светлоград', 'Тулун', 'Фурманов', 'Горноправдинск', 'Новый Оскол', 'Сковородино', 'ст. Павловская', 'Норильск', 'Зима', 'Шимановск', 'Хасавюрт', 'Анадырь', 'Лучегорск', 'п. Ванино', 'Борзя', 'Кулебаки', 'Амурск', 'Новый Уренгой', 'Верхняя Пышма', 'Ершов', 'Сосновый Бор', 'Королев', 'Бронницы', 'Дальнереченск', 'Вилючинск', 'Нижний Тагил', 'Минеральные воды', 'Артёмовский', 'Алейск', 'ЗАТО Сибирский', 'Буинск', 'Игрим', 'Агрыз', 'Черноголовка', 'Сергиев Посад', 'Северобайкальск', 'Колпашево', 'Старый Оскол', 'Карабулак', 'Болотное', 'пгт. Новая Чара', 'Краснознаменск']
+    launch_info_pipeline(bank_name=bank_name, cities_list=cities_list, check_existing=False)

@@ -25,26 +25,42 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name):
     # logging.info("I finish YandexParser ")
     reviews = parser.parse(type_parse='reviews')
     logging.info("I finish parse.parse ")
-    if 'company_reviews' in reviews.keys():
+    print('reviews')
+    print(reviews)
 
-        reviews_list = reviews['company_reviews']
-        df = pd.DataFrame(reviews_list)
-        # df.drop('icon_href', axis=1, inplace=True)
+    today = datetime.today().strftime('%Y_%m_%d') # ('%Y_%m_%d_%H_%M_%S')
+    directory_name = f'reviews_outputs/{bank_name}/{city_name}'
+    if not os.path.exists(directory_name):
+        os.makedirs(directory_name)  
 
-        df['date'] = df['date'].apply(unix_ts_to_readable)
-        logging.info(df.head())
-        logging.info(df.shape)
+    if reviews != {} and  'company_reviews' in reviews.keys():
+        try: 
+        # if 'company_reviews' in reviews.keys():
 
-        today = datetime.today().strftime('%Y_%m_%d') # ('%Y_%m_%d_%H_%M_%S')
-        directory_name = f'reviews_outputs/{bank_name}/{city_name}'
-        if not os.path.exists(directory_name):
-            os.makedirs(directory_name)  
-        
-        df.to_csv(f'{directory_name}/reviews_{id_ya}.csv')
-        logging.info('################################################################')
-        logging.info(f'Saved {len(df)} reviews for {id_ya}')
-    else:
-        logging.info('Error in get reviews :(')
+            reviews_list = reviews['company_reviews']
+            df = pd.DataFrame(reviews_list)
+            # df.drop('icon_href', axis=1, inplace=True)
+
+            df['date'] = df['date'].apply(unix_ts_to_readable)
+            logging.info(df.head())
+            logging.info(df.shape)
+
+            df.to_csv(f'{directory_name}/reviews_{id_ya}.csv')
+            logging.info('################################################################')
+            logging.info(f'Saved {len(df)} reviews for {id_ya}')
+        # else:
+        except Exception as e:
+            data = {'name': [None],
+            'date': [None],
+            'text': [None],
+            'stars': [None],
+            'answer': [None]}
+
+            df = pd.DataFrame(data)
+            df.to_csv(f'{directory_name}/reviews_{id_ya}.csv')
+            
+            logging.info(f'Error in get reviews for id_ya {id_ya}: {e}')
+            # TODO: сюда continue?
 
 
 def get_cities_reviews(cities, bank_name):
@@ -110,7 +126,7 @@ def get_cities_reviews(cities, bank_name):
             logging.info(f'{counter} items left')
 
         
-        logging.info(f'where ara no handled banks in city {city_name} lentgh of {len(not_handled)}: {not_handled}')
+        logging.info(f'where are no handled banks in city {city_name} lentgh of {len(not_handled)}: {not_handled}')
         
 
 

@@ -2,12 +2,13 @@ import pandas as pd
 import numpy as np
 import os
 import re
+import logging
 from pathlib import Path
 from os import listdir
 from os.path import isfile, join
 import pickle
 from datetime import datetime
-import re
+from log import setup_logging
 
 from call_yandex_api_org import remove_cities
 from utils import find_between, search_end_of_str
@@ -32,10 +33,29 @@ def handle_C_lat(lat):
 def check(city, address):
     """проверяет,что название города в поле city есть в поле address"""
     city = city.lower()
-    address = address.lower()
-    if city[:2] == 'п.':
+    try:
+        address = str(address).lower()
+    except Exception as e:
+        print(f'address {address}, error {e}')
+        print('check')
+        print(str(address))
+        raise
+
+    ended_two = ['п.', 'д.', 'c.']
+    if city[2:] in ended_two:
         city = city[2:]
-    if bool(re.search(city, address)):
+
+    ended_three = ['ст.']
+    if city[3:] in ended_three:
+        city = city[3:]
+
+    ended_four = ['пгт.', 'пос.', 'р.п.']
+    if city[4:] in ended_four:
+        city = city[4:]
+
+    # TODO: работает?
+    word_list = address.split() 
+    if bool(re.search(city,  word_list[-1])):
         return True
     else:
         return False
@@ -204,8 +224,9 @@ def merge_all_reviews(bank_name, drop_errors=False):
 
 
 if __name__ == "__main__":
-    # bank_name = 'alfa_bank'
-    bank_name = 'sberbank'
-    # merge_all_info(bank_name, drop_errors=True)
+    setup_logging()
+    bank_name = 'alfa_bank'
+    # bank_name = 'sberbank'
+    merge_all_info(bank_name, drop_errors=True)
 
-    merge_all_reviews(bank_name, drop_errors=False)
+    # merge_all_reviews(bank_name, drop_errors=False)

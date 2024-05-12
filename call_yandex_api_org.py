@@ -44,6 +44,18 @@ def remove_cities(cities, bank_name):
     logging.info(f'{links_counter} links was removed')
 
 
+def custom_handle(roman_city):
+    if roman_city.startswith('novyi') and ' ' in roman_city:
+        roman_city = roman_city.split(' ')[1]
+    ended_three = ['noy', 'noe', 'noi', 'goe', 'goi', 'goy', 'koe','koi', 'kiy', 'nyy', 'nyi', 'kyy', 'kyi']
+    if roman_city[-3:] in ended_three:
+        roman_city = roman_city[:-2]
+
+    ended_two = ['ai', 'ay']
+    if roman_city[-2:] in ended_two:
+        roman_city = roman_city[:-1]
+    return roman_city
+
 
 class Russian_romanizer(object):
 
@@ -155,14 +167,21 @@ def get_bank_id_from_city(bank_name, city_name, apikey=apikey):
     if 'features' in data.keys() and len(data['features']) > 0:
         rom = Russian_romanizer(city_name)
         roman_city = rom.transliterate()
-        # TODO: только для Новый? ст. обрабатываются корректно 
-        roman_city = roman_city.lower().split(' ')[-1]
+
+        # roman_city = custom_handle(roman_city)
+        roman_city = roman_city.lower() #.split(' ')[-1]
 
         address = data['features'][0]['properties']['CompanyMetaData']['address'].lower()
 
-        if similar(roman_city, address) > 0.3 or roman_city in address or city_name.lower() in address:
+        # if (similar(roman_city, address) > 0.3) or (roman_city in address) or (city_name.lower() in address):
+        #     yndx_id = data['features'][0]['properties']['CompanyMetaData']['id']
+        # else:
+        #     logging.info(f"where is no {bank_name} in {city_name}")
+        #     yndx_id = 0
+
+        try:
             yndx_id = data['features'][0]['properties']['CompanyMetaData']['id']
-        else:
+        except:
             logging.info(f"where is no {bank_name} in {city_name}")
             yndx_id = 0
 
@@ -231,10 +250,11 @@ def update_cities_dict(cities_list, bank_name, path, limit=500):
     return cities_dict
 
 
-def get_duplicated_ids(bank_name,path, remove_files=False):
+def get_duplicated_ids(bank_name, path, remove_files=False):
     """при запросе в yandex api по организациям, если банка нет в городе,
         по нему может возвращаться id предыдущего запроса, 
         что приводит к дублирующимся значениям для городов"""
+    
     with open(f'{path}cities_dict_{bank_name}.pickle', 'rb') as handle:
         cities = pickle.load(handle)
 
@@ -250,29 +270,32 @@ def get_duplicated_ids(bank_name,path, remove_files=False):
 
     if remove_files:
         remove_cities(duplicated_values, bank_name)
-        # # удаление дублирующихся файлов 
-        # info_path  =f'info_output/{bank_name}/'
-        # links_path  =f'links/{bank_name}/'
-        # for f in duplicated_values:
-            
-        #     os.remove(info_path + f + '_info.csv')
-        #     os.remove(links_path + 'link_' + f + '.pkl')
-        # logging.info(f'{N} files was removed')
 
     logging.info(f'duplicated_values in dict {N}')
     return duplicated_values
 
 
-def handle_duplicates(bank_name, path, N = 21):
+def handle_duplicates(bank_name, path):
     """удаляет дублирующиеся id яндекс карт словаре город-id яндекс карт,
     допускает N дубликатов"""
-    limit = N-1
-    while N > limit:
-        duplicated_values = get_duplicated_ids(bank_name, path)
-        N = len(duplicated_values)
-        logging.info(f'duplicated_values: {N}')
 
-        update_cities_dict(duplicated_values, bank_name)
+    duplicated_values = get_duplicated_ids(bank_name=bank_name, path=path) # list ?
+
+    N = len(duplicated_values)
+    logging.info(f'duplicated_values: {N}')
+
+    with open(f'{path}cities_dict_{bank_name}.pickle', 'rb') as handle:
+        cities_dict = pickle.load(handle)
+
+    for c in duplicated_values:
+        cities_dict[c] = 0
+
+    logging.info(f'{N} duplicates updated in cities dictionary')
+
+    with open(f'{path}cities_dict_{bank_name}.pickle', 'wb') as handle:
+        pickle.dump(cities_dict, handle)
+
+    # update_cities_dict(duplicated_values, bank_name)
 
 
 def get_cities_dict(bank_name, path, check_existing=True):
@@ -303,6 +326,8 @@ def get_cities_dict(bank_name, path, check_existing=True):
 
 
 if __name__ == "__main__":
+    # python3 call_yandex_api_org.py -path_type 0 -bank_name sberbank 
+    # python3 call_yandex_api_org.py -path_type 0 -bank_name alfa_bank 
     parser = argparse.ArgumentParser()
     parser.add_argument('-bank_name', type=str)
     parser.add_argument('-path_type', type=int)
@@ -311,11 +336,14 @@ if __name__ == "__main__":
     setup_logging()
     
     bank_name = args.bank_name
-
+    print(f"bank_name {bank_name}")
     path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
 
+    cities_list = ['Краснознаменск', 'Шимановск', 'п. Ванино', 'Карабулак', 'Набережные Челны', 'Козьмодемьянск', 'п. Свободный', 'р.п. Сенной', 'Кулебаки', 'ст. Талица', 'Большой Камень', 'Белая Калитва', 'п. Тазовский', 'Малиновский', 'Великий Новгород', 'Полярный', 'Семенов', 'Красноармейск', 'пгт. Забайкальск', 'Ейск', 'п. Голышманово', 'Гагарин', 'п. Придорожный', 'Полярные зори', 'Норильск', 'Фокино', 'Хасавюрт', 'Нижний Тагил', 'Северобайкальск', 'пгт. Новая Чара', 'Ноябрьск', 'Верхняя Пышма', 'Коряжма', 'Щёлково', 'Буинск', 'Старая Русса', 'Мыски', 'п. Мурино', 'Алексеевка', 'Кяхта', 'Борзя', 'Бронницы', 'Вилючинск', 'Баксан', 'Вихоревка', 'Ершов', 'Заполярный', 'Фурманов', 'Белоярский', 'Кизляр', 'Звенигово', 'Бирск', 'Сергиев Посад', 'Каспийск', 'Будённовск', 'Зубова Поляна', 'Лотошино', 'ЗАТО Сибирский', 'Донецк', 'Избербаш', 'Бологое', 'Светлоград', 'Славянск-на-Кубани', 'пгт. Карымское', 'Горноправдинск', 'Малгобек', 'Берёзово', 'Гудермес', 'Агрыз', 'Сосногорск', 'д. Жуковка', 'Тербуны', 'Федоровский', 'Фролово', 'п. Междуреченский', 'Дедовск', 'Киселёвск', 'Льгов', 'Дальнереченск', 'п. Магдагачи', 'Московский', 'Дзержинский', 'Железнодорожный', 'Озерск', 'Заинск', 'Советская Гавань', 'Комсомольск-на-Амуре', 'Нижний Новгород', 'Гусиноозерск', 'Саров', 'Черноголовка', 'Луховицы', 'Новый Оскол', 'Трёхгорный', 'Кукмор', 'Вышний Волочек', 'ст. Павловская', 'Губаха', 'Игрим', 'Зима', 'Новый Уренгой', 'Куровское', 'Суворов', 'п. Айхал', 'Буй', 'р.п. Кольцово', 'п. Светлый', 'Алейск', 'Сосновый Бор', 'Кемь', 'Горячий Ключ', 'Болотное', 'п. Таксимо', 'Пущино', 'п. Ерофей Павлович', 'Сегежа', 'Павловский Посад', 'п. Новоорск', 'с. Красноселькуп', 'п. Излучинск', 'Райчихинск', 'Колпашево', 'Артёмовский', 'Тулун', 'Балабаново', 'Ува', 'Амурск', 'Камень-на-Оби', 'Лучегорск', 'Красный Сулин', 'Завитинск', 'Нарьян-Мар', 'Назрань', 'Шали', 'Оса', 'Хилок', 'Королев', 'Старый Оскол', 'Жуков', 'Удачный', 'Североуральск', 'Верхняя Салда', 'Сковородино', 'Покачи', 'Минеральные воды', 'Лесной', 'Ростов-на-Дону', 'Миллерово', 'пос. Саянский', 'Карталы', 'Анадырь', 'Шумерля', 'Иланский', 'Могоча', 'пос. Персиановский', 'Великие Луки', 'Артём', 'Советский', 'пгт. Чернышевск', 'р.п. Краснообск', 'Агинское', 'пгт. Промышленная', 'Урюпинск', 'п. Новый Ургал', 'Прохладный', 'Заозёрск']
+    update_cities_dict(cities_list, bank_name, path)
+    
 
-    get_cities_dict(bank_name, path, check_existing=True)
+    # get_cities_dict(bank_name, path, check_existing=True)
+    # # handle_duplicates(bank_name, path)
 
-    # python3 call_yandex_api_org.py -path_type 0 -bank_name sberbank 
-    # python3 call_yandex_api_org.py -path_type 0 -bank_name alfa_bank 
+
