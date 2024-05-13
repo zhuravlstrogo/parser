@@ -127,7 +127,7 @@ def get_bank_links(cities, bank_name, path):
 
         # print('links ',links)
 
-        with open(f'{path}/links/{bank_name}/link_{city_name}.pkl', 'wb') as f:
+        with open(f'{directory_name}/link_{city_name}.pkl', 'wb') as f:
             pickle.dump(links, f)
         logging.info(f"{len(links)} links saved for {city_name} city")
         
