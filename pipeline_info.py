@@ -153,8 +153,8 @@ def launch_info_pipeline(bank_name, path, cities_list=None, check_existing=False
     logging.info(f'{len(cities)} not null cities')
     
     # TODO: раскоментить 
-    # funcs = get_all_links(cities, bank_name, path, check_existing), get_all_info(cities, bank_name, path, check_existing)
-    funcs = get_all_info(cities, bank_name, path, check_existing), get_all_info(cities, bank_name, path, check_existing)
+    funcs = get_all_links(cities, bank_name, path, check_existing), get_all_info(cities, bank_name, path, check_existing)
+    # funcs = get_all_info(cities, bank_name, path, check_existing), get_all_info(cities, bank_name, path, check_existing)
 
     for func in funcs:
         try:
