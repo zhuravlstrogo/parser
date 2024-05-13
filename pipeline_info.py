@@ -58,7 +58,7 @@ def get_all_links(cities, bank_name, path, check_existing=False):
                 # print(existing_link)
         logging.info(f'{len(existing_links)} links already exists')
         
-    get_bank_links(cities_copy, bank_name)
+    get_bank_links(cities_copy, bank_name, path)
     logging.info(f'Got links in {datetime.now() - start} seconds')
 
     
@@ -153,8 +153,8 @@ def launch_info_pipeline(bank_name, path, cities_list=None, check_existing=False
     logging.info(f'{len(cities)} not null cities')
     
     # TODO: раскоментить 
-    # funcs = get_all_links(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
-    funcs = get_all_info(cities, bank_name, path, check_existing), get_all_info(cities, bank_name, path, check_existing)
+    funcs = get_all_links(cities, bank_name, path, check_existing), get_all_info(cities, bank_name, path, check_existing)
+    # funcs = get_all_info(cities, bank_name, path, check_existing), get_all_info(cities, bank_name, path, check_existing)
 
     for func in funcs:
         try:
@@ -183,14 +183,11 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     bank_name = args.bank_name
-    path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
+    path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
 
     setup_logging()
-    launch_info_pipeline(bank_name=bank_name, path=path, check_existing=True)
+    launch_info_pipeline(bank_name=bank_name, path=path, check_existing=False)
 
     # можно передавать ограниченный список городов, будут обрабатываться только они 
-    # сбер
-    # cities_list = ['д. Жуковка', 'п. Магдагачи', 'п. Таксимо', 'пгт. Забайкальск', 'Семёнов', 'п. Голышманово', 'Лысьва', 'Вышний Волочек', 'Гусиноозерск', 'Павловский Посад', 'пгт. Карымское', 'р.п. Кольцово', 'Верхняя Салда', 'п. Ерофей Павлович', 'пос. Персиановский', 'п. Междуреченский', 'п. Светлый', 'Зубова Поляна', 'Полярные зори', 'Набережные Челны', 'Белая Калитва', 'п. Придорожный', 'Большой Камень', 'п. Тазовский', 'п. Айхал', 'п. Новоорск', 'Верхняя Пышма', 'Нижний Тагил', 'Великие Луки', 'Железнодорожный', 'п. Излучинск',  'п. Новый Ургал', 'Нижний Новгород', 'Старый Оскол', 'ст. Павловская', 'п. Ванино', 'пгт. Промышленная', 'с. Красноселькуп', 'Комсомольск-на-Амуре', 'Великий Новгород', 'пос. Саянский', 'Сосновый Бор', 'Старая Русса', 'Горячий Ключ', 'р.п. Краснообск', 'Минеральные воды', 'ст. Талица', 'Красный Сулин', 'ЗАТО Сибирский', 'Славянск-на-Кубани', 'р.п. Сенной', 'Новый Уренгой', 'Озёрск', 'пгт. Новая Чара', 'п. Свободный', 'пгт. Чернышевск', 'Новый Оскол', 'п. Мурино', 'Сергиев Посад', 'Советская Гавань']
-    # alfa - 'Анадырь' лажа какая-то
     # cities_list = [ 'Сегежа', 'Озёрск', 'Ноябрьск', 'Алексеевка']
     # launch_info_pipeline(bank_name=bank_name, cities_list=cities_list, check_existing=False)

@@ -191,3 +191,31 @@ TypeError: expected string or bytes-like object
 [2024-05-13 09:20:37,369] p36306 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:173} INFO - final_df.shape (3734, 22)
 [2024-05-13 09:20:38,622] p36306 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:186} INFO - 626 unique cities saved
 [2024-05-13 09:20:38,622] p36306 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:193} INFO - not handled 9 cities: {'Минеральные воды', 'Озёрск', 'Федоровский', 'Гусиноозерск', 'Комсомольск-на-Амуре', 'Железнодорожный', 'Славянск-на-Кубани', 'д. Жуковка', 'Вышний Волочек'}
+[2024-05-13 15:55:03,318] p40552 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:121} INFO - *********************************************************
+[2024-05-13 15:55:03,318] p40552 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:122} INFO - launch info pipeline for alfa_bank at 2024-05-13 15:55:03.317991
+[2024-05-13 15:55:03,318] p40552 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 189, in <module>
+    launch_info_pipeline(bank_name=bank_name, path=path, check_existing=False)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 125, in launch_info_pipeline
+    with open(cities_path, 'rb') as handle:
+FileNotFoundError: [Errno 2] No such file or directory: '/cities_dict_alfa_bank.pickle'
+[2024-05-13 15:55:34,990] p40594 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:121} INFO - *********************************************************
+[2024-05-13 15:55:34,990] p40594 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:122} INFO - launch info pipeline for alfa_bank at 2024-05-13 15:55:34.990168
+[2024-05-13 15:55:34,991] p40594 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:153} INFO - 655 not null cities
+[2024-05-13 15:55:34,991] p40594 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:43} INFO - start get links for alfa_bank at 2024-05-13 15:55:34.991825
+[2024-05-13 15:55:34,992] p40594 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 189, in <module>
+    launch_info_pipeline(bank_name=bank_name, path=path, check_existing=False)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 156, in launch_info_pipeline
+    funcs = get_all_links(cities, bank_name, path, check_existing), get_all_info(cities, bank_name, path, check_existing)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 61, in get_all_links
+    get_bank_links(cities_copy, bank_name)
+TypeError: get_bank_links() missing 1 required positional argument: 'path'
+[2024-05-13 15:55:51,283] p40618 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:121} INFO - *********************************************************
+[2024-05-13 15:55:51,283] p40618 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:122} INFO - launch info pipeline for alfa_bank at 2024-05-13 15:55:51.283739
+[2024-05-13 15:55:51,284] p40618 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:153} INFO - 655 not null cities
+[2024-05-13 15:55:51,284] p40618 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:43} INFO - start get links for alfa_bank at 2024-05-13 15:55:51.284339
+[2024-05-13 15:55:51,284] p40618 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:103} INFO - I will get links for 655 cities
+[2024-05-13 15:55:51,284] p40618 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:108} INFO - sleeping for 29.77 seconds
