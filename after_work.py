@@ -189,6 +189,12 @@ def merge_all_info(bank_name, path, drop_errors=False):
     with open(f'{path}/cities.txt') as f:
         input_cities = [x.strip('\n') for x in f ]
 
+    # with open('cities_1.txt') as f:
+    #     input_cities_1 = [x.strip('\n') for x in f ]
+    # with open('cities_2.txt') as f
+    #     input_cities_2 = [x.strip('\n') for x in f ]
+    # input_cities = input_cities_1 + input_cities_2
+
     not_handled_cities = set(input_cities).difference(unique_cities)
 
     logging.info(f'not handled {len(not_handled_cities)} cities: {not_handled_cities}')
