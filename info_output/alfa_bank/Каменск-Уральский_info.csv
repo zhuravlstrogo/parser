@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,ypage,lat,lon,rating,phone,social
-0,1071975376,Альфа-Банк,"просп. Победы, 39А, Каменск-Уральский",,,,56.423630,61.910880,"4,3",,
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Обслуживание,Отношение к клиентам,Персонал,Время ожидания,Кредит,Расположение
+0,1071975376,Альфа-Банк,"просп. Победы, 39А, Каменск-Уральский",alfabank.ru,"'mon': 09:00-20:00, 'tue': 09:00-20:00, 'wed': 09:00-19:00, 'thu': выходной, 'fri': 10:00-18:00, 'sat': 10:00-18:00, 'sun': выходной",56.423630,61.910880,"4,3",['8 (800) 200-00-00Показать телефон'],"['https://ok.ru/alfabank', 'https://t.me/alfabank', 'https://vk.com/alfabank', 'https://www.youtube.com/user/alfabankru']",83,80,85,82,79,100

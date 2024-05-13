@@ -1,6 +1,7 @@
  # -*- coding: utf-8 -*-
 import os
 import re
+import argparse
 import logging
 import pickle
 import random
@@ -32,8 +33,15 @@ class Parser:
         outputs = []
 
         main_url = f'https://yandex.ru/maps/org/{bank_name}'
-
-        yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
+        
+        try:
+            yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
+        except Exception as e:
+            print(e)
+            print('*********')
+            print(f'organization_url {organization_url}')
+            organization_url = organization_url.replace('{bank_name}', f'{bank_name}')
+            yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
         
         self.driver.get(f"{main_url}/{yandex_bank_id}")
 
@@ -66,7 +74,7 @@ class Parser:
         return outputs, is_captcha
 
 
-    def parse_data(self, hrefs, city_name, bank_name):
+    def parse_data(self, hrefs, city_name, bank_name, path):
         """получаем инфо по всем банкам/ссылкам в городе hrefs - название, адресс и тд"""
         self.driver.maximize_window()
         self.driver.get('https://yandex.ru/maps')
@@ -107,7 +115,7 @@ class Parser:
                     #     df = pd.concat([df_now_handled,df_not_null], axis=1)
                     #     logging.info('assert ', df.shape, len(outputs))
                     
-                df.to_csv(f'{directory_name}/{city_name}_info.csv')
+                df.to_csv(f'{path}/{directory_name}/{city_name}_info.csv')
                 logging.info(f'df info saved')
                 counter -= 1 
                 logging.info(f'left {counter} links for {city_name}')
@@ -130,7 +138,7 @@ class Parser:
                 self.driver.get(f"{main_url}/{yandex_bank_id}")
         
         
-def get_cities_info(cities, bank_name):
+def get_cities_info(cities, bank_name, path):
     # TODO: cities -> cities_dict 
     """получаем инфо по всем банкам/ссылкам по всем городам cities - название, адресс и тд""" 
     counter = len(cities)
@@ -150,7 +158,7 @@ def get_cities_info(cities, bank_name):
             driver = undetected_chromedriver.Chrome(options=opts)
 
             parser = Parser(driver)
-            parser.parse_data(all_hrefs, city_name, bank_name)
+            parser.parse_data(all_hrefs, city_name, bank_name, path)
             logging.info("driver closed")
             driver.close()
             driver.quit()
@@ -178,8 +186,16 @@ def get_cities_info(cities, bank_name):
 
 
 if __name__ == "__main__":
+    # python3 get_info.py -path_type 0 -bank_name alfa_bank 
 
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-bank_name', type=str)
+    parser.add_argument('-path_type', type=int)
+    args = parser.parse_args()
+
+    bank_name = args.bank_name
+    path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
     setup_logging()
-    bank_name = 'alfa_bank'
+
     cities = {'Кострома':99532788218}
-    get_cities_info(cities, bank_name)
+    get_cities_info(cities, bank_name, path)

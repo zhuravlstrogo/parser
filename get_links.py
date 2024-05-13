@@ -1,6 +1,7 @@
  # -*- coding: utf-8 -*-
 import os
 import re
+import argparse
 import datetime
 import json
 import time
@@ -90,11 +91,11 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
     return yndx_idx
 
 
-def get_bank_links(cities, bank_name):
+def get_bank_links(cities, bank_name, path):
     
     new_handled_links = {}
 
-    directory_name = f'links/{bank_name}'
+    directory_name = f'{path}/links/{bank_name}'
     if not os.path.exists(directory_name):
         os.makedirs(directory_name) 
         
@@ -126,7 +127,7 @@ def get_bank_links(cities, bank_name):
 
         # print('links ',links)
 
-        with open(f'links/{bank_name}/link_{city_name}.pkl', 'wb') as f:
+        with open(f'{path}/links/{bank_name}/link_{city_name}.pkl', 'wb') as f:
             pickle.dump(links, f)
         logging.info(f"{len(links)} links saved for {city_name} city")
         
@@ -148,6 +149,15 @@ def get_bank_links(cities, bank_name):
 
 
 if __name__ == "__main__":
+    # python3 get_links.py -path_type 0 -bank_name alfa_bank 
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-bank_name', type=str)
+    parser.add_argument('-path_type', type=int)
+    args = parser.parse_args()
+
+    bank_name = args.bank_name
+    path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
     setup_logging()
     cities = {}
-    get_bank_links(cities, bank_name)
+    get_bank_links(cities, bank_name, path)

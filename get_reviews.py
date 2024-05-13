@@ -1,6 +1,7 @@
  # -*- coding: utf-8 -*-
 import os
 import re
+import argparse
 import logging
 import pickle
 import random
@@ -18,18 +19,17 @@ def unix_ts_to_readable(unix_ts):
     return timestamp.strftime('%Y-%m-%d %H:%M:%S')
 
 
-def parse_ans_save_reviews(id_ya, city_name, bank_name):
+def parse_ans_save_reviews(id_ya, city_name, bank_name, path):
     """формирует отзывы для одного банка с id яндекс карт id_ya в городе city_name"""
-    # logging.info("I start ")
+
     parser = YandexParser(id_ya)
-    # logging.info("I finish YandexParser ")
     reviews = parser.parse(type_parse='reviews')
     logging.info("I finish parse.parse ")
     print('reviews')
     print(reviews)
 
     today = datetime.today().strftime('%Y_%m_%d') # ('%Y_%m_%d_%H_%M_%S')
-    directory_name = f'reviews_outputs/{bank_name}/{city_name}'
+    directory_name = f'{path}/reviews_outputs/{bank_name}/{city_name}'
     if not os.path.exists(directory_name):
         os.makedirs(directory_name)  
 
@@ -45,7 +45,7 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name):
             logging.info(df.head())
             logging.info(df.shape)
 
-            df.to_csv(f'{directory_name}/reviews_{id_ya}.csv')
+            df.to_csv(f'{path}/{directory_name}/reviews_{id_ya}.csv')
             logging.info('################################################################')
             logging.info(f'Saved {len(df)} reviews for {id_ya}')
         # else:
@@ -57,13 +57,13 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name):
             'answer': [None]}
 
             df = pd.DataFrame(data)
-            df.to_csv(f'{directory_name}/reviews_{id_ya}.csv')
+            df.to_csv(f'{path}/{directory_name}/reviews_{id_ya}.csv')
             
             logging.info(f'Error in get reviews for id_ya {id_ya}: {e}')
             # TODO: сюда continue?
 
 
-def get_cities_reviews(cities, bank_name):
+def get_cities_reviews(cities, bank_name, path):
     """
         Args:
             cities (dict): город - список id банков
@@ -76,7 +76,7 @@ def get_cities_reviews(cities, bank_name):
     for city_name, links in cities.items():
         logging.info(f'starting get reviews for {city_name} city')
 
-        not_handled_path = Path(f'not_handled_reviews_{bank_name}.pkl')
+        not_handled_path = Path(f'{path}/not_handled_reviews_{bank_name}.pkl')
         if not not_handled_path.is_file():
             not_handled_reviews = {}
             with open(not_handled_path, 'wb') as handle:
@@ -105,10 +105,10 @@ def get_cities_reviews(cities, bank_name):
                 # проверяем, что отзывы по городу не создана ранее    
                 # already_existing_reviews = []
               
-                existing_link = Path(f'reviews_outputs/{bank_name}/{city_name}/reviews_{yandex_bank_id}.csv')
+                existing_link = Path(f'{path}/reviews_outputs/{bank_name}/{city_name}/reviews_{yandex_bank_id}.csv')
                 if not existing_link.is_file(): 
                     logging.info(f'starting get reviews for id {yandex_bank_id}')
-                    parse_ans_save_reviews(yandex_bank_id, city_name, bank_name)
+                    parse_ans_save_reviews(yandex_bank_id, city_name, bank_name, path)
                     handled.append(yandex_bank_id)
 
                 else:
@@ -122,7 +122,7 @@ def get_cities_reviews(cities, bank_name):
                 with open(not_handled_path, 'wb') as f:
                     pickle.dump(not_handled_reviews, f)
 
-                directory_name = f'reviews_outputs/{bank_name}/{city_name}'
+                directory_name = f'{path}/reviews_outputs/{bank_name}/{city_name}'
                 if not os.path.exists(directory_name):
                     os.makedirs(directory_name)  
 
@@ -133,7 +133,7 @@ def get_cities_reviews(cities, bank_name):
                 'answer': [None]}
 
                 df = pd.DataFrame(data)
-                df.to_csv(f'{directory_name}/reviews_{yandex_bank_id}.csv')
+                df.to_csv(f'{path}/{directory_name}/reviews_{yandex_bank_id}.csv')
                 
             counter -= 1
             logging.info(f'{counter} items left')
@@ -143,17 +143,18 @@ def get_cities_reviews(cities, bank_name):
         
 
 
-    
-            
-            
-    #     logging.info(f'{len(not_handled)} ids isn"t handled')
-    #     logging.info(f'{len(handled)} ids is handled')
-
-        
 
 if __name__ == "__main__":
+    # python3 get_links.py -path_type 0 -bank_name alfa_bank 
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-bank_name', type=str)
+    parser.add_argument('-path_type', type=int)
+    args = parser.parse_args()
+
+    bank_name = args.bank_name
+    path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
     setup_logging()
-    bank_name = 'sberbank'
-    parse_ans_save_reviews(1066499300, "Москва", bank_name)
+    parse_ans_save_reviews(1066499300, "Москва", bank_name), path
     
     cities = {}

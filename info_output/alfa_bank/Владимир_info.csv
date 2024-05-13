@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,ypage,lat,lon,rating,phone,social
-0,115208039878,Альфа-Банк,"просп. Ленина, 26, Владимир",,,,56.120432,40.367710,"4,4",,
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Обслуживание,Отношение к клиентам,Персонал,Время ожидания,Кредит,Банкомат,Вклад,График работы,Расположение
+0,115208039878,Альфа-Банк,"просп. Ленина, 26, Владимир",alfabank.ru,"'mon': 09:00-19:00, 'tue': 09:00-19:00, 'wed': 09:00-18:00, 'thu': выходной, 'fri': 10:00-18:00, 'sat': выходной, 'sun': выходной",56.120432,40.367710,"4,4",['8 (800) 200-00-00Показать телефон'],"['https://ok.ru/alfabank', 'https://t.me/alfabank', 'https://vk.com/alfabank', 'https://www.youtube.com/user/alfabankru']",70,69,74,64,68,50,71,33,80

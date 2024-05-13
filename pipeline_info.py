@@ -2,6 +2,7 @@
 import time
 import logging
 import re
+import argparse
 from copy import deepcopy
 from pathlib import Path
 import pickle
@@ -36,7 +37,7 @@ from log import setup_logging
 
 
 # @timing
-def get_all_links(cities, bank_name, check_existing=False):       
+def get_all_links(cities, bank_name, path, check_existing=False):       
     """формирует список банков-ссылок для всех городов и сохраняет в /links/bank_name/"""     
     start = datetime.now()
     logging.info(f"start get links for {bank_name} at {start}")
@@ -48,7 +49,7 @@ def get_all_links(cities, bank_name, check_existing=False):
         existing_links = []
         for key in cities_keys:
             # проверка на то, что файл links для этого города уже существует 
-            existing_link = Path(f'links/{bank_name}/link_{key}.pkl')
+            existing_link = Path(f'{path}/links/{bank_name}/link_{key}.pkl')
             
             if existing_link.is_file():
                 existing_links.append(key)
@@ -63,13 +64,13 @@ def get_all_links(cities, bank_name, check_existing=False):
     
 
 # @timing
-def get_all_info(cities, bank_name, check_existing=False):
+def get_all_info(cities, bank_name, path, check_existing=False):
     """формирует datafram-ы с информацией по всем банкам по всем городам в /info_output/bank_name/""" 
     start = datetime.now()
     logging.info(f"start get info for {bank_name} at {start}")
     
     # проверяем, что список links для городов есть 
-    mypath =f'links/{bank_name}/'
+    mypath =f'{path}/links/{bank_name}/'
     onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
     city_names = []
     for f in onlyfiles:
@@ -99,7 +100,7 @@ def get_all_info(cities, bank_name, check_existing=False):
         already_exist_info = []
         for key in cities_keys:
             # TODO: файлы могут записываться не полностью 
-            existing_link = Path(f'info_output/{bank_name}/{key}_info.csv')
+            existing_link = Path(f'{path}/info_output/{bank_name}/{key}_info.csv')
             if existing_link.is_file():
                 already_exist_info.append(key)
                 del cities_copy[key]
@@ -110,17 +111,17 @@ def get_all_info(cities, bank_name, check_existing=False):
         #     logging.info('no info to handle')
         #     raise
 
-    get_cities_info(cities_copy, bank_name)
+    get_cities_info(cities_copy, bank_name, path)
     
     logging.info(f'Got info for in {datetime.now() - start} seconds')
 
 
-def launch_info_pipeline(bank_name, cities_list=None, check_existing=False):
+def launch_info_pipeline(bank_name, path, cities_list=None, check_existing=False):
     start = datetime.now()
     logging.info('*********************************************************')
     logging.info(f"launch info pipeline for {bank_name} at {start}")
 
-    cities_path = f'cities_dict_{bank_name}.pickle'
+    cities_path = f'{path}/cities_dict_{bank_name}.pickle'
     with open(cities_path, 'rb') as handle:
         cities = pickle.load(handle)
 
@@ -153,13 +154,12 @@ def launch_info_pipeline(bank_name, cities_list=None, check_existing=False):
     
     # TODO: раскоментить 
     # funcs = get_all_links(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
-    funcs = get_all_info(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
-    # funcs = get_all_links(cities, bank_name, check_existing)
+    funcs = get_all_info(cities, bank_name, path, check_existing), get_all_info(cities, bank_name, path, check_existing)
 
     for func in funcs:
         try:
             st = datetime.now()
-            func(cities, bank_name, check_existing)
+            func(cities, bank_name, path, check_existing)
             break
         except Exception as e:
             logging.info(f'Error in {func}: ', e)
@@ -183,11 +183,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     bank_name = args.bank_name
-    
     path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
 
     setup_logging()
-    launch_info_pipeline(bank_name=bank_name, check_existing=False)
+    launch_info_pipeline(bank_name=bank_name, path=path, check_existing=True)
 
     # можно передавать ограниченный список городов, будут обрабатываться только они 
     # сбер
