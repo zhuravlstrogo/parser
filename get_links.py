@@ -102,7 +102,7 @@ def get_bank_links(cities, bank_name):
     logging.info(f"I will get links for {counter} cities")
     
     for city_name, yndx_id in cities.items():
-        
+        print('input yndx_id ', yndx_id)
         N = round(random.uniform(20.1, 40.9), 2)
         logging.info(f'sleeping for {N} seconds')
         time.sleep(N)
@@ -115,12 +115,16 @@ def get_bank_links(cities, bank_name):
             continue
         yndx_ids.append(str(yndx_id))
         yndx_ids = list(set(yndx_ids))
+
+        # print('yndx_ids ',yndx_ids)
         
         links = []
  
         main_url = f'https://yandex.ru/maps/org/{bank_name}/'
         for l in yndx_ids:
             links.append(main_url + l)
+
+        # print('links ',links)
 
         with open(f'links/{bank_name}/link_{city_name}.pkl', 'wb') as f:
             pickle.dump(links, f)

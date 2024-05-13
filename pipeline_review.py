@@ -102,15 +102,14 @@ def get_all_reviews(cities, bank_name, check_existing=True):
     if check_existing:
         cities_dict = get_not_handled_reviews(bank_name)
 
-        print("Абинск' in cities_dict")
-        print('Абинск' in cities_dict.keys())
+        
 
         cities_dict = {k:v for k,v in cities_dict.items() if k in cities and v != []}
 
         main_url = f'https://yandex.ru/maps/org/{bank_name}/'
 
-        for k, v in cities_dict.items():
-            cities_dict[k] = [main_url + i for i in v] 
+        # for k, v in cities_dict.items():
+        #     cities_dict[k] = [main_url + i for i in v] 
 
     else:
         # default-ный список 
@@ -122,14 +121,16 @@ def get_all_reviews(cities, bank_name, check_existing=True):
             # TODO: тип лист? 
             cities_dict[city_name] = links
 
+    print('cities_dict  ********** ')
+    print(cities_dict)
 
     logging.info(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
 
     # передаём словарь город - список адресов банков
     get_cities_reviews(cities_dict, bank_name)
 
-    print("Абинск' in cities_dict 2")
-    print('Абинск' in cities_dict.keys())
+    # print("Абинск' in cities_dict 2")
+    # print('Абинск' in cities_dict.keys())
     
     logging.info(f'Got info for in {datetime.now() - start} seconds')
 
@@ -178,7 +179,8 @@ if __name__ == "__main__":
 
     
 #     # TODO: раскомментить
-    funcs = get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True)
+    funcs = get_all_reviews(cities, bank_name, check_existing=True)
+    # , get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True)
 
     
 

@@ -49,13 +49,17 @@ def check(city, address):
     if city[3:] in ended_three:
         city = city[3:]
 
-    ended_four = ['пгт.', 'пос.', 'р.п.']
+    ended_four = ['пгт.', 'пос.', 'р.п.', 'ЗАТО']
     if city[4:] in ended_four:
         city = city[4:]
 
-    # TODO: работает?
+    # TODO: обрабатывать Московский, к-й не в конце строки 
     word_list = address.split() 
-    if bool(re.search(city,  word_list[-1])):
+    # print('word_list ', word_list)
+    # print('word_list[-1] ', word_list[-1])
+    # print('city ', city)
+    if bool(re.search(city[-1],  word_list[-1])):
+        # print("I am OK")
         return True
     else:
         return False
@@ -102,12 +106,11 @@ def merge_all_info(bank_name, drop_errors=False):
     d = {}
     for f in only_info_files:
         try:
+            
             city_name = find_between(f, first='', last='_info.csv')[0]
-
             d[city_name] = info_path + f
         except:
             print(f'error {city_name}')
-
 
     frames = []
     for city_name, file_path in d.items():
@@ -126,16 +129,25 @@ def merge_all_info(bank_name, drop_errors=False):
         except:
             print(f'error in city {city_name}')
 
+    print(len(d))
+    print(len(frames))
+
     if all(v is None for v in frames):
         final_df = None
     else:
-        final_df = pd.concat(frames)
+        final_df = pd.concat(frames, axis=0)
+
+    # final_df = final_df[final_df['city'].str.contains('Казань')]
+    # print('final_df ', final_df)
 
     final_df['lat'] = final_df['lat'].astype('str')
     final_df['lon'] = final_df['lon'].astype('str')
 
     final_df['lon'] = final_df.apply(lambda x: handle_C_lat(x.lon), axis=1)
     final_df['lat'] = final_df.apply(lambda x: handle_C_lat(x.lat), axis=1)
+
+    print(f'final_df shape before clean {final_df.shape}')
+    print(final_df.sample())
 
     final_df = clean_rows(df=final_df, bank_name=bank_name, drop_errors=drop_errors)
 
@@ -153,7 +165,6 @@ def merge_all_info(bank_name, drop_errors=False):
     logging.info('final df')
     print(final_df.head())
     logging.info(f'final_df.shape {final_df.shape}')
-
 
     # TODO: добавлять города, в которых нет банков из cities_dict_{bank_name}.pickle
 
@@ -176,7 +187,7 @@ def merge_all_info(bank_name, drop_errors=False):
     logging.info(f'not handled {len(not_handled_cities)} cities: {not_handled_cities}')
 
 
-def merge_all_reviews(bank_name, drop_errors=False):
+def merge_all_reviews(bank_name, drop_errors=False, filter_by_info_df=False):
     """соединяет отдельные datafram-ы с банками по городам в один dataframe"""
 
     reviews_path  =f'reviews_outputs/{bank_name}/'
@@ -201,25 +212,38 @@ def merge_all_reviews(bank_name, drop_errors=False):
     if all(v is None for v in frames):
         final_df = None
     else:
-        final_df = pd.concat(frames)
+        final_df = pd.concat(frames, axis=0)
+
+    # TODO: set True after give id for all banks in info 
+    if filter_by_info_df:
+        final_df['id'] = final_df['id'].astype('float64')
+        logging.info(f'len final_df before filter {len(final_df)}')
+
+        info_df = pd.read_csv(f'info_all/{bank_name}_info_all_2024_05_12.csv')
+
+        final_df = final_df[final_df['id'].isin(list(np.unique(info_df['ID'])))]
+        logging.info(f'len final_df after filter {len(final_df)}')
+
+    logging.info(f"unique banks {len(np.unique(final_df['id']))}")
+    logging.info(f"unique cities {len(np.unique(final_df['city'] ))}")
 
     directory_name = f'reviews_all/{bank_name}'
     if not os.path.exists(directory_name):
         os.makedirs(directory_name) 
 
     logging.info(f"I will save reviews length of {len(final_df)}")
-    logging.info(f"final_df.shap {final_df.shape}") # 339 814
-    final_df_sample = final_df.sample(100000)
+    logging.info(f"final_df.shap {final_df.shape}")
+    # final_df_sample = final_df.sample(100000)
 
     today = datetime.today().strftime('%Y_%m_%d') 
     final_df.to_csv(f'reviews_all/{bank_name}_reviews_all_{today}.csv', index=False)
     final_df.to_excel(f'reviews_all/{bank_name}_reviews_{today}.xlsx', index=False)  
-    final_df_sample.to_excel(f'reviews_all/{bank_name}_reviews_sample_{today}.xlsx', index=False)  
+    # final_df_sample.to_excel(f'reviews_all/{bank_name}_reviews_sample_{today}.xlsx', index=False)  
 
     logging.info(f"I saved reviews length of {len(final_df)}")
 
-    unique_cities = set(np.unique(final_df['city']))
-    logging.info(f'{len(unique_cities)} unique cities saved')
+
+
 
 
 
@@ -227,6 +251,6 @@ if __name__ == "__main__":
     setup_logging()
     bank_name = 'alfa_bank'
     # bank_name = 'sberbank'
-    merge_all_info(bank_name, drop_errors=True)
+    merge_all_info(bank_name, drop_errors=False)
 
-    # merge_all_reviews(bank_name, drop_errors=False)
+    # merge_all_reviews(bank_name, drop_errors=False, filter_by_info_df=False)

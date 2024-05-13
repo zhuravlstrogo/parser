@@ -106,7 +106,7 @@ def get_cities_reviews(cities, bank_name):
                 # already_existing_reviews = []
               
                 existing_link = Path(f'reviews_outputs/{bank_name}/{city_name}/reviews_{yandex_bank_id}.csv')
-                if not existing_link.is_file():
+                if not existing_link.is_file(): 
                     logging.info(f'starting get reviews for id {yandex_bank_id}')
                     parse_ans_save_reviews(yandex_bank_id, city_name, bank_name)
                     handled.append(yandex_bank_id)
@@ -121,6 +121,19 @@ def get_cities_reviews(cities, bank_name):
                 not_handled_reviews.update(not_handled)
                 with open(not_handled_path, 'wb') as f:
                     pickle.dump(not_handled_reviews, f)
+
+                directory_name = f'reviews_outputs/{bank_name}/{city_name}'
+                if not os.path.exists(directory_name):
+                    os.makedirs(directory_name)  
+
+                data = {'name': [None],
+                'date': [None],
+                'text': [None],
+                'stars': [None],
+                'answer': [None]}
+
+                df = pd.DataFrame(data)
+                df.to_csv(f'{directory_name}/reviews_{yandex_bank_id}.csv')
                 
             counter -= 1
             logging.info(f'{counter} items left')
