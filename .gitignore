@@ -171,6 +171,5 @@ config.py
 *.txt
 *.xlsx
 
-readme.md
-pickle
-pkl
+*.pickle
+*.pkl
