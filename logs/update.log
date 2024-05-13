@@ -219,3 +219,11 @@ TypeError: get_bank_links() missing 1 required positional argument: 'path'
 [2024-05-13 15:55:51,284] p40618 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:43} INFO - start get links for alfa_bank at 2024-05-13 15:55:51.284339
 [2024-05-13 15:55:51,284] p40618 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:103} INFO - I will get links for 655 cities
 [2024-05-13 15:55:51,284] p40618 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:108} INFO - sleeping for 29.77 seconds
+[2024-05-13 15:57:45,500] p40927 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:121} INFO - *********************************************************
+[2024-05-13 15:57:45,500] p40927 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:122} INFO - launch info pipeline for alfa_bank at 2024-05-13 15:57:45.500151
+[2024-05-13 15:57:45,500] p40927 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:153} INFO - 655 not null cities
+[2024-05-13 15:57:45,500] p40927 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:70} INFO - start get info for alfa_bank at 2024-05-13 15:57:45.500779
+[2024-05-13 15:57:45,508] p40927 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:94} INFO - 17 links are not available
+[2024-05-13 15:57:45,508] p40927 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:95} INFO - 638 links are available
+[2024-05-13 15:57:45,509] p40927 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:151} INFO - get info for banks in Москва length of 83
+[2024-05-13 15:57:51,367] p40927 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
