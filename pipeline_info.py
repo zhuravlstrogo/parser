@@ -168,7 +168,7 @@ def launch_info_pipeline(bank_name, path, cities_list=None, check_existing=False
             # time.sleep(1800)
             continue
 
-    merge_all_info(bank_name)
+    merge_all_info(bank_name, path)
     logging.info(f'I finished at {datetime.now()}')
     logging.info(f'Pipeline worked {datetime.now() - start} seconds')
 
