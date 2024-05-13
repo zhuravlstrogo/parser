@@ -186,14 +186,14 @@ def merge_all_info(bank_name, path, drop_errors=False):
     unique_cities = set(np.unique(final_df['city']))
     logging.info(f'{len(unique_cities)} unique cities saved')
 
-    with open(f'{path}/cities.txt') as f:
-        input_cities = [x.strip('\n') for x in f ]
+    # with open(f'{path}/cities.txt') as f:
+    #     input_cities = [x.strip('\n') for x in f ]
 
-    # with open('cities_1.txt') as f:
-    #     input_cities_1 = [x.strip('\n') for x in f ]
-    # with open('cities_2.txt') as f
-    #     input_cities_2 = [x.strip('\n') for x in f ]
-    # input_cities = input_cities_1 + input_cities_2
+    with open('cities_1.txt') as f:
+        input_cities_1 = [x.strip('\n') for x in f ]
+    with open('cities_2.txt') as f
+        input_cities_2 = [x.strip('\n') for x in f ]
+    input_cities = input_cities_1 + input_cities_2
 
     not_handled_cities = set(input_cities).difference(unique_cities)
 
