@@ -191,7 +191,7 @@ def merge_all_info(bank_name, path, drop_errors=False):
 
     with open('cities_1.txt') as f:
         input_cities_1 = [x.strip('\n') for x in f ]
-    with open('cities_2.txt') as f
+    with open('cities_2.txt') as f:
         input_cities_2 = [x.strip('\n') for x in f ]
     input_cities = input_cities_1 + input_cities_2
 
