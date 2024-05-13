@@ -3,3 +3,73 @@
 [2024-05-13 04:56:27,327] p31926 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:167} INFO - final_df.shape (1333, 33)
 [2024-05-13 04:56:28,036] p31926 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:180} INFO - 569 unique cities saved
 [2024-05-13 04:56:28,037] p31926 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:187} INFO - not handled 73 cities: {'Урюпинск', 'Артёмовский', 'Саров', 'Покачи', 'Красноармейск', 'п. Свободный', 'Суворов', 'Кемь', 'Горноправдинск', 'Колпашево', 'Агрыз', 'Сегежа', 'Северобайкальск', 'Хасавюрт', 'Буй', 'Кизляр', 'Избербаш', 'Завитинск', 'р.п. Сенной', 'Краснознаменск', 'Ершов', 'Белоярский', 'Райчихинск', 'Бологое', 'Семёнов', 'Анадырь', 'Камень-на-Оби', 'Шали', 'Московский', 'Болотное', 'Заполярный', 'Шумерля', 'Малгобек', 'Хилок', 'пос. Персиановский', 'Ейск', 'Борзя', 'Агинское', 'п. Магдагачи', 'Назрань', 'Кукмор', 'Сосногорск', 'Тербуны', 'Лучегорск', 'Игрим', 'Славянск-на-Кубани', 'ст. Талица', 'Донецк', 'пос. Саянский', 'ст. Павловская', 'Зима', 'Буинск', 'с. Красноселькуп', 'Старая Русса', 'Луховицы', 'Лесной', 'Жуков', 'Иланский', 'Мыски', 'Федоровский', 'Прохладный', 'Шимановск', 'Удачный', 'Гусиноозерск', 'Гудермес', 'Малиновский', 'Советский', 'Железнодорожный', 'Дзержинский', 'Могоча', 'Полярный', 'Кулебаки', 'Комсомольск-на-Амуре'}
+[2024-05-13 05:08:08,882] p32447 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:158} INFO - cities_without_bank 0
+[2024-05-13 05:08:08,882] p32447 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:165} INFO - final df
+[2024-05-13 05:08:08,893] p32447 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:167} INFO - final_df.shape (4597, 22)
+[2024-05-13 05:08:10,390] p32447 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:180} INFO - 644 unique cities saved
+[2024-05-13 05:08:10,390] p32447 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:187} INFO - not handled 7 cities: {'Железнодорожный', 'Семёнов', 'Славянск-на-Кубани', 'Минеральные воды', 'Озёрск', 'Комсомольск-на-Амуре', 'п. Мурино'}
+[2024-05-13 05:10:58,566] p32527 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:158} INFO - cities_without_bank 6
+[2024-05-13 05:10:58,566] p32527 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:165} INFO - final df
+[2024-05-13 05:10:58,581] p32527 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:167} INFO - final_df.shape (1333, 33)
+[2024-05-13 05:10:59,275] p32527 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:180} INFO - 569 unique cities saved
+[2024-05-13 05:10:59,276] p32527 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:187} INFO - not handled 73 cities: {'Болотное', 'Хилок', 'Семёнов', 'Кукмор', 'Иланский', 'Шимановск', 'Федоровский', 'Райчихинск', 'Славянск-на-Кубани', 'Завитинск', 'Агрыз', 'п. Магдагачи', 'Лучегорск', 'пос. Саянский', 'Луховицы', 'Назрань', 'Шумерля', 'пос. Персиановский', 'Прохладный', 'Краснознаменск', 'Избербаш', 'Могоча', 'Жуков', 'п. Свободный', 'Буй', 'Горноправдинск', 'Мыски', 'Лесной', 'р.п. Сенной', 'Белоярский', 'Агинское', 'Буинск', 'с. Красноселькуп', 'Кулебаки', 'Тербуны', 'Сосногорск', 'Северобайкальск', 'Борзя', 'Хасавюрт', 'Покачи', 'Шали', 'Заполярный', 'Ейск', 'Комсомольск-на-Амуре', 'Игрим', 'Гусиноозерск', 'Донецк', 'Урюпинск', 'Артёмовский', 'Малиновский', 'Камень-на-Оби', 'Красноармейск', 'Сегежа', 'Ершов', 'Московский', 'Полярный', 'Кемь', 'ст. Павловская', 'Старая Русса', 'Бологое', 'ст. Талица', 'Советский', 'Удачный', 'Саров', 'Зима', 'Колпашево', 'Дзержинский', 'Суворов', 'Кизляр', 'Гудермес', 'Анадырь', 'Железнодорожный', 'Малгобек'}
+[2024-05-13 05:11:03,694] p32527 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:227} INFO - unique banks 1541
+[2024-05-13 05:11:03,787] p32527 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:228} INFO - unique cities 581
+[2024-05-13 05:11:03,787] p32527 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:234} INFO - I will save reviews length of 178402
+[2024-05-13 05:11:03,787] p32527 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:235} INFO - final_df.shap (178402, 7)
+[2024-05-13 05:11:41,086] p32527 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:243} INFO - I saved reviews length of 178402
+[2024-05-13 05:15:01,012] p32628 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:158} INFO - cities_without_bank 6
+[2024-05-13 05:15:01,012] p32628 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:165} INFO - final df
+[2024-05-13 05:15:01,027] p32628 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:167} INFO - final_df.shape (1333, 33)
+[2024-05-13 05:15:01,724] p32628 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:180} INFO - 569 unique cities saved
+[2024-05-13 05:15:01,725] p32628 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:187} INFO - not handled 73 cities: {'Белоярский', 'пос. Персиановский', 'пос. Саянский', 'Избербаш', 'Сегежа', 'Кизляр', 'Агрыз', 'Назрань', 'с. Красноселькуп', 'Саров', 'Жуков', 'Лучегорск', 'Славянск-на-Кубани', 'Зима', 'Полярный', 'Малгобек', 'Артёмовский', 'Луховицы', 'Советский', 'Шумерля', 'Красноармейск', 'Буинск', 'р.п. Сенной', 'Болотное', 'ст. Талица', 'Краснознаменск', 'Кемь', 'Суворов', 'Агинское', 'Железнодорожный', 'Северобайкальск', 'Московский', 'Гудермес', 'Донецк', 'Завитинск', 'Федоровский', 'Дзержинский', 'Бологое', 'Хасавюрт', 'Буй', 'Шимановск', 'Мыски', 'Семёнов', 'Могоча', 'п. Свободный', 'Малиновский', 'Гусиноозерск', 'Камень-на-Оби', 'Игрим', 'Горноправдинск', 'ст. Павловская', 'Райчихинск', 'Комсомольск-на-Амуре', 'Сосногорск', 'Борзя', 'Иланский', 'Кулебаки', 'Старая Русса', 'Покачи', 'п. Магдагачи', 'Урюпинск', 'Прохладный', 'Анадырь', 'Хилок', 'Колпашево', 'Шали', 'Удачный', 'Ершов', 'Кукмор', 'Тербуны', 'Лесной', 'Ейск', 'Заполярный'}
+[2024-05-13 05:15:06,081] p32628 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:227} INFO - unique banks 1541
+[2024-05-13 05:15:06,167] p32628 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:228} INFO - unique cities 575
+[2024-05-13 05:15:06,167] p32628 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:234} INFO - I will save reviews length of 176986
+[2024-05-13 05:15:06,167] p32628 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:235} INFO - final_df.shap (176986, 7)
+[2024-05-13 05:15:42,577] p32628 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:243} INFO - I saved reviews length of 176986
+[2024-05-13 05:17:49,537] p32728 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:227} INFO - unique banks 1541
+[2024-05-13 05:17:49,623] p32728 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:228} INFO - unique cities 575
+[2024-05-13 05:17:49,777] p32728 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:238} INFO - I will save reviews length of 176381
+[2024-05-13 05:17:49,777] p32728 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:239} INFO - final_df.shap (176381, 7)
+[2024-05-13 05:18:26,472] p32728 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:247} INFO - I saved reviews length of 176381
+[2024-05-13 05:19:06,417] p32793 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:227} INFO - unique banks 1541
+[2024-05-13 05:19:06,502] p32793 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:228} INFO - unique cities 575
+[2024-05-13 05:19:06,724] p32793 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:236} INFO - I will save reviews length of 176977
+[2024-05-13 05:19:06,724] p32793 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:237} INFO - final_df.shap (176977, 7)
+[2024-05-13 05:19:43,554] p32793 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:245} INFO - I saved reviews length of 176977
+[2024-05-13 05:20:24,309] p32848 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:233} INFO - I will save reviews length of 679326
+[2024-05-13 05:20:24,309] p32848 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:234} INFO - final_df.shape (679326, 7)
+[2024-05-13 05:20:24,731] p32848 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:235} INFO - unique banks 4751
+[2024-05-13 05:20:25,098] p32848 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:236} INFO - unique cities 630
+[2024-05-13 05:22:13,263] p32848 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:244} INFO - I saved reviews length of 679326
+[2024-05-13 05:24:58,134] p32942 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:234} INFO - I will save reviews length of 679149
+[2024-05-13 05:24:58,135] p32942 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:235} INFO - final_df.shape (679149, 7)
+[2024-05-13 05:24:58,548] p32942 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:236} INFO - unique banks 4622
+[2024-05-13 05:24:58,914] p32942 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:237} INFO - unique cities 616
+[2024-05-13 05:26:45,679] p32942 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:245} INFO - I saved reviews length of 679149
+[2024-05-13 05:26:56,126] p33000 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:235} INFO - I will save reviews length of 176382
+[2024-05-13 05:26:56,126] p33000 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:236} INFO - final_df.shape (176382, 7)
+[2024-05-13 05:26:56,224] p33000 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:237} INFO - unique banks 1002
+[2024-05-13 05:26:56,307] p33000 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:238} INFO - unique cities 459
+[2024-05-13 05:27:33,228] p33000 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:246} INFO - I saved reviews length of 176382
+[2024-05-13 05:46:29,023] p33100 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:235} INFO - I will save reviews length of 89594
+[2024-05-13 05:46:29,023] p33100 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:236} INFO - final_df.shape (89594, 7)
+[2024-05-13 05:46:29,068] p33100 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:237} INFO - unique banks 1002
+[2024-05-13 05:46:29,108] p33100 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:238} INFO - unique cities 380
+[2024-05-13 05:46:47,771] p33100 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:246} INFO - I saved reviews length of 89594
+[2024-05-13 05:47:08,449] p33137 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:237} INFO - I will save reviews length of 89594
+[2024-05-13 05:47:08,449] p33137 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:238} INFO - final_df.shape (89594, 7)
+[2024-05-13 05:47:08,494] p33137 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:239} INFO - unique banks 1002
+[2024-05-13 05:47:08,533] p33137 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - unique cities 380
+[2024-05-13 05:47:27,044] p33137 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:248} INFO - I saved reviews length of 89594
+[2024-05-13 05:47:38,290] p33170 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:237} INFO - I will save reviews length of 89827
+[2024-05-13 05:47:38,290] p33170 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:238} INFO - final_df.shape (89827, 7)
+[2024-05-13 05:47:38,336] p33170 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:239} INFO - unique banks 1002
+[2024-05-13 05:47:38,376] p33170 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - unique cities 381
+[2024-05-13 05:47:56,768] p33170 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:248} INFO - I saved reviews length of 89827
+[2024-05-13 05:48:18,894] p33210 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:238} INFO - I will save reviews length of 525311
+[2024-05-13 05:48:18,894] p33210 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:239} INFO - final_df.shape (525311, 7)
+[2024-05-13 05:48:19,204] p33210 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - unique banks 4622
+[2024-05-13 05:48:19,481] p33210 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:241} INFO - unique cities 601
+[2024-05-13 05:49:50,187] p33210 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:249} INFO - I saved reviews length of 525311

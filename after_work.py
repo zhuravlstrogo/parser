@@ -219,20 +219,26 @@ def merge_all_reviews(bank_name, drop_errors=False, filter_by_info_df=False):
         final_df['id'] = final_df['id'].astype('float64')
         logging.info(f'len final_df before filter {len(final_df)}')
 
+        # TODO: 2024_05_12 ?
         info_df = pd.read_csv(f'info_all/{bank_name}_info_all_2024_05_12.csv')
 
         final_df = final_df[final_df['id'].isin(list(np.unique(info_df['ID'])))]
         logging.info(f'len final_df after filter {len(final_df)}')
 
-    logging.info(f"unique banks {len(np.unique(final_df['id']))}")
-    logging.info(f"unique cities {len(np.unique(final_df['city'] ))}")
-
     directory_name = f'reviews_all/{bank_name}'
     if not os.path.exists(directory_name):
         os.makedirs(directory_name) 
 
+    # TODO: заменить на проверку по info df
+    final_df = final_df.drop_duplicates(subset=['id', 'date', 'name', 'text', 'stars'])
+    final_df = final_df.dropna(subset=['text'])
+
+    print(final_df.sample())
+
     logging.info(f"I will save reviews length of {len(final_df)}")
-    logging.info(f"final_df.shap {final_df.shape}")
+    logging.info(f"final_df.shape {final_df.shape}")
+    logging.info(f"unique banks {len(np.unique(final_df['id']))}")
+    logging.info(f"unique cities {len(np.unique(final_df['city'] ))}")
     # final_df_sample = final_df.sample(100000)
 
     today = datetime.today().strftime('%Y_%m_%d') 
@@ -249,8 +255,8 @@ def merge_all_reviews(bank_name, drop_errors=False, filter_by_info_df=False):
 
 if __name__ == "__main__":
     setup_logging()
-    bank_name = 'alfa_bank'
-    # bank_name = 'sberbank'
-    merge_all_info(bank_name, drop_errors=False)
+    # bank_name = 'alfa_bank'
+    bank_name = 'sberbank'
+    # merge_all_info(bank_name, drop_errors=False)
 
-    # merge_all_reviews(bank_name, drop_errors=False, filter_by_info_df=False)
+    merge_all_reviews(bank_name, drop_errors=False, filter_by_info_df=False)
