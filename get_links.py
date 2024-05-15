@@ -62,7 +62,7 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
             # скролл
             driver.execute_script("arguments[0].scrollIntoView();", elements[-1]);
 
-            N = round(random.uniform(139.1, 199.9), 2)
+            N = round(random.uniform(13.1, 19.9), 2) # was higher
             logging.info(f'sleep for {N}')
             time.sleep(N)
             elements = driver.find_elements(By.CLASS_NAME, t)

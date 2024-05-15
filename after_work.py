@@ -144,6 +144,8 @@ def merge_all_info(bank_name, path, drop_errors=False):
     # final_df = final_df[final_df['city'].str.contains('Балашиха')]
     # print('final_df ', final_df)
 
+    final_df = final_df[final_df['opening_hours'] != "'mon': выходной, 'tue': выходной, 'wed': выходной, 'thu': выходной, 'fri': выходной, 'sat': выходной, 'sun': выходной"]
+
     final_df['lat'] = final_df['lat'].astype('str')
     final_df['lon'] = final_df['lon'].astype('str')
 
@@ -186,14 +188,17 @@ def merge_all_info(bank_name, path, drop_errors=False):
     unique_cities = set(np.unique(final_df['city']))
     logging.info(f'{len(unique_cities)} unique cities saved')
 
-    # with open(f'{path}/cities.txt') as f:
-    #     input_cities = [x.strip('\n') for x in f ]
+    
+    try:
+        with open('cities_1.txt') as f:
+            input_cities_1 = [x.strip('\n') for x in f ]
+        with open('cities_2.txt') as f:
+            input_cities_2 = [x.strip('\n') for x in f ]
+        input_cities = input_cities_1 + input_cities_2
+    except:
+        with open(f'{path}/cities.txt') as f:
+            input_cities = [x.strip('\n') for x in f ]
 
-    with open('cities_1.txt') as f:
-        input_cities_1 = [x.strip('\n') for x in f ]
-    with open('cities_2.txt') as f:
-        input_cities_2 = [x.strip('\n') for x in f ]
-    input_cities = input_cities_1 + input_cities_2
 
     not_handled_cities = set(input_cities).difference(unique_cities)
 
@@ -274,6 +279,7 @@ if __name__ == "__main__":
     parser.add_argument('-path_type', type=int)
     args = parser.parse_args()
     bank_name = args.bank_name
+    path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
     setup_logging()
     merge_all_info(bank_name, path, drop_errors=False)
 

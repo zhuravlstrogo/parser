@@ -123,7 +123,7 @@ class Parser:
                 if is_captcha:
                     self.driver.close()
                     self.driver.quit()
-                    N = round(random.uniform(300.1, 390.9), 2)
+                    N = round(random.uniform(30.1, 39.9), 2) # was higher
                     logging.info(f"driver closed, sleep for {N}")
                     sleep(N)
                 
@@ -134,7 +134,7 @@ class Parser:
             else:
                 logging.info('I tired, it is time to sleep')
                 self.driver.quit()
-                sleep(round(random.uniform(300.1, 309.9), 2))
+                sleep(round(random.uniform(30.1, 39.9), 2)) # was higher
                 self.driver.get(f"{main_url}/{yandex_bank_id}")
         
         
@@ -145,7 +145,7 @@ def get_cities_info(cities, bank_name, path):
     
     for city_name, yandex_bank_id in cities.items():
         
-        with open(f'links/{bank_name}/link_{city_name}.pkl', 'rb') as f:
+        with open(f'{path}/links/{bank_name}/link_{city_name}.pkl', 'rb') as f:
             all_hrefs = pickle.load(f)
         
         logging.info(f'get info for banks in {city_name} length of {len(all_hrefs)}')
