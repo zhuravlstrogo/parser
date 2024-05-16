@@ -42,7 +42,7 @@ def check(city, address):
         print(str(address))
         raise
 
-    ended_two = ['п.', 'д.', 'c.']
+    ended_two = ['П.', 'п.', 'Д.', 'д.','С.', 'c.']
     if city[2:] in ended_two:
         city = city[2:]
 
@@ -146,6 +146,8 @@ def merge_all_info(bank_name, path, drop_errors=False):
 
     final_df = final_df[final_df['opening_hours'] != "'mon': выходной, 'tue': выходной, 'wed': выходной, 'thu': выходной, 'fri': выходной, 'sat': выходной, 'sun': выходной"]
 
+    final_df = final_df[['ID', 'name', 'city', 'address','opening_hours', 'lat', 'lon', 'rating', 'Обслуживание', 'Отношение к клиентам', 'Персонал', 'Время ожидания', 'Кредит', 'Банкомат', 'Расположение', 'Вклад']]
+
     final_df['lat'] = final_df['lat'].astype('str')
     final_df['lon'] = final_df['lon'].astype('str')
 
@@ -182,8 +184,8 @@ def merge_all_info(bank_name, path, drop_errors=False):
         os.makedirs(directory_name) 
 
     today = datetime.today().strftime('%Y_%m_%d') 
-    final_df.to_csv(f'{path}/info_all/{bank_name}_info_all_{today}.csv', index=False)
-    final_df.to_excel(f'{path}/info_all/{bank_name}_info_{today}.xlsx', index=False)  
+    final_df.to_csv(f'{path}/info_all/{bank_name}_info_all.csv', index=False)
+    final_df.to_excel(f'{path}/info_all/{bank_name}_info.xlsx', index=False)  
 
     unique_cities = set(np.unique(final_df['city']))
     logging.info(f'{len(unique_cities)} unique cities saved')
@@ -205,7 +207,7 @@ def merge_all_info(bank_name, path, drop_errors=False):
     logging.info(f'not handled {len(not_handled_cities)} cities: {not_handled_cities}')
 
 
-def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=False):
+def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True):
     """соединяет отдельные datafram-ы с банками по городам в один dataframe"""
 
     reviews_path  =f'reviews_outputs/{bank_name}/'
@@ -234,13 +236,23 @@ def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=Fals
 
     # TODO: set True after give id for all banks in info 
     if filter_by_info_df:
-        final_df['id'] = final_df['id'].astype('float64')
+        final_df['id'] = final_df['id'].astype('int')
         logging.info(f'len final_df before filter {len(final_df)}')
 
-        # TODO: 2024_05_12 ?
-        info_df = pd.read_csv(f'{path}/info_all/{bank_name}_info_all_2024_05_12.csv')
+        info_df = pd.read_csv(f'{path}/info_all/{bank_name}_info_all.csv')
+        info_df = info_df[['city', 'ID']].drop_duplicates()
+        info_df['indicator'] = info_df['city']+ info_df['ID'].astype(str)
+        final_df['indicator'] = final_df['city'] + final_df['id'].astype(str)
+        not_handled_df = info_df.loc[~info_df['indicator'].isin(final_df['indicator'])] #.drop(columns=['indicator'])
+        
+        print("NOT HANDLED REVIEWS")
+        not_handled_dict = info_df.groupby('city')['ID'].agg(list).to_dict()
+        print(not_handled_dict)
 
-        final_df = final_df[final_df['id'].isin(list(np.unique(info_df['ID'])))]
+        with open(f'not_handled_reviews_{bank_name}.pickle', 'wb') as handle:
+            pickle.dump(not_handled_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+        final_df = final_df.loc[final_df['indicator'].isin(info_df['indicator'])].drop(columns=['indicator'])
         logging.info(f'len final_df after filter {len(final_df)}')
 
     directory_name = f'reviews_all/{bank_name}'
@@ -251,7 +263,6 @@ def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=Fals
     final_df = final_df.drop_duplicates(subset=['id', 'date', 'name', 'text', 'stars'])
     final_df = final_df.dropna(subset=['text'])
 
-    print(final_df.sample())
 
     logging.info(f"I will save reviews length of {len(final_df)}")
     logging.info(f"final_df.shape {final_df.shape}")
@@ -281,6 +292,6 @@ if __name__ == "__main__":
     bank_name = args.bank_name
     path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
     setup_logging()
-    merge_all_info(bank_name, path, drop_errors=False)
+    # merge_all_info(bank_name, path, drop_errors=False)
 
-    # merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=False)
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)

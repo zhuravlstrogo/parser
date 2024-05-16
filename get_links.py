@@ -157,7 +157,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     bank_name = args.bank_name
-    path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
+    path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
     setup_logging()
     cities = {}
     get_bank_links(cities, bank_name, path)

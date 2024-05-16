@@ -186,8 +186,9 @@ if __name__ == "__main__":
     path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
 
     setup_logging()
-    launch_info_pipeline(bank_name=bank_name, path=path, check_existing=False)
+    # launch_info_pipeline(bank_name=bank_name, path=path, check_existing=False)
 
     # можно передавать ограниченный список городов, будут обрабатываться только они 
-    # cities_list = [ 'Сегежа', 'Озёрск', 'Ноябрьск', 'Алексеевка']
-    # launch_info_pipeline(bank_name=bank_name, cities_list=cities_list, check_existing=False)
+    cities_list = ['Балтийск',  'Нижнесортымский', 'п. Мурино', 'Нарьян-Мар', 'Лабытнанги', 'Алексеевка', 'Кинешма', 'Калачинск', 'Елец',  'Озерск',  'Вышний Волочёк']
+    # cities_list = [ 'Гусиноозёрск', 'Минеральные воды', 'п. Мурино', 'Лысьва', 'Вышний Волочёк', 'Сосновый Бор', 'Железнодорожный']
+    launch_info_pipeline(bank_name=bank_name, path=path, cities_list=cities_list, check_existing=False)
