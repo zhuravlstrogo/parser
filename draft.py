@@ -3,14 +3,34 @@ import os
 from pathlib import Path
 from os import listdir
 from os.path import isfile, join
-from sklearn.model_selection import train_test_split
+# from sklearn.model_selection import train_test_split
 import pandas as pd
 
 from utils import find_between
 
 
-bank_name = 'sberbank' # 108 городов не подтянулись
-# bank_name = 'alfa_bank' # 145 городов не подтянулись
+# bank_name = 'sberbank' # 108 городов не подтянулись
+bank_name = 'alfa_bank' # 145 городов не подтянулись
+
+# df = pd.read_csv('reviews_outputs/alfa_bank/Екатеринбург/reviews_1226244982.csv')
+# print(df.isnull().sum().sum())
+# print(df.shape[1]-1)
+
+reviews_path  =f'reviews_outputs/{bank_name}/'
+
+existing_reviews = {}
+for path, dirs, files in os.walk(reviews_path, topdown=False):
+    try:
+        for name in files:
+            df = pd.read_csv(os.path.join(path, name))
+
+            if df.isnull().sum().sum() == df.shape[1]-1:
+                os.remove(os.path.join(path, name))
+        # k = root.replace(reviews_path, '')
+        # v = [find_between(f, first=f'reviews_', last='.csv')[0] for f in files]
+        # existing_reviews[k] = v
+    except:
+        pass
 
 # with open('cities.txt') as f:
 #     input_cities = [x.strip('\n') for x in f ]
@@ -92,59 +112,59 @@ bank_name = 'sberbank' # 108 городов не подтянулись
 # #     pickle.dump(tuta, f)  
 
 
-reviews_path  =f'reviews_outputs/{bank_name}/'
+# reviews_path  =f'reviews_outputs/{bank_name}/'
 
-existing_reviews = {}
-for root, dirs, files in os.walk(reviews_path, topdown=False):
-    try:
-        k = root.replace(reviews_path, '')
-        v = [find_between(f, first=f'reviews_', last='.csv')[0] for f in files]
-        existing_reviews[k] = len(v)
-    except:
-        pass
+# existing_reviews = {}
+# for root, dirs, files in os.walk(reviews_path, topdown=False):
+#     try:
+#         k = root.replace(reviews_path, '')
+#         v = [find_between(f, first=f'reviews_', last='.csv')[0] for f in files]
+#         existing_reviews[k] = len(v)
+#     except:
+#         pass
 
-# print("Абинск' in existing_reviews.keys()")
-# print('Абинск' in existing_reviews.keys())
+# # print("Абинск' in existing_reviews.keys()")
+# # print('Абинск' in existing_reviews.keys())
 
 
 
-info_path  =f'info_output/{bank_name}/'
-only_info_files = [f for f in listdir(info_path) if isfile(join(info_path, f))]
+# info_path  =f'info_output/{bank_name}/'
+# only_info_files = [f for f in listdir(info_path) if isfile(join(info_path, f))]
 
-existing_info = {}
-for f in only_info_files:
+# existing_info = {}
+# for f in only_info_files:
 
-    try:
+#     try:
 
-        k = f[:-9]
+#         k = f[:-9]
    
-        # with open(links_path + f, 'rb') as handle:
-        #     city_links = pickle.load(handle)
+#         # with open(links_path + f, 'rb') as handle:
+#         #     city_links = pickle.load(handle)
     
-        # v = [search_end_of_str(start_with=f'https://yandex.ru/maps/org/{bank_name}/', full_str=f) for f in city_links]
-        df = pd.read_csv(info_path + f)
-        existing_info[k] = len(df)
-    except:
-        pass
+#         # v = [search_end_of_str(start_with=f'https://yandex.ru/maps/org/{bank_name}/', full_str=f) for f in city_links]
+#         df = pd.read_csv(info_path + f)
+#         existing_info[k] = len(df)
+#     except:
+#         pass
 
-# print("Абинск' in existing_links.keys()")
-# print('Абинск' in existing_links.keys())
+# # print("Абинск' in existing_links.keys()")
+# # print('Абинск' in existing_links.keys())
 
 
 
-not_handled_reviews = []
-for k, v in existing_info.items():
-    try:
-        if existing_info[k] != existing_info[k]:
-            not_handled_reviews.append(k)
-    except:
-        pass
+# not_handled_reviews = []
+# for k, v in existing_info.items():
+#     try:
+#         if existing_info[k] != existing_info[k]:
+#             not_handled_reviews.append(k)
+#     except:
+#         pass
 
-print(not_handled_reviews)
-# print(existing_reviews['Москва'])
-# print(existing_info['Москва'])
+# print(not_handled_reviews)
+# # print(existing_reviews['Москва'])
+# # print(existing_info['Москва'])
 
-print(f'len existing_reviews  {sum(v for k,v in existing_reviews.items())}')
-print(f'len existing_info  {sum(v for k,v in existing_info.items())}')
+# print(f'len existing_reviews  {sum(v for k,v in existing_reviews.items())}')
+# print(f'len existing_info  {sum(v for k,v in existing_info.items())}')
 
-print(set(existing_info.keys()).difference(set(existing_reviews.keys())))
+# print(set(existing_info.keys()).difference(set(existing_reviews.keys())))

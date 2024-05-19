@@ -245,6 +245,7 @@ def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True
         final_df['indicator'] = final_df['city'] + final_df['id'].astype(str)
         not_handled_df = info_df.loc[~info_df['indicator'].isin(final_df['indicator'])] #.drop(columns=['indicator'])
         
+        # TODO: существеющие отзывы тоже включаются 
         print("NOT HANDLED REVIEWS")
         not_handled_dict = info_df.groupby('city')['ID'].agg(list).to_dict()
         print(not_handled_dict)

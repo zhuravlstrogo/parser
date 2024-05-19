@@ -561,3 +561,10 @@ KeyboardInterrupt
 [2024-05-16 16:53:08,678] p12254 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:269} INFO - unique banks 511
 [2024-05-16 16:53:08,714] p12254 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:270} INFO - unique cities 357
 [2024-05-16 16:53:22,805] p12254 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:278} INFO - I saved reviews length of 66781
+[2024-05-16 17:11:17,742] p13232 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 174550
+[2024-05-16 17:11:17,895] p13232 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:257} INFO - len final_df after filter 66699
+[2024-05-16 17:11:17,968] p13232 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:268} INFO - I will save reviews length of 66641
+[2024-05-16 17:11:17,968] p13232 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:269} INFO - final_df.shape (66641, 7)
+[2024-05-16 17:11:17,969] p13232 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:270} INFO - unique banks 490
+[2024-05-16 17:11:17,998] p13232 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:271} INFO - unique cities 336
+[2024-05-16 17:11:31,609] p13232 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:279} INFO - I saved reviews length of 66641

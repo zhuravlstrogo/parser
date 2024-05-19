@@ -110,8 +110,8 @@ def get_all_reviews(cities, bank_name, path, check_existing=True):
 
         main_url = f'https://yandex.ru/maps/org/{bank_name}/'
 
-        # for k, v in cities_dict.items():
-        #     cities_dict[k] = [main_url + i for i in v] 
+        for k, v in cities_dict.items():
+            cities_dict[k] = [main_url + i for i in v] 
 
     else:
         # default-ный список 
@@ -127,13 +127,13 @@ def get_all_reviews(cities, bank_name, path, check_existing=True):
             # TODO: тип лист? 
             cities_dict[city_name] = links
 
-    print('cities_dict  ********** ')
-    print(cities_dict)
+    # print('cities_dict  ********** ')
+    # print(cities_dict)
 
     logging.info(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
 
     # передаём словарь город - список адресов банков
-    get_cities_reviews(cities_dict, bank_name)
+    get_cities_reviews(cities_dict, bank_name, path)
 
     # print("Абинск' in cities_dict 2")
     # print('Абинск' in cities_dict.keys())
@@ -192,22 +192,21 @@ if __name__ == "__main__":
 
         cities_dict[k] =new_values
 
-    get_cities_reviews(cities_dict, bank_name, path)
+    # get_cities_reviews(cities_dict, bank_name, path)
 
-    # funcs = get_all_reviews(cities, bank_name, path, check_existing=True)
-    # get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True)
+    funcs = get_all_reviews(cities, bank_name, path, check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True)
 
-    # for func in funcs:
-    #     try:
-    #         st = datetime.now()
-    #         func(cities, bank_name, path, check_existing=True)
-    #         break
-    #     except Exception as e:
-    #         logging.info(f'Error in {func}: {e}')
-    #         logging.info(f'worked {datetime.now() - st} seconds')
-    #         # # TODO: раскомментить
-    #         # time.sleep(1800)
-    #         continue
+    for func in funcs:
+        try:
+            st = datetime.now()
+            func(cities, bank_name, path, check_existing=True)
+            break
+        except Exception as e:
+            logging.info(f'Error in {func}: {e}')
+            logging.info(f'worked {datetime.now() - st} seconds')
+            # # TODO: раскомментить
+            # time.sleep(1800)
+            continue
 
 logging.info(f'I finished at {datetime.now()}')
 logging.info(f'Pipeline worked {datetime.now() - start} seconds')

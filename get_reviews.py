@@ -49,15 +49,15 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name, path):
             logging.info(f'Saved {len(df)} reviews for {id_ya}')
         # else:
         except Exception as e:
-            data = {'name': [None],
-            'date': [None],
-            'text': [None],
-            'stars': [None],
-            'answer': [None],
-            'load_time' : today}
+            # data = {'name': [None],
+            # 'date': [None],
+            # 'text': [None],
+            # 'stars': [None],
+            # 'answer': [None],
+            # 'load_time' : today}
 
-            df = pd.DataFrame(data)
-            df.to_csv(f'{path}/{directory_name}/reviews_{id_ya}.csv')
+            # df = pd.DataFrame(data)
+            # df.to_csv(f'{path}/{directory_name}/reviews_{id_ya}.csv')
             
             logging.info(f'Error in get reviews for id_ya {id_ya}: {e}')
             # TODO: сюда continue?
@@ -120,7 +120,7 @@ def get_cities_reviews(cities, bank_name, path):
                         logging.info(f'review for {yandex_bank_id} in {city_name} already exists')  
                     
                 except Exception as e:
-                    logging.info(f'ERRORed organization_url {organization_urlorganization_url} {e}')
+                    logging.info(f'ERRORed organization_url {organization_url} {e}')
                     logging.info(f'{yandex_bank_id} not handled')
                     not_handled[city_name].append(yandex_bank_id)
                     not_handled_reviews.update(not_handled)
@@ -131,14 +131,14 @@ def get_cities_reviews(cities, bank_name, path):
                     if not os.path.exists(directory_name):
                         os.makedirs(directory_name)  
 
-                    data = {'name': [None],
-                    'date': [None],
-                    'text': [None],
-                    'stars': [None],
-                    'answer': [None]}
+                    # data = {'name': [None],
+                    # 'date': [None],
+                    # 'text': [None],
+                    # 'stars': [None],
+                    # 'answer': [None]}
 
-                    df = pd.DataFrame(data)
-                    df.to_csv(f'{path}/{directory_name}/reviews_{yandex_bank_id}.csv')
+                    # df = pd.DataFrame(data)
+                    # df.to_csv(f'{path}/{directory_name}/reviews_{yandex_bank_id}.csv')
                     
                 counter -= 1
                 logging.info(f'{counter} items left')
