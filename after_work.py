@@ -243,16 +243,21 @@ def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True
         info_df = info_df[['city', 'ID']].drop_duplicates()
         info_df['indicator'] = info_df['city']+ info_df['ID'].astype(str)
         final_df['indicator'] = final_df['city'] + final_df['id'].astype(str)
+        # TODO: 
         not_handled_df = info_df.loc[~info_df['indicator'].isin(final_df['indicator'])] #.drop(columns=['indicator'])
-        
+        # print('NOT HANDLED ****** ')
+        # print(not_handled_df.sample())
+        # # print(not_handled_df[not_handled_df['indicator'] == 'Химки76465325675'])
+        # print(not_handled_df[(not_handled_df['city'] == 'Химки') & (not_handled_df['ID'] == 76465325675)])
+
         # TODO: существеющие отзывы тоже включаются 
         print("NOT HANDLED REVIEWS")
-        not_handled_dict = info_df.groupby('city')['ID'].agg(list).to_dict()
+        not_handled_dict = not_handled_df.groupby('city')['ID'].agg(list).to_dict()
         print(not_handled_dict)
 
         with open(f'not_handled_reviews_{bank_name}.pickle', 'wb') as handle:
             pickle.dump(not_handled_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
+        print("not handled reviews SAVED")
         final_df = final_df.loc[final_df['indicator'].isin(info_df['indicator'])].drop(columns=['indicator'])
         logging.info(f'len final_df after filter {len(final_df)}')
 

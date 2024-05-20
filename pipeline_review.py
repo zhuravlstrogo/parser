@@ -176,12 +176,12 @@ if __name__ == "__main__":
 #     #     update_cities_dict(duplicated_values, bank_name)
 
     
-#     # TODO: переименовать в not_handled_review
-    # with open(f'{path}/not_handled_reviews_{bank_name}.pickle', 'rb') as handle:
-    #     cities_dict = pickle.load(handle)
+    # TODO: {path}/
+    with open(f'not_handled_reviews_{bank_name}.pickle', 'rb') as handle:
+        cities_dict = pickle.load(handle)
 
-    cities_dict= {'Екатеринбург': [207304593332, 210757813545, 197157133230, 126057036045, 1046227220, 75276657208, 4886075019, 1226244982, 1124266124, 152223420751, 1013430452]}
 
+    # cities_dict= {'Челябинск': [138995344255, 132482659526, 1030580735, 1034159938]}
     main_url = f'https://yandex.ru/maps/org/{bank_name}/'
 
     for k, v in cities_dict.items():
@@ -192,9 +192,10 @@ if __name__ == "__main__":
 
         cities_dict[k] =new_values
 
-    # get_cities_reviews(cities_dict, bank_name, path)
+    # опции перечитывать конкретные города 
+    get_cities_reviews(cities_dict, bank_name, path)
 
-    funcs = get_all_reviews(cities, bank_name, path, check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True)
+    # funcs = get_all_reviews(cities, bank_name, path, check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True)
 
     for func in funcs:
         try:

@@ -12,6 +12,15 @@ from utils import find_between
 # bank_name = 'sberbank' # 108 городов не подтянулись
 bank_name = 'alfa_bank' # 145 городов не подтянулись
 
+city_name = 'Челябинск'
+links_path = Path(f'links/{bank_name}/link_{city_name}.pkl')
+
+with open(links_path, 'rb') as f:
+    bank_links = pickle.load(f)
+
+print(bank_links)
+
+
 # df = pd.read_csv('reviews_outputs/alfa_bank/Екатеринбург/reviews_1226244982.csv')
 # print(df.isnull().sum().sum())
 # print(df.shape[1]-1)

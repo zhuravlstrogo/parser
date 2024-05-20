@@ -48,8 +48,13 @@ class ParserHelper:
         :param date_string: Дата в формате %Y-%m-%dT%H:%M:%S.%fZ
         :return: Дата в формате Timestamp
         """
-        datetime_object: datetime = datetime.strptime(date_string, "%Y-%m-%dT%H:%M:%S.%fZ")
-        return datetime_object.timestamp()
+        try:
+            datetime_object = datetime.strptime(date_string, "%Y-%m-%dT%H:%M:%S.%fZ")
+            datetime_object = datetime_object.timestamp()
+        except Exception as e:
+            print(f'Error in form_date: {e}')
+            datetime_object = None
+        return datetime_object
 
     @staticmethod
     def get_count_star(review_stars: list) -> Union[float, int]:
