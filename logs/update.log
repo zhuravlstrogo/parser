@@ -1,43 +1,30 @@
-[2024-05-14 09:07:24,088] p2440 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:121} INFO - *********************************************************
-[2024-05-14 09:07:24,089] p2440 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:122} INFO - launch info pipeline for alfa_bank at 2024-05-14 09:07:24.088757
-[2024-05-14 09:07:24,090] p2440 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:153} INFO - 655 not null cities
-[2024-05-14 09:07:24,090] p2440 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:70} INFO - start get info for alfa_bank at 2024-05-14 09:07:24.090241
-[2024-05-14 09:07:24,097] p2440 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:94} INFO - 17 links are not available
-[2024-05-14 09:07:24,097] p2440 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:95} INFO - 638 links are available
-[2024-05-14 09:07:24,097] p2440 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:151} INFO - get info for banks in Москва length of 83
-[2024-05-14 09:07:27,613] p2440 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-05-14 09:07:41,095] p2525 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:121} INFO - *********************************************************
-[2024-05-14 09:07:41,096] p2525 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:122} INFO - launch info pipeline for alfa_bank at 2024-05-14 09:07:41.095869
-[2024-05-14 09:07:41,096] p2525 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:153} INFO - 655 not null cities
-[2024-05-14 09:07:41,096] p2525 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:70} INFO - start get info for alfa_bank at 2024-05-14 09:07:41.096664
-[2024-05-14 09:07:41,103] p2525 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:94} INFO - 17 links are not available
-[2024-05-14 09:07:41,103] p2525 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:95} INFO - 638 links are available
-[2024-05-14 09:07:41,108] p2525 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:107} INFO - 536 info already exists
-[2024-05-14 09:07:41,109] p2525 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:151} INFO - get info for banks in Полярные зори length of 1
-[2024-05-14 09:07:43,542] p2525 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-05-14 13:42:21,763] p1620 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+[2024-05-23 11:30:35,951] p6172 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:147} INFO - *********************************************************
+[2024-05-23 11:30:35,952] p6172 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:148} INFO - launch info pipeline for alfa_bank at 2024-05-23 11:30:35.951794
+[2024-05-23 11:30:35,952] p6172 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:161} INFO - 656 not null cities
+[2024-05-23 11:30:35,952] p6172 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:27} INFO - start get info for alfa_bank at 2024-05-23 11:30:35.952954
+[2024-05-23 11:30:35,959] p6172 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:51} INFO - 18 links are not available
+[2024-05-23 11:30:35,959] p6172 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py:52} INFO - 638 links are available
+[2024-05-23 11:30:35,960] p6172 {/Users/anyarulina/yandex-info-reviews-parser/get_info.py:154} INFO - get info for banks in Москва length of 83
+[2024-05-23 11:30:37,553] p6172 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-05-23 11:30:39,655] p6172 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
 Traceback (most recent call last):
-  File "/Users/anyarulina/yandex-info-reviews-parser/after_work.py", line 278, in <module>
-    merge_all_info(bank_name, path, drop_errors=False)
-NameError: name 'path' is not defined
-[2024-05-14 13:43:02,164] p1656 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:165} INFO - cities_without_bank 6
-[2024-05-14 13:43:02,165] p1656 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:172} INFO - final df
-[2024-05-14 13:43:02,183] p1656 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:174} INFO - final_df.shape (808, 33)
-[2024-05-14 13:43:03,311] p1656 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:187} INFO - 514 unique cities saved
-[2024-05-14 13:43:03,311] p1656 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
-Traceback (most recent call last):
-  File "/Users/anyarulina/yandex-info-reviews-parser/after_work.py", line 279, in <module>
-    merge_all_info(bank_name, path, drop_errors=False)
-  File "/Users/anyarulina/yandex-info-reviews-parser/after_work.py", line 192, in merge_all_info
-    with open('cities_1.txt') as f:
-FileNotFoundError: [Errno 2] No such file or directory: 'cities_1.txt'
-[2024-05-14 13:43:39,460] p1691 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:165} INFO - cities_without_bank 6
-[2024-05-14 13:43:39,460] p1691 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:172} INFO - final df
-[2024-05-14 13:43:39,477] p1691 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:174} INFO - final_df.shape (808, 33)
-[2024-05-14 13:43:40,021] p1691 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:187} INFO - 514 unique cities saved
-[2024-05-14 13:43:40,022] p1691 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:203} INFO - not handled 128 cities: {'Колпашево', 'Сегежа', 'Урюпинск', 'Фролово', 'Ноябрьск', 'Северобайкальск', 'Железнодорожный', 'Амурск', 'Ершов', 'Ростов-на-Дону', 'Зима', 'Жуков', 'Кемь', 'Коряжма', 'Заинск', 'Губаха', 'р.п. Сенной', 'Шимановск', 'Льгов', 'Камень-на-Оби', 'Донецк', 'Вилючинск', 'Краснознаменск', 'Горноправдинск', 'Сковородино', 'Красноармейск', 'Озёрск', 'Алексеевка', 'Полярный', 'Нарьян-Мар', 'Борзя', 'Хасавюрт', 'Саров', 'с. Красноселькуп', 'Избербаш', 'Карабулак', 'ст. Талица', 'Луховицы', 'Вихоревка', 'Агинское', 'Прохладный', 'п. Свободный', 'Буинск', 'Норильск', 'Кяхта', 'Лотошино', 'Славянск-на-Кубани', 'Назрань', 'Балабаново', 'п. Мурино', 'ЗАТО Сибирский', 'Старая Русса', 'Фурманов', 'п. Придорожный', 'Райчихинск', 'Суворов', 'Звенигово', 'Сосногорск', 'Лучегорск', 'Артёмовский', 'Пущино', 'Черноголовка', 'Карталы', 'Малиновский', 'Полярные зори', 'Шумерля', 'Анадырь', 'Дальнереченск', 'Удачный', 'Фокино', 'Советский', 'пос. Персиановский', 'Покачи', 'Алейск', 'Вышний Волочек', 'пос. Саянский', 'Оса', 'Мыски', 'Могоча', 'Дедовск', 'Лесной', 'Федоровский', 'Калачинск', 'Буй', 'Баксан', 'Кулебаки', 'ст. Павловская', 'Гудермес', 'п. Новый Ургал', 'Агрыз', 'Завитинск', 'Гагарин', 'Малгобек', 'Каспийск', 'Куровское', 'Комсомольск-на-Амуре', 'Североуральск', 'Кизляр', 'Гусиноозерск', 'Игрим', 'Шали', 'Бирск', 'Заполярный', 'Миллерово', 'п. Таксимо', 'Ейск', 'Кукмор', 'Иланский', 'Хилок', 'Минеральные воды', 'Заозёрск', 'Светлоград', 'Берёзово', 'Дзержинский', 'Семёнов', 'Тербуны', 'п. Ванино', 'Советская Гавань', 'Бронницы', 'Белоярский', 'п. Магдагачи', 'Московский', 'Тулун', 'Бологое', 'д. Жуковка', 'п. Айхал', 'Болотное', 'Козьмодемьянск'}
-[2024-05-14 16:57:28,395] p3042 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:167} INFO - cities_without_bank 6
-[2024-05-14 16:57:28,395] p3042 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:174} INFO - final df
-[2024-05-14 16:57:28,410] p3042 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:176} INFO - final_df.shape (769, 33)
-[2024-05-14 16:57:28,925] p3042 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:189} INFO - 485 unique cities saved
-[2024-05-14 16:57:28,926] p3042 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:205} INFO - not handled 157 cities: {'Полярные зори', 'Тайга', 'Коряжма', 'Ноябрьск', 'Тулун', 'Свободный', 'Шали', 'Вихоревка', 'Заинск', 'Дзержинский', 'п. Мурино', 'Алдан', 'Кемь', 'Черкесск', 'Елец', 'Бирск', 'Нарьян-Мар', 'Миллерово', 'Фурманов', 'Новый Уренгой', 'Тербуны', 'Кукмор', 'Лесной', 'Фокино', 'Буинск', 'р.п. Сенной', 'Льгов', 'Урюпинск', 'Грозный', 'Козьмодемьянск', 'п. Новый Ургал', 'Берёзово', 'Агрыз', 'Кимовск', 'Озёрск', 'Игрим', 'Кулебаки', 'Саров', 'Колпашево', 'Шимановск', 'Звенигово', 'Сковородино', 'Кировск', 'д. Жуковка', 'Борзя', 'Дербент', 'Куровское', 'ст. Талица', 'п. Таксимо', 'Избербаш', 'Кизляр', 'п. Айхал', 'Бронницы', 'Таштагол', 'Трёхгорный', 'Карабулак', 'Камень-на-Оби', 'Ува', 'Дедовск', 'Дальнереченск', 'Железнодорожный', 'Ростов-на-Дону', 'Гагарин', 'Хасавюрт', 'Североуральск', 'Балабаново', 'Фролово', 'Московский', 'Иланский', 'Буй', 'Болотное', 'Донецк', 'Ершов', 'Лучегорск', 'Боготол', 'Светлоград', 'Пущино', 'ЗАТО Сибирский', 'Покачи', 'Сортавала', 'Зима', 'Кяхта', 'Заозёрск', 'Аргун', 'Вышний Волочек', 'Губаха', 'Жуков', 'Баксан', 'Федоровский', 'Камышлов', 'Советская Гавань', 'Калачинск', 'Сальск', 'Строитель', 'ст. Павловская', 'Бологое', 'Шумерля', 'Гуково', 'Хилок', 'Удачный', 'Могоча', 'Старая Русса', 'Славянск-на-Кубани', 'Артёмовский', 'п. Придорожный', 'Белоярский', 'Каспийск', 'Нижнесортымский', 'Минеральные воды', 'Оса', 'Горноправдинск', 'Суворов', 'Балтийск', 'п. Ванино', 'Анадырь', 'Сегежа', 'Алексеевка', 'Мыски', 'Семёнов', 'Кинешма', 'Карталы', 'Хотьково', 'п. Светлый', 'Норильск', 'Заполярный', 'Малиновский', 'Алейск', 'пос. Персиановский', 'Гудермес', 'Райчихинск', 'Лабытнанги', 'Кушва', 'Лотошино', 'Прохладный', 'Назрань', 'Краснознаменск', 'пос. Саянский', 'п. Магдагачи', 'Комсомольск-на-Амуре', 'Полярный', 'Амурск', 'Ейск', 'Талдом', 'Советский', 'Топки', 'Черноголовка', 'Агинское', 'Гусиноозерск', 'Северобайкальск', 'Малгобек', 'с. Красноселькуп', 'Луховицы', 'Завитинск', 'Вилючинск', 'Сосногорск', 'п. Свободный', 'Красноармейск'}
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 163, in <module>
+    get_all_info(cities, bank_name, path, check_existing=False)
+  File "/Users/anyarulina/yandex-info-reviews-parser/pipeline_info.py", line 71, in get_all_info
+    get_cities_info(cities_copy, bank_name, path)
+  File "/Users/anyarulina/yandex-info-reviews-parser/get_info.py", line 161, in get_cities_info
+    driver = undetected_chromedriver.Chrome(options=opts)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/selenium/webdriver/chromium/webdriver.py", line 50, in __init__
+    self.service.start()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 106, in start
+    sleep(min(0.01 + 0.05 * count, 0.5))
+KeyboardInterrupt
+[2024-05-23 11:30:52,975] p6250 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_links.py:66} INFO - launch get links for alfa_bank at 2024-05-23 11:30:52.975966
+[2024-05-23 11:30:52,976] p6250 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_links.py:72} INFO - 656 not null cities
+[2024-05-23 11:30:52,976] p6250 {/Users/anyarulina/yandex-info-reviews-parser/pipeline_links.py:30} INFO - start get links for alfa_bank at 2024-05-23 11:30:52.976553
+[2024-05-23 11:30:52,977] p6250 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:103} INFO - I will get links for 656 cities
+[2024-05-23 11:30:52,977] p6250 {/Users/anyarulina/yandex-info-reviews-parser/get_links.py:108} INFO - sleeping for 21.01 seconds

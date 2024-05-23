@@ -173,3 +173,4 @@ config.py
 
 *.pickle
 *.pkl
+*.zip

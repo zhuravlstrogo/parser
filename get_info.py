@@ -78,6 +78,8 @@ class Parser:
         """получаем инфо по всем банкам/ссылкам в городе hrefs - название, адресс и тд"""
         self.driver.maximize_window()
         self.driver.get('https://yandex.ru/maps')
+
+        today = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
         
         N = len(hrefs)
         counter = N
@@ -114,7 +116,8 @@ class Parser:
                         
                     #     df = pd.concat([df_now_handled,df_not_null], axis=1)
                     #     logging.info('assert ', df.shape, len(outputs))
-                    
+                
+                df['load_time'] = today
                 df.to_csv(f'{path}/{directory_name}/{city_name}_info.csv')
                 logging.info(f'df info saved')
                 counter -= 1 
@@ -180,6 +183,7 @@ def get_cities_info(cities, bank_name, path):
             logging.info(f'sleep for {N} seconds')
             sleep(N)
         except Exception as e:
+            # TODO: сохранять пустой df c loadtime ?
             logging.info(f'Error in get info for banks in {city_name}, error: {e}')
             continue
         
@@ -194,7 +198,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     bank_name = args.bank_name
-    path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
+    path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
     setup_logging()
 
     cities = {'Кострома':99532788218}

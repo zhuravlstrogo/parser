@@ -73,8 +73,12 @@ def get_not_handled_reviews(bank_name, path):
     not_handled_cities = list(set(existing_links.keys()).difference(set(existing_reviews.keys())))
     for city_name in not_handled_cities:
         links_path = Path(f'links/{bank_name}/link_{city_name}.pkl')
-        with open(links_path, 'rb') as f:
-            links = pickle.load(f)
+        # TODO: поумнее
+        try:
+            with open(links_path, 'rb') as f:
+                links = pickle.load(f)
+        except:
+            links = None
 
         not_handled_reviews[city_name] = links
 
@@ -102,32 +106,34 @@ def get_all_reviews(cities, bank_name, path, check_existing=True):
     if check_existing:
         cities_dict = get_not_handled_reviews(bank_name, path)
 
-        
-
         cities_dict = {k:v for k,v in cities_dict.items() if k in cities and v != []}
 
         main_url = f'https://yandex.ru/maps/org/{bank_name}/'
 
-        # for k, v in cities_dict.items():
-        #     cities_dict[k] = [main_url + i for i in v] 
+        for k, v in cities_dict.items():
+            cities_dict[k] = [main_url + i for i in v] 
 
     else:
         # default-ный список 
         cities_dict = {}
         for city_name in cities:
             links_path = Path(f'{path}/links/{bank_name}/link_{city_name}.pkl')
-            with open(links_path, 'rb') as f:
-                links = pickle.load(f)
+            # TODO: поумнее 
+            try:
+                with open(links_path, 'rb') as f:
+                    links = pickle.load(f)
+            except:
+                links = None
             # TODO: тип лист? 
             cities_dict[city_name] = links
 
-    print('cities_dict  ********** ')
-    print(cities_dict)
+    # print('cities_dict  ********** ')
+    # print(cities_dict)
 
     logging.info(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
 
     # передаём словарь город - список адресов банков
-    get_cities_reviews(cities_dict, bank_name)
+    get_cities_reviews(cities_dict, bank_name, path)
 
     # print("Абинск' in cities_dict 2")
     # print('Абинск' in cities_dict.keys())
@@ -144,24 +150,16 @@ if __name__ == "__main__":
 
     bank_name = args.bank_name
     print(f"bank_name {bank_name}")
-    path = '' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
+    path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
 
     setup_logging()
     start = datetime.now()
 
     logging.info(f"start pipeline for {bank_name} at {start}")
 
-
-
     with open('cities.txt') as f:
         cities = [x.strip('\n') for x in f ]
-
-    # print("Абинск' in cities?")
-    # print('Абинск' in cities)
-
-    # cities = ['Абинск']
     logging.info(f'{len(cities)} cities in input')
-
 
 #     # review_path  =f'info_output/{bank_name}/'
 #     # review_files = [f for f in listdir(info_path) if isfile(join(info_path, f))]
@@ -178,11 +176,26 @@ if __name__ == "__main__":
 #     #     update_cities_dict(duplicated_values, bank_name)
 
     
-#     # TODO: раскомментить
-    funcs = get_all_reviews(cities, bank_name, path, check_existing=True)
-    # , get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True), get_all_reviews(cities, bank_name, check_existing=True)
+    # TODO: {path}/
+    with open(f'not_handled_reviews_{bank_name}.pickle', 'rb') as handle:
+        cities_dict = pickle.load(handle)
 
-    
+
+    # cities_dict= {'Челябинск': [138995344255, 132482659526, 1030580735, 1034159938]}
+    main_url = f'https://yandex.ru/maps/org/{bank_name}/'
+
+    for k, v in cities_dict.items():
+        new_values = []
+        for i in range(len(v)):
+
+            new_values.append(main_url + str(v[i]))
+
+        cities_dict[k] =new_values
+
+    # опции перечитывать конкретные города 
+    get_cities_reviews(cities_dict, bank_name, path)
+
+    # funcs = get_all_reviews(cities, bank_name, path, check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True)
 
     for func in funcs:
         try:
