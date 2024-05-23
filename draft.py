@@ -12,34 +12,53 @@ from utils import find_between
 # bank_name = 'sberbank' # 108 городов не подтянулись
 bank_name = 'alfa_bank' # 145 городов не подтянулись
 
-city_name = 'Челябинск'
-links_path = Path(f'links/{bank_name}/link_{city_name}.pkl')
 
-with open(links_path, 'rb') as f:
-    bank_links = pickle.load(f)
+links_path  =f'links/{bank_name}/'
+only_links_files = [f for f in listdir(links_path) if isfile(join(links_path, f))]
 
-print(bank_links)
+for f in only_links_files:
+    print('f')
+    print(f)
+    try:
+        with open(f, 'rb') as handle:
+            city_links = pickle.load(handle)
+
+        for link in city_links:
+            print('link ', link)
+            if '{path}' in link:
+                print(link)
+    except:
+        pass
+        # print(f)
+
+# city_name = 'Челябинск'
+# links_path = Path(f'links/{bank_name}/link_{city_name}.pkl')
+
+# with open(links_path, 'rb') as f:
+#     bank_links = pickle.load(f)
+
+# print(bank_links)
 
 
 # df = pd.read_csv('reviews_outputs/alfa_bank/Екатеринбург/reviews_1226244982.csv')
 # print(df.isnull().sum().sum())
 # print(df.shape[1]-1)
 
-reviews_path  =f'reviews_outputs/{bank_name}/'
+# reviews_path  =f'reviews_outputs/{bank_name}/'
 
-existing_reviews = {}
-for path, dirs, files in os.walk(reviews_path, topdown=False):
-    try:
-        for name in files:
-            df = pd.read_csv(os.path.join(path, name))
+# existing_reviews = {}
+# for path, dirs, files in os.walk(reviews_path, topdown=False):
+#     try:
+#         for name in files:
+#             df = pd.read_csv(os.path.join(path, name))
 
-            if df.isnull().sum().sum() == df.shape[1]-1:
-                os.remove(os.path.join(path, name))
-        # k = root.replace(reviews_path, '')
-        # v = [find_between(f, first=f'reviews_', last='.csv')[0] for f in files]
-        # existing_reviews[k] = v
-    except:
-        pass
+#             if df.isnull().sum().sum() == df.shape[1]-1:
+#                 os.remove(os.path.join(path, name))
+#         # k = root.replace(reviews_path, '')
+#         # v = [find_between(f, first=f'reviews_', last='.csv')[0] for f in files]
+#         # existing_reviews[k] = v
+#     except:
+#         pass
 
 # with open('cities.txt') as f:
 #     input_cities = [x.strip('\n') for x in f ]

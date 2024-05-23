@@ -244,7 +244,7 @@ def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True
         info_df['indicator'] = info_df['city']+ info_df['ID'].astype(str)
         final_df['indicator'] = final_df['city'] + final_df['id'].astype(str)
         # TODO: 
-        not_handled_df = info_df.loc[~info_df['indicator'].isin(final_df['indicator'])] #.drop(columns=['indicator'])
+        not_handled_df = info_df.loc[~info_df['indicator'].isin(final_df['indicator'])].drop(columns=['indicator'])
         # print('NOT HANDLED ****** ')
         # print(not_handled_df.sample())
         # # print(not_handled_df[not_handled_df['indicator'] == 'Химки76465325675'])

@@ -12,58 +12,15 @@ from os import listdir
 from os.path import isfile, join
 import sys
 import argparse
-
-from get_links import get_bank_links
-from get_info import get_cities_info
-from config import apikey
-
 from functools import wraps
 
-from call_yandex_api_org import update_cities_dict, get_duplicated_ids
+from get_info import get_cities_info
+from config import apikey
 from after_work import merge_all_info
 from log import setup_logging
 
 
-# def timing(f):
-#     @wraps(f)
-#     def wrap(*args, **kw):
-#         ts = time()
-#         result = f(*args, **kw)
-#         te = time()
-#         logging.info('func:%r took: %2.4f sec' % \
-#           (f.__name__, te-ts))
-#         return result
-#     return wrap
 
-
-# @timing
-def get_all_links(cities, bank_name, path, check_existing=False):       
-    """формирует список банков-ссылок для всех городов и сохраняет в /links/bank_name/"""     
-    start = datetime.now()
-    logging.info(f"start get links for {bank_name} at {start}")
-
-    cities_copy = deepcopy(cities)
-    cities_keys = list(cities_copy.keys())
-    
-    if check_existing:
-        existing_links = []
-        for key in cities_keys:
-            # проверка на то, что файл links для этого города уже существует 
-            existing_link = Path(f'{path}/links/{bank_name}/link_{key}.pkl')
-            
-            if existing_link.is_file():
-                existing_links.append(key)
-                del cities_copy[key]
-            # else:
-                # print(existing_link)
-        logging.info(f'{len(existing_links)} links already exists')
-        
-    get_bank_links(cities_copy, bank_name, path)
-    logging.info(f'Got links in {datetime.now() - start} seconds')
-
-    
-
-# @timing
 def get_all_info(cities, bank_name, path, check_existing=False):
     """формирует datafram-ы с информацией по всем банкам по всем городам в /info_output/bank_name/""" 
     start = datetime.now()
@@ -186,9 +143,25 @@ if __name__ == "__main__":
     path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
 
     setup_logging()
-    # launch_info_pipeline(bank_name=bank_name, path=path, check_existing=False)
+    start = datetime.now()
+    logging.info('*********************************************************')
+    logging.info(f"launch info pipeline for {bank_name} at {start}")
 
-    # можно передавать ограниченный список городов, будут обрабатываться только они 
-    cities_list = ['Балтийск',  'Нижнесортымский', 'п. Мурино', 'Нарьян-Мар', 'Лабытнанги', 'Алексеевка', 'Кинешма', 'Калачинск', 'Елец',  'Озерск',  'Вышний Волочёк']
-    # cities_list = [ 'Гусиноозёрск', 'Минеральные воды', 'п. Мурино', 'Лысьва', 'Вышний Волочёк', 'Сосновый Бор', 'Железнодорожный']
-    launch_info_pipeline(bank_name=bank_name, path=path, cities_list=cities_list, check_existing=False)
+    cities_list = False
+
+    cities_path = f'{path}/cities_dict_{bank_name}.pickle'
+    with open(cities_path, 'rb') as handle:
+        cities = pickle.load(handle)
+
+    if cities_list:
+        cities = {k: v for k, v in cities.items() if k in cities_list}
+        print(f'len cities_list {len(cities_list)}')
+
+    cities = {k: v for k, v in cities.items() if v != 0}
+    logging.info(f'{len(cities)} not null cities')
+
+    get_all_info(cities, bank_name, path, check_existing=False)
+
+    merge_all_info(bank_name, path)
+    logging.info(f'I finished at {datetime.now()}')
+    logging.info(f'Pipeline worked {datetime.now() - start} seconds')
