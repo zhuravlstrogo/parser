@@ -1,0 +1,139 @@
+[2024-05-19 11:19:14,689] p13596 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 181901
+[2024-05-19 11:19:14,863] p13596 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:257} INFO - len final_df after filter 68090
+[2024-05-19 11:19:14,958] p13596 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:268} INFO - I will save reviews length of 67826
+[2024-05-19 11:19:14,958] p13596 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:269} INFO - final_df.shape (67826, 8)
+[2024-05-19 11:19:14,959] p13596 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:270} INFO - unique banks 536
+[2024-05-19 11:19:14,996] p13596 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:271} INFO - unique cities 382
+[2024-05-19 11:19:30,641] p13596 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:279} INFO - I saved reviews length of 67826
+[2024-05-19 11:29:26,777] p14048 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 181901
+[2024-05-19 11:29:26,939] p14048 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:260} INFO - len final_df after filter 68090
+[2024-05-19 11:29:27,019] p14048 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:271} INFO - I will save reviews length of 67826
+[2024-05-19 11:29:27,019] p14048 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:272} INFO - final_df.shape (67826, 8)
+[2024-05-19 11:29:27,020] p14048 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:273} INFO - unique banks 536
+[2024-05-19 11:29:27,051] p14048 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:274} INFO - unique cities 382
+[2024-05-19 11:29:43,506] p14048 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:282} INFO - I saved reviews length of 67826
+[2024-05-19 11:31:12,328] p14128 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 181901
+[2024-05-19 11:31:12,485] p14128 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:260} INFO - len final_df after filter 68090
+[2024-05-19 11:31:12,564] p14128 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:271} INFO - I will save reviews length of 67826
+[2024-05-19 11:31:12,564] p14128 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:272} INFO - final_df.shape (67826, 8)
+[2024-05-19 11:31:12,565] p14128 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:273} INFO - unique banks 536
+[2024-05-19 11:31:12,596] p14128 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:274} INFO - unique cities 382
+[2024-05-19 11:31:28,936] p14128 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:282} INFO - I saved reviews length of 67826
+[2024-05-19 11:32:21,408] p14178 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 181901
+[2024-05-19 11:32:21,494] p14178 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/after_work.py", line 302, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/after_work.py", line 250, in merge_all_reviews
+    print(not_handled_df[(not_handled_df['city'] == 'Химки') & (not_handled_df['id'] == 76465325675)])
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'id'
+[2024-05-19 11:32:45,663] p14215 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 181901
+[2024-05-19 11:32:45,753] p14215 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/after_work.py", line 303, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/after_work.py", line 251, in merge_all_reviews
+    print(not_handled_df[(not_handled_df['city'] == 'Химки') & (not_handled_df['id'] == 76465325675)])
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'id'
+[2024-05-19 11:33:09,156] p14258 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 181901
+[2024-05-19 11:33:09,319] p14258 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:262} INFO - len final_df after filter 68090
+[2024-05-19 11:33:09,400] p14258 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:273} INFO - I will save reviews length of 67826
+[2024-05-19 11:33:09,400] p14258 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:274} INFO - final_df.shape (67826, 8)
+[2024-05-19 11:33:09,401] p14258 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:275} INFO - unique banks 536
+[2024-05-19 11:33:09,432] p14258 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:276} INFO - unique cities 382
+[2024-05-19 11:33:44,284] p14308 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 181901
+[2024-05-19 11:33:44,443] p14308 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:262} INFO - len final_df after filter 68090
+[2024-05-19 11:33:44,519] p14308 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:273} INFO - I will save reviews length of 67826
+[2024-05-19 11:33:44,519] p14308 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:274} INFO - final_df.shape (67826, 8)
+[2024-05-19 11:33:44,520] p14308 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:275} INFO - unique banks 536
+[2024-05-19 11:33:44,551] p14308 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:276} INFO - unique cities 382
+[2024-05-19 11:33:58,149] p14308 {/Users/anyarulina/yandex-info-reviews-parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/yandex-info-reviews-parser/after_work.py", line 303, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/yandex-info-reviews-parser/after_work.py", line 281, in merge_all_reviews
+    final_df.to_excel(f'{path}/reviews_all/{bank_name}_reviews_{today}.xlsx', index=False)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/io/formats/excel.py", line 904, in write
+    writer.close()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/io/excel/_base.py", line 1205, in close
+    self.save()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/io/excel/_openpyxl.py", line 81, in save
+    self.book.save(self.handles.handle)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/workbook/workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/writer/excel.py", line 294, in save_workbook
+    writer.save()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/writer/excel.py", line 275, in save
+    self.write_data()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/writer/excel.py", line 77, in write_data
+    self._write_worksheets()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/writer/excel.py", line 215, in _write_worksheets
+    self.write_worksheet(ws)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/writer/excel.py", line 203, in write_worksheet
+    self._archive.write(writer.out, ws.path[1:])
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/zipfile.py", line 1771, in write
+    shutil.copyfileobj(src, dest, 1024*8)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/zipfile.py", line 1138, in write
+    self._fileobj.write(data)
+OSError: [Errno 28] No space left on device
+[2024-05-19 11:47:21,249] p14806 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 181901
+[2024-05-19 11:47:21,407] p14806 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:262} INFO - len final_df after filter 68090
+[2024-05-19 11:47:21,488] p14806 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:273} INFO - I will save reviews length of 67826
+[2024-05-19 11:47:21,488] p14806 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:274} INFO - final_df.shape (67826, 8)
+[2024-05-19 11:47:21,490] p14806 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:275} INFO - unique banks 536
+[2024-05-19 11:47:21,520] p14806 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:276} INFO - unique cities 382
+[2024-05-19 11:47:37,173] p14806 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:284} INFO - I saved reviews length of 67826
+[2024-05-19 19:12:52,220] p18406 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 181901
+[2024-05-19 19:12:52,378] p18406 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:262} INFO - len final_df after filter 68090
+[2024-05-19 19:12:52,456] p18406 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:273} INFO - I will save reviews length of 67826
+[2024-05-19 19:12:52,456] p18406 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:274} INFO - final_df.shape (67826, 8)
+[2024-05-19 19:12:52,457] p18406 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:275} INFO - unique banks 536
+[2024-05-19 19:12:52,488] p18406 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:276} INFO - unique cities 382
+[2024-05-19 19:13:08,049] p18406 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:284} INFO - I saved reviews length of 67826
+[2024-05-19 19:14:54,206] p18486 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 181909
+[2024-05-19 19:14:54,357] p18486 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:262} INFO - len final_df after filter 68094
+[2024-05-19 19:14:54,435] p18486 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:273} INFO - I will save reviews length of 67830
+[2024-05-19 19:14:54,435] p18486 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:274} INFO - final_df.shape (67830, 8)
+[2024-05-19 19:14:54,437] p18486 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:275} INFO - unique banks 538
+[2024-05-19 19:14:54,467] p18486 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:276} INFO - unique cities 384
+[2024-05-19 19:15:10,315] p18486 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:284} INFO - I saved reviews length of 67830
+[2024-05-19 20:43:20,307] p19564 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:240} INFO - len final_df before filter 691373
+[2024-05-19 20:43:20,897] p19564 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:262} INFO - len final_df after filter 466227
+[2024-05-19 20:43:21,411] p19564 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:273} INFO - I will save reviews length of 466176
+[2024-05-19 20:43:21,412] p19564 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:274} INFO - final_df.shape (466176, 8)
+[2024-05-19 20:43:21,419] p19564 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:275} INFO - unique banks 3518
+[2024-05-19 20:43:21,662] p19564 {/Users/anyarulina/yandex-info-reviews-parser/after_work.py:276} INFO - unique cities 617
