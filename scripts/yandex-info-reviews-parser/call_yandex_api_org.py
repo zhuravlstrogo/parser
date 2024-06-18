@@ -340,7 +340,7 @@ if __name__ == "__main__":
     parser.add_argument('-path_type', type=int)
     args = parser.parse_args()
 
-    setup_logging()
+    setup_logging(path)
     
     bank_name = args.bank_name
     print(f"bank_name {bank_name}")

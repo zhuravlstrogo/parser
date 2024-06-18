@@ -302,7 +302,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     bank_name = args.bank_name
     path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
-    setup_logging()
+    setup_logging(path)
     # merge_all_info(bank_name, path, drop_errors=False)
 
     merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)

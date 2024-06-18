@@ -152,7 +152,7 @@ if __name__ == "__main__":
     print(f"bank_name {bank_name}")
     path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
 
-    setup_logging()
+    setup_logging(path)
     start = datetime.now()
 
     logging.info(f"start pipeline for {bank_name} at {start}")

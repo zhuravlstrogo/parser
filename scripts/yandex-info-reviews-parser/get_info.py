@@ -199,7 +199,7 @@ if __name__ == "__main__":
 
     bank_name = args.bank_name
     path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
-    setup_logging()
+    setup_logging(path)
 
     cities = {'Кострома':99532788218}
     get_cities_info(cities, bank_name, path)

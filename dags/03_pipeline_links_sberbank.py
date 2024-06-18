@@ -26,7 +26,7 @@ dag = DAG(
     f'{DAG_NAME}',
     default_args=default_args,
     tags=['yandex'],
-    schedule_interval='56 9 2,17 * *'
+    schedule_interval='56 9 17 * *'
 )
 
 pipeline_links_sberbank = BashOperator(

@@ -4,17 +4,14 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 
 
-# sys.path.append('/opt/airflow/dags/internal-bi-project/logs')
-sys.path.append(os.path.abspath('../logs'))
 
-
-def setup_logging():
+def setup_logging(path):
     log_formatter = logging.Formatter(
         "[%(asctime)s] p%(process)s {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s"
     )
 
     time_rot_log_handler = TimedRotatingFileHandler(
-        "logs/update.log", when="midnight", backupCount=100
+        f"{path}logs/update.log", when="midnight", backupCount=100
     )
     time_rot_log_handler.setFormatter(log_formatter)
 

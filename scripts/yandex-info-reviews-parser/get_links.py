@@ -174,6 +174,6 @@ if __name__ == "__main__":
 
     bank_name = args.bank_name
     path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
-    setup_logging()
+    setup_logging(path)
     cities = {'Нефтеюганск' : 21755334894}
     get_bank_links(cities, bank_name, path)

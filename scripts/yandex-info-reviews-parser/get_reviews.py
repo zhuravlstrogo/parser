@@ -175,7 +175,7 @@ if __name__ == "__main__":
 
     bank_name = args.bank_name
     path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
-    setup_logging()
+    setup_logging(path)
     parse_ans_save_reviews(1066499300, "Москва", bank_name), path
     
     cities = {}
