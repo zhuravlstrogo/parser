@@ -118,6 +118,8 @@ class Parser:
                     #     logging.info('assert ', df.shape, len(outputs))
                 
                 df['load_time'] = today
+                print(f'PATH _-------_ {path}')
+                print(f'{path}/{directory_name}/{city_name}_info.csv')
                 df.to_csv(f'{path}/{directory_name}/{city_name}_info.csv')
                 logging.info(f'df info saved')
                 counter -= 1 
@@ -136,6 +138,7 @@ class Parser:
                 sleep(round(random.uniform(5.1, 5.9), 2))
             else:
                 logging.info('I tired, it is time to sleep')
+                self.driver.close()
                 self.driver.quit()
                 sleep(round(random.uniform(30.1, 39.9), 2)) # was higher
                 self.driver.get(f"{main_url}/{yandex_bank_id}")
@@ -154,6 +157,8 @@ def get_cities_info(cities, bank_name, path):
         logging.info(f'get info for banks in {city_name} length of {len(all_hrefs)}')
         try:
             opts = undetected_chromedriver.ChromeOptions()
+            opts.add_argument("--disable-renderer-backgrounding")
+            opts.add_argument("--disable-extensions")
             opts.add_argument('--no-sandbox')
             opts.add_argument('--disable-dev-shm-usage')
             opts.add_argument('headless')

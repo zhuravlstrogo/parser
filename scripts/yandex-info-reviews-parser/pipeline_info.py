@@ -140,7 +140,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     bank_name = args.bank_name
-    path = '.' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
+    # TODO: home
+    path = '/Users/anyarulina/yandex-info-reviews-parser/scripts/yandex-info-reviews-parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex-info-reviews-parser/'
 
     setup_logging(path)
     start = datetime.now()
@@ -148,6 +149,7 @@ if __name__ == "__main__":
     logging.info(f"launch info pipeline for {bank_name} at {start}")
 
     cities_list = False
+    # cities_list = ['Ульяновск']
 
     cities_path = f'{path}/cities_dict_{bank_name}.pickle'
     with open(cities_path, 'rb') as handle:

@@ -39,6 +39,8 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
     """формирует список ссыллок-банков для текущего банка id из яндекс карт из раздела Филиалы"""
     
     opts = undetected_chromedriver.ChromeOptions()
+    opts.add_argument("--disable-renderer-backgrounding")
+    opts.add_argument("--disable-extensions")
     opts.add_argument('--no-sandbox')
     opts.add_argument('--disable-dev-shm-usage')
     opts.add_argument('headless')
