@@ -31,7 +31,7 @@ dag = DAG(
 
 pipeline_reviews_sberbank = BashOperator(
     task_id = 'pipeline_reviews_sberbank',
-    bash_command='python3 /opt/airflow/scripts/yandex-info-reviews-parser/pipeline_review.py -path_type 1 -bank_name sverbank',
+    bash_command='python3 /opt/airflow/scripts/parser/pipeline_review.py -path_type 1 -bank_name sverbank',
     execution_timeout=timedelta(minutes=50000),
     dag=dag
 )

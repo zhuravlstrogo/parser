@@ -1,0 +1,1513 @@
+[2024-05-01 17:29:25,438] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:193} INFO - current limit is 500
+[2024-05-01 17:29:25,614] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Абакан yndx_id 1657685442
+[2024-05-01 17:29:27,620] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 1 cities updated in cities dictionary
+[2024-05-01 17:29:27,866] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Абинск yndx_id 1069925679
+[2024-05-01 17:29:29,873] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 2 cities updated in cities dictionary
+[2024-05-01 17:29:30,107] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Агинское
+[2024-05-01 17:29:30,108] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Агинское yndx_id 0
+[2024-05-01 17:29:32,113] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 3 cities updated in cities dictionary
+[2024-05-01 17:29:32,284] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Агрыз yndx_id 1092753653
+[2024-05-01 17:29:34,290] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 4 cities updated in cities dictionary
+[2024-05-01 17:29:34,524] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Азов yndx_id 1198153462
+[2024-05-01 17:29:36,530] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 5 cities updated in cities dictionary
+[2024-05-01 17:29:36,761] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Аксай
+[2024-05-01 17:29:36,762] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Аксай yndx_id 0
+[2024-05-01 17:29:38,768] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 6 cities updated in cities dictionary
+[2024-05-01 17:29:38,976] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Алапаевск
+[2024-05-01 17:29:38,977] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Алапаевск yndx_id 0
+[2024-05-01 17:29:40,981] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 7 cities updated in cities dictionary
+[2024-05-01 17:29:41,212] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Алатырь yndx_id 1264127508
+[2024-05-01 17:29:43,219] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 8 cities updated in cities dictionary
+[2024-05-01 17:29:43,416] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Алдан yndx_id 1102863907
+[2024-05-01 17:29:45,422] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 9 cities updated in cities dictionary
+[2024-05-01 17:29:45,646] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Алейск
+[2024-05-01 17:29:45,647] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Алейск yndx_id 0
+[2024-05-01 17:29:47,653] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 10 cities updated in cities dictionary
+[2024-05-01 17:29:47,850] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Александров yndx_id 1132064355
+[2024-05-01 17:29:49,857] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 11 cities updated in cities dictionary
+[2024-05-01 17:29:50,127] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Алексеевка yndx_id 1226123722
+[2024-05-01 17:29:52,133] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 12 cities updated in cities dictionary
+[2024-05-01 17:29:52,325] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Алексин yndx_id 1154559672
+[2024-05-01 17:29:54,327] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 13 cities updated in cities dictionary
+[2024-05-01 17:29:54,529] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Альметьевск
+[2024-05-01 17:29:54,530] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Альметьевск yndx_id 0
+[2024-05-01 17:29:56,532] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 14 cities updated in cities dictionary
+[2024-05-01 17:29:56,775] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Амурск yndx_id 1013558396
+[2024-05-01 17:29:58,777] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 15 cities updated in cities dictionary
+[2024-05-01 17:29:59,029] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Анадырь yndx_id 239747306332
+[2024-05-01 17:30:01,036] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 16 cities updated in cities dictionary
+[2024-05-01 17:30:01,304] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Анапа yndx_id 1059004526
+[2024-05-01 17:30:03,307] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 17 cities updated in cities dictionary
+[2024-05-01 17:30:04,369] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ангарск yndx_id 1075009808
+[2024-05-01 17:30:06,372] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 18 cities updated in cities dictionary
+[2024-05-01 17:30:06,617] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Анжеро-Судженск yndx_id 1109758211
+[2024-05-01 17:30:08,623] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 19 cities updated in cities dictionary
+[2024-05-01 17:30:08,868] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Апрелевка yndx_id 1110576565
+[2024-05-01 17:30:10,875] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 20 cities updated in cities dictionary
+[2024-05-01 17:30:11,332] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Апшеронск yndx_id 67809410023
+[2024-05-01 17:30:13,339] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 21 cities updated in cities dictionary
+[2024-05-01 17:30:13,597] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Аргун yndx_id 82799828973
+[2024-05-01 17:30:15,604] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 22 cities updated in cities dictionary
+[2024-05-01 17:30:15,859] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Арзамас yndx_id 1340405228
+[2024-05-01 17:30:17,866] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 23 cities updated in cities dictionary
+[2024-05-01 17:30:18,076] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Армавир yndx_id 1149124790
+[2024-05-01 17:30:20,083] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 24 cities updated in cities dictionary
+[2024-05-01 17:30:20,321] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Арсеньев
+[2024-05-01 17:30:20,322] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Арсеньев yndx_id 0
+[2024-05-01 17:30:22,328] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 25 cities updated in cities dictionary
+[2024-05-01 17:30:22,574] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Арск yndx_id 3728009499
+[2024-05-01 17:30:24,581] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 26 cities updated in cities dictionary
+[2024-05-01 17:30:24,779] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Артем
+[2024-05-01 17:30:24,779] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Артем yndx_id 0
+[2024-05-01 17:30:26,786] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 27 cities updated in cities dictionary
+[2024-05-01 17:30:27,203] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Артемовский yndx_id 200864829887
+[2024-05-01 17:30:29,207] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 28 cities updated in cities dictionary
+[2024-05-01 17:30:29,440] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Архангельск yndx_id 1013292260
+[2024-05-01 17:30:31,445] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 29 cities updated in cities dictionary
+[2024-05-01 17:30:31,645] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Асбест yndx_id 1110160848
+[2024-05-01 17:30:33,652] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 30 cities updated in cities dictionary
+[2024-05-01 17:30:33,861] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Асино yndx_id 1129241620
+[2024-05-01 17:30:35,868] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 31 cities updated in cities dictionary
+[2024-05-01 17:30:36,063] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Астрахань yndx_id 1144185469
+[2024-05-01 17:30:38,070] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 32 cities updated in cities dictionary
+[2024-05-01 17:30:38,286] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Аткарск yndx_id 1240075353
+[2024-05-01 17:30:40,293] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 33 cities updated in cities dictionary
+[2024-05-01 17:30:40,488] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ахтубинск yndx_id 1651286657
+[2024-05-01 17:30:42,495] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 34 cities updated in cities dictionary
+[2024-05-01 17:30:42,718] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ачинск yndx_id 1074626699
+[2024-05-01 17:30:44,725] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 35 cities updated in cities dictionary
+[2024-05-01 17:30:44,929] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Баксан yndx_id 1562745039
+[2024-05-01 17:30:46,936] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 36 cities updated in cities dictionary
+[2024-05-01 17:30:47,131] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Балабаново yndx_id 129249571302
+[2024-05-01 17:30:49,138] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 37 cities updated in cities dictionary
+[2024-05-01 17:30:49,350] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Балаково yndx_id 1063283952
+[2024-05-01 17:30:51,357] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 38 cities updated in cities dictionary
+[2024-05-01 17:30:51,555] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Балахна yndx_id 1047129550
+[2024-05-01 17:30:53,561] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 39 cities updated in cities dictionary
+[2024-05-01 17:30:53,803] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Балашиха yndx_id 116580378923
+[2024-05-01 17:30:55,810] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 40 cities updated in cities dictionary
+[2024-05-01 17:30:56,008] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Балашов yndx_id 15584478221
+[2024-05-01 17:30:58,016] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 41 cities updated in cities dictionary
+[2024-05-01 17:30:58,222] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Балтийск
+[2024-05-01 17:30:58,223] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Балтийск yndx_id 0
+[2024-05-01 17:31:00,229] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 42 cities updated in cities dictionary
+[2024-05-01 17:31:00,845] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Барабинск yndx_id 1043416014
+[2024-05-01 17:31:02,852] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 43 cities updated in cities dictionary
+[2024-05-01 17:31:03,055] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Барнаул yndx_id 1004476506
+[2024-05-01 17:31:05,059] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 44 cities updated in cities dictionary
+[2024-05-01 17:31:05,307] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Батайск
+[2024-05-01 17:31:05,308] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Батайск yndx_id 0
+[2024-05-01 17:31:07,314] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 45 cities updated in cities dictionary
+[2024-05-01 17:31:07,531] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Белая Калитва yndx_id 1005499618
+[2024-05-01 17:31:09,538] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 46 cities updated in cities dictionary
+[2024-05-01 17:31:09,805] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Белгород yndx_id 1178701689
+[2024-05-01 17:31:11,812] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 47 cities updated in cities dictionary
+[2024-05-01 17:31:12,015] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Белебей
+[2024-05-01 17:31:12,016] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Белебей yndx_id 0
+[2024-05-01 17:31:14,022] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 48 cities updated in cities dictionary
+[2024-05-01 17:31:14,233] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Белово yndx_id 1066255666
+[2024-05-01 17:31:16,240] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 49 cities updated in cities dictionary
+[2024-05-01 17:31:16,473] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Белогорск yndx_id 1066562571
+[2024-05-01 17:31:18,479] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 50 cities updated in cities dictionary
+[2024-05-01 17:31:18,687] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Белорецк yndx_id 1051406688
+[2024-05-01 17:31:20,694] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 51 cities updated in cities dictionary
+[2024-05-01 17:31:20,915] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Белореченск yndx_id 232499656275
+[2024-05-01 17:31:22,923] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 52 cities updated in cities dictionary
+[2024-05-01 17:31:23,126] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Белоярский yndx_id 1045599761
+[2024-05-01 17:31:25,131] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 53 cities updated in cities dictionary
+[2024-05-01 17:31:25,335] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Бердск yndx_id 1035723734
+[2024-05-01 17:31:27,342] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 54 cities updated in cities dictionary
+[2024-05-01 17:31:27,826] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Березники yndx_id 1055910643
+[2024-05-01 17:31:29,829] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 55 cities updated in cities dictionary
+[2024-05-01 17:31:30,053] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Березово
+[2024-05-01 17:31:30,054] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Березово yndx_id 0
+[2024-05-01 17:31:32,061] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 56 cities updated in cities dictionary
+[2024-05-01 17:31:32,272] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Березовский yndx_id 1593202304
+[2024-05-01 17:31:34,279] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 57 cities updated in cities dictionary
+[2024-05-01 17:31:34,472] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Березовский yndx_id 1593202304
+[2024-05-01 17:31:36,479] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 57 cities updated in cities dictionary
+[2024-05-01 17:31:36,688] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Бийск
+[2024-05-01 17:31:36,689] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Бийск yndx_id 0
+[2024-05-01 17:31:38,696] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 58 cities updated in cities dictionary
+[2024-05-01 17:31:38,909] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Биробиджан yndx_id 1046101832
+[2024-05-01 17:31:40,916] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 59 cities updated in cities dictionary
+[2024-05-01 17:31:41,110] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Бирск yndx_id 156527778108
+[2024-05-01 17:31:43,117] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 60 cities updated in cities dictionary
+[2024-05-01 17:31:43,315] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Благовещенск yndx_id 1109090696
+[2024-05-01 17:31:45,321] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 61 cities updated in cities dictionary
+[2024-05-01 17:31:45,980] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Благовещенск yndx_id 1109090696
+[2024-05-01 17:31:47,988] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 61 cities updated in cities dictionary
+[2024-05-01 17:31:48,245] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Богданович yndx_id 1259887631
+[2024-05-01 17:31:50,252] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 62 cities updated in cities dictionary
+[2024-05-01 17:31:50,437] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Богородицк yndx_id 1014509076
+[2024-05-01 17:31:52,440] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 63 cities updated in cities dictionary
+[2024-05-01 17:31:52,672] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Богородск yndx_id 1617085513
+[2024-05-01 17:31:54,678] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 64 cities updated in cities dictionary
+[2024-05-01 17:31:54,952] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Боготол yndx_id 1117286702
+[2024-05-01 17:31:56,959] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 65 cities updated in cities dictionary
+[2024-05-01 17:31:57,172] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Бологое yndx_id 1008552738
+[2024-05-01 17:31:59,178] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 66 cities updated in cities dictionary
+[2024-05-01 17:31:59,362] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Болотное
+[2024-05-01 17:31:59,363] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Болотное yndx_id 0
+[2024-05-01 17:32:01,369] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 67 cities updated in cities dictionary
+[2024-05-01 17:32:01,592] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Большой Камень yndx_id 1569366758
+[2024-05-01 17:32:03,598] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 68 cities updated in cities dictionary
+[2024-05-01 17:32:03,807] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Бор yndx_id 1028022135
+[2024-05-01 17:32:05,814] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 69 cities updated in cities dictionary
+[2024-05-01 17:32:06,043] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Борзя yndx_id 1243443450
+[2024-05-01 17:32:08,047] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 70 cities updated in cities dictionary
+[2024-05-01 17:32:08,252] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Борисоглебск yndx_id 1264289627
+[2024-05-01 17:32:10,259] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 71 cities updated in cities dictionary
+[2024-05-01 17:32:10,470] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Боровичи yndx_id 202650585058
+[2024-05-01 17:32:12,477] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 72 cities updated in cities dictionary
+[2024-05-01 17:32:12,691] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Братск yndx_id 20899308797
+[2024-05-01 17:32:14,699] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 73 cities updated in cities dictionary
+[2024-05-01 17:32:14,932] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Бронницы yndx_id 1124926689
+[2024-05-01 17:32:16,939] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 74 cities updated in cities dictionary
+[2024-05-01 17:32:17,170] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Брянск yndx_id 1575342368
+[2024-05-01 17:32:19,177] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 75 cities updated in cities dictionary
+[2024-05-01 17:32:19,408] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Бугульма yndx_id 186346210055
+[2024-05-01 17:32:21,414] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 76 cities updated in cities dictionary
+[2024-05-01 17:32:21,601] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Бугуруслан yndx_id 1629944368
+[2024-05-01 17:32:23,605] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 77 cities updated in cities dictionary
+[2024-05-01 17:32:23,837] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Буденновск
+[2024-05-01 17:32:23,838] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Буденновск yndx_id 0
+[2024-05-01 17:32:25,845] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 78 cities updated in cities dictionary
+[2024-05-01 17:32:26,108] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Бузулук yndx_id 1371304216
+[2024-05-01 17:32:28,115] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 79 cities updated in cities dictionary
+[2024-05-01 17:32:28,366] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Буинск yndx_id 1082267184
+[2024-05-01 17:32:30,373] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 80 cities updated in cities dictionary
+[2024-05-01 17:32:30,597] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Буй
+[2024-05-01 17:32:30,597] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Буй yndx_id 0
+[2024-05-01 17:32:32,604] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 81 cities updated in cities dictionary
+[2024-05-01 17:32:32,885] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Валуйки
+[2024-05-01 17:32:32,886] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Валуйки yndx_id 0
+[2024-05-01 17:32:34,893] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 82 cities updated in cities dictionary
+[2024-05-01 17:32:35,145] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Великие Луки yndx_id 1004188770
+[2024-05-01 17:32:37,152] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 83 cities updated in cities dictionary
+[2024-05-01 17:32:37,428] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Великий Новгород yndx_id 1038292489
+[2024-05-01 17:32:39,435] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 84 cities updated in cities dictionary
+[2024-05-01 17:32:39,714] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Верещагино yndx_id 1317403074
+[2024-05-01 17:32:41,721] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 85 cities updated in cities dictionary
+[2024-05-01 17:32:41,918] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Верхняя Пышма yndx_id 29999320507
+[2024-05-01 17:32:43,925] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 86 cities updated in cities dictionary
+[2024-05-01 17:32:44,139] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Верхняя Салда yndx_id 244014916032
+[2024-05-01 17:32:46,146] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 87 cities updated in cities dictionary
+[2024-05-01 17:32:46,357] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Видное
+[2024-05-01 17:32:46,357] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Видное yndx_id 0
+[2024-05-01 17:32:48,364] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 88 cities updated in cities dictionary
+[2024-05-01 17:32:48,546] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Вилючинск yndx_id 1181876383
+[2024-05-01 17:32:50,552] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 89 cities updated in cities dictionary
+[2024-05-01 17:32:50,755] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Вихоревка yndx_id 1108714522
+[2024-05-01 17:32:52,762] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 90 cities updated in cities dictionary
+[2024-05-01 17:32:53,125] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Владивосток yndx_id 1204489702
+[2024-05-01 17:32:55,133] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 91 cities updated in cities dictionary
+[2024-05-01 17:32:55,367] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Владикавказ yndx_id 1027252383
+[2024-05-01 17:32:57,373] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 92 cities updated in cities dictionary
+[2024-05-01 17:32:57,615] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Владимир yndx_id 1246858086
+[2024-05-01 17:32:59,622] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 93 cities updated in cities dictionary
+[2024-05-01 17:32:59,845] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Волгоград yndx_id 1046577498
+[2024-05-01 17:33:01,852] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 94 cities updated in cities dictionary
+[2024-05-01 17:33:02,111] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Волгодонск yndx_id 189276267751
+[2024-05-01 17:33:04,119] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 95 cities updated in cities dictionary
+[2024-05-01 17:33:04,310] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Волжск yndx_id 1010148006
+[2024-05-01 17:33:06,317] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 96 cities updated in cities dictionary
+[2024-05-01 17:33:06,515] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Волжский
+[2024-05-01 17:33:06,516] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Волжский yndx_id 0
+[2024-05-01 17:33:08,519] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 97 cities updated in cities dictionary
+[2024-05-01 17:33:08,770] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Вологда yndx_id 1081117752
+[2024-05-01 17:33:10,777] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 98 cities updated in cities dictionary
+[2024-05-01 17:33:11,148] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Волоколамск yndx_id 1172211342
+[2024-05-01 17:33:13,156] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 99 cities updated in cities dictionary
+[2024-05-01 17:33:13,370] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Волхов yndx_id 1051204381
+[2024-05-01 17:33:15,377] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 100 cities updated in cities dictionary
+[2024-05-01 17:33:15,758] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Вольск yndx_id 1072259736
+[2024-05-01 17:33:17,765] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 101 cities updated in cities dictionary
+[2024-05-01 17:33:17,990] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Воркута yndx_id 1169545326
+[2024-05-01 17:33:19,997] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 102 cities updated in cities dictionary
+[2024-05-01 17:33:20,242] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Воронеж yndx_id 135006317161
+[2024-05-01 17:33:22,249] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 103 cities updated in cities dictionary
+[2024-05-01 17:33:22,508] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Воскресенск yndx_id 1558447154
+[2024-05-01 17:33:24,513] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 104 cities updated in cities dictionary
+[2024-05-01 17:33:24,777] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Воткинск yndx_id 1240222403
+[2024-05-01 17:33:26,784] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 105 cities updated in cities dictionary
+[2024-05-01 17:33:27,008] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Всеволожск yndx_id 1143202497
+[2024-05-01 17:33:29,016] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 106 cities updated in cities dictionary
+[2024-05-01 17:33:29,228] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Выборг yndx_id 1059112060
+[2024-05-01 17:33:31,235] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 107 cities updated in cities dictionary
+[2024-05-01 17:33:31,436] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Выкса yndx_id 1123251911
+[2024-05-01 17:33:33,444] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 108 cities updated in cities dictionary
+[2024-05-01 17:33:33,840] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Вышний Волочек
+[2024-05-01 17:33:33,840] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Вышний Волочек yndx_id 0
+[2024-05-01 17:33:35,846] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 109 cities updated in cities dictionary
+[2024-05-01 17:33:36,061] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Вязники yndx_id 1110613094
+[2024-05-01 17:33:38,068] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 110 cities updated in cities dictionary
+[2024-05-01 17:33:38,338] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Вязьма yndx_id 1204327239
+[2024-05-01 17:33:40,345] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 111 cities updated in cities dictionary
+[2024-05-01 17:33:40,552] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Гагарин yndx_id 1103680605
+[2024-05-01 17:33:42,559] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 112 cities updated in cities dictionary
+[2024-05-01 17:33:42,893] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Гатчина yndx_id 192309321154
+[2024-05-01 17:33:44,900] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 113 cities updated in cities dictionary
+[2024-05-01 17:33:45,132] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Геленджик yndx_id 1009131586
+[2024-05-01 17:33:47,138] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 114 cities updated in cities dictionary
+[2024-05-01 17:33:47,373] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Георгиевск yndx_id 1222617609
+[2024-05-01 17:33:49,380] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 115 cities updated in cities dictionary
+[2024-05-01 17:33:49,601] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Глазов yndx_id 1222813461
+[2024-05-01 17:33:51,608] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 116 cities updated in cities dictionary
+[2024-05-01 17:33:51,834] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Горно-Алтайск
+[2024-05-01 17:33:51,835] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Горно-Алтайск yndx_id 0
+[2024-05-01 17:33:53,841] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 117 cities updated in cities dictionary
+[2024-05-01 17:33:54,045] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Горноправдинск yndx_id 1175364025
+[2024-05-01 17:33:56,052] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 118 cities updated in cities dictionary
+[2024-05-01 17:33:56,251] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Городец yndx_id 236772398461
+[2024-05-01 17:33:58,258] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 119 cities updated in cities dictionary
+[2024-05-01 17:33:58,500] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Горячий Ключ yndx_id 22977392964
+[2024-05-01 17:34:00,507] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 120 cities updated in cities dictionary
+[2024-05-01 17:34:00,874] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Грозный
+[2024-05-01 17:34:00,874] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Грозный yndx_id 0
+[2024-05-01 17:34:02,881] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 121 cities updated in cities dictionary
+[2024-05-01 17:34:03,270] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Грязи yndx_id 1270903922
+[2024-05-01 17:34:05,277] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 122 cities updated in cities dictionary
+[2024-05-01 17:34:05,504] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Губаха yndx_id 1263163503
+[2024-05-01 17:34:07,511] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 123 cities updated in cities dictionary
+[2024-05-01 17:34:07,791] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Губкин yndx_id 23266263667
+[2024-05-01 17:34:09,795] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 124 cities updated in cities dictionary
+[2024-05-01 17:34:09,981] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Губкинский
+[2024-05-01 17:34:09,982] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Губкинский yndx_id 0
+[2024-05-01 17:34:11,986] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 125 cities updated in cities dictionary
+[2024-05-01 17:34:12,197] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Гудермес yndx_id 1123938117
+[2024-05-01 17:34:14,204] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 126 cities updated in cities dictionary
+[2024-05-01 17:34:14,420] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Гуково yndx_id 1097575469
+[2024-05-01 17:34:16,427] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 127 cities updated in cities dictionary
+[2024-05-01 17:34:16,651] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Гурьевск
+[2024-05-01 17:34:16,652] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Гурьевск yndx_id 0
+[2024-05-01 17:34:18,657] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 128 cities updated in cities dictionary
+[2024-05-01 17:34:18,851] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Гусев yndx_id 1016838204
+[2024-05-01 17:34:20,858] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 129 cities updated in cities dictionary
+[2024-05-01 17:34:21,078] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Гусиноозерск
+[2024-05-01 17:34:21,078] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Гусиноозерск yndx_id 0
+[2024-05-01 17:34:23,081] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 130 cities updated in cities dictionary
+[2024-05-01 17:34:23,298] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Гусь-Хрустальный yndx_id 1165157799
+[2024-05-01 17:34:25,305] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 131 cities updated in cities dictionary
+[2024-05-01 17:34:25,521] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дальнегорск yndx_id 1164908188
+[2024-05-01 17:34:27,526] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 132 cities updated in cities dictionary
+[2024-05-01 17:34:27,749] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дальнереченск yndx_id 1544585298
+[2024-05-01 17:34:29,756] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 133 cities updated in cities dictionary
+[2024-05-01 17:34:29,977] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дедовск yndx_id 33396235536
+[2024-05-01 17:34:31,984] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 134 cities updated in cities dictionary
+[2024-05-01 17:34:32,194] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дербент yndx_id 1108256377
+[2024-05-01 17:34:34,201] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 135 cities updated in cities dictionary
+[2024-05-01 17:34:34,408] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Десногорск yndx_id 106850547956
+[2024-05-01 17:34:36,415] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 136 cities updated in cities dictionary
+[2024-05-01 17:34:36,603] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дзержинск yndx_id 2514534191
+[2024-05-01 17:34:38,604] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 137 cities updated in cities dictionary
+[2024-05-01 17:34:38,794] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дзержинский yndx_id 44573640252
+[2024-05-01 17:34:40,801] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 138 cities updated in cities dictionary
+[2024-05-01 17:34:41,062] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дивногорск yndx_id 1018299704
+[2024-05-01 17:34:43,067] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 139 cities updated in cities dictionary
+[2024-05-01 17:34:43,338] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Димитровград yndx_id 1161485299
+[2024-05-01 17:34:45,345] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 140 cities updated in cities dictionary
+[2024-05-01 17:34:45,582] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дмитров yndx_id 1070345450
+[2024-05-01 17:34:47,590] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 141 cities updated in cities dictionary
+[2024-05-01 17:34:47,831] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Долгопрудный yndx_id 1059775730
+[2024-05-01 17:34:49,835] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 142 cities updated in cities dictionary
+[2024-05-01 17:34:50,272] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Домодедово yndx_id 212851331192
+[2024-05-01 17:34:52,279] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 143 cities updated in cities dictionary
+[2024-05-01 17:34:52,511] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Донецк yndx_id 1390689592
+[2024-05-01 17:34:54,517] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 144 cities updated in cities dictionary
+[2024-05-01 17:34:54,794] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Донской
+[2024-05-01 17:34:54,795] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Донской yndx_id 0
+[2024-05-01 17:34:56,801] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 145 cities updated in cities dictionary
+[2024-05-01 17:34:57,000] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дубна yndx_id 47305074803
+[2024-05-01 17:34:59,004] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 146 cities updated in cities dictionary
+[2024-05-01 17:34:59,423] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дюртюли yndx_id 1064818655
+[2024-05-01 17:35:01,435] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 147 cities updated in cities dictionary
+[2024-05-01 17:35:01,634] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Дятьково yndx_id 133732950595
+[2024-05-01 17:35:03,635] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 148 cities updated in cities dictionary
+[2024-05-01 17:35:04,143] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Егорьевск
+[2024-05-01 17:35:04,144] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Егорьевск yndx_id 0
+[2024-05-01 17:35:06,156] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 149 cities updated in cities dictionary
+[2024-05-01 17:35:06,372] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Ейск
+[2024-05-01 17:35:06,373] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ейск yndx_id 0
+[2024-05-01 17:35:08,384] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 150 cities updated in cities dictionary
+[2024-05-01 17:35:08,802] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Екатеринбург yndx_id 1246147257
+[2024-05-01 17:35:10,814] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 151 cities updated in cities dictionary
+[2024-05-01 17:35:11,025] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Елабуга yndx_id 97838918512
+[2024-05-01 17:35:13,031] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 152 cities updated in cities dictionary
+[2024-05-01 17:35:13,326] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Елец yndx_id 1060583717
+[2024-05-01 17:35:15,338] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 153 cities updated in cities dictionary
+[2024-05-01 17:35:15,557] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Елизово yndx_id 1079752887
+[2024-05-01 17:35:17,569] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 154 cities updated in cities dictionary
+[2024-05-01 17:35:17,823] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ершов yndx_id 1079279621
+[2024-05-01 17:35:19,835] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 155 cities updated in cities dictionary
+[2024-05-01 17:35:20,064] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ессентуки yndx_id 1126383463
+[2024-05-01 17:35:22,076] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 156 cities updated in cities dictionary
+[2024-05-01 17:35:22,295] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ефремов yndx_id 87625474751
+[2024-05-01 17:35:24,298] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 157 cities updated in cities dictionary
+[2024-05-01 17:35:24,678] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Железногорск yndx_id 150725932708
+[2024-05-01 17:35:26,690] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 158 cities updated in cities dictionary
+[2024-05-01 17:35:27,546] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Железногорск yndx_id 150725932708
+[2024-05-01 17:35:29,553] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 158 cities updated in cities dictionary
+[2024-05-01 17:35:29,750] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Железногорск-Илимский yndx_id 1113782012
+[2024-05-01 17:35:31,762] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 159 cities updated in cities dictionary
+[2024-05-01 17:35:31,961] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Железнодорожный yndx_id 1052606493
+[2024-05-01 17:35:33,974] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 160 cities updated in cities dictionary
+[2024-05-01 17:35:34,183] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Жигулевск
+[2024-05-01 17:35:34,184] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Жигулевск yndx_id 0
+[2024-05-01 17:35:36,195] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 161 cities updated in cities dictionary
+[2024-05-01 17:35:36,424] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Жирновск yndx_id 27799398107
+[2024-05-01 17:35:38,436] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 162 cities updated in cities dictionary
+[2024-05-01 17:35:38,647] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Жуков yndx_id 1077821761
+[2024-05-01 17:35:40,659] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 163 cities updated in cities dictionary
+[2024-05-01 17:35:40,857] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Жуковский
+[2024-05-01 17:35:40,857] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Жуковский yndx_id 0
+[2024-05-01 17:35:42,869] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 164 cities updated in cities dictionary
+[2024-05-01 17:35:43,093] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in ЗАТО Сибирский
+[2024-05-01 17:35:43,094] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - ЗАТО Сибирский yndx_id 0
+[2024-05-01 17:35:45,100] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 165 cities updated in cities dictionary
+[2024-05-01 17:35:45,461] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Завитинск yndx_id 103521913607
+[2024-05-01 17:35:47,473] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 166 cities updated in cities dictionary
+[2024-05-01 17:35:47,680] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Заводоуковск yndx_id 1126931505
+[2024-05-01 17:35:49,687] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 167 cities updated in cities dictionary
+[2024-05-01 17:35:49,942] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Заволжье
+[2024-05-01 17:35:49,943] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Заволжье yndx_id 0
+[2024-05-01 17:35:51,954] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 168 cities updated in cities dictionary
+[2024-05-01 17:35:52,173] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Заинск yndx_id 1083368842
+[2024-05-01 17:35:54,185] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 169 cities updated in cities dictionary
+[2024-05-01 17:35:54,435] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Заозерск
+[2024-05-01 17:35:54,436] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Заозерск yndx_id 0
+[2024-05-01 17:35:56,447] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 170 cities updated in cities dictionary
+[2024-05-01 17:35:56,685] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Заполярный
+[2024-05-01 17:35:56,686] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Заполярный yndx_id 0
+[2024-05-01 17:35:58,695] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 171 cities updated in cities dictionary
+[2024-05-01 17:36:00,108] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Зарайск
+[2024-05-01 17:36:00,109] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Зарайск yndx_id 0
+[2024-05-01 17:36:02,120] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 172 cities updated in cities dictionary
+[2024-05-01 17:36:02,354] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Заречный
+[2024-05-01 17:36:02,355] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Заречный yndx_id 0
+[2024-05-01 17:36:04,367] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 173 cities updated in cities dictionary
+[2024-05-01 17:36:04,617] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Заречный
+[2024-05-01 17:36:04,618] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Заречный yndx_id 0
+[2024-05-01 17:36:06,626] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 173 cities updated in cities dictionary
+[2024-05-01 17:36:06,892] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Заринск yndx_id 1388701322
+[2024-05-01 17:36:08,904] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 174 cities updated in cities dictionary
+[2024-05-01 17:36:09,187] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Звенигово yndx_id 53442776753
+[2024-05-01 17:36:11,200] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 175 cities updated in cities dictionary
+[2024-05-01 17:36:11,414] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Звенигород yndx_id 1132146092
+[2024-05-01 17:36:13,418] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 176 cities updated in cities dictionary
+[2024-05-01 17:36:13,639] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Зеленогорск yndx_id 13093492973
+[2024-05-01 17:36:15,652] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 177 cities updated in cities dictionary
+[2024-05-01 17:36:15,885] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Зеленоград yndx_id 1107936525
+[2024-05-01 17:36:17,897] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 178 cities updated in cities dictionary
+[2024-05-01 17:36:18,113] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Зеленодольск yndx_id 1020962258
+[2024-05-01 17:36:20,125] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 179 cities updated in cities dictionary
+[2024-05-01 17:36:20,326] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Зима yndx_id 1235628372
+[2024-05-01 17:36:22,338] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 180 cities updated in cities dictionary
+[2024-05-01 17:36:22,755] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Златоуст yndx_id 53127490436
+[2024-05-01 17:36:24,761] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 181 cities updated in cities dictionary
+[2024-05-01 17:36:25,001] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Зубова Поляна yndx_id 108297725852
+[2024-05-01 17:36:27,013] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 182 cities updated in cities dictionary
+[2024-05-01 17:36:27,235] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Иваново yndx_id 1030051381
+[2024-05-01 17:36:29,247] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 183 cities updated in cities dictionary
+[2024-05-01 17:36:29,551] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Ивантеевка
+[2024-05-01 17:36:29,552] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ивантеевка yndx_id 0
+[2024-05-01 17:36:31,564] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 184 cities updated in cities dictionary
+[2024-05-01 17:36:31,792] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Игрим yndx_id 1093638748
+[2024-05-01 17:36:33,803] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 185 cities updated in cities dictionary
+[2024-05-01 17:36:33,989] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ижевск yndx_id 1074874800
+[2024-05-01 17:36:36,001] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 186 cities updated in cities dictionary
+[2024-05-01 17:36:36,236] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Избербаш yndx_id 29236117364
+[2024-05-01 17:36:38,248] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 187 cities updated in cities dictionary
+[2024-05-01 17:36:38,470] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Изобильный
+[2024-05-01 17:36:38,470] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Изобильный yndx_id 0
+[2024-05-01 17:36:40,482] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 188 cities updated in cities dictionary
+[2024-05-01 17:36:40,735] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Иланский
+[2024-05-01 17:36:40,736] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Иланский yndx_id 0
+[2024-05-01 17:36:42,747] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 189 cities updated in cities dictionary
+[2024-05-01 17:36:42,942] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ирбит yndx_id 1560133869
+[2024-05-01 17:36:44,954] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 190 cities updated in cities dictionary
+[2024-05-01 17:36:45,202] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Иркутск yndx_id 1106221682
+[2024-05-01 17:36:47,215] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 191 cities updated in cities dictionary
+[2024-05-01 17:36:47,487] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Исилькуль yndx_id 1556756093
+[2024-05-01 17:36:49,499] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 192 cities updated in cities dictionary
+[2024-05-01 17:36:49,748] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Искитим yndx_id 97325586759
+[2024-05-01 17:36:51,760] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 193 cities updated in cities dictionary
+[2024-05-01 17:36:52,007] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Истра yndx_id 1659441478
+[2024-05-01 17:36:54,020] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 194 cities updated in cities dictionary
+[2024-05-01 17:36:54,483] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ишим yndx_id 1219242585
+[2024-05-01 17:36:56,491] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 195 cities updated in cities dictionary
+[2024-05-01 17:36:56,701] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Ишимбай
+[2024-05-01 17:36:56,702] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ишимбай yndx_id 0
+[2024-05-01 17:36:58,704] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 196 cities updated in cities dictionary
+[2024-05-01 17:36:58,971] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Йошкар-Ола yndx_id 1257468373
+[2024-05-01 17:37:00,978] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 197 cities updated in cities dictionary
+[2024-05-01 17:37:01,212] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Казань yndx_id 1196545186
+[2024-05-01 17:37:03,221] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 198 cities updated in cities dictionary
+[2024-05-01 17:37:03,453] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Калачинск yndx_id 1581102261
+[2024-05-01 17:37:05,458] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 199 cities updated in cities dictionary
+[2024-05-01 17:37:05,726] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Калининград yndx_id 71924155629
+[2024-05-01 17:37:07,737] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 200 cities updated in cities dictionary
+[2024-05-01 17:37:07,955] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Калуга yndx_id 3473402042
+[2024-05-01 17:37:09,967] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 201 cities updated in cities dictionary
+[2024-05-01 17:37:10,188] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Каменка yndx_id 1234982999
+[2024-05-01 17:37:12,194] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 202 cities updated in cities dictionary
+[2024-05-01 17:37:12,608] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Каменск-Уральский yndx_id 1114148844
+[2024-05-01 17:37:14,621] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 203 cities updated in cities dictionary
+[2024-05-01 17:37:14,840] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Каменск-Шахтинский yndx_id 1039895010
+[2024-05-01 17:37:16,853] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 204 cities updated in cities dictionary
+[2024-05-01 17:37:17,079] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Камень-на-Оби yndx_id 1040654241
+[2024-05-01 17:37:19,091] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 205 cities updated in cities dictionary
+[2024-05-01 17:37:19,318] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Камышин yndx_id 1048157468
+[2024-05-01 17:37:21,330] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 206 cities updated in cities dictionary
+[2024-05-01 17:37:21,603] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Камышлов yndx_id 1096157041
+[2024-05-01 17:37:23,615] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 207 cities updated in cities dictionary
+[2024-05-01 17:37:23,843] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Канаш yndx_id 111239725581
+[2024-05-01 17:37:25,855] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 208 cities updated in cities dictionary
+[2024-05-01 17:37:26,099] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кандалакша yndx_id 1064997879
+[2024-05-01 17:37:28,111] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 209 cities updated in cities dictionary
+[2024-05-01 17:37:28,336] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Канск yndx_id 174538671899
+[2024-05-01 17:37:30,348] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 210 cities updated in cities dictionary
+[2024-05-01 17:37:30,532] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Карабулак yndx_id 170638229416
+[2024-05-01 17:37:32,543] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 211 cities updated in cities dictionary
+[2024-05-01 17:37:32,780] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Карасук yndx_id 1085263371
+[2024-05-01 17:37:34,793] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 212 cities updated in cities dictionary
+[2024-05-01 17:37:34,991] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Карталы yndx_id 1124912833
+[2024-05-01 17:37:37,004] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 213 cities updated in cities dictionary
+[2024-05-01 17:37:37,277] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Касимов yndx_id 1046103998
+[2024-05-01 17:37:39,285] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 214 cities updated in cities dictionary
+[2024-05-01 17:37:39,496] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Каспийск
+[2024-05-01 17:37:39,497] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Каспийск yndx_id 0
+[2024-05-01 17:37:41,508] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 215 cities updated in cities dictionary
+[2024-05-01 17:37:41,781] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Качканар yndx_id 6336953504
+[2024-05-01 17:37:43,793] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 216 cities updated in cities dictionary
+[2024-05-01 17:37:43,987] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кашира yndx_id 1049937519
+[2024-05-01 17:37:45,998] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 217 cities updated in cities dictionary
+[2024-05-01 17:37:46,210] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кемерово yndx_id 137667793354
+[2024-05-01 17:37:48,222] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 218 cities updated in cities dictionary
+[2024-05-01 17:37:48,430] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кемь yndx_id 1083215254
+[2024-05-01 17:37:50,443] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 219 cities updated in cities dictionary
+[2024-05-01 17:37:50,661] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кизляр yndx_id 1000164787
+[2024-05-01 17:37:52,673] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 220 cities updated in cities dictionary
+[2024-05-01 17:37:52,959] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кимовск yndx_id 1095929125
+[2024-05-01 17:37:54,970] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 221 cities updated in cities dictionary
+[2024-05-01 17:37:55,180] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кимры yndx_id 1050330773
+[2024-05-01 17:37:57,191] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 222 cities updated in cities dictionary
+[2024-05-01 17:37:57,399] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кингисепп yndx_id 1576732849
+[2024-05-01 17:37:59,410] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 223 cities updated in cities dictionary
+[2024-05-01 17:37:59,642] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кинель yndx_id 38029817856
+[2024-05-01 17:38:01,654] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 224 cities updated in cities dictionary
+[2024-05-01 17:38:01,929] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кинешма yndx_id 1021014537
+[2024-05-01 17:38:03,941] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 225 cities updated in cities dictionary
+[2024-05-01 17:38:04,308] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Киреевск yndx_id 1050019008
+[2024-05-01 17:38:06,316] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 226 cities updated in cities dictionary
+[2024-05-01 17:38:07,541] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кириши yndx_id 76103960163
+[2024-05-01 17:38:09,550] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 227 cities updated in cities dictionary
+[2024-05-01 17:38:09,791] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Киров yndx_id 1083934751
+[2024-05-01 17:38:11,804] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 228 cities updated in cities dictionary
+[2024-05-01 17:38:12,059] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кирово-Чепецк yndx_id 1092488890
+[2024-05-01 17:38:14,072] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 229 cities updated in cities dictionary
+[2024-05-01 17:38:14,663] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кировск yndx_id 216523380385
+[2024-05-01 17:38:16,674] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 230 cities updated in cities dictionary
+[2024-05-01 17:38:16,889] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Киселевск
+[2024-05-01 17:38:16,890] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Киселевск yndx_id 0
+[2024-05-01 17:38:18,901] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 231 cities updated in cities dictionary
+[2024-05-01 17:38:19,107] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кисловодск yndx_id 1070257000
+[2024-05-01 17:38:21,120] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 232 cities updated in cities dictionary
+[2024-05-01 17:38:21,336] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Клин yndx_id 1081572692
+[2024-05-01 17:38:23,348] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 233 cities updated in cities dictionary
+[2024-05-01 17:38:23,576] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Клинцы yndx_id 6610110031
+[2024-05-01 17:38:25,588] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 234 cities updated in cities dictionary
+[2024-05-01 17:38:26,031] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ковров yndx_id 1566051364
+[2024-05-01 17:38:28,043] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 235 cities updated in cities dictionary
+[2024-05-01 17:38:28,284] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Когалым yndx_id 1116092349
+[2024-05-01 17:38:30,297] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 236 cities updated in cities dictionary
+[2024-05-01 17:38:30,529] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Козьмодемьянск yndx_id 71937621600
+[2024-05-01 17:38:32,537] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 237 cities updated in cities dictionary
+[2024-05-01 17:38:32,736] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Коломна yndx_id 33227499426
+[2024-05-01 17:38:34,748] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 238 cities updated in cities dictionary
+[2024-05-01 17:38:34,968] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Колпашево yndx_id 1036659027
+[2024-05-01 17:38:36,976] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 239 cities updated in cities dictionary
+[2024-05-01 17:38:37,220] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Колпино yndx_id 1115805676
+[2024-05-01 17:38:39,229] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 240 cities updated in cities dictionary
+[2024-05-01 17:38:39,453] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кольчугино yndx_id 1061632076
+[2024-05-01 17:38:41,458] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 241 cities updated in cities dictionary
+[2024-05-01 17:38:41,679] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Комсомольск-на-Амуре yndx_id 1126721076
+[2024-05-01 17:38:43,691] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 242 cities updated in cities dictionary
+[2024-05-01 17:38:43,920] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Конаково yndx_id 1080074296
+[2024-05-01 17:38:45,932] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 243 cities updated in cities dictionary
+[2024-05-01 17:38:46,190] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кондопога yndx_id 107660671424
+[2024-05-01 17:38:48,203] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 244 cities updated in cities dictionary
+[2024-05-01 17:38:48,431] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Копейск
+[2024-05-01 17:38:48,432] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Копейск yndx_id 0
+[2024-05-01 17:38:50,444] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 245 cities updated in cities dictionary
+[2024-05-01 17:38:50,659] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кореновск yndx_id 1096328309
+[2024-05-01 17:38:52,665] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 246 cities updated in cities dictionary
+[2024-05-01 17:38:52,908] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Коркино yndx_id 1078734595
+[2024-05-01 17:38:54,920] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 247 cities updated in cities dictionary
+[2024-05-01 17:38:55,157] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Королев
+[2024-05-01 17:38:55,158] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Королев yndx_id 0
+[2024-05-01 17:38:57,170] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 248 cities updated in cities dictionary
+[2024-05-01 17:38:57,447] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Корсаков yndx_id 170429403701
+[2024-05-01 17:38:59,459] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 249 cities updated in cities dictionary
+[2024-05-01 17:38:59,701] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Коряжма yndx_id 1636803774
+[2024-05-01 17:39:01,714] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 250 cities updated in cities dictionary
+[2024-05-01 17:39:01,957] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Костомукша yndx_id 1112224123
+[2024-05-01 17:39:03,967] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 251 cities updated in cities dictionary
+[2024-05-01 17:39:04,328] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кострома yndx_id 1097498693
+[2024-05-01 17:39:06,340] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 252 cities updated in cities dictionary
+[2024-05-01 17:39:06,567] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Котельнич yndx_id 192341934532
+[2024-05-01 17:39:08,579] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 253 cities updated in cities dictionary
+[2024-05-01 17:39:08,796] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Котлас yndx_id 1144032568
+[2024-05-01 17:39:10,808] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 254 cities updated in cities dictionary
+[2024-05-01 17:39:11,024] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Красноармейск
+[2024-05-01 17:39:11,024] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Красноармейск yndx_id 0
+[2024-05-01 17:39:13,036] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 255 cities updated in cities dictionary
+[2024-05-01 17:39:13,236] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Красногорск yndx_id 1021956590
+[2024-05-01 17:39:15,241] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 256 cities updated in cities dictionary
+[2024-05-01 17:39:15,593] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Краснодар yndx_id 1108341202
+[2024-05-01 17:39:17,605] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 257 cities updated in cities dictionary
+[2024-05-01 17:39:18,255] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Краснознаменск yndx_id 1150473829
+[2024-05-01 17:39:20,268] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 258 cities updated in cities dictionary
+[2024-05-01 17:39:21,020] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Краснокаменск yndx_id 1256529174
+[2024-05-01 17:39:23,033] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 259 cities updated in cities dictionary
+[2024-05-01 17:39:23,312] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Краснокамск yndx_id 1097671643
+[2024-05-01 17:39:25,314] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 260 cities updated in cities dictionary
+[2024-05-01 17:39:25,529] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Краснотурьинск yndx_id 1037657379
+[2024-05-01 17:39:27,539] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 261 cities updated in cities dictionary
+[2024-05-01 17:39:27,764] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Красноуфимск yndx_id 1642324092
+[2024-05-01 17:39:29,776] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 262 cities updated in cities dictionary
+[2024-05-01 17:39:30,795] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Красноярск yndx_id 1149927135
+[2024-05-01 17:39:32,807] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 263 cities updated in cities dictionary
+[2024-05-01 17:39:33,084] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Красный Сулин yndx_id 93481877599
+[2024-05-01 17:39:35,096] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 264 cities updated in cities dictionary
+[2024-05-01 17:39:35,324] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кропоткин yndx_id 201542622081
+[2024-05-01 17:39:37,337] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 265 cities updated in cities dictionary
+[2024-05-01 17:39:37,528] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Крымск yndx_id 1219534059
+[2024-05-01 17:39:39,540] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 266 cities updated in cities dictionary
+[2024-05-01 17:39:39,781] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кстово yndx_id 1172334319
+[2024-05-01 17:39:41,793] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 267 cities updated in cities dictionary
+[2024-05-01 17:39:42,028] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кудрово yndx_id 28304591277
+[2024-05-01 17:39:44,039] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 268 cities updated in cities dictionary
+[2024-05-01 17:39:44,232] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кузнецк yndx_id 1601499382
+[2024-05-01 17:39:46,244] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 269 cities updated in cities dictionary
+[2024-05-01 17:39:46,490] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Куйбышев
+[2024-05-01 17:39:46,490] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Куйбышев yndx_id 0
+[2024-05-01 17:39:48,502] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 270 cities updated in cities dictionary
+[2024-05-01 17:39:48,733] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кукмор yndx_id 1055134481
+[2024-05-01 17:39:50,745] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 271 cities updated in cities dictionary
+[2024-05-01 17:39:50,928] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кулебаки yndx_id 1100493286
+[2024-05-01 17:39:52,940] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 272 cities updated in cities dictionary
+[2024-05-01 17:39:53,166] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кумертау yndx_id 1015120869
+[2024-05-01 17:39:55,174] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 273 cities updated in cities dictionary
+[2024-05-01 17:39:55,425] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кунгур yndx_id 216564658115
+[2024-05-01 17:39:57,430] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 274 cities updated in cities dictionary
+[2024-05-01 17:39:57,691] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Курган yndx_id 1103910082
+[2024-05-01 17:39:59,701] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 275 cities updated in cities dictionary
+[2024-05-01 17:39:59,940] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Курганинск yndx_id 7620282518
+[2024-05-01 17:40:01,953] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 276 cities updated in cities dictionary
+[2024-05-01 17:40:02,163] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Куровское yndx_id 8658479858
+[2024-05-01 17:40:04,174] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 277 cities updated in cities dictionary
+[2024-05-01 17:40:04,406] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Курск yndx_id 174069617480
+[2024-05-01 17:40:06,408] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 278 cities updated in cities dictionary
+[2024-05-01 17:40:06,628] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Курчатов yndx_id 1065862032
+[2024-05-01 17:40:08,638] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 279 cities updated in cities dictionary
+[2024-05-01 17:40:08,856] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кушва yndx_id 1078183687
+[2024-05-01 17:40:10,868] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 280 cities updated in cities dictionary
+[2024-05-01 17:40:11,092] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кызыл yndx_id 205673874446
+[2024-05-01 17:40:13,104] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 281 cities updated in cities dictionary
+[2024-05-01 17:40:13,314] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Кяхта yndx_id 81515354713
+[2024-05-01 17:40:15,326] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 282 cities updated in cities dictionary
+[2024-05-01 17:40:15,561] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лабинск yndx_id 1070929531
+[2024-05-01 17:40:17,572] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 283 cities updated in cities dictionary
+[2024-05-01 17:40:18,977] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лабытнанги yndx_id 1112445169
+[2024-05-01 17:40:20,989] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 284 cities updated in cities dictionary
+[2024-05-01 17:40:21,207] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лангепас yndx_id 1097657990
+[2024-05-01 17:40:23,219] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 285 cities updated in cities dictionary
+[2024-05-01 17:40:23,441] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лебедянь yndx_id 1095540227
+[2024-05-01 17:40:25,453] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 286 cities updated in cities dictionary
+[2024-05-01 17:40:25,713] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лениногорск yndx_id 1072191525
+[2024-05-01 17:40:27,724] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 287 cities updated in cities dictionary
+[2024-05-01 17:40:28,194] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ленинск-Кузнецкий yndx_id 1160918159
+[2024-05-01 17:40:30,206] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 288 cities updated in cities dictionary
+[2024-05-01 17:40:30,434] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ленск yndx_id 1141912270
+[2024-05-01 17:40:32,447] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 289 cities updated in cities dictionary
+[2024-05-01 17:40:32,727] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Лесной
+[2024-05-01 17:40:32,728] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лесной yndx_id 0
+[2024-05-01 17:40:34,740] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 290 cities updated in cities dictionary
+[2024-05-01 17:40:34,993] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лесозаводск yndx_id 54847983424
+[2024-05-01 17:40:37,005] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 291 cities updated in cities dictionary
+[2024-05-01 17:40:37,277] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лесосибирск yndx_id 148689932472
+[2024-05-01 17:40:39,281] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 292 cities updated in cities dictionary
+[2024-05-01 17:40:39,489] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ливны yndx_id 1003349435
+[2024-05-01 17:40:41,496] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 293 cities updated in cities dictionary
+[2024-05-01 17:40:41,742] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Липецк yndx_id 1054645108
+[2024-05-01 17:40:43,754] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 294 cities updated in cities dictionary
+[2024-05-01 17:40:43,964] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лиски yndx_id 125867202480
+[2024-05-01 17:40:45,976] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 295 cities updated in cities dictionary
+[2024-05-01 17:40:46,244] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лобня yndx_id 83666427651
+[2024-05-01 17:40:48,254] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 296 cities updated in cities dictionary
+[2024-05-01 17:40:48,465] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лотошино yndx_id 1226018086
+[2024-05-01 17:40:50,477] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 297 cities updated in cities dictionary
+[2024-05-01 17:40:50,711] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Луга yndx_id 1016279876
+[2024-05-01 17:40:52,723] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 298 cities updated in cities dictionary
+[2024-05-01 17:40:52,927] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Луховицы yndx_id 78594578427
+[2024-05-01 17:40:54,939] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 299 cities updated in cities dictionary
+[2024-05-01 17:40:55,637] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лучегорск yndx_id 1046894389
+[2024-05-01 17:40:57,646] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 300 cities updated in cities dictionary
+[2024-05-01 17:40:57,938] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лысьва yndx_id 1069366694
+[2024-05-01 17:40:59,951] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 301 cities updated in cities dictionary
+[2024-05-01 17:41:00,175] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лыткарино yndx_id 40158012604
+[2024-05-01 17:41:02,184] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 302 cities updated in cities dictionary
+[2024-05-01 17:41:02,407] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Льгов yndx_id 1029745250
+[2024-05-01 17:41:04,419] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 303 cities updated in cities dictionary
+[2024-05-01 17:41:04,649] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Люберцы yndx_id 105644001647
+[2024-05-01 17:41:06,661] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 304 cities updated in cities dictionary
+[2024-05-01 17:41:06,855] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Людиново yndx_id 182598680220
+[2024-05-01 17:41:08,867] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 305 cities updated in cities dictionary
+[2024-05-01 17:41:09,127] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Лянтор yndx_id 141310014139
+[2024-05-01 17:41:11,138] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 306 cities updated in cities dictionary
+[2024-05-01 17:41:11,376] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Магадан yndx_id 1084963485
+[2024-05-01 17:41:13,388] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 307 cities updated in cities dictionary
+[2024-05-01 17:41:13,624] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Магнитогорск yndx_id 1008973879
+[2024-05-01 17:41:15,637] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 308 cities updated in cities dictionary
+[2024-05-01 17:41:15,867] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Майкоп
+[2024-05-01 17:41:15,868] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Майкоп yndx_id 0
+[2024-05-01 17:41:17,880] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 309 cities updated in cities dictionary
+[2024-05-01 17:41:18,111] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Малгобек yndx_id 1112243337
+[2024-05-01 17:41:20,123] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 310 cities updated in cities dictionary
+[2024-05-01 17:41:21,702] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Малиновский
+[2024-05-01 17:41:21,703] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Малиновский yndx_id 0
+[2024-05-01 17:41:23,715] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 311 cities updated in cities dictionary
+[2024-05-01 17:41:23,928] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Малоярославец yndx_id 121417803812
+[2024-05-01 17:41:25,940] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 312 cities updated in cities dictionary
+[2024-05-01 17:41:26,149] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мариинск yndx_id 1097924620
+[2024-05-01 17:41:28,161] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 313 cities updated in cities dictionary
+[2024-05-01 17:41:28,391] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Махачкала yndx_id 1124009885
+[2024-05-01 17:41:30,403] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 314 cities updated in cities dictionary
+[2024-05-01 17:41:30,622] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мегион yndx_id 1027734825
+[2024-05-01 17:41:32,634] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 315 cities updated in cities dictionary
+[2024-05-01 17:41:32,832] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Междуреченск yndx_id 1111957152
+[2024-05-01 17:41:34,844] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 316 cities updated in cities dictionary
+[2024-05-01 17:41:35,064] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мелеуз yndx_id 1081919524
+[2024-05-01 17:41:37,076] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 317 cities updated in cities dictionary
+[2024-05-01 17:41:37,332] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Миасс yndx_id 1006489290
+[2024-05-01 17:41:39,337] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 318 cities updated in cities dictionary
+[2024-05-01 17:41:39,530] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Миллерово yndx_id 1193977833
+[2024-05-01 17:41:41,542] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 319 cities updated in cities dictionary
+[2024-05-01 17:41:41,770] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Минеральные воды yndx_id 1160921868
+[2024-05-01 17:41:43,782] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 320 cities updated in cities dictionary
+[2024-05-01 17:41:44,002] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Минусинск yndx_id 1090830408
+[2024-05-01 17:41:46,016] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 321 cities updated in cities dictionary
+[2024-05-01 17:41:46,247] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Мирный
+[2024-05-01 17:41:46,247] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мирный yndx_id 0
+[2024-05-01 17:41:48,259] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 322 cities updated in cities dictionary
+[2024-05-01 17:41:48,497] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Мирный
+[2024-05-01 17:41:48,497] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мирный yndx_id 0
+[2024-05-01 17:41:50,509] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 322 cities updated in cities dictionary
+[2024-05-01 17:41:50,748] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Михайловка yndx_id 181793992796
+[2024-05-01 17:41:52,760] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 323 cities updated in cities dictionary
+[2024-05-01 17:41:53,023] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Михайловск yndx_id 1173987527
+[2024-05-01 17:41:55,035] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 324 cities updated in cities dictionary
+[2024-05-01 17:41:55,243] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мичуринск yndx_id 1007236112
+[2024-05-01 17:41:57,255] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 325 cities updated in cities dictionary
+[2024-05-01 17:41:57,458] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Могоча yndx_id 1119352251
+[2024-05-01 17:41:59,471] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 326 cities updated in cities dictionary
+[2024-05-01 17:41:59,699] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Можайск
+[2024-05-01 17:41:59,700] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Можайск yndx_id 0
+[2024-05-01 17:42:01,711] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 327 cities updated in cities dictionary
+[2024-05-01 17:42:01,898] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Можга yndx_id 1229696541
+[2024-05-01 17:42:03,911] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 328 cities updated in cities dictionary
+[2024-05-01 17:42:04,174] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Моздок yndx_id 1120538071
+[2024-05-01 17:42:06,186] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 329 cities updated in cities dictionary
+[2024-05-01 17:42:06,469] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мончегорск yndx_id 43415973936
+[2024-05-01 17:42:08,476] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 330 cities updated in cities dictionary
+[2024-05-01 17:42:08,727] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Моршанск yndx_id 1266948878
+[2024-05-01 17:42:10,739] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 331 cities updated in cities dictionary
+[2024-05-01 17:42:10,995] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Москва
+[2024-05-01 17:42:10,995] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Москва yndx_id 0
+[2024-05-01 17:42:13,004] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 332 cities updated in cities dictionary
+[2024-05-01 17:42:13,559] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Московский yndx_id 1324337043
+[2024-05-01 17:42:15,568] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 333 cities updated in cities dictionary
+[2024-05-01 17:42:15,833] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Муравленко yndx_id 1593184889
+[2024-05-01 17:42:17,845] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 334 cities updated in cities dictionary
+[2024-05-01 17:42:18,096] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мурманск yndx_id 1093592477
+[2024-05-01 17:42:20,109] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 335 cities updated in cities dictionary
+[2024-05-01 17:42:20,400] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Муром yndx_id 1031982746
+[2024-05-01 17:42:22,408] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 336 cities updated in cities dictionary
+[2024-05-01 17:42:22,607] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мценск yndx_id 1060358061
+[2024-05-01 17:42:24,615] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 337 cities updated in cities dictionary
+[2024-05-01 17:42:24,844] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мыски yndx_id 1142426509
+[2024-05-01 17:42:26,857] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 338 cities updated in cities dictionary
+[2024-05-01 17:42:27,105] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Мытищи
+[2024-05-01 17:42:27,106] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Мытищи yndx_id 0
+[2024-05-01 17:42:29,117] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 339 cities updated in cities dictionary
+[2024-05-01 17:42:29,416] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Набережные Челны yndx_id 1211399402
+[2024-05-01 17:42:31,428] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 340 cities updated in cities dictionary
+[2024-05-01 17:42:31,634] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Надым yndx_id 1148756225
+[2024-05-01 17:42:33,647] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 341 cities updated in cities dictionary
+[2024-05-01 17:42:33,851] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Назарово yndx_id 1129563856
+[2024-05-01 17:42:35,863] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 342 cities updated in cities dictionary
+[2024-05-01 17:42:36,130] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Назрань yndx_id 1613766988
+[2024-05-01 17:42:38,143] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 343 cities updated in cities dictionary
+[2024-05-01 17:42:38,379] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нальчик yndx_id 1015006259
+[2024-05-01 17:42:40,391] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 344 cities updated in cities dictionary
+[2024-05-01 17:42:40,799] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Наро-Фоминск yndx_id 1132491207
+[2024-05-01 17:42:42,811] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 345 cities updated in cities dictionary
+[2024-05-01 17:42:43,020] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нарьян-Мар yndx_id 1127128346
+[2024-05-01 17:42:45,032] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 346 cities updated in cities dictionary
+[2024-05-01 17:42:45,260] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Находка yndx_id 1133913277
+[2024-05-01 17:42:47,272] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 347 cities updated in cities dictionary
+[2024-05-01 17:42:47,504] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Невинномысск yndx_id 111864128187
+[2024-05-01 17:42:49,517] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 348 cities updated in cities dictionary
+[2024-05-01 17:42:49,764] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нерюнгри yndx_id 1246140715
+[2024-05-01 17:42:51,777] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 349 cities updated in cities dictionary
+[2024-05-01 17:42:51,995] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нефтекамск yndx_id 1558233348
+[2024-05-01 17:42:54,007] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 350 cities updated in cities dictionary
+[2024-05-01 17:42:54,187] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нефтеюганск yndx_id 21755334894
+[2024-05-01 17:42:56,199] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 351 cities updated in cities dictionary
+[2024-05-01 17:42:56,574] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нижневартовск yndx_id 1040062100
+[2024-05-01 17:42:58,581] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 352 cities updated in cities dictionary
+[2024-05-01 17:42:58,787] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нижнекамск yndx_id 1120392260
+[2024-05-01 17:43:00,791] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 353 cities updated in cities dictionary
+[2024-05-01 17:43:00,992] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Нижнесортымский
+[2024-05-01 17:43:00,992] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нижнесортымский yndx_id 0
+[2024-05-01 17:43:02,999] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 354 cities updated in cities dictionary
+[2024-05-01 17:43:03,179] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нижнеудинск yndx_id 1138059180
+[2024-05-01 17:43:05,191] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 355 cities updated in cities dictionary
+[2024-05-01 17:43:05,688] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нижний Новгород yndx_id 1209002488
+[2024-05-01 17:43:07,701] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 356 cities updated in cities dictionary
+[2024-05-01 17:43:07,913] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нижний Тагил yndx_id 1216042505
+[2024-05-01 17:43:09,925] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 357 cities updated in cities dictionary
+[2024-05-01 17:43:10,185] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новоалтайск yndx_id 1035644173
+[2024-05-01 17:43:12,191] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 358 cities updated in cities dictionary
+[2024-05-01 17:43:13,465] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нововоронеж yndx_id 1012260833
+[2024-05-01 17:43:15,477] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 359 cities updated in cities dictionary
+[2024-05-01 17:43:15,704] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новодвинск yndx_id 1007806608
+[2024-05-01 17:43:17,716] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 360 cities updated in cities dictionary
+[2024-05-01 17:43:18,079] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новокузнецк yndx_id 1100683424
+[2024-05-01 17:43:20,091] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 361 cities updated in cities dictionary
+[2024-05-01 17:43:20,328] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новокуйбышевск yndx_id 117295542620
+[2024-05-01 17:43:22,341] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 362 cities updated in cities dictionary
+[2024-05-01 17:43:22,552] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новомосковск yndx_id 1265382801
+[2024-05-01 17:43:24,565] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 363 cities updated in cities dictionary
+[2024-05-01 17:43:24,802] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новороссийск yndx_id 1003738891
+[2024-05-01 17:43:26,815] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 364 cities updated in cities dictionary
+[2024-05-01 17:43:27,091] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новосибирск yndx_id 1182171426
+[2024-05-01 17:43:29,103] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 365 cities updated in cities dictionary
+[2024-05-01 17:43:29,315] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новотроицк yndx_id 1175460400
+[2024-05-01 17:43:31,328] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 366 cities updated in cities dictionary
+[2024-05-01 17:43:31,528] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новоуральск yndx_id 37611178074
+[2024-05-01 17:43:33,534] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 367 cities updated in cities dictionary
+[2024-05-01 17:43:33,773] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новочебоксарск yndx_id 1568282561
+[2024-05-01 17:43:35,786] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 368 cities updated in cities dictionary
+[2024-05-01 17:43:36,012] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новочеркасск yndx_id 1267001409
+[2024-05-01 17:43:38,018] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 369 cities updated in cities dictionary
+[2024-05-01 17:43:38,226] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новошахтинск yndx_id 1017364165
+[2024-05-01 17:43:40,238] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 370 cities updated in cities dictionary
+[2024-05-01 17:43:40,459] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новый Оскол yndx_id 1185297503
+[2024-05-01 17:43:42,471] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 371 cities updated in cities dictionary
+[2024-05-01 17:43:42,682] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Новый Уренгой
+[2024-05-01 17:43:42,683] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Новый Уренгой yndx_id 0
+[2024-05-01 17:43:44,691] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 372 cities updated in cities dictionary
+[2024-05-01 17:43:44,979] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ногинск yndx_id 1038818901
+[2024-05-01 17:43:46,992] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 373 cities updated in cities dictionary
+[2024-05-01 17:43:47,255] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Норильск yndx_id 1016356660
+[2024-05-01 17:43:49,263] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 374 cities updated in cities dictionary
+[2024-05-01 17:43:49,465] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ноябрьск yndx_id 1163624134
+[2024-05-01 17:43:51,477] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 375 cities updated in cities dictionary
+[2024-05-01 17:43:51,691] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нурлат yndx_id 47239304355
+[2024-05-01 17:43:53,703] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 376 cities updated in cities dictionary
+[2024-05-01 17:43:54,077] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Нягань yndx_id 1231393219
+[2024-05-01 17:43:56,089] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 377 cities updated in cities dictionary
+[2024-05-01 17:43:56,474] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Обнинск yndx_id 1157088064
+[2024-05-01 17:43:58,479] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 378 cities updated in cities dictionary
+[2024-05-01 17:43:59,168] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Одинцово yndx_id 1056997351
+[2024-05-01 17:44:01,178] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 379 cities updated in cities dictionary
+[2024-05-01 17:44:01,696] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Озерск yndx_id 155396487164
+[2024-05-01 17:44:03,708] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 380 cities updated in cities dictionary
+[2024-05-01 17:44:04,158] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Октябрьский
+[2024-05-01 17:44:04,159] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Октябрьский yndx_id 0
+[2024-05-01 17:44:06,171] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 381 cities updated in cities dictionary
+[2024-05-01 17:44:06,420] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Оленегорск yndx_id 1000931869
+[2024-05-01 17:44:08,427] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 382 cities updated in cities dictionary
+[2024-05-01 17:44:08,666] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Омск yndx_id 1033643160
+[2024-05-01 17:44:10,675] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 383 cities updated in cities dictionary
+[2024-05-01 17:44:10,943] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Орел
+[2024-05-01 17:44:10,944] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Орел yndx_id 0
+[2024-05-01 17:44:12,953] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 384 cities updated in cities dictionary
+[2024-05-01 17:44:13,166] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Оренбург yndx_id 209985292798
+[2024-05-01 17:44:15,170] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 385 cities updated in cities dictionary
+[2024-05-01 17:44:15,398] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Орехово-Зуево yndx_id 1256219148
+[2024-05-01 17:44:17,410] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 386 cities updated in cities dictionary
+[2024-05-01 17:44:17,631] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Орск yndx_id 1345478401
+[2024-05-01 17:44:19,637] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 387 cities updated in cities dictionary
+[2024-05-01 17:44:19,851] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Оса yndx_id 1109844825
+[2024-05-01 17:44:21,862] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 388 cities updated in cities dictionary
+[2024-05-01 17:44:22,111] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Осинники yndx_id 1077759704
+[2024-05-01 17:44:24,123] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 389 cities updated in cities dictionary
+[2024-05-01 17:44:24,437] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Отрадный
+[2024-05-01 17:44:24,438] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Отрадный yndx_id 0
+[2024-05-01 17:44:26,449] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 390 cities updated in cities dictionary
+[2024-05-01 17:44:26,679] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Павлово yndx_id 1034988321
+[2024-05-01 17:44:28,689] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 391 cities updated in cities dictionary
+[2024-05-01 17:44:28,943] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Павловский Посад yndx_id 1089521203
+[2024-05-01 17:44:30,955] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 392 cities updated in cities dictionary
+[2024-05-01 17:44:31,205] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Партизанск yndx_id 1617492477
+[2024-05-01 17:44:33,218] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 393 cities updated in cities dictionary
+[2024-05-01 17:44:33,468] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Пенза yndx_id 137711305370
+[2024-05-01 17:44:35,480] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 394 cities updated in cities dictionary
+[2024-05-01 17:44:35,699] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Первомайск
+[2024-05-01 17:44:35,700] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Первомайск yndx_id 0
+[2024-05-01 17:44:37,712] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 395 cities updated in cities dictionary
+[2024-05-01 17:44:37,924] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Первоуральск yndx_id 1069190717
+[2024-05-01 17:44:39,936] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 396 cities updated in cities dictionary
+[2024-05-01 17:44:40,153] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Переславль-Залесский yndx_id 1617321997
+[2024-05-01 17:44:42,165] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 397 cities updated in cities dictionary
+[2024-05-01 17:44:42,427] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Пермь yndx_id 1209619935
+[2024-05-01 17:44:44,439] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 398 cities updated in cities dictionary
+[2024-05-01 17:44:44,665] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Петергоф
+[2024-05-01 17:44:44,665] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Петергоф yndx_id 0
+[2024-05-01 17:44:46,677] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 399 cities updated in cities dictionary
+[2024-05-01 17:44:46,863] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Петровск-Забайкальский yndx_id 85396781417
+[2024-05-01 17:44:48,876] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 400 cities updated in cities dictionary
+[2024-05-01 17:44:49,115] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Петрозаводск yndx_id 1088078205
+[2024-05-01 17:44:51,127] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 401 cities updated in cities dictionary
+[2024-05-01 17:44:51,374] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Петропавловск-Камчатский yndx_id 1238262598
+[2024-05-01 17:44:53,386] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 402 cities updated in cities dictionary
+[2024-05-01 17:44:53,609] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Печора yndx_id 1130852880
+[2024-05-01 17:44:55,620] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 403 cities updated in cities dictionary
+[2024-05-01 17:44:55,875] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Подольск yndx_id 118152483825
+[2024-05-01 17:44:57,887] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 404 cities updated in cities dictionary
+[2024-05-01 17:44:58,103] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Пойковский
+[2024-05-01 17:44:58,104] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Пойковский yndx_id 0
+[2024-05-01 17:45:00,108] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 405 cities updated in cities dictionary
+[2024-05-01 17:45:00,324] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Покачи yndx_id 214868723832
+[2024-05-01 17:45:02,337] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 406 cities updated in cities dictionary
+[2024-05-01 17:45:03,585] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Полевской
+[2024-05-01 17:45:03,586] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Полевской yndx_id 0
+[2024-05-01 17:45:05,597] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 407 cities updated in cities dictionary
+[2024-05-01 17:45:06,421] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Полярные зори yndx_id 1075174040
+[2024-05-01 17:45:08,435] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 408 cities updated in cities dictionary
+[2024-05-01 17:45:08,747] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Полярный yndx_id 1009702847
+[2024-05-01 17:45:10,759] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 409 cities updated in cities dictionary
+[2024-05-01 17:45:11,742] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Прокопьевск yndx_id 1165016861
+[2024-05-01 17:45:13,754] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 410 cities updated in cities dictionary
+[2024-05-01 17:45:13,975] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Протвино yndx_id 1168978594
+[2024-05-01 17:45:15,986] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 411 cities updated in cities dictionary
+[2024-05-01 17:45:16,220] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Прохладный yndx_id 1071744536
+[2024-05-01 17:45:18,232] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 412 cities updated in cities dictionary
+[2024-05-01 17:45:18,467] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Псков yndx_id 1079345204
+[2024-05-01 17:45:20,479] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 413 cities updated in cities dictionary
+[2024-05-01 17:45:20,709] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Пугачев
+[2024-05-01 17:45:20,710] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Пугачев yndx_id 0
+[2024-05-01 17:45:22,721] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 414 cities updated in cities dictionary
+[2024-05-01 17:45:22,976] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Пушкин yndx_id 1059140325
+[2024-05-01 17:45:24,981] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 415 cities updated in cities dictionary
+[2024-05-01 17:45:25,204] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Пушкино yndx_id 81518982420
+[2024-05-01 17:45:27,216] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 416 cities updated in cities dictionary
+[2024-05-01 17:45:27,429] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Пущино yndx_id 1267971687
+[2024-05-01 17:45:29,441] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 417 cities updated in cities dictionary
+[2024-05-01 17:45:29,722] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Пыть-Ях yndx_id 1075081363
+[2024-05-01 17:45:31,739] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 418 cities updated in cities dictionary
+[2024-05-01 17:45:32,326] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Пятигорск yndx_id 32147006678
+[2024-05-01 17:45:34,338] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 419 cities updated in cities dictionary
+[2024-05-01 17:45:34,551] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Радужный
+[2024-05-01 17:45:34,551] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Радужный yndx_id 0
+[2024-05-01 17:45:36,557] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 420 cities updated in cities dictionary
+[2024-05-01 17:45:36,791] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Райчихинск yndx_id 194323641480
+[2024-05-01 17:45:38,803] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 421 cities updated in cities dictionary
+[2024-05-01 17:45:39,045] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Раменское
+[2024-05-01 17:45:39,046] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Раменское yndx_id 0
+[2024-05-01 17:45:41,057] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 422 cities updated in cities dictionary
+[2024-05-01 17:45:41,269] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Рассказово yndx_id 1212332641
+[2024-05-01 17:45:43,274] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 423 cities updated in cities dictionary
+[2024-05-01 17:45:43,559] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ревда yndx_id 1007984413
+[2024-05-01 17:45:45,567] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 424 cities updated in cities dictionary
+[2024-05-01 17:45:45,807] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Реж yndx_id 1543151783
+[2024-05-01 17:45:47,817] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 425 cities updated in cities dictionary
+[2024-05-01 17:45:48,084] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Реутов yndx_id 1133736123
+[2024-05-01 17:45:50,096] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 426 cities updated in cities dictionary
+[2024-05-01 17:45:50,351] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ржев yndx_id 25631729079
+[2024-05-01 17:45:52,363] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 427 cities updated in cities dictionary
+[2024-05-01 17:45:52,583] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Рославль yndx_id 67494400555
+[2024-05-01 17:45:54,592] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 428 cities updated in cities dictionary
+[2024-05-01 17:45:54,810] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Россошь yndx_id 1290485972
+[2024-05-01 17:45:56,822] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 429 cities updated in cities dictionary
+[2024-05-01 17:45:57,050] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ростов-на-Дону yndx_id 166373240123
+[2024-05-01 17:45:59,062] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 430 cities updated in cities dictionary
+[2024-05-01 17:45:59,340] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ртищево yndx_id 1041755677
+[2024-05-01 17:46:01,352] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 431 cities updated in cities dictionary
+[2024-05-01 17:46:01,548] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Рубцовск yndx_id 1097167561
+[2024-05-01 17:46:03,560] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 432 cities updated in cities dictionary
+[2024-05-01 17:46:03,784] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Рузаевка
+[2024-05-01 17:46:03,785] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Рузаевка yndx_id 0
+[2024-05-01 17:46:05,790] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 433 cities updated in cities dictionary
+[2024-05-01 17:46:06,019] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Рыбинск yndx_id 103295031182
+[2024-05-01 17:46:08,028] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 434 cities updated in cities dictionary
+[2024-05-01 17:46:08,235] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ряжск yndx_id 1212834648
+[2024-05-01 17:46:10,248] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 435 cities updated in cities dictionary
+[2024-05-01 17:46:10,454] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Рязань yndx_id 1777800121
+[2024-05-01 17:46:12,459] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 436 cities updated in cities dictionary
+[2024-05-01 17:46:12,676] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Салават yndx_id 1642416877
+[2024-05-01 17:46:14,687] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 437 cities updated in cities dictionary
+[2024-05-01 17:46:14,873] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Салехард yndx_id 1156968879
+[2024-05-01 17:46:16,885] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 438 cities updated in cities dictionary
+[2024-05-01 17:46:17,127] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сальск yndx_id 1061626564
+[2024-05-01 17:46:19,139] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 439 cities updated in cities dictionary
+[2024-05-01 17:46:19,531] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Самара yndx_id 1105246102
+[2024-05-01 17:46:21,543] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 440 cities updated in cities dictionary
+[2024-05-01 17:46:21,796] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Санкт-Петербург yndx_id 1082776551
+[2024-05-01 17:46:23,800] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 441 cities updated in cities dictionary
+[2024-05-01 17:46:24,044] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Саранск yndx_id 1009199910
+[2024-05-01 17:46:26,056] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 442 cities updated in cities dictionary
+[2024-05-01 17:46:26,288] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сарапул yndx_id 1034998365
+[2024-05-01 17:46:28,300] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 443 cities updated in cities dictionary
+[2024-05-01 17:46:28,571] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Саратов yndx_id 36077115938
+[2024-05-01 17:46:30,584] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 444 cities updated in cities dictionary
+[2024-05-01 17:46:30,814] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Саров yndx_id 245388683483
+[2024-05-01 17:46:32,826] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 445 cities updated in cities dictionary
+[2024-05-01 17:46:33,051] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сасово yndx_id 1084868639
+[2024-05-01 17:46:35,063] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 446 cities updated in cities dictionary
+[2024-05-01 17:46:35,289] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сатка yndx_id 1107499313
+[2024-05-01 17:46:37,297] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 447 cities updated in cities dictionary
+[2024-05-01 17:46:37,522] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сафоново yndx_id 1034047965
+[2024-05-01 17:46:39,534] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 448 cities updated in cities dictionary
+[2024-05-01 17:46:39,797] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Саяногорск yndx_id 66041564138
+[2024-05-01 17:46:41,808] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 449 cities updated in cities dictionary
+[2024-05-01 17:46:42,096] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Саянск yndx_id 1571452915
+[2024-05-01 17:46:44,108] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 450 cities updated in cities dictionary
+[2024-05-01 17:46:44,365] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Светлоград yndx_id 1056358031
+[2024-05-01 17:46:46,377] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 451 cities updated in cities dictionary
+[2024-05-01 17:46:46,623] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Свободный yndx_id 1076504603
+[2024-05-01 17:46:48,635] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 452 cities updated in cities dictionary
+[2024-05-01 17:46:48,873] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Северобайкальск yndx_id 1055982421
+[2024-05-01 17:46:50,885] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 453 cities updated in cities dictionary
+[2024-05-01 17:46:51,098] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Северодвинск yndx_id 1216588527
+[2024-05-01 17:46:53,110] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 454 cities updated in cities dictionary
+[2024-05-01 17:46:53,354] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Североморск yndx_id 1022468933
+[2024-05-01 17:46:55,366] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 455 cities updated in cities dictionary
+[2024-05-01 17:46:55,600] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Североуральск yndx_id 1131947309
+[2024-05-01 17:46:57,612] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 456 cities updated in cities dictionary
+[2024-05-01 17:46:57,847] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Северск yndx_id 1106911613
+[2024-05-01 17:46:59,858] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 457 cities updated in cities dictionary
+[2024-05-01 17:47:00,039] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сегежа yndx_id 184686390187
+[2024-05-01 17:47:02,051] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 458 cities updated in cities dictionary
+[2024-05-01 17:47:02,312] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Семенов
+[2024-05-01 17:47:02,313] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Семенов yndx_id 0
+[2024-05-01 17:47:04,325] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 459 cities updated in cities dictionary
+[2024-05-01 17:47:05,553] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сергиев Посад yndx_id 1182625294
+[2024-05-01 17:47:07,565] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 460 cities updated in cities dictionary
+[2024-05-01 17:47:07,816] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сердобск yndx_id 160099585456
+[2024-05-01 17:47:09,827] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 461 cities updated in cities dictionary
+[2024-05-01 17:47:10,026] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Серов yndx_id 1049826067
+[2024-05-01 17:47:12,038] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 462 cities updated in cities dictionary
+[2024-05-01 17:47:12,273] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Серпухов yndx_id 1202775617
+[2024-05-01 17:47:14,285] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 463 cities updated in cities dictionary
+[2024-05-01 17:47:14,495] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сертолово yndx_id 1001255417
+[2024-05-01 17:47:16,507] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 464 cities updated in cities dictionary
+[2024-05-01 17:47:16,755] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сестрорецк yndx_id 81333796682
+[2024-05-01 17:47:18,765] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 465 cities updated in cities dictionary
+[2024-05-01 17:47:19,334] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Сибай
+[2024-05-01 17:47:19,335] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сибай yndx_id 0
+[2024-05-01 17:47:21,347] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 466 cities updated in cities dictionary
+[2024-05-01 17:47:21,537] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сковородино yndx_id 232707449079
+[2024-05-01 17:47:23,549] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 467 cities updated in cities dictionary
+[2024-05-01 17:47:23,770] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Славгород yndx_id 119037218633
+[2024-05-01 17:47:25,780] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 468 cities updated in cities dictionary
+[2024-05-01 17:47:26,002] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Славянск-на-Кубани yndx_id 1134633479
+[2024-05-01 17:47:28,014] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 469 cities updated in cities dictionary
+[2024-05-01 17:47:28,200] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Слободской
+[2024-05-01 17:47:28,201] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Слободской yndx_id 0
+[2024-05-01 17:47:30,204] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 470 cities updated in cities dictionary
+[2024-05-01 17:47:30,435] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Слюдянка yndx_id 211180367527
+[2024-05-01 17:47:32,447] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 471 cities updated in cities dictionary
+[2024-05-01 17:47:32,655] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Смоленск yndx_id 55718940075
+[2024-05-01 17:47:34,668] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 472 cities updated in cities dictionary
+[2024-05-01 17:47:34,879] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Снежинск yndx_id 1209505538
+[2024-05-01 17:47:36,891] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 473 cities updated in cities dictionary
+[2024-05-01 17:47:37,113] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Советск yndx_id 1090318782
+[2024-05-01 17:47:39,116] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 474 cities updated in cities dictionary
+[2024-05-01 17:47:39,332] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Советск yndx_id 1090318782
+[2024-05-01 17:47:41,345] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 474 cities updated in cities dictionary
+[2024-05-01 17:47:41,573] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Советская Гавань yndx_id 1626015275
+[2024-05-01 17:47:43,577] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 475 cities updated in cities dictionary
+[2024-05-01 17:47:43,822] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Советский
+[2024-05-01 17:47:43,822] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Советский yndx_id 0
+[2024-05-01 17:47:45,834] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 476 cities updated in cities dictionary
+[2024-05-01 17:47:46,076] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Соликамск yndx_id 38974939488
+[2024-05-01 17:47:48,082] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 477 cities updated in cities dictionary
+[2024-05-01 17:47:48,314] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Солнечногорск yndx_id 1128862619
+[2024-05-01 17:47:50,321] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 478 cities updated in cities dictionary
+[2024-05-01 17:47:50,528] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Соль-Илецк yndx_id 1274979359
+[2024-05-01 17:47:52,540] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 479 cities updated in cities dictionary
+[2024-05-01 17:47:52,753] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сортавала yndx_id 1218184641
+[2024-05-01 17:47:54,765] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 480 cities updated in cities dictionary
+[2024-05-01 17:47:54,968] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сосновоборск yndx_id 1575381178
+[2024-05-01 17:47:56,978] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 481 cities updated in cities dictionary
+[2024-05-01 17:47:57,220] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сосновый Бор yndx_id 1039895260
+[2024-05-01 17:47:59,233] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 482 cities updated in cities dictionary
+[2024-05-01 17:47:59,464] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сосногорск yndx_id 1169781455
+[2024-05-01 17:48:01,468] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 483 cities updated in cities dictionary
+[2024-05-01 17:48:01,679] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сочи yndx_id 1757413563
+[2024-05-01 17:48:03,691] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 484 cities updated in cities dictionary
+[2024-05-01 17:48:03,909] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Спасск-Дальний yndx_id 1040127704
+[2024-05-01 17:48:05,920] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 485 cities updated in cities dictionary
+[2024-05-01 17:48:06,138] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ставрополь yndx_id 191067855708
+[2024-05-01 17:48:08,149] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 486 cities updated in cities dictionary
+[2024-05-01 17:48:08,397] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Старая Русса yndx_id 31172457945
+[2024-05-01 17:48:10,409] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 487 cities updated in cities dictionary
+[2024-05-01 17:48:10,631] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Старый Оскол yndx_id 1116935023
+[2024-05-01 17:48:12,643] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 488 cities updated in cities dictionary
+[2024-05-01 17:48:13,094] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Стерлитамак yndx_id 1098635297
+[2024-05-01 17:48:15,106] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 489 cities updated in cities dictionary
+[2024-05-01 17:48:15,756] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Стрежевой yndx_id 1127880691
+[2024-05-01 17:48:17,768] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 490 cities updated in cities dictionary
+[2024-05-01 17:48:18,011] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Строитель yndx_id 1049852230
+[2024-05-01 17:48:20,023] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 491 cities updated in cities dictionary
+[2024-05-01 17:48:20,471] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ступино yndx_id 1222889372
+[2024-05-01 17:48:22,484] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 492 cities updated in cities dictionary
+[2024-05-01 17:48:22,743] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Суворов yndx_id 1052425115
+[2024-05-01 17:48:24,755] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:24,756] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 493 cities updated in cities dictionary
+[2024-05-01 17:48:24,992] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сургут yndx_id 1258699028
+[2024-05-01 17:48:27,004] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:27,004] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 494 cities updated in cities dictionary
+[2024-05-01 17:48:27,220] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сызрань yndx_id 1170051798
+[2024-05-01 17:48:29,232] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:29,233] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 495 cities updated in cities dictionary
+[2024-05-01 17:48:29,499] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Сыктывкар yndx_id 1095896623
+[2024-05-01 17:48:31,510] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:31,511] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 496 cities updated in cities dictionary
+[2024-05-01 17:48:31,730] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Таганрог yndx_id 1109695028
+[2024-05-01 17:48:33,742] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:33,742] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 497 cities updated in cities dictionary
+[2024-05-01 17:48:33,991] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Тайга
+[2024-05-01 17:48:33,992] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тайга yndx_id 0
+[2024-05-01 17:48:36,004] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:36,004] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 498 cities updated in cities dictionary
+[2024-05-01 17:48:36,253] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Тайшет
+[2024-05-01 17:48:36,254] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тайшет yndx_id 0
+[2024-05-01 17:48:38,265] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:38,266] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 499 cities updated in cities dictionary
+[2024-05-01 17:48:38,475] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Талдом yndx_id 114378303833
+[2024-05-01 17:48:40,480] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:40,480] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 500 cities updated in cities dictionary
+[2024-05-01 17:48:40,744] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тамань yndx_id 221915964297
+[2024-05-01 17:48:42,756] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:42,756] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 501 cities updated in cities dictionary
+[2024-05-01 17:48:42,974] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тамбов yndx_id 1046459421
+[2024-05-01 17:48:44,983] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:44,983] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 502 cities updated in cities dictionary
+[2024-05-01 17:48:45,179] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тара yndx_id 1606155159
+[2024-05-01 17:48:47,191] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:47,192] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 503 cities updated in cities dictionary
+[2024-05-01 17:48:47,410] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тарко-Сале yndx_id 167957614495
+[2024-05-01 17:48:49,422] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:49,423] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 504 cities updated in cities dictionary
+[2024-05-01 17:48:49,648] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Татарск yndx_id 1272597995
+[2024-05-01 17:48:51,657] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:51,658] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 505 cities updated in cities dictionary
+[2024-05-01 17:48:51,870] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Таштагол yndx_id 1244555824
+[2024-05-01 17:48:53,882] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:53,883] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 506 cities updated in cities dictionary
+[2024-05-01 17:48:54,128] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тверь yndx_id 1112246661
+[2024-05-01 17:48:56,140] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:56,140] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 507 cities updated in cities dictionary
+[2024-05-01 17:48:56,365] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Тейково
+[2024-05-01 17:48:56,366] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тейково yndx_id 0
+[2024-05-01 17:48:58,377] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:48:58,378] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 508 cities updated in cities dictionary
+[2024-05-01 17:48:58,609] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Темрюк yndx_id 1120474325
+[2024-05-01 17:49:00,618] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:00,619] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 509 cities updated in cities dictionary
+[2024-05-01 17:49:01,016] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тербуны yndx_id 1094646358
+[2024-05-01 17:49:03,022] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:03,023] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 510 cities updated in cities dictionary
+[2024-05-01 17:49:03,283] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Тимашевск
+[2024-05-01 17:49:03,284] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тимашевск yndx_id 0
+[2024-05-01 17:49:05,296] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:05,296] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 511 cities updated in cities dictionary
+[2024-05-01 17:49:05,852] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тихвин yndx_id 1123825627
+[2024-05-01 17:49:07,864] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:07,865] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 512 cities updated in cities dictionary
+[2024-05-01 17:49:08,082] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тихорецк yndx_id 42491589481
+[2024-05-01 17:49:10,094] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:10,095] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 513 cities updated in cities dictionary
+[2024-05-01 17:49:10,323] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тобольск yndx_id 1119382639
+[2024-05-01 17:49:12,335] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:12,336] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 514 cities updated in cities dictionary
+[2024-05-01 17:49:12,564] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тольятти yndx_id 1190899367
+[2024-05-01 17:49:14,576] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:14,576] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 515 cities updated in cities dictionary
+[2024-05-01 17:49:14,866] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Томск yndx_id 1131894108
+[2024-05-01 17:49:16,878] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:16,879] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 516 cities updated in cities dictionary
+[2024-05-01 17:49:17,083] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Топки yndx_id 1069068038
+[2024-05-01 17:49:19,095] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:19,096] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 517 cities updated in cities dictionary
+[2024-05-01 17:49:19,331] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Торжок yndx_id 1123136902
+[2024-05-01 17:49:21,343] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:21,344] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 518 cities updated in cities dictionary
+[2024-05-01 17:49:21,540] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тосно yndx_id 1239888420
+[2024-05-01 17:49:23,547] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:23,548] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 519 cities updated in cities dictionary
+[2024-05-01 17:49:23,777] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Трехгорный yndx_id 1569908726
+[2024-05-01 17:49:25,789] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:25,789] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 520 cities updated in cities dictionary
+[2024-05-01 17:49:26,043] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Троицк yndx_id 1061345029
+[2024-05-01 17:49:28,055] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:28,056] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 521 cities updated in cities dictionary
+[2024-05-01 17:49:28,306] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Троицк yndx_id 1061345029
+[2024-05-01 17:49:30,318] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:30,319] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 521 cities updated in cities dictionary
+[2024-05-01 17:49:30,593] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Туапсе yndx_id 1003228792
+[2024-05-01 17:49:32,599] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:32,599] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 522 cities updated in cities dictionary
+[2024-05-01 17:49:32,831] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Туймазы
+[2024-05-01 17:49:32,831] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Туймазы yndx_id 0
+[2024-05-01 17:49:34,843] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:34,844] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 523 cities updated in cities dictionary
+[2024-05-01 17:49:35,095] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тула yndx_id 1192154456
+[2024-05-01 17:49:37,106] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:37,107] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 524 cities updated in cities dictionary
+[2024-05-01 17:49:37,336] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тулун yndx_id 213271022340
+[2024-05-01 17:49:39,348] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:39,349] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 525 cities updated in cities dictionary
+[2024-05-01 17:49:39,543] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Тутаев
+[2024-05-01 17:49:39,544] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тутаев yndx_id 0
+[2024-05-01 17:49:41,555] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:41,556] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 526 cities updated in cities dictionary
+[2024-05-01 17:49:41,791] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тында yndx_id 1540985777
+[2024-05-01 17:49:43,803] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:43,804] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 527 cities updated in cities dictionary
+[2024-05-01 17:49:44,001] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Тюмень yndx_id 1585824733
+[2024-05-01 17:49:46,013] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:46,014] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 528 cities updated in cities dictionary
+[2024-05-01 17:49:46,254] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ува yndx_id 139061754236
+[2024-05-01 17:49:48,267] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:48,267] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 529 cities updated in cities dictionary
+[2024-05-01 17:49:48,488] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Удачный
+[2024-05-01 17:49:48,488] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Удачный yndx_id 0
+[2024-05-01 17:49:50,500] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:50,501] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 530 cities updated in cities dictionary
+[2024-05-01 17:49:50,827] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Удомля yndx_id 1116796573
+[2024-05-01 17:49:52,835] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:52,836] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 531 cities updated in cities dictionary
+[2024-05-01 17:49:53,050] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Узловая yndx_id 215514308678
+[2024-05-01 17:49:55,061] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:55,061] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 532 cities updated in cities dictionary
+[2024-05-01 17:49:55,755] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Улан-Удэ yndx_id 1226256098
+[2024-05-01 17:49:57,766] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:57,767] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 533 cities updated in cities dictionary
+[2024-05-01 17:49:57,981] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ульяновск yndx_id 238649675073
+[2024-05-01 17:49:59,993] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:49:59,993] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 534 cities updated in cities dictionary
+[2024-05-01 17:50:00,208] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Урай
+[2024-05-01 17:50:00,209] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Урай yndx_id 0
+[2024-05-01 17:50:02,222] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:02,223] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 535 cities updated in cities dictionary
+[2024-05-01 17:50:02,463] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Урус-Мартан yndx_id 1651204832
+[2024-05-01 17:50:04,476] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:04,476] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 536 cities updated in cities dictionary
+[2024-05-01 17:50:04,711] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Урюпинск yndx_id 1115611938
+[2024-05-01 17:50:06,722] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:06,723] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 537 cities updated in cities dictionary
+[2024-05-01 17:50:06,934] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Усинск yndx_id 1064161891
+[2024-05-01 17:50:08,946] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:08,947] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 538 cities updated in cities dictionary
+[2024-05-01 17:50:09,728] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Усолье-Сибирское yndx_id 127524408419
+[2024-05-01 17:50:11,740] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:11,741] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 539 cities updated in cities dictionary
+[2024-05-01 17:50:11,980] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Уссурийск
+[2024-05-01 17:50:11,981] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Уссурийск yndx_id 0
+[2024-05-01 17:50:13,993] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:13,993] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 540 cities updated in cities dictionary
+[2024-05-01 17:50:14,211] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Усть-Илимск yndx_id 201151107263
+[2024-05-01 17:50:16,223] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:16,224] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 541 cities updated in cities dictionary
+[2024-05-01 17:50:16,448] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Усть-Кут yndx_id 154260558236
+[2024-05-01 17:50:18,460] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:18,460] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 542 cities updated in cities dictionary
+[2024-05-01 17:50:18,686] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Усть-Лабинск yndx_id 1071699142
+[2024-05-01 17:50:20,698] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:20,699] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 543 cities updated in cities dictionary
+[2024-05-01 17:50:20,932] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Уфа yndx_id 1104653043
+[2024-05-01 17:50:22,944] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:22,945] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 544 cities updated in cities dictionary
+[2024-05-01 17:50:23,145] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ухта yndx_id 1074053712
+[2024-05-01 17:50:25,156] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:25,156] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 545 cities updated in cities dictionary
+[2024-05-01 17:50:25,487] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Федоровский
+[2024-05-01 17:50:25,487] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Федоровский yndx_id 0
+[2024-05-01 17:50:27,499] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:27,500] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 546 cities updated in cities dictionary
+[2024-05-01 17:50:27,712] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Фокино yndx_id 1001655423
+[2024-05-01 17:50:29,723] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:29,724] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 547 cities updated in cities dictionary
+[2024-05-01 17:50:29,997] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Фролово yndx_id 1051153369
+[2024-05-01 17:50:32,009] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:32,010] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 548 cities updated in cities dictionary
+[2024-05-01 17:50:32,239] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Фрязино yndx_id 1015567982
+[2024-05-01 17:50:34,244] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:34,244] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 549 cities updated in cities dictionary
+[2024-05-01 17:50:34,443] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Фурманов yndx_id 142956405994
+[2024-05-01 17:50:36,456] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:36,456] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 550 cities updated in cities dictionary
+[2024-05-01 17:50:36,657] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Хабаровск yndx_id 1019073979
+[2024-05-01 17:50:38,669] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:38,669] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 551 cities updated in cities dictionary
+[2024-05-01 17:50:38,897] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ханты-Мансийск yndx_id 1019870634
+[2024-05-01 17:50:40,903] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:40,903] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 552 cities updated in cities dictionary
+[2024-05-01 17:50:41,119] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Хасавюрт yndx_id 1071394859
+[2024-05-01 17:50:43,131] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:43,131] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 553 cities updated in cities dictionary
+[2024-05-01 17:50:43,297] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Хилок yndx_id 1022033665
+[2024-05-01 17:50:45,309] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:45,310] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 554 cities updated in cities dictionary
+[2024-05-01 17:50:45,573] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Химки yndx_id 1245666277
+[2024-05-01 17:50:47,585] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:47,585] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 555 cities updated in cities dictionary
+[2024-05-01 17:50:47,781] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Холмск yndx_id 1670352252
+[2024-05-01 17:50:49,793] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:49,794] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 556 cities updated in cities dictionary
+[2024-05-01 17:50:50,020] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Хотьково yndx_id 122000955384
+[2024-05-01 17:50:52,032] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:52,033] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 557 cities updated in cities dictionary
+[2024-05-01 17:50:52,329] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Чайковский yndx_id 1203132537
+[2024-05-01 17:50:54,341] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:54,342] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 558 cities updated in cities dictionary
+[2024-05-01 17:50:54,574] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Чапаевск
+[2024-05-01 17:50:54,574] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Чапаевск yndx_id 0
+[2024-05-01 17:50:56,586] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:56,587] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 559 cities updated in cities dictionary
+[2024-05-01 17:50:56,840] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Чебаркуль yndx_id 1107018289
+[2024-05-01 17:50:58,852] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:50:58,853] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 560 cities updated in cities dictionary
+[2024-05-01 17:50:59,073] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Чебоксары yndx_id 33819802542
+[2024-05-01 17:51:01,085] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:01,086] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 561 cities updated in cities dictionary
+[2024-05-01 17:51:01,283] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Челябинск yndx_id 1132255720
+[2024-05-01 17:51:03,289] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:03,290] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 562 cities updated in cities dictionary
+[2024-05-01 17:51:03,514] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Черемхово yndx_id 1046632752
+[2024-05-01 17:51:05,525] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:05,526] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 563 cities updated in cities dictionary
+[2024-05-01 17:51:05,775] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Черепаново yndx_id 1000272959
+[2024-05-01 17:51:07,787] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:07,788] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 564 cities updated in cities dictionary
+[2024-05-01 17:51:08,030] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Череповец yndx_id 109598101531
+[2024-05-01 17:51:10,035] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:10,036] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 565 cities updated in cities dictionary
+[2024-05-01 17:51:10,297] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Черкесск yndx_id 1191654780
+[2024-05-01 17:51:12,304] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:12,305] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 566 cities updated in cities dictionary
+[2024-05-01 17:51:12,515] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Черноголовка
+[2024-05-01 17:51:12,516] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Черноголовка yndx_id 0
+[2024-05-01 17:51:14,527] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:14,528] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 567 cities updated in cities dictionary
+[2024-05-01 17:51:14,761] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Черногорск yndx_id 1103091509
+[2024-05-01 17:51:16,767] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:16,768] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 568 cities updated in cities dictionary
+[2024-05-01 17:51:16,967] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Чернушка yndx_id 1163866570
+[2024-05-01 17:51:18,979] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:18,980] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 569 cities updated in cities dictionary
+[2024-05-01 17:51:19,214] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Черняховск yndx_id 1038119480
+[2024-05-01 17:51:21,226] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:21,227] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 570 cities updated in cities dictionary
+[2024-05-01 17:51:21,439] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Чехов yndx_id 1652596820
+[2024-05-01 17:51:23,451] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:23,451] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 571 cities updated in cities dictionary
+[2024-05-01 17:51:23,724] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Чистополь yndx_id 1184282613
+[2024-05-01 17:51:25,736] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:25,736] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 572 cities updated in cities dictionary
+[2024-05-01 17:51:25,969] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Чита yndx_id 1118767830
+[2024-05-01 17:51:27,981] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:27,982] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 573 cities updated in cities dictionary
+[2024-05-01 17:51:28,230] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Чусовой
+[2024-05-01 17:51:28,230] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Чусовой yndx_id 0
+[2024-05-01 17:51:30,241] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:30,241] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 574 cities updated in cities dictionary
+[2024-05-01 17:51:30,445] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шадринск yndx_id 1022091159
+[2024-05-01 17:51:32,458] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:32,458] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 575 cities updated in cities dictionary
+[2024-05-01 17:51:32,683] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шали yndx_id 169702763770
+[2024-05-01 17:51:34,696] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:34,696] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 576 cities updated in cities dictionary
+[2024-05-01 17:51:34,908] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шарыпово yndx_id 1629986799
+[2024-05-01 17:51:36,920] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:36,921] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 577 cities updated in cities dictionary
+[2024-05-01 17:51:37,114] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шарья yndx_id 1204325228
+[2024-05-01 17:51:39,119] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:39,120] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 578 cities updated in cities dictionary
+[2024-05-01 17:51:39,535] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шатура yndx_id 1055125991
+[2024-05-01 17:51:41,538] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:41,539] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 579 cities updated in cities dictionary
+[2024-05-01 17:51:41,889] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шаховская yndx_id 1121961334
+[2024-05-01 17:51:43,901] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:43,902] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 580 cities updated in cities dictionary
+[2024-05-01 17:51:44,166] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шахты yndx_id 1177193543
+[2024-05-01 17:51:46,170] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:46,171] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 581 cities updated in cities dictionary
+[2024-05-01 17:51:46,384] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шахунья yndx_id 1084411687
+[2024-05-01 17:51:48,395] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:48,396] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 582 cities updated in cities dictionary
+[2024-05-01 17:51:48,643] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шелехов yndx_id 1081880934
+[2024-05-01 17:51:50,655] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:50,656] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 583 cities updated in cities dictionary
+[2024-05-01 17:51:50,895] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шилка yndx_id 1027491976
+[2024-05-01 17:51:52,907] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:52,908] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 584 cities updated in cities dictionary
+[2024-05-01 17:51:53,130] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шимановск yndx_id 79169495670
+[2024-05-01 17:51:55,143] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:55,143] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 585 cities updated in cities dictionary
+[2024-05-01 17:51:55,318] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шумерля yndx_id 115007863918
+[2024-05-01 17:51:57,330] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:57,331] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 586 cities updated in cities dictionary
+[2024-05-01 17:51:57,556] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шушары yndx_id 1380413951
+[2024-05-01 17:51:59,568] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:51:59,569] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 587 cities updated in cities dictionary
+[2024-05-01 17:51:59,813] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Шуя yndx_id 1027548249
+[2024-05-01 17:52:01,825] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:01,826] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 588 cities updated in cities dictionary
+[2024-05-01 17:52:02,064] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Щекино
+[2024-05-01 17:52:02,065] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Щекино yndx_id 0
+[2024-05-01 17:52:04,070] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:04,071] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 589 cities updated in cities dictionary
+[2024-05-01 17:52:04,303] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Щелково
+[2024-05-01 17:52:04,304] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Щелково yndx_id 0
+[2024-05-01 17:52:06,315] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:06,316] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 590 cities updated in cities dictionary
+[2024-05-01 17:52:06,520] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Электросталь yndx_id 1127641966
+[2024-05-01 17:52:08,532] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:08,533] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 591 cities updated in cities dictionary
+[2024-05-01 17:52:09,022] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Элиста yndx_id 1049790377
+[2024-05-01 17:52:11,034] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:11,035] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 592 cities updated in cities dictionary
+[2024-05-01 17:52:11,307] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Энгельс yndx_id 1085204776
+[2024-05-01 17:52:13,319] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:13,320] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 593 cities updated in cities dictionary
+[2024-05-01 17:52:13,539] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Югорск yndx_id 217750841003
+[2024-05-01 17:52:15,547] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:15,547] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 594 cities updated in cities dictionary
+[2024-05-01 17:52:15,807] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Южно-Сахалинск yndx_id 1036234288
+[2024-05-01 17:52:17,815] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:17,816] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 595 cities updated in cities dictionary
+[2024-05-01 17:52:18,067] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Южноуральск yndx_id 1673911895
+[2024-05-01 17:52:20,079] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:20,080] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 596 cities updated in cities dictionary
+[2024-05-01 17:52:20,311] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Юрга yndx_id 1122309068
+[2024-05-01 17:52:22,316] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:22,317] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 597 cities updated in cities dictionary
+[2024-05-01 17:52:22,516] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Якутск yndx_id 1235874543
+[2024-05-01 17:52:24,528] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:24,529] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 598 cities updated in cities dictionary
+[2024-05-01 17:52:24,727] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ялуторовск yndx_id 161456601712
+[2024-05-01 17:52:26,735] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:26,735] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 599 cities updated in cities dictionary
+[2024-05-01 17:52:26,951] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ярославль yndx_id 1023508346
+[2024-05-01 17:52:28,963] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:28,964] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 600 cities updated in cities dictionary
+[2024-05-01 17:52:29,238] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ярцево yndx_id 1217811066
+[2024-05-01 17:52:31,251] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:31,251] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 601 cities updated in cities dictionary
+[2024-05-01 17:52:31,464] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in Ясный
+[2024-05-01 17:52:31,465] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - Ясный yndx_id 0
+[2024-05-01 17:52:33,477] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:33,477] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 602 cities updated in cities dictionary
+[2024-05-01 17:52:33,699] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - д. Жуковка yndx_id 236753973078
+[2024-05-01 17:52:35,711] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:35,711] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 603 cities updated in cities dictionary
+[2024-05-01 17:52:35,888] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in п. Айхал
+[2024-05-01 17:52:35,888] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Айхал yndx_id 0
+[2024-05-01 17:52:37,891] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:37,892] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 604 cities updated in cities dictionary
+[2024-05-01 17:52:38,313] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Ванино yndx_id 168045311273
+[2024-05-01 17:52:40,316] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:40,316] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 605 cities updated in cities dictionary
+[2024-05-01 17:52:40,509] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Голышманово yndx_id 1086180283
+[2024-05-01 17:52:42,521] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:42,522] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 606 cities updated in cities dictionary
+[2024-05-01 17:52:42,737] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Ерофей Павлович yndx_id 1019117004
+[2024-05-01 17:52:44,749] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:44,749] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 607 cities updated in cities dictionary
+[2024-05-01 17:52:45,019] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Излучинск yndx_id 1127532610
+[2024-05-01 17:52:47,031] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:47,031] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 608 cities updated in cities dictionary
+[2024-05-01 17:52:47,243] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Магдагачи yndx_id 1081090948
+[2024-05-01 17:52:49,255] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:49,256] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 609 cities updated in cities dictionary
+[2024-05-01 17:52:49,464] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in п. Междуреченский
+[2024-05-01 17:52:49,464] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Междуреченский yndx_id 0
+[2024-05-01 17:52:51,476] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:51,477] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 610 cities updated in cities dictionary
+[2024-05-01 17:52:52,699] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Мурино yndx_id 186139030206
+[2024-05-01 17:52:54,711] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:54,712] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 611 cities updated in cities dictionary
+[2024-05-01 17:52:54,929] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Новоорск yndx_id 55231890895
+[2024-05-01 17:52:56,940] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:56,941] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 612 cities updated in cities dictionary
+[2024-05-01 17:52:57,210] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Новый Ургал yndx_id 1025730373
+[2024-05-01 17:52:59,220] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:52:59,221] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 613 cities updated in cities dictionary
+[2024-05-01 17:52:59,458] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in п. Придорожный
+[2024-05-01 17:52:59,459] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Придорожный yndx_id 0
+[2024-05-01 17:53:01,470] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:01,471] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 614 cities updated in cities dictionary
+[2024-05-01 17:53:01,701] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in п. Светлый
+[2024-05-01 17:53:01,702] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Светлый yndx_id 0
+[2024-05-01 17:53:03,705] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:03,705] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 615 cities updated in cities dictionary
+[2024-05-01 17:53:03,951] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in п. Свободный
+[2024-05-01 17:53:03,952] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Свободный yndx_id 0
+[2024-05-01 17:53:05,964] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:05,965] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 616 cities updated in cities dictionary
+[2024-05-01 17:53:06,575] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in п. Тазовский
+[2024-05-01 17:53:06,576] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Тазовский yndx_id 0
+[2024-05-01 17:53:08,588] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:08,588] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 617 cities updated in cities dictionary
+[2024-05-01 17:53:08,807] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - п. Таксимо yndx_id 1221682077
+[2024-05-01 17:53:10,819] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:10,820] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 618 cities updated in cities dictionary
+[2024-05-01 17:53:11,063] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - пгт. Забайкальск yndx_id 95552108287
+[2024-05-01 17:53:13,075] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:13,076] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 619 cities updated in cities dictionary
+[2024-05-01 17:53:13,272] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in пгт. Карымское
+[2024-05-01 17:53:13,273] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - пгт. Карымское yndx_id 0
+[2024-05-01 17:53:15,284] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:15,285] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 620 cities updated in cities dictionary
+[2024-05-01 17:53:15,532] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - пгт. Новая Чара yndx_id 1000273433
+[2024-05-01 17:53:17,543] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:17,544] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 621 cities updated in cities dictionary
+[2024-05-01 17:53:17,759] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - пгт. Промышленная yndx_id 1026928775
+[2024-05-01 17:53:19,771] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:19,772] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 622 cities updated in cities dictionary
+[2024-05-01 17:53:19,988] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - пгт. Чернышевск yndx_id 1084735874
+[2024-05-01 17:53:22,000] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:22,001] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 623 cities updated in cities dictionary
+[2024-05-01 17:53:22,234] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - пос. Персиановский yndx_id 1032503413
+[2024-05-01 17:53:24,246] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:24,247] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 624 cities updated in cities dictionary
+[2024-05-01 17:53:24,458] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in пос. Саянский
+[2024-05-01 17:53:24,459] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - пос. Саянский yndx_id 0
+[2024-05-01 17:53:26,471] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:26,472] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 625 cities updated in cities dictionary
+[2024-05-01 17:53:26,721] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - р.п. Кольцово yndx_id 1102993553
+[2024-05-01 17:53:28,733] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:28,733] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 626 cities updated in cities dictionary
+[2024-05-01 17:53:29,308] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - р.п. Краснообск yndx_id 226146025537
+[2024-05-01 17:53:31,320] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:31,320] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 627 cities updated in cities dictionary
+[2024-05-01 17:53:31,534] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:163} INFO - where is no sberbank in р.п. Сенной
+[2024-05-01 17:53:31,535] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - р.п. Сенной yndx_id 0
+[2024-05-01 17:53:33,538] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:33,538] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 628 cities updated in cities dictionary
+[2024-05-01 17:53:33,729] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - с. Красноселькуп yndx_id 1217969593
+[2024-05-01 17:53:35,741] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:35,741] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 629 cities updated in cities dictionary
+[2024-05-01 17:53:36,013] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - ст. Павловская yndx_id 1035106102
+[2024-05-01 17:53:38,025] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:38,026] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 630 cities updated in cities dictionary
+[2024-05-01 17:53:38,279] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:205} INFO - ст. Талица yndx_id 202243384120
+[2024-05-01 17:53:40,291] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:222} INFO - limit is ended, see you tomorrow
+[2024-05-01 17:53:40,292] p9796 {/Users/anyarulina/parser/call_yandex_api_org.py:226} INFO - 631 cities updated in cities dictionary

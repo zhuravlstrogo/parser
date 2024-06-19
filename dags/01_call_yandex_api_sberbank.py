@@ -28,7 +28,7 @@ with DAG(
 ) as dag:
     call_yandex_api_sberbank = BashOperator(
     task_id = 'call_yandex_api_sberbank',
-    bash_command='python3 /opt/airflow/scripts/yandex-info-reviews-parser/call_yandex_api_org.py -path_type 1 -bank_name sberbank',
+    bash_command='python3 /opt/airflow/scripts/parser/call_yandex_api_org.py -path_type 1 -bank_name sberbank',
     execution_timeout=timedelta(minutes=1200)
     # dag=dag
 )

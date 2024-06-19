@@ -1,0 +1,570 @@
+[2024-05-16 10:08:49,609] p3347 {/Users/anyarulina/parser/after_work.py:169} INFO - cities_without_bank 6
+[2024-05-16 10:08:49,610] p3347 {/Users/anyarulina/parser/after_work.py:176} INFO - final df
+[2024-05-16 10:08:49,620] p3347 {/Users/anyarulina/parser/after_work.py:178} INFO - final_df.shape (775, 16)
+[2024-05-16 10:08:50,063] p3347 {/Users/anyarulina/parser/after_work.py:191} INFO - 491 unique cities saved
+[2024-05-16 10:08:50,064] p3347 {/Users/anyarulina/parser/after_work.py:207} INFO - not handled 147 cities: {'п. Айхал', 'Талдом', 'Лотошино', 'Урюпинск', 'Малгобек', 'Грозный', 'Льгов', 'Кукмор', 'Заинск', 'Алдан', 'Колпашево', 'п. Таксимо', 'Камышлов', 'Гагарин', 'Карабулак', 'Трёхгорный', 'Таштагол', 'Анадырь', 'Дедовск', 'Северобайкальск', 'Дербент', 'Нижнесортымский', 'Сковородино', 'Буинск', 'Бологое', 'Малиновский', 'п. Придорожный', 'Суворов', 'Бронницы', 'Сегежа', 'Губаха', 'Белоярский', 'Прохладный', 'Полярный', 'Свободный', 'Коряжма', 'Балтийск', 'Ейск', 'Заполярный', 'Тулун', 'Федоровский', 'п. Магдагачи', 'Хотьково', 'Железнодорожный', 'Саров', 'Кулебаки', 'Дзержинский', 'Донецк', 'Карталы', 'Пущино', 'Назрань', 'п. Свободный', 'д. Жуковка', 'Агинское', 'Московский', 'Сальск', 'Минеральные воды', 'Могоча', 'Зима', 'Завитинск', 'Шимановск', 'р.п. Сенной', 'Советская Гавань', 'Горноправдинск', 'Вилючинск', 'Советский', 'Ноябрьск', 'Красноармейск', 'Боготол', 'Аргун', 'Сортавала', 'Жуков', 'ст. Талица', 'Баксан', 'Кизляр', 'Фокино', 'Удачный', 'Алексеевка', 'Дальнереченск', 'Топки', 'Козьмодемьянск', 'Амурск', 'Буй', 'Алейск', 'п. Новый Ургал', 'Ершов', 'Кушва', 'Кемь', 'Куровское', 'Болотное', 'Иланский', 'Лучегорск', 'Миллерово', 'п. Ванино', 'Берёзово', 'с. Красноселькуп', 'Светлоград', 'п. Светлый', 'Заозёрск', 'Шали', 'Краснознаменск', 'Луховицы', 'Фурманов', 'пос. Саянский', 'ЗАТО Сибирский', 'Оса', 'Старая Русса', 'Артёмовский', 'Хасавюрт', 'Строитель', 'Звенигово', 'ст. Павловская', 'Игрим', 'Лесной', 'Кировск', 'Гусиноозёрск', 'Озерск', 'Хилок', 'Тайга', 'Фролово', 'Ува', 'Новый Уренгой', 'Бирск', 'Гуково', 'Борзя', 'Семёнов', 'Вихоревка', 'п. Мурино', 'Полярные зори', 'Кимовск', 'Мыски', 'Черкесск', 'Райчихинск', 'Избербаш', 'Черноголовка', 'Норильск', 'Сосногорск', 'Тербуны', 'Североуральск', 'Каспийск', 'Шумерля', 'Балабаново', 'пос. Персиановский', 'Кяхта', 'Покачи', 'Гудермес', 'Агрыз'}
+[2024-05-16 10:14:28,105] p3482 {/Users/anyarulina/parser/after_work.py:169} INFO - cities_without_bank 0
+[2024-05-16 10:14:28,106] p3482 {/Users/anyarulina/parser/after_work.py:176} INFO - final df
+[2024-05-16 10:14:28,116] p3482 {/Users/anyarulina/parser/after_work.py:178} INFO - final_df.shape (3609, 16)
+[2024-05-16 10:14:29,089] p3482 {/Users/anyarulina/parser/after_work.py:191} INFO - 628 unique cities saved
+[2024-05-16 10:14:29,089] p3482 {/Users/anyarulina/parser/after_work.py:207} INFO - not handled 5 cities: {'Железнодорожный', 'Федоровский', 'Минеральные воды', 'д. Жуковка', 'п. Мурино'}
+[2024-05-16 10:14:53,136] p3511 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:14:53,142] p3511 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 294, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 247, in merge_all_reviews
+    info_df['indicator'] = info_df['city'].str.cat(df1['ID'])
+NameError: name 'df1' is not defined
+[2024-05-16 10:15:09,714] p3532 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:15:09,721] p3532 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 294, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 247, in merge_all_reviews
+    info_df['indicator'] = info_df['city'].str.cat(info_df['ID'])
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/strings/accessor.py", line 125, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/strings/accessor.py", line 633, in cat
+    result = cat_safe(all_cols, sep)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/strings/accessor.py", line 3179, in cat_safe
+    raise TypeError(
+TypeError: Concatenation requires list-likes containing only strings (or missing values). Offending values found in column integer
+[2024-05-16 10:15:58,293] p3563 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:15:58,300] p3563 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 294, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 247, in merge_all_reviews
+    info_df['indicator'] = info_df['city'].str.cat(str(info_df['ID']))
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/strings/accessor.py", line 125, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/strings/accessor.py", line 567, in cat
+    raise ValueError("Did you mean to supply a `sep` keyword?")
+ValueError: Did you mean to supply a `sep` keyword?
+[2024-05-16 10:16:49,024] p3624 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:16:49,031] p3624 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'ID'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 294, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 248, in merge_all_reviews
+    final_df['indicator'] = final_df['city'] + str(final_df['ID'])
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'ID'
+[2024-05-16 10:17:01,706] p3643 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:17:01,755] p3643 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 294, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 250, in merge_all_reviews
+    final_df = final_df.loc[final_df['indicator'].info_df(info_df['indicator'])].drop(columns=['indicator'])
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 5575, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'Series' object has no attribute 'info_df'
+[2024-05-16 10:17:48,197] p3678 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:17:48,250] p3678 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 297, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 253, in merge_all_reviews
+    final_df = final_df.loc[final_df['indicator'].info_df(info_df['indicator'])].drop(columns=['indicator'])
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 5575, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'Series' object has no attribute 'info_df'
+[2024-05-16 10:18:26,225] p3705 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:18:26,421] p3705 {/Users/anyarulina/parser/after_work.py:255} INFO - len final_df after filter 0
+[2024-05-16 10:18:26,422] p3705 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 297, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 265, in merge_all_reviews
+    print(final_df.sample())
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 5446, in sample
+    sampled_indices = sample.sample(obj_len, size, replace, weights, rs)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/sample.py", line 150, in sample
+    return random_state.choice(obj_len, size=size, replace=replace, p=weights).astype(
+  File "mtrand.pyx", line 909, in numpy.random.mtrand.RandomState.choice
+ValueError: a must be greater than 0 unless no samples are taken
+[2024-05-16 10:21:42,066] p3775 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:21:42,274] p3775 {/Users/anyarulina/parser/after_work.py:258} INFO - len final_df after filter 0
+[2024-05-16 10:21:42,275] p3775 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 300, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 268, in merge_all_reviews
+    print(final_df.sample())
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 5446, in sample
+    sampled_indices = sample.sample(obj_len, size, replace, weights, rs)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/sample.py", line 150, in sample
+    return random_state.choice(obj_len, size=size, replace=replace, p=weights).astype(
+  File "mtrand.pyx", line 909, in numpy.random.mtrand.RandomState.choice
+ValueError: a must be greater than 0 unless no samples are taken
+[2024-05-16 10:22:58,396] p3832 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:22:58,606] p3832 {/Users/anyarulina/parser/after_work.py:258} INFO - len final_df after filter 0
+[2024-05-16 10:22:58,607] p3832 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 300, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 268, in merge_all_reviews
+    print(final_df.sample())
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 5446, in sample
+    sampled_indices = sample.sample(obj_len, size, replace, weights, rs)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/sample.py", line 150, in sample
+    return random_state.choice(obj_len, size=size, replace=replace, p=weights).astype(
+  File "mtrand.pyx", line 909, in numpy.random.mtrand.RandomState.choice
+ValueError: a must be greater than 0 unless no samples are taken
+[2024-05-16 10:23:47,094] p3887 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:23:47,314] p3887 {/Users/anyarulina/parser/after_work.py:257} INFO - len final_df after filter 0
+[2024-05-16 10:23:47,316] p3887 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 299, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 267, in merge_all_reviews
+    print(final_df.sample())
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 5446, in sample
+    sampled_indices = sample.sample(obj_len, size, replace, weights, rs)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/sample.py", line 150, in sample
+    return random_state.choice(obj_len, size=size, replace=replace, p=weights).astype(
+  File "mtrand.pyx", line 909, in numpy.random.mtrand.RandomState.choice
+ValueError: a must be greater than 0 unless no samples are taken
+[2024-05-16 10:24:20,672] p3923 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:24:20,883] p3923 {/Users/anyarulina/parser/after_work.py:257} INFO - len final_df after filter 0
+[2024-05-16 10:24:20,884] p3923 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 299, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 267, in merge_all_reviews
+    print(final_df.sample())
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 5446, in sample
+    sampled_indices = sample.sample(obj_len, size, replace, weights, rs)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/sample.py", line 150, in sample
+    return random_state.choice(obj_len, size=size, replace=replace, p=weights).astype(
+  File "mtrand.pyx", line 909, in numpy.random.mtrand.RandomState.choice
+ValueError: a must be greater than 0 unless no samples are taken
+[2024-05-16 10:25:28,921] p3975 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:25:29,094] p3975 {/Users/anyarulina/parser/after_work.py:257} INFO - len final_df after filter 0
+[2024-05-16 10:25:29,096] p3975 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 299, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 267, in merge_all_reviews
+    print(final_df.sample())
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 5446, in sample
+    sampled_indices = sample.sample(obj_len, size, replace, weights, rs)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/sample.py", line 150, in sample
+    return random_state.choice(obj_len, size=size, replace=replace, p=weights).astype(
+  File "mtrand.pyx", line 909, in numpy.random.mtrand.RandomState.choice
+ValueError: a must be greater than 0 unless no samples are taken
+[2024-05-16 10:26:52,645] p4017 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:26:52,836] p4017 {/Users/anyarulina/parser/after_work.py:261} INFO - len final_df after filter 0
+[2024-05-16 10:26:52,837] p4017 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 303, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 271, in merge_all_reviews
+    print(final_df.sample())
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 5446, in sample
+    sampled_indices = sample.sample(obj_len, size, replace, weights, rs)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/sample.py", line 150, in sample
+    return random_state.choice(obj_len, size=size, replace=replace, p=weights).astype(
+  File "mtrand.pyx", line 909, in numpy.random.mtrand.RandomState.choice
+ValueError: a must be greater than 0 unless no samples are taken
+[2024-05-16 10:27:41,319] p4060 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:27:41,469] p4060 {/Users/anyarulina/parser/after_work.py:261} INFO - len final_df after filter 66932
+[2024-05-16 10:27:41,550] p4060 {/Users/anyarulina/parser/after_work.py:273} INFO - I will save reviews length of 66781
+[2024-05-16 10:27:41,550] p4060 {/Users/anyarulina/parser/after_work.py:274} INFO - final_df.shape (66781, 7)
+[2024-05-16 10:27:41,551] p4060 {/Users/anyarulina/parser/after_work.py:275} INFO - unique banks 511
+[2024-05-16 10:27:41,580] p4060 {/Users/anyarulina/parser/after_work.py:276} INFO - unique cities 357
+[2024-05-16 10:29:42,701] p4126 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:29:42,846] p4126 {/Users/anyarulina/parser/after_work.py:252} INFO - len final_df after filter 66932
+[2024-05-16 10:29:42,925] p4126 {/Users/anyarulina/parser/after_work.py:264} INFO - I will save reviews length of 66781
+[2024-05-16 10:29:42,925] p4126 {/Users/anyarulina/parser/after_work.py:265} INFO - final_df.shape (66781, 7)
+[2024-05-16 10:29:42,926] p4126 {/Users/anyarulina/parser/after_work.py:266} INFO - unique banks 511
+[2024-05-16 10:29:42,955] p4126 {/Users/anyarulina/parser/after_work.py:267} INFO - unique cities 357
+[2024-05-16 10:29:56,658] p4126 {/Users/anyarulina/parser/after_work.py:275} INFO - I saved reviews length of 66781
+[2024-05-16 10:33:01,884] p4253 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:33:01,969] p4253 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 297, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 250, in merge_all_reviews
+    not_handled_dict = dict(zip(not_handled_df.not_handled_df.values, not_handled_df.ID.values))
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 5575, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'not_handled_df'
+[2024-05-16 10:33:47,949] p4290 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176986
+[2024-05-16 10:33:48,093] p4290 {/Users/anyarulina/parser/after_work.py:255} INFO - len final_df after filter 66932
+[2024-05-16 10:33:48,174] p4290 {/Users/anyarulina/parser/after_work.py:267} INFO - I will save reviews length of 66781
+[2024-05-16 10:33:48,175] p4290 {/Users/anyarulina/parser/after_work.py:268} INFO - final_df.shape (66781, 7)
+[2024-05-16 10:33:48,176] p4290 {/Users/anyarulina/parser/after_work.py:269} INFO - unique banks 511
+[2024-05-16 10:33:48,205] p4290 {/Users/anyarulina/parser/after_work.py:270} INFO - unique cities 357
+[2024-05-16 10:34:02,271] p4290 {/Users/anyarulina/parser/after_work.py:278} INFO - I saved reviews length of 66781
+[2024-05-16 10:34:43,450] p4345 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 678733
+[2024-05-16 10:34:44,016] p4345 {/Users/anyarulina/parser/after_work.py:255} INFO - len final_df after filter 461618
+[2024-05-16 10:34:44,529] p4345 {/Users/anyarulina/parser/after_work.py:267} INFO - I will save reviews length of 461552
+[2024-05-16 10:34:44,529] p4345 {/Users/anyarulina/parser/after_work.py:268} INFO - final_df.shape (461552, 7)
+[2024-05-16 10:34:44,537] p4345 {/Users/anyarulina/parser/after_work.py:269} INFO - unique banks 3488
+[2024-05-16 10:34:44,778] p4345 {/Users/anyarulina/parser/after_work.py:270} INFO - unique cities 605
+[2024-05-16 10:35:56,268] p4345 {/Users/anyarulina/parser/after_work.py:278} INFO - I saved reviews length of 461552
+[2024-05-16 12:38:19,963] p5901 {/Users/anyarulina/parser/after_work.py:169} INFO - cities_without_bank 0
+[2024-05-16 12:38:19,963] p5901 {/Users/anyarulina/parser/after_work.py:176} INFO - final df
+[2024-05-16 12:38:19,973] p5901 {/Users/anyarulina/parser/after_work.py:178} INFO - final_df.shape (3609, 16)
+[2024-05-16 12:38:20,975] p5901 {/Users/anyarulina/parser/after_work.py:191} INFO - 628 unique cities saved
+[2024-05-16 12:38:20,976] p5901 {/Users/anyarulina/parser/after_work.py:207} INFO - not handled 5 cities: {'Железнодорожный', 'Федоровский', 'д. Жуковка', 'Минеральные воды', 'п. Мурино'}
+[2024-05-16 12:38:46,653] p5948 {/Users/anyarulina/parser/after_work.py:169} INFO - cities_without_bank 0
+[2024-05-16 12:38:46,654] p5948 {/Users/anyarulina/parser/after_work.py:176} INFO - final df
+[2024-05-16 12:38:46,663] p5948 {/Users/anyarulina/parser/after_work.py:178} INFO - final_df.shape (3609, 16)
+[2024-05-16 12:38:47,639] p5948 {/Users/anyarulina/parser/after_work.py:191} INFO - 628 unique cities saved
+[2024-05-16 12:38:47,639] p5948 {/Users/anyarulina/parser/after_work.py:207} INFO - not handled 5 cities: {'Федоровский', 'Минеральные воды', 'д. Жуковка', 'п. Мурино', 'Железнодорожный'}
+[2024-05-16 12:39:14,580] p5992 {/Users/anyarulina/parser/after_work.py:169} INFO - cities_without_bank 6
+[2024-05-16 12:39:14,580] p5992 {/Users/anyarulina/parser/after_work.py:176} INFO - final df
+[2024-05-16 12:39:14,590] p5992 {/Users/anyarulina/parser/after_work.py:178} INFO - final_df.shape (775, 16)
+[2024-05-16 12:39:14,882] p5992 {/Users/anyarulina/parser/after_work.py:191} INFO - 491 unique cities saved
+[2024-05-16 12:39:14,882] p5992 {/Users/anyarulina/parser/after_work.py:207} INFO - not handled 147 cities: {'Кировск', 'п. Магдагачи', 'п. Мурино', 'Сальск', 'Берёзово', 'Артёмовский', 'Аргун', 'Нижнесортымский', 'Анадырь', 'Прохладный', 'Минеральные воды', 'Краснознаменск', 'Гуково', 'Гудермес', 'Урюпинск', 'п. Новый Ургал', 'ст. Павловская', 'ЗАТО Сибирский', 'Игрим', 'Бологое', 'Балтийск', 'п. Придорожный', 'Алексеевка', 'Каспийск', 'Новый Уренгой', 'Мыски', 'Козьмодемьянск', 'Ейск', 'Талдом', 'Куровское', 'Ершов', 'п. Светлый', 'п. Таксимо', 'Миллерово', 'Зима', 'Малиновский', 'Алейск', 'Строитель', 'Советская Гавань', 'Оса', 'Озерск', 'Кяхта', 'Лучегорск', 'Свободный', 'Черноголовка', 'Губаха', 'Буй', 'Дедовск', 'Дзержинский', 'Покачи', 'Северобайкальск', 'Боготол', 'Шумерля', 'Дербент', 'Кемь', 'Льгов', 'Красноармейск', 'пос. Персиановский', 'Лотошино', 'Балабаново', 'Камышлов', 'р.п. Сенной', 'Звенигово', 'п. Свободный', 'Райчихинск', 'Ува', 'Тайга', 'Вихоревка', 'Пущино', 'Тербуны', 'Сортавала', 'Колпашево', 'Кизляр', 'Полярные зори', 'Малгобек', 'Жуков', 'Лесной', 'Бирск', 'Белоярский', 'Грозный', 'Кимовск', 'Ноябрьск', 'Черкесск', 'ст. Талица', 'Алдан', 'Могоча', 'Шали', 'п. Ванино', 'д. Жуковка', 'с. Красноселькуп', 'Железнодорожный', 'Североуральск', 'Полярный', 'Коряжма', 'Хасавюрт', 'Сегежа', 'Удачный', 'Старая Русса', 'Кукмор', 'Донецк', 'Заозёрск', 'Фролово', 'Болотное', 'Хилок', 'Назрань', 'Гусиноозёрск', 'Сковородино', 'Дальнереченск', 'пос. Саянский', 'Таштагол', 'Федоровский', 'Избербаш', 'Карабулак', 'Кулебаки', 'Гагарин', 'Норильск', 'Трёхгорный', 'Кушва', 'Тулун', 'Хотьково', 'Саров', 'Иланский', 'Топки', 'Суворов', 'Семёнов', 'Фокино', 'Карталы', 'Борзя', 'Луховицы', 'Вилючинск', 'Шимановск', 'Заполярный', 'Советский', 'Горноправдинск', 'Агинское', 'Завитинск', 'Фурманов', 'Баксан', 'Сосногорск', 'Светлоград', 'Заинск', 'п. Айхал', 'Буинск', 'Амурск', 'Агрыз', 'Московский', 'Бронницы'}
+[2024-05-16 12:41:58,091] p6211 {/Users/anyarulina/parser/after_work.py:169} INFO - cities_without_bank 0
+[2024-05-16 12:41:58,091] p6211 {/Users/anyarulina/parser/after_work.py:176} INFO - final df
+[2024-05-16 12:41:58,101] p6211 {/Users/anyarulina/parser/after_work.py:178} INFO - final_df.shape (3609, 16)
+[2024-05-16 12:41:59,070] p6211 {/Users/anyarulina/parser/after_work.py:191} INFO - 628 unique cities saved
+[2024-05-16 12:41:59,071] p6211 {/Users/anyarulina/parser/after_work.py:207} INFO - not handled 5 cities: {'д. Жуковка', 'Железнодорожный', 'п. Мурино', 'Федоровский', 'Минеральные воды'}
+[2024-05-16 12:48:44,951] p6426 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 12:48:45,090] p6426 {/Users/anyarulina/parser/after_work.py:255} INFO - len final_df after filter 66992
+[2024-05-16 12:48:45,173] p6426 {/Users/anyarulina/parser/after_work.py:267} INFO - I will save reviews length of 66781
+[2024-05-16 12:48:45,173] p6426 {/Users/anyarulina/parser/after_work.py:268} INFO - final_df.shape (66781, 7)
+[2024-05-16 12:48:45,174] p6426 {/Users/anyarulina/parser/after_work.py:269} INFO - unique banks 511
+[2024-05-16 12:48:45,203] p6426 {/Users/anyarulina/parser/after_work.py:270} INFO - unique cities 357
+[2024-05-16 12:48:58,857] p6426 {/Users/anyarulina/parser/after_work.py:278} INFO - I saved reviews length of 66781
+[2024-05-16 12:53:01,010] p6523 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 12:53:01,156] p6523 {/Users/anyarulina/parser/after_work.py:258} INFO - len final_df after filter 66992
+[2024-05-16 12:53:01,236] p6523 {/Users/anyarulina/parser/after_work.py:270} INFO - I will save reviews length of 66781
+[2024-05-16 12:53:01,236] p6523 {/Users/anyarulina/parser/after_work.py:271} INFO - final_df.shape (66781, 7)
+[2024-05-16 12:53:01,237] p6523 {/Users/anyarulina/parser/after_work.py:272} INFO - unique banks 511
+[2024-05-16 12:53:01,267] p6523 {/Users/anyarulina/parser/after_work.py:273} INFO - unique cities 357
+[2024-05-16 12:53:14,767] p6523 {/Users/anyarulina/parser/after_work.py:281} INFO - I saved reviews length of 66781
+[2024-05-16 12:56:11,548] p6656 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 12:56:11,694] p6656 {/Users/anyarulina/parser/after_work.py:261} INFO - len final_df after filter 66992
+[2024-05-16 12:56:11,776] p6656 {/Users/anyarulina/parser/after_work.py:273} INFO - I will save reviews length of 66781
+[2024-05-16 12:56:11,776] p6656 {/Users/anyarulina/parser/after_work.py:274} INFO - final_df.shape (66781, 7)
+[2024-05-16 12:56:11,777] p6656 {/Users/anyarulina/parser/after_work.py:275} INFO - unique banks 511
+[2024-05-16 12:56:11,806] p6656 {/Users/anyarulina/parser/after_work.py:276} INFO - unique cities 357
+[2024-05-16 12:56:25,861] p6656 {/Users/anyarulina/parser/after_work.py:284} INFO - I saved reviews length of 66781
+[2024-05-16 12:57:33,767] p6727 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 12:57:33,914] p6727 {/Users/anyarulina/parser/after_work.py:262} INFO - len final_df after filter 66992
+[2024-05-16 12:57:33,997] p6727 {/Users/anyarulina/parser/after_work.py:274} INFO - I will save reviews length of 66781
+[2024-05-16 12:57:33,997] p6727 {/Users/anyarulina/parser/after_work.py:275} INFO - final_df.shape (66781, 7)
+[2024-05-16 12:57:33,998] p6727 {/Users/anyarulina/parser/after_work.py:276} INFO - unique banks 511
+[2024-05-16 12:57:34,027] p6727 {/Users/anyarulina/parser/after_work.py:277} INFO - unique cities 357
+[2024-05-16 12:57:47,618] p6727 {/Users/anyarulina/parser/after_work.py:285} INFO - I saved reviews length of 66781
+[2024-05-16 12:58:23,392] p6777 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 12:58:23,538] p6777 {/Users/anyarulina/parser/after_work.py:262} INFO - len final_df after filter 66992
+[2024-05-16 12:58:23,622] p6777 {/Users/anyarulina/parser/after_work.py:274} INFO - I will save reviews length of 66781
+[2024-05-16 12:58:23,622] p6777 {/Users/anyarulina/parser/after_work.py:275} INFO - final_df.shape (66781, 7)
+[2024-05-16 12:58:23,623] p6777 {/Users/anyarulina/parser/after_work.py:276} INFO - unique banks 511
+[2024-05-16 12:58:23,653] p6777 {/Users/anyarulina/parser/after_work.py:277} INFO - unique cities 357
+[2024-05-16 12:58:37,330] p6777 {/Users/anyarulina/parser/after_work.py:285} INFO - I saved reviews length of 66781
+[2024-05-16 12:59:52,580] p6857 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 12:59:52,671] p6857 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 307, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 257, in merge_all_reviews
+    print(not_handled_dict[['city', 'ID']].to_dict())
+UnboundLocalError: local variable 'not_handled_dict' referenced before assignment
+[2024-05-16 13:00:09,579] p6892 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 13:00:09,729] p6892 {/Users/anyarulina/parser/after_work.py:265} INFO - len final_df after filter 66992
+[2024-05-16 13:00:09,809] p6892 {/Users/anyarulina/parser/after_work.py:277} INFO - I will save reviews length of 66781
+[2024-05-16 13:00:09,809] p6892 {/Users/anyarulina/parser/after_work.py:278} INFO - final_df.shape (66781, 7)
+[2024-05-16 13:00:09,811] p6892 {/Users/anyarulina/parser/after_work.py:279} INFO - unique banks 511
+[2024-05-16 13:00:09,840] p6892 {/Users/anyarulina/parser/after_work.py:280} INFO - unique cities 357
+[2024-05-16 13:00:24,778] p6892 {/Users/anyarulina/parser/after_work.py:288} INFO - I saved reviews length of 66781
+[2024-05-16 13:01:07,742] p6981 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 13:01:07,896] p6981 {/Users/anyarulina/parser/after_work.py:265} INFO - len final_df after filter 66992
+[2024-05-16 13:01:07,978] p6981 {/Users/anyarulina/parser/after_work.py:277} INFO - I will save reviews length of 66781
+[2024-05-16 13:01:07,979] p6981 {/Users/anyarulina/parser/after_work.py:278} INFO - final_df.shape (66781, 7)
+[2024-05-16 13:01:07,980] p6981 {/Users/anyarulina/parser/after_work.py:279} INFO - unique banks 511
+[2024-05-16 13:01:08,009] p6981 {/Users/anyarulina/parser/after_work.py:280} INFO - unique cities 357
+[2024-05-16 13:02:52,560] p7046 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 13:02:52,710] p7046 {/Users/anyarulina/parser/after_work.py:270} INFO - len final_df after filter 66992
+[2024-05-16 13:02:52,792] p7046 {/Users/anyarulina/parser/after_work.py:282} INFO - I will save reviews length of 66781
+[2024-05-16 13:02:52,792] p7046 {/Users/anyarulina/parser/after_work.py:283} INFO - final_df.shape (66781, 7)
+[2024-05-16 13:02:52,793] p7046 {/Users/anyarulina/parser/after_work.py:284} INFO - unique banks 511
+[2024-05-16 13:02:52,823] p7046 {/Users/anyarulina/parser/after_work.py:285} INFO - unique cities 357
+[2024-05-16 13:03:23,625] p7097 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 13:03:23,782] p7097 {/Users/anyarulina/parser/after_work.py:270} INFO - len final_df after filter 66992
+[2024-05-16 13:03:23,863] p7097 {/Users/anyarulina/parser/after_work.py:282} INFO - I will save reviews length of 66781
+[2024-05-16 13:03:23,864] p7097 {/Users/anyarulina/parser/after_work.py:283} INFO - final_df.shape (66781, 7)
+[2024-05-16 13:03:23,865] p7097 {/Users/anyarulina/parser/after_work.py:284} INFO - unique banks 511
+[2024-05-16 13:03:23,894] p7097 {/Users/anyarulina/parser/after_work.py:285} INFO - unique cities 357
+[2024-05-16 13:05:28,179] p7171 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 13:05:29,099] p7171 {/Users/anyarulina/parser/after_work.py:270} INFO - len final_df after filter 66992
+[2024-05-16 13:05:29,179] p7171 {/Users/anyarulina/parser/after_work.py:282} INFO - I will save reviews length of 66781
+[2024-05-16 13:05:29,179] p7171 {/Users/anyarulina/parser/after_work.py:283} INFO - final_df.shape (66781, 7)
+[2024-05-16 13:05:29,180] p7171 {/Users/anyarulina/parser/after_work.py:284} INFO - unique banks 511
+[2024-05-16 13:05:29,210] p7171 {/Users/anyarulina/parser/after_work.py:285} INFO - unique cities 357
+[2024-05-16 13:05:44,196] p7171 {/Users/anyarulina/parser/after_work.py:293} INFO - I saved reviews length of 66781
+[2024-05-16 13:08:38,703] p7277 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 13:08:38,857] p7277 {/Users/anyarulina/parser/after_work.py:277} INFO - len final_df after filter 66992
+[2024-05-16 13:08:38,938] p7277 {/Users/anyarulina/parser/after_work.py:289} INFO - I will save reviews length of 66781
+[2024-05-16 13:08:38,938] p7277 {/Users/anyarulina/parser/after_work.py:290} INFO - final_df.shape (66781, 7)
+[2024-05-16 13:08:38,939] p7277 {/Users/anyarulina/parser/after_work.py:291} INFO - unique banks 511
+[2024-05-16 13:08:38,968] p7277 {/Users/anyarulina/parser/after_work.py:292} INFO - unique cities 357
+[2024-05-16 13:08:52,455] p7277 {/Users/anyarulina/parser/after_work.py:300} INFO - I saved reviews length of 66781
+[2024-05-16 13:10:15,305] p7340 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 13:10:15,473] p7340 {/Users/anyarulina/parser/after_work.py:278} INFO - len final_df after filter 66992
+[2024-05-16 13:10:15,559] p7340 {/Users/anyarulina/parser/after_work.py:290} INFO - I will save reviews length of 66781
+[2024-05-16 13:10:15,559] p7340 {/Users/anyarulina/parser/after_work.py:291} INFO - final_df.shape (66781, 7)
+[2024-05-16 13:10:15,560] p7340 {/Users/anyarulina/parser/after_work.py:292} INFO - unique banks 511
+[2024-05-16 13:10:15,589] p7340 {/Users/anyarulina/parser/after_work.py:293} INFO - unique cities 357
+[2024-05-16 13:12:44,872] p7445 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 13:12:46,263] p7445 {/Users/anyarulina/parser/after_work.py:277} INFO - len final_df after filter 66992
+[2024-05-16 13:12:46,342] p7445 {/Users/anyarulina/parser/after_work.py:289} INFO - I will save reviews length of 66781
+[2024-05-16 13:12:46,342] p7445 {/Users/anyarulina/parser/after_work.py:290} INFO - final_df.shape (66781, 7)
+[2024-05-16 13:12:46,343] p7445 {/Users/anyarulina/parser/after_work.py:291} INFO - unique banks 511
+[2024-05-16 13:12:46,372] p7445 {/Users/anyarulina/parser/after_work.py:292} INFO - unique cities 357
+[2024-05-16 13:13:34,322] p7499 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 13:13:34,418] p7499 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 319, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 268, in merge_all_reviews
+    not_handled_dict[not_handled_list[i]['city']].add(not_handled_list[i]['ID'])
+AttributeError: 'list' object has no attribute 'add'
+[2024-05-16 13:21:34,568] p7652 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 177926
+[2024-05-16 13:21:34,729] p7652 {/Users/anyarulina/parser/after_work.py:263} INFO - len final_df after filter 66992
+[2024-05-16 13:21:34,811] p7652 {/Users/anyarulina/parser/after_work.py:275} INFO - I will save reviews length of 66781
+[2024-05-16 13:21:34,811] p7652 {/Users/anyarulina/parser/after_work.py:276} INFO - final_df.shape (66781, 7)
+[2024-05-16 13:21:34,812] p7652 {/Users/anyarulina/parser/after_work.py:277} INFO - unique banks 511
+[2024-05-16 13:21:34,841] p7652 {/Users/anyarulina/parser/after_work.py:278} INFO - unique cities 357
+[2024-05-16 13:30:16,329] p7874 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 678733
+[2024-05-16 13:30:16,894] p7874 {/Users/anyarulina/parser/after_work.py:263} INFO - len final_df after filter 461618
+[2024-05-16 13:30:17,412] p7874 {/Users/anyarulina/parser/after_work.py:275} INFO - I will save reviews length of 461552
+[2024-05-16 13:30:17,412] p7874 {/Users/anyarulina/parser/after_work.py:276} INFO - final_df.shape (461552, 7)
+[2024-05-16 13:30:17,421] p7874 {/Users/anyarulina/parser/after_work.py:277} INFO - unique banks 3488
+[2024-05-16 13:30:17,664] p7874 {/Users/anyarulina/parser/after_work.py:278} INFO - unique cities 605
+[2024-05-16 13:33:24,630] p7985 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 678733
+[2024-05-16 13:33:25,196] p7985 {/Users/anyarulina/parser/after_work.py:253} INFO - len final_df after filter 461618
+[2024-05-16 13:33:25,726] p7985 {/Users/anyarulina/parser/after_work.py:265} INFO - I will save reviews length of 461552
+[2024-05-16 13:33:25,726] p7985 {/Users/anyarulina/parser/after_work.py:266} INFO - final_df.shape (461552, 7)
+[2024-05-16 13:33:25,734] p7985 {/Users/anyarulina/parser/after_work.py:267} INFO - unique banks 3488
+[2024-05-16 13:33:25,976] p7985 {/Users/anyarulina/parser/after_work.py:268} INFO - unique cities 605
+[2024-05-16 13:36:34,227] p8120 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 678733
+[2024-05-16 13:36:34,806] p8120 {/Users/anyarulina/parser/after_work.py:257} INFO - len final_df after filter 461618
+[2024-05-16 13:36:35,338] p8120 {/Users/anyarulina/parser/after_work.py:269} INFO - I will save reviews length of 461552
+[2024-05-16 13:36:35,338] p8120 {/Users/anyarulina/parser/after_work.py:270} INFO - final_df.shape (461552, 7)
+[2024-05-16 13:36:35,347] p8120 {/Users/anyarulina/parser/after_work.py:271} INFO - unique banks 3488
+[2024-05-16 13:36:35,589] p8120 {/Users/anyarulina/parser/after_work.py:272} INFO - unique cities 605
+[2024-05-16 13:37:47,681] p8120 {/Users/anyarulina/parser/after_work.py:280} INFO - I saved reviews length of 461552
+[2024-05-16 15:08:54,636] p9582 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 678733
+[2024-05-16 15:08:55,226] p9582 {/Users/anyarulina/parser/after_work.py:257} INFO - len final_df after filter 461618
+[2024-05-16 15:08:55,753] p9582 {/Users/anyarulina/parser/after_work.py:269} INFO - I will save reviews length of 461552
+[2024-05-16 15:08:55,753] p9582 {/Users/anyarulina/parser/after_work.py:270} INFO - final_df.shape (461552, 7)
+[2024-05-16 15:08:55,761] p9582 {/Users/anyarulina/parser/after_work.py:271} INFO - unique banks 3488
+[2024-05-16 15:08:56,005] p9582 {/Users/anyarulina/parser/after_work.py:272} INFO - unique cities 605
+[2024-05-16 15:10:19,610] p9582 {/Users/anyarulina/parser/after_work.py:280} INFO - I saved reviews length of 461552
+[2024-05-16 15:10:33,686] p9665 {/Users/anyarulina/parser/pipeline_review.py:158} INFO - start pipeline for alfa_bank at 2024-05-16 15:10:33.686918
+[2024-05-16 15:10:33,687] p9665 {/Users/anyarulina/parser/pipeline_review.py:162} INFO - 631 cities in input
+[2024-05-16 15:10:33,687] p9665 {/Users/anyarulina/parser/get_reviews.py:77} INFO - starting get reviews for Абакан city
+[2024-05-16 15:10:33,688] p9665 {/Users/anyarulina/parser/get_reviews.py:96} INFO - I will handle 6 banks for city Абакан
+[2024-05-16 15:10:33,688] p9665 {/Users/anyarulina/parser/get_reviews.py:97} INFO - links: ['https://yandex.ru/maps/org/alfa_bank/139342182959', 'https://yandex.ru/maps/org/alfa_bank/1612348941', 'https://yandex.ru/maps/org/alfa_bank/1661772449', 'https://yandex.ru/maps/org/alfa_bank/142447951722', 'https://yandex.ru/maps/org/alfa_bank/2432536431', 'https://yandex.ru/maps/org/alfa_bank/56547607203']
+[2024-05-16 15:10:33,688] p9665 {/Users/anyarulina/parser/get_reviews.py:113} INFO - starting get reviews for id 139342182959
+[2024-05-16 15:10:36,073] p9665 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-05-16 15:10:40,270] p9665 {/Users/anyarulina/parser/get_reviews.py:121} INFO - error Message: unknown error: cannot connect to chrome at 127.0.0.1:53273
+from session not created: This version of ChromeDriver only supports Chrome version 125
+Current browser version is 124.0.6367.208
+Stacktrace:
+0   undetected_chromedriver             0x00000001034b58f8 undetected_chromedriver + 5146872
+1   undetected_chromedriver             0x00000001034ad86a undetected_chromedriver + 5113962
+2   undetected_chromedriver             0x000000010302eb6c undetected_chromedriver + 400236
+3   undetected_chromedriver             0x000000010306aec3 undetected_chromedriver + 646851
+4   undetected_chromedriver             0x0000000103069fe0 undetected_chromedriver + 643040
+5   undetected_chromedriver             0x0000000103060557 undetected_chromedriver + 603479
+6   undetected_chromedriver             0x00000001030ab64a undetected_chromedriver + 910922
+7   undetected_chromedriver             0x000000010309e6d3 undetected_chromedriver + 857811
+8   undetected_chromedriver             0x000000010306e385 undetected_chromedriver + 660357
+9   undetected_chromedriver             0x000000010306ec1e undetected_chromedriver + 662558
+10  undetected_chromedriver             0x0000000103477c60 undetected_chromedriver + 4893792
+11  undetected_chromedriver             0x000000010347d699 undetected_chromedriver + 4916889
+12  undetected_chromedriver             0x0000000103459384 undetected_chromedriver + 4768644
+13  undetected_chromedriver             0x000000010347e179 undetected_chromedriver + 4919673
+14  undetected_chromedriver             0x000000010344ac74 undetected_chromedriver + 4709492
+15  undetected_chromedriver             0x000000010349e008 undetected_chromedriver + 5050376
+16  undetected_chromedriver             0x000000010349e1c7 undetected_chromedriver + 5050823
+17  undetected_chromedriver             0x00000001034ad41e undetected_chromedriver + 5112862
+18  libsystem_pthread.dylib             0x00007ff810ecc18b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff810ec7ae3 thread_start + 15
+
+[2024-05-16 15:10:40,270] p9665 {/Users/anyarulina/parser/get_reviews.py:122} INFO - 139342182959 not handled
+[2024-05-16 15:10:40,274] p9665 {/Users/anyarulina/parser/get_reviews.py:142} INFO - 5 items left
+[2024-05-16 15:10:40,274] p9665 {/Users/anyarulina/parser/get_reviews.py:113} INFO - starting get reviews for id 1612348941
+[2024-05-16 15:10:43,080] p9665 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-05-16 15:10:47,326] p9665 {/Users/anyarulina/parser/get_reviews.py:121} INFO - error Message: unknown error: cannot connect to chrome at 127.0.0.1:53319
+from session not created: This version of ChromeDriver only supports Chrome version 125
+Current browser version is 124.0.6367.208
+Stacktrace:
+0   undetected_chromedriver             0x00000001011e98f8 undetected_chromedriver + 5146872
+1   undetected_chromedriver             0x00000001011e186a undetected_chromedriver + 5113962
+2   undetected_chromedriver             0x0000000100d62b6c undetected_chromedriver + 400236
+3   undetected_chromedriver             0x0000000100d9eec3 undetected_chromedriver + 646851
+4   undetected_chromedriver             0x0000000100d9dfe0 undetected_chromedriver + 643040
+5   undetected_chromedriver             0x0000000100d94557 undetected_chromedriver + 603479
+6   undetected_chromedriver             0x0000000100ddf64a undetected_chromedriver + 910922
+7   undetected_chromedriver             0x0000000100dd26d3 undetected_chromedriver + 857811
+8   undetected_chromedriver             0x0000000100da2385 undetected_chromedriver + 660357
+9   undetected_chromedriver             0x0000000100da2c1e undetected_chromedriver + 662558
+10  undetected_chromedriver             0x00000001011abc60 undetected_chromedriver + 4893792
+11  undetected_chromedriver             0x00000001011b1699 undetected_chromedriver + 4916889
+12  undetected_chromedriver             0x000000010118d384 undetected_chromedriver + 4768644
+13  undetected_chromedriver             0x00000001011b2179 undetected_chromedriver + 4919673
+14  undetected_chromedriver             0x000000010117ec74 undetected_chromedriver + 4709492
+15  undetected_chromedriver             0x00000001011d2008 undetected_chromedriver + 5050376
+16  undetected_chromedriver             0x00000001011d21c7 undetected_chromedriver + 5050823
+17  undetected_chromedriver             0x00000001011e141e undetected_chromedriver + 5112862
+18  libsystem_pthread.dylib             0x00007ff810ecc18b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff810ec7ae3 thread_start + 15
+
+[2024-05-16 15:10:47,326] p9665 {/Users/anyarulina/parser/get_reviews.py:122} INFO - 1612348941 not handled
+[2024-05-16 15:10:47,329] p9665 {/Users/anyarulina/parser/get_reviews.py:142} INFO - 4 items left
+[2024-05-16 15:10:47,329] p9665 {/Users/anyarulina/parser/get_reviews.py:113} INFO - starting get reviews for id 1661772449
+[2024-05-16 15:10:49,679] p9665 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-05-16 15:19:01,804] p9956 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 175934
+[2024-05-16 15:19:01,957] p9956 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 67087
+[2024-05-16 15:19:02,043] p9956 {/Users/anyarulina/parser/after_work.py:268} INFO - I will save reviews length of 66781
+[2024-05-16 15:19:02,043] p9956 {/Users/anyarulina/parser/after_work.py:269} INFO - final_df.shape (66781, 7)
+[2024-05-16 15:19:02,044] p9956 {/Users/anyarulina/parser/after_work.py:270} INFO - unique banks 511
+[2024-05-16 15:19:02,074] p9956 {/Users/anyarulina/parser/after_work.py:271} INFO - unique cities 357
+[2024-05-16 15:19:16,005] p9956 {/Users/anyarulina/parser/after_work.py:279} INFO - I saved reviews length of 66781
+[2024-05-16 15:19:56,187] p10026 {/Users/anyarulina/parser/pipeline_review.py:158} INFO - start pipeline for sberbank at 2024-05-16 15:19:56.187858
+[2024-05-16 15:19:56,188] p10026 {/Users/anyarulina/parser/pipeline_review.py:162} INFO - 631 cities in input
+[2024-05-16 15:19:56,188] p10026 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/pipeline_review.py", line 180, in <module>
+    sber
+NameError: name 'sber' is not defined
+[2024-05-16 16:15:47,461] p10719 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 175934
+[2024-05-16 16:15:47,619] p10719 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 67087
+[2024-05-16 16:15:47,700] p10719 {/Users/anyarulina/parser/after_work.py:268} INFO - I will save reviews length of 66781
+[2024-05-16 16:15:47,701] p10719 {/Users/anyarulina/parser/after_work.py:269} INFO - final_df.shape (66781, 7)
+[2024-05-16 16:15:47,702] p10719 {/Users/anyarulina/parser/after_work.py:270} INFO - unique banks 511
+[2024-05-16 16:15:47,731] p10719 {/Users/anyarulina/parser/after_work.py:271} INFO - unique cities 357
+[2024-05-16 16:16:01,579] p10719 {/Users/anyarulina/parser/after_work.py:279} INFO - I saved reviews length of 66781
+[2024-05-16 16:17:36,807] p10951 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 678733
+[2024-05-16 16:17:37,381] p10951 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 461618
+[2024-05-16 16:17:37,901] p10951 {/Users/anyarulina/parser/after_work.py:268} INFO - I will save reviews length of 461552
+[2024-05-16 16:17:37,901] p10951 {/Users/anyarulina/parser/after_work.py:269} INFO - final_df.shape (461552, 7)
+[2024-05-16 16:17:37,909] p10951 {/Users/anyarulina/parser/after_work.py:270} INFO - unique banks 3488
+[2024-05-16 16:17:38,150] p10951 {/Users/anyarulina/parser/after_work.py:271} INFO - unique cities 605
+[2024-05-16 16:18:37,951] p11040 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 678733
+[2024-05-16 16:18:38,520] p11040 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 461618
+[2024-05-16 16:18:39,031] p11040 {/Users/anyarulina/parser/after_work.py:268} INFO - I will save reviews length of 461552
+[2024-05-16 16:18:39,031] p11040 {/Users/anyarulina/parser/after_work.py:269} INFO - final_df.shape (461552, 7)
+[2024-05-16 16:18:39,039] p11040 {/Users/anyarulina/parser/after_work.py:270} INFO - unique banks 3488
+[2024-05-16 16:18:39,281] p11040 {/Users/anyarulina/parser/after_work.py:271} INFO - unique cities 605
+[2024-05-16 16:19:01,354] p11085 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 175934
+[2024-05-16 16:19:01,507] p11085 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 67087
+[2024-05-16 16:19:01,590] p11085 {/Users/anyarulina/parser/after_work.py:268} INFO - I will save reviews length of 66781
+[2024-05-16 16:19:01,590] p11085 {/Users/anyarulina/parser/after_work.py:269} INFO - final_df.shape (66781, 7)
+[2024-05-16 16:19:01,592] p11085 {/Users/anyarulina/parser/after_work.py:270} INFO - unique banks 511
+[2024-05-16 16:19:01,621] p11085 {/Users/anyarulina/parser/after_work.py:271} INFO - unique cities 357
+[2024-05-16 16:22:47,435] p11228 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 176148
+[2024-05-16 16:22:47,607] p11228 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 67087
+[2024-05-16 16:22:47,692] p11228 {/Users/anyarulina/parser/after_work.py:268} INFO - I will save reviews length of 66781
+[2024-05-16 16:22:47,692] p11228 {/Users/anyarulina/parser/after_work.py:269} INFO - final_df.shape (66781, 8)
+[2024-05-16 16:22:47,693] p11228 {/Users/anyarulina/parser/after_work.py:270} INFO - unique banks 511
+[2024-05-16 16:22:47,722] p11228 {/Users/anyarulina/parser/after_work.py:271} INFO - unique cities 357
+[2024-05-16 16:22:53,506] p11228 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/after_work.py", line 298, in <module>
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+  File "/Users/anyarulina/parser/after_work.py", line 276, in merge_all_reviews
+    final_df.to_excel(f'{path}/reviews_all/{bank_name}_reviews_{today}.xlsx', index=False)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/io/formats/excel.py", line 904, in write
+    writer.close()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/io/excel/_base.py", line 1205, in close
+    self.save()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/io/excel/_openpyxl.py", line 81, in save
+    self.book.save(self.handles.handle)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/workbook/workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/writer/excel.py", line 294, in save_workbook
+    writer.save()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/writer/excel.py", line 275, in save
+    self.write_data()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/writer/excel.py", line 77, in write_data
+    self._write_worksheets()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/writer/excel.py", line 215, in _write_worksheets
+    self.write_worksheet(ws)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/writer/excel.py", line 200, in write_worksheet
+    writer.write()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/worksheet/_writer.py", line 359, in write
+    self.write_rows()
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/worksheet/_writer.py", line 125, in write_rows
+    self.write_row(xf, row, row_idx)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/worksheet/_writer.py", line 147, in write_row
+    write_cell(xf, self.ws, cell, cell.has_style)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/openpyxl/cell/_writer.py", line 103, in lxml_write_cell
+    with xf.element("c", attributes):
+KeyboardInterrupt
+[2024-05-16 16:26:57,713] p11369 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 175931
+[2024-05-16 16:26:57,872] p11369 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 67086
+[2024-05-16 16:26:57,956] p11369 {/Users/anyarulina/parser/after_work.py:268} INFO - I will save reviews length of 66781
+[2024-05-16 16:26:57,957] p11369 {/Users/anyarulina/parser/after_work.py:269} INFO - final_df.shape (66781, 7)
+[2024-05-16 16:26:57,958] p11369 {/Users/anyarulina/parser/after_work.py:270} INFO - unique banks 511
+[2024-05-16 16:26:57,987] p11369 {/Users/anyarulina/parser/after_work.py:271} INFO - unique cities 357
+[2024-05-16 16:27:13,609] p11369 {/Users/anyarulina/parser/after_work.py:279} INFO - I saved reviews length of 66781
+[2024-05-16 16:32:01,862] p11519 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 175931
+[2024-05-16 16:32:02,017] p11519 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 67086
+[2024-05-16 16:32:02,106] p11519 {/Users/anyarulina/parser/after_work.py:269} INFO - I will save reviews length of 21844
+[2024-05-16 16:32:02,106] p11519 {/Users/anyarulina/parser/after_work.py:270} INFO - final_df.shape (21844, 7)
+[2024-05-16 16:32:02,106] p11519 {/Users/anyarulina/parser/after_work.py:271} INFO - unique banks 68
+[2024-05-16 16:32:02,114] p11519 {/Users/anyarulina/parser/after_work.py:272} INFO - unique cities 1
+[2024-05-16 16:32:06,741] p11519 {/Users/anyarulina/parser/after_work.py:280} INFO - I saved reviews length of 21844
+[2024-05-16 16:35:12,158] p11609 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 175931
+[2024-05-16 16:35:12,315] p11609 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 67086
+[2024-05-16 16:35:12,404] p11609 {/Users/anyarulina/parser/after_work.py:269} INFO - I will save reviews length of 21844
+[2024-05-16 16:35:12,404] p11609 {/Users/anyarulina/parser/after_work.py:270} INFO - final_df.shape (21844, 7)
+[2024-05-16 16:35:12,405] p11609 {/Users/anyarulina/parser/after_work.py:271} INFO - unique banks 68
+[2024-05-16 16:35:12,413] p11609 {/Users/anyarulina/parser/after_work.py:272} INFO - unique cities 1
+[2024-05-16 16:35:17,052] p11609 {/Users/anyarulina/parser/after_work.py:280} INFO - I saved reviews length of 21844
+[2024-05-16 16:47:30,614] p11999 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 175931
+[2024-05-16 16:47:30,765] p11999 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 67086
+[2024-05-16 16:47:30,854] p11999 {/Users/anyarulina/parser/after_work.py:269} INFO - I will save reviews length of 21844
+[2024-05-16 16:47:30,854] p11999 {/Users/anyarulina/parser/after_work.py:270} INFO - final_df.shape (21844, 7)
+[2024-05-16 16:47:30,855] p11999 {/Users/anyarulina/parser/after_work.py:271} INFO - unique banks 68
+[2024-05-16 16:47:30,863] p11999 {/Users/anyarulina/parser/after_work.py:272} INFO - unique cities 1
+[2024-05-16 16:47:35,425] p11999 {/Users/anyarulina/parser/after_work.py:280} INFO - I saved reviews length of 21844
+[2024-05-16 16:52:13,046] p12182 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 175931
+[2024-05-16 16:52:13,203] p12182 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 67086
+[2024-05-16 16:52:13,292] p12182 {/Users/anyarulina/parser/after_work.py:269} INFO - I will save reviews length of 21844
+[2024-05-16 16:52:13,292] p12182 {/Users/anyarulina/parser/after_work.py:270} INFO - final_df.shape (21844, 7)
+[2024-05-16 16:52:13,293] p12182 {/Users/anyarulina/parser/after_work.py:271} INFO - unique banks 68
+[2024-05-16 16:52:13,301] p12182 {/Users/anyarulina/parser/after_work.py:272} INFO - unique cities 1
+[2024-05-16 16:52:17,908] p12182 {/Users/anyarulina/parser/after_work.py:280} INFO - I saved reviews length of 21844
+[2024-05-16 16:53:08,448] p12254 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 175931
+[2024-05-16 16:53:08,597] p12254 {/Users/anyarulina/parser/after_work.py:256} INFO - len final_df after filter 67086
+[2024-05-16 16:53:08,677] p12254 {/Users/anyarulina/parser/after_work.py:267} INFO - I will save reviews length of 66781
+[2024-05-16 16:53:08,677] p12254 {/Users/anyarulina/parser/after_work.py:268} INFO - final_df.shape (66781, 7)
+[2024-05-16 16:53:08,678] p12254 {/Users/anyarulina/parser/after_work.py:269} INFO - unique banks 511
+[2024-05-16 16:53:08,714] p12254 {/Users/anyarulina/parser/after_work.py:270} INFO - unique cities 357
+[2024-05-16 16:53:22,805] p12254 {/Users/anyarulina/parser/after_work.py:278} INFO - I saved reviews length of 66781
+[2024-05-16 17:11:17,742] p13232 {/Users/anyarulina/parser/after_work.py:240} INFO - len final_df before filter 174550
+[2024-05-16 17:11:17,895] p13232 {/Users/anyarulina/parser/after_work.py:257} INFO - len final_df after filter 66699
+[2024-05-16 17:11:17,968] p13232 {/Users/anyarulina/parser/after_work.py:268} INFO - I will save reviews length of 66641
+[2024-05-16 17:11:17,968] p13232 {/Users/anyarulina/parser/after_work.py:269} INFO - final_df.shape (66641, 7)
+[2024-05-16 17:11:17,969] p13232 {/Users/anyarulina/parser/after_work.py:270} INFO - unique banks 490
+[2024-05-16 17:11:17,998] p13232 {/Users/anyarulina/parser/after_work.py:271} INFO - unique cities 336
+[2024-05-16 17:11:31,609] p13232 {/Users/anyarulina/parser/after_work.py:279} INFO - I saved reviews length of 66641

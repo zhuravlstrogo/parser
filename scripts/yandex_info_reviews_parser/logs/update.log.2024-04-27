@@ -1,0 +1,40 @@
+[2024-04-27 09:06:10,507] p20632 {/Users/anyarulina/parser/pipeline_info.py:118} INFO - start pipeline at 2024-04-27 09:06:10.507977
+[2024-04-27 09:06:10,508] p20632 {/Users/anyarulina/parser/pipeline_info.py:39} INFO - start get links at 2024-04-27 09:06:10.508737
+[2024-04-27 09:06:10,509] p20632 {/Users/anyarulina/parser/get_links.py:102} INFO - I will get links for 371 cities
+[2024-04-27 09:06:10,509] p20632 {/Users/anyarulina/parser/get_links.py:107} INFO - sleeping for 33.23 seconds
+[2024-04-27 09:07:22,145] p20686 {/Users/anyarulina/parser/pipeline_info.py:118} INFO - start pipeline at 2024-04-27 09:07:22.145747
+[2024-04-27 09:07:22,146] p20686 {/Users/anyarulina/parser/pipeline_info.py:39} INFO - start get links at 2024-04-27 09:07:22.146114
+[2024-04-27 09:07:22,149] p20686 {/Users/anyarulina/parser/pipeline_info.py:55} INFO - 318 links already exists
+[2024-04-27 09:07:22,149] p20686 {/Users/anyarulina/parser/get_links.py:102} INFO - I will get links for 53 cities
+[2024-04-27 09:07:22,149] p20686 {/Users/anyarulina/parser/get_links.py:107} INFO - sleeping for 36.26 seconds
+[2024-04-27 09:07:58,414] p20686 {/Users/anyarulina/parser/get_links.py:110} INFO - get links for bank: sberbank, city: Алексеевка, yndx id: 1226123722
+[2024-04-27 09:07:59,330] p20686 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-04-27 09:08:04,001] p20686 {/Users/anyarulina/parser/get_links.py:65} INFO - sleep for 196.8
+[2024-04-27 09:09:07,373] p20810 {/Users/anyarulina/parser/pipeline_info.py:118} INFO - start pipeline at 2024-04-27 09:09:07.373268
+[2024-04-27 09:09:07,373] p20810 {/Users/anyarulina/parser/pipeline_info.py:39} INFO - start get links at 2024-04-27 09:09:07.373651
+[2024-04-27 09:09:07,377] p20810 {/Users/anyarulina/parser/pipeline_info.py:55} INFO - 318 links already exists
+[2024-04-27 09:09:07,377] p20810 {/Users/anyarulina/parser/get_links.py:102} INFO - I will get links for 53 cities
+[2024-04-27 09:09:07,377] p20810 {/Users/anyarulina/parser/get_links.py:107} INFO - sleeping for 29.91 seconds
+[2024-04-27 09:09:37,291] p20810 {/Users/anyarulina/parser/get_links.py:110} INFO - get links for bank: sberbank, city: Алексеевка, yndx id: 1226123722
+[2024-04-27 09:09:38,074] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-04-27 09:09:43,167] p20810 {/Users/anyarulina/parser/get_links.py:83} INFO - driver stopped
+[2024-04-27 09:09:43,466] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c9d3a0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdd863805dd18fbacbeabc2ff27f189e/window
+[2024-04-27 09:09:43,467] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c8c4c0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdd863805dd18fbacbeabc2ff27f189e/window
+[2024-04-27 09:09:43,468] p20810 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c8c9a0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdd863805dd18fbacbeabc2ff27f189e/window
+[2024-04-27 09:09:43,469] p20810 {/Users/anyarulina/parser/get_links.py:114} INFO - Error in get links for bank: sberbank, city: Алексеевка, yndx id: 1226123722, error: HTTPConnectionPool(host='localhost', port=58566): Max retries exceeded with url: /session/fdd863805dd18fbacbeabc2ff27f189e/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x131c8caf0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+[2024-04-27 09:09:43,469] p20810 {/Users/anyarulina/parser/get_links.py:107} INFO - sleeping for 33.17 seconds
+[2024-04-27 09:10:08,927] p20810 {/Users/anyarulina/parser/log.py:32} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/pipeline_info.py", line 182, in <module>
+    launch_info_pipeline(bank_name=bank_name, check_existing=True)
+  File "/Users/anyarulina/parser/pipeline_info.py", line 160, in launch_info_pipeline
+    funcs = get_all_links(cities, bank_name, check_existing), get_all_info(cities, bank_name, check_existing)
+  File "/Users/anyarulina/parser/pipeline_info.py", line 57, in get_all_links
+    get_bank_links(cities_copy, bank_name)
+  File "/Users/anyarulina/parser/get_links.py", line 108, in get_bank_links
+    time.sleep(N)
+KeyboardInterrupt
+[2024-04-27 10:55:35,692] p23764 {/Users/anyarulina/parser/call_yandex_api_org.py:209} INFO - current limit is 500
+[2024-04-27 10:55:35,914] p23764 {/Users/anyarulina/parser/call_yandex_api_org.py:221} INFO - Абакан yndx_id 1657685442
+[2024-04-27 10:55:37,921] p23764 {/Users/anyarulina/parser/call_yandex_api_org.py:242} INFO - 1 cities updated in cities dictionary
+[2024-04-27 10:55:38,188] p23764 {/Users/anyarulina/parser/call_yandex_api_org.py:221} INFO - Азов yndx_id 1198153462
