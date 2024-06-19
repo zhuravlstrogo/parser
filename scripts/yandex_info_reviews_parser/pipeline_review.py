@@ -153,7 +153,7 @@ if __name__ == "__main__":
     print(f"bank_name {bank_name}")
     
     homyak = os.path.expanduser('~')
-    path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/parser/'
+    path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
 
     setup_logging(path)
     start = datetime.now()

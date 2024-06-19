@@ -143,15 +143,15 @@ if __name__ == "__main__":
     bank_name = args.bank_name
 
     homyak = os.path.expanduser('~')
-    path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/parser/'
+    path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
 
     setup_logging(path)
     start = datetime.now()
     logging.info('*********************************************************')
     logging.info(f"launch info pipeline for {bank_name} at {start}")
 
-    # cities_list = False
-    cities_list = ['Ульяновск']
+    cities_list = False
+    # cities_list = ['Ульяновск']
 
     cities_path = f'{path}/cities_dict_{bank_name}.pickle'
     with open(cities_path, 'rb') as handle:

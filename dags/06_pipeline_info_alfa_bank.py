@@ -31,7 +31,7 @@ dag = DAG(
 
 pipeline_info_alfa_bank = BashOperator(
     task_id = 'pipeline_info_alfa_bank',
-    bash_command='python3 /opt/airflow/scripts/parser/pipeline_info.py -path_type 1 -bank_name alfa_bank',
+    bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/pipeline_info.py -path_type 1 -bank_name alfa_bank',
     execution_timeout=timedelta(minutes=50000),
     dag=dag
 )

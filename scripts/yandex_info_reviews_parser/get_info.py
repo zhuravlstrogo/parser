@@ -1,4 +1,5 @@
  # -*- coding: utf-8 -*-
+import psutil
 import os
 import re
 import argparse
@@ -155,6 +156,8 @@ def get_cities_info(cities, bank_name, path):
             all_hrefs = pickle.load(f)
         
         logging.info(f'get info for banks in {city_name} length of {len(all_hrefs)}')
+        logging.info(f'percentage of available memory {psutil.virtual_memory().available * 100 / psutil.virtual_memory().total}')
+        logging.info(f'cpu_percent {psutil.cpu_percent()}')
         try:
             opts = undetected_chromedriver.ChromeOptions()
             opts.add_argument("--disable-renderer-backgrounding")

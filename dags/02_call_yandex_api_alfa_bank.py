@@ -31,7 +31,7 @@ dag = DAG(
 
 call_yandex_api_alfa_bank = BashOperator(
     task_id = 'call_yandex_api_alfa_bank',
-    bash_command='python3 /opt/airflow/scripts/parser/call_yandex_api_org.py -path_type 1 -bank_name alfa_bank',
+    bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/call_yandex_api_org.py -path_type 1 -bank_name alfa_bank',
     execution_timeout=timedelta(minutes=1200),
     dag=dag
 )
