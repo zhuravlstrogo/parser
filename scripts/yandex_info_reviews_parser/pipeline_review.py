@@ -9,6 +9,7 @@ from datetime import datetime
 import requests
 from os import listdir
 from os.path import isfile, join
+import os
 import argparse
 from functools import wraps
 
@@ -150,7 +151,9 @@ if __name__ == "__main__":
 
     bank_name = args.bank_name
     print(f"bank_name {bank_name}")
-    path = '.' if args.path_type==0 else '/opt/airflow/scripts/parser/'
+    
+    homyak = os.path.expanduser('~')
+    path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/parser/'
 
     setup_logging(path)
     start = datetime.now()
