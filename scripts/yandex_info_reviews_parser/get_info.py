@@ -38,9 +38,9 @@ class Parser:
         try:
             yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
         except Exception as e:
-            print(e)
-            print('*********')
-            print(f'organization_url {organization_url}')
+            logging.info(e)
+            logging.info('*********')
+            logging.info(f'organization_url {organization_url}')
             organization_url = organization_url.replace('{bank_name}', f'{bank_name}')
             yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
         
@@ -119,8 +119,6 @@ class Parser:
                     #     logging.info('assert ', df.shape, len(outputs))
                 
                 df['load_time'] = today
-                print(f'PATH _-------_ {path}')
-                print(f'{path}/{directory_name}/{city_name}_info.csv')
                 df.to_csv(f'{path}/{directory_name}/{city_name}_info.csv')
                 logging.info(f'df info saved')
                 counter -= 1 
@@ -206,7 +204,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     bank_name = args.bank_name
-    path = '.' if args.path_type==0 else '/opt/airflow/scripts/parser/'
+    homyak = os.path.expanduser('~')
+    path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
 
     cities = {'Кострома':99532788218}

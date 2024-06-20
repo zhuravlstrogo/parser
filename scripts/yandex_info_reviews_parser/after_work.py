@@ -146,7 +146,7 @@ def merge_all_info(bank_name, path, drop_errors=False):
 
     final_df = final_df[final_df['opening_hours'] != "'mon': выходной, 'tue': выходной, 'wed': выходной, 'thu': выходной, 'fri': выходной, 'sat': выходной, 'sun': выходной"]
 
-    final_df = final_df[['ID', 'name', 'city', 'address','opening_hours', 'lat', 'lon', 'rating', 'Обслуживание', 'Отношение к клиентам', 'Персонал', 'Время ожидания', 'Кредит', 'Банкомат', 'Расположение', 'Вклад']]
+    final_df = final_df[['ID', 'name', 'city', 'address','opening_hours', 'lat', 'lon', 'rating', 'Обслуживание', 'Отношение к клиентам', 'Персонал', 'Время ожидания', 'Кредит', 'Банкомат', 'Расположение', 'Вклад', 'load_time']]
 
     final_df['lat'] = final_df['lat'].astype('str')
     final_df['lon'] = final_df['lon'].astype('str')
@@ -283,7 +283,7 @@ def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True
 
     # today = datetime.today().strftime('%Y_%m_%d') 
     final_df.to_csv(f'{path}/reviews_all/{bank_name}_reviews_all.csv', index=False)
-    final_df.to_excel(f'{path}/reviews_all/{bank_name}_reviews.xlsx', index=False)  
+    final_df.to_excel(f'{path}/reviews_all/{bank_name}_reviews_all.xlsx', index=False)  
     # final_df_sample.to_excel(f'reviews_all/{bank_name}_reviews_sample_{today}.xlsx', index=False)  
 
     logging.info(f"I saved reviews length of {len(final_df)}")
@@ -291,7 +291,7 @@ def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True
 
 
 
-
+# TODO: проверять, что в папках-источниках есть данные 
 
 if __name__ == "__main__":
     
@@ -301,7 +301,8 @@ if __name__ == "__main__":
     parser.add_argument('-path_type', type=int)
     args = parser.parse_args()
     bank_name = args.bank_name
-    path = '.' if args.path_type==0 else '/opt/airflow/scripts/parser/'
+    homyak = os.path.expanduser('~')
+    path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
     # merge_all_info(bank_name, path, drop_errors=False)
 

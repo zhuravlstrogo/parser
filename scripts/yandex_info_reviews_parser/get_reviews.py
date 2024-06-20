@@ -174,7 +174,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     bank_name = args.bank_name
-    path = '.' if args.path_type==0 else '/opt/airflow/scripts/parser/'
+    homyak = os.path.expanduser('~')
+    path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
     parse_ans_save_reviews(1066499300, "Москва", bank_name), path
     
