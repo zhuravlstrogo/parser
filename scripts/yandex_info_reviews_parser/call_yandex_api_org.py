@@ -340,18 +340,16 @@ if __name__ == "__main__":
     parser.add_argument('-path_type', type=int)
     args = parser.parse_args()
 
-    setup_logging(path)
-    
     bank_name = args.bank_name
     print(f"bank_name {bank_name}")
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
-
-    cities_list = ['Балтийск',  'Нижнесортымский', 'п. Мурино', 'Нарьян-Мар', 'Лабытнанги', 'Алексеевка', 'Кинешма', 'Калачинск', 'Елец',  'Озерск',  'Вышний Волочёк']
-    update_cities_dict(cities_list, bank_name, path)
+    setup_logging(path)
+    # cities_list = ['Балтийск',  'Нижнесортымский', 'п. Мурино', 'Нарьян-Мар', 'Лабытнанги', 'Алексеевка', 'Кинешма', 'Калачинск', 'Елец',  'Озерск',  'Вышний Волочёк']
+    # update_cities_dict(cities_list, bank_name, path)
     
 
-    # get_cities_dict(bank_name, path, check_existing=True)
+    get_cities_dict(bank_name, path, check_existing=False)
     # # handle_duplicates(bank_name, path)
 
 
