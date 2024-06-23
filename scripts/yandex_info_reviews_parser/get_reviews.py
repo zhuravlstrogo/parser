@@ -27,6 +27,8 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name, path):
     
     today = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
 
+    print('PATH')
+    print(path)
     directory_name = f'{path}/reviews_outputs/{bank_name}/{city_name}'
     if not os.path.exists(directory_name):
         os.makedirs(directory_name)  
@@ -46,7 +48,7 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name, path):
             logging.info(df.shape)
 
             df['load_time'] = today
-            df.to_csv(f'{path}/{directory_name}/reviews_{id_ya}.csv')
+            df.to_csv(f'{directory_name}/reviews_{id_ya}.csv')
             logging.info('################################################################')
             logging.info(f'Saved {len(df)} reviews for {id_ya}')
         # else:
@@ -92,8 +94,6 @@ def get_cities_reviews(cities, bank_name, path):
         # TODO: поумнее
         try:
             with open(links_path, 'rb') as f:
-                print('links_path ')
-                print(links_path)
                 bank_links = pickle.load(f)
 
             # TODO: костыль 
@@ -108,17 +108,14 @@ def get_cities_reviews(cities, bank_name, path):
             # TODO: если не обработанных больше, чем не обработанных - 
             handled = {}
 
-            print('bank_links :')
-            print(bank_links)
-
+    
             # для каждого банка получаем список отзывов 
             for organization_url in bank_links:
-                print('organization_url')
                 print(organization_url)
-                # organization_url = organization_url.split(' ')[0]
+                organization_url = organization_url.split(' ')[0]
 
-                # print('organization_url AFTER')
-                # print(organization_url)
+                print('organization_url AFTER')
+                print(organization_url)
 
                 main_url = f'https://yandex.ru/maps/org/{bank_name}/'
                 yandex_bank_id = organization_url.replace(main_url, '')
