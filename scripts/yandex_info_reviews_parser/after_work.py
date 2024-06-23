@@ -304,6 +304,6 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    # merge_all_info(bank_name, path, drop_errors=False)
+    merge_all_info(bank_name, path, drop_errors=False)
 
-    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+    # merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)

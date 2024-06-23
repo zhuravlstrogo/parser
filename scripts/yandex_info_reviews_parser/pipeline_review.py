@@ -14,8 +14,6 @@ import argparse
 from functools import wraps
 
 from log import setup_logging
-# from call_yandex_api_org import update_cities_dict, get_duplicated_ids
-from pipeline_info import get_all_links
 from get_reviews import parse_ans_save_reviews, get_cities_reviews
 from utils import find_between, search_end_of_str
 
@@ -160,9 +158,9 @@ if __name__ == "__main__":
 
     logging.info(f"start pipeline for {bank_name} at {start}")
 
-    with open('cities.txt') as f:
-        cities = [x.strip('\n') for x in f ]
-    logging.info(f'{len(cities)} cities in input')
+    # with open('cities.txt') as f:
+    #     cities = [x.strip('\n') for x in f ]
+    # logging.info(f'{len(cities)} cities in input')
 
 #     # review_path  =f'info_output/{bank_name}/'
 #     # review_files = [f for f in listdir(info_path) if isfile(join(info_path, f))]
@@ -180,20 +178,26 @@ if __name__ == "__main__":
 
     
     # TODO: {path}/
-    with open(f'not_handled_reviews_{bank_name}.pickle', 'rb') as handle:
-        cities_dict = pickle.load(handle)
+    # with open(f'not_handled_reviews_{bank_name}.pickle', 'rb') as handle:
+    #     cities_dict = pickle.load(handle)
 
 
     # cities_dict= {'Челябинск': [138995344255, 132482659526, 1030580735, 1034159938]}
-    main_url = f'https://yandex.ru/maps/org/{bank_name}/'
+    # main_url = f'https://yandex.ru/maps/org/{bank_name}/'
 
-    for k, v in cities_dict.items():
-        new_values = []
-        for i in range(len(v)):
+    # for k, v in cities_dict.items():
+    #     new_values = []
+    #     for i in range(len(v)):
 
-            new_values.append(main_url + str(v[i]))
+    #         new_values.append(main_url + str(v[i]))
 
-        cities_dict[k] =new_values
+    #     cities_dict[k] =new_values
+
+    
+    cities_path = f'{path}/cities_dict_{bank_name}.pickle'
+    with open(cities_path, 'rb') as handle:
+        cities_dict = pickle.load(handle)
+    
 
     # опции перечитывать конкретные города 
     get_cities_reviews(cities_dict, bank_name, path)

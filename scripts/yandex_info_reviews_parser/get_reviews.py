@@ -92,6 +92,8 @@ def get_cities_reviews(cities, bank_name, path):
         # TODO: поумнее
         try:
             with open(links_path, 'rb') as f:
+                print('links_path ')
+                print(links_path)
                 bank_links = pickle.load(f)
 
             # TODO: костыль 
@@ -105,15 +107,18 @@ def get_cities_reviews(cities, bank_name, path):
             not_handled = {}
             # TODO: если не обработанных больше, чем не обработанных - 
             handled = {}
-            
+
+            print('bank_links :')
+            print(bank_links)
+
             # для каждого банка получаем список отзывов 
-            for organization_url in links:
+            for organization_url in bank_links:
                 print('organization_url')
                 print(organization_url)
-                organization_url = organization_url.split(' ')[0]
+                # organization_url = organization_url.split(' ')[0]
 
-                print('organization_url AFTER')
-                print(organization_url)
+                # print('organization_url AFTER')
+                # print(organization_url)
 
                 main_url = f'https://yandex.ru/maps/org/{bank_name}/'
                 yandex_bank_id = organization_url.replace(main_url, '')
