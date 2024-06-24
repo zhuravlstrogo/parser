@@ -1,5 +1,7 @@
-Для работы на сервере нужен [Chrome version 114](https://mirror.cs.uchicago.edu/google-chrome/pool/main/g/google-chrome-stable/) и библиотеки из requirements.txt.
+Код написан под Ubuntu, MacOS. 
+Для работы на сервере нужен [Chrome version 114](https://mirror.cs.uchicago.edu/google-chrome/pool/main/g/google-chrome-stable/) и библиотеки из requirements.txt. 
 Примерные шаги установки описаны в run.sh.
+Также для работы потребуется token [API Поиска по организациям яндекса](https://developer.tech.yandex.ru/services/12) и список городов для парсинга в файле cities.txt.
 
 Парсер на 1) этапе по списку городов формирует словарь город - id одного отделения банка в яндекс картах. Например, для альфа банка в [Ржеве](https://yandex.ru/maps/org/alfa_bank/34376605990/?ll=34.328759%2C56.265052&z=16) будет записано id отделения 34376605990 {‘Ржев’: 34376605990}. 
 На 2) этапе переходим по ссылке с этим id в раздел [филиалы](https://yandex.ru/maps/org/alfa_bank/34376605990/chain/?ll=34.328759%2C56.265052&z=16) и из списка отделений банков города достаём все id отделений (как правило это все отделения этого банк в этом городе, но не всегда).

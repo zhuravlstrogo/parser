@@ -21,17 +21,18 @@ default_args = {
 }
 
 with DAG(
-    f'{DAG_NAME}',
-    default_args=default_args,
+    dag_id='05_stop_process',
+    catchup=False,
+    start_date=datetime(2024, 6, 24),
     tags=['yandex'],
     schedule_interval='0 1 * * 5'
 ) as dag:
     stop_process = BashOperator(
     task_id = 'stop_process',
-    bash_command='stop_process.sh ',
-    execution_timeout=timedelta(minutes=50000),
+    bash_command='/opt/airflow/stop_process.sh ',
+    # execution_timeout=timedelta(minutes=50000),
     # dag=dag
 )
-(
-    stop_process
-)
+# (
+#     stop_process
+# )

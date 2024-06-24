@@ -1,14 +1,11 @@
-from airflow import DAG
-from airflow.models import Variable
-from airflow.operators.bash_operator import BashOperator
-from airflow.operators.python_operator import PythonOperator
-from airflow.utils.dates import days_ago
-from datetime import datetime, timedelta
-import datetime as dt
-import os
 import sys
-import json
+from datetime import datetime, timedelta
 
+from airflow import DAG
+from airflow.operators.bash_operator import BashOperator
+
+ 
+DAG_NAME = '07_pipeline_review_sberbank'
 default_args = {
     "owner": "anyarulina",
     "start_date": datetime(2024, 5, 28),
@@ -19,21 +16,18 @@ default_args = {
     "dagrun_timeout": timedelta(minutes=50000)
 }
 
-
-DAG_NAME = '07_pipeline_reviews_sberbank'
-
-dag = DAG(
+with DAG(
     f'{DAG_NAME}',
     default_args=default_args,
     tags=['yandex'],
     schedule_interval='21 9 * * 6'
-)
-
-pipeline_reviews_sberbank = BashOperator(
+) as dag:
+    pipeline_reviews_sberbank = BashOperator(
     task_id = 'pipeline_reviews_sberbank',
-    bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/pipeline_review.py -path_type 1 -bank_name sverbank',
+    bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/pipeline_review.py -path_type 1 -bank_name sberbank',
     execution_timeout=timedelta(minutes=50000),
-    dag=dag
+    # dag=dag
 )
-
-pipeline_reviews_sberbank
+(
+    pipeline_reviews_sberbank
+)

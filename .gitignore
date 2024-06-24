@@ -175,3 +175,4 @@ config.py
 *.pkl
 *.zip
 *.deb
+*.yaml

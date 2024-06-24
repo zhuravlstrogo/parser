@@ -203,8 +203,8 @@ if __name__ == "__main__":
 
     
     # TODO: {path}/
-    # with open(f'not_handled_reviews_{bank_name}.pickle', 'rb') as handle:
-    #     cities_dict = pickle.load(handle)
+    with open(f'not_handled_reviews_{bank_name}.pickle', 'rb') as handle:
+        cities_dict = pickle.load(handle)
 
 
     # cities_dict= {'Челябинск': [138995344255, 132482659526, 1030580735, 1034159938]}
@@ -219,9 +219,9 @@ if __name__ == "__main__":
     #     cities_dict[k] =new_values
 
     
-    cities_path = f'{path}/cities_dict_{bank_name}.pickle'
-    with open(cities_path, 'rb') as handle:
-        cities_dict = pickle.load(handle)
+    # cities_path = f'{path}/cities_dict_{bank_name}.pickle'
+    # with open(cities_path, 'rb') as handle:
+    #     cities_dict = pickle.load(handle)
     
 
     # опции перечитывать конкретные города 
