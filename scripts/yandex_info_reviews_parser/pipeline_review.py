@@ -140,6 +140,29 @@ def get_all_reviews(cities, bank_name, path, check_existing=True):
     logging.info(f'Got info for in {datetime.now() - start} seconds')
 
 
+def pipeline_review_alfa_bank():
+    path_type = 1
+    bank_name = 'alfa_bank'
+    print(f"bank_name {bank_name}")
+    
+    homyak = os.path.expanduser('~')
+    path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
+
+    setup_logging(path)
+    start = datetime.now()
+
+    cities_path = f'{path}/cities_dict_{bank_name}.pickle'
+    with open(cities_path, 'rb') as handle:
+        cities_dict = pickle.load(handle)
+
+    logging.info(f"start pipeline for {bank_name} at {start}")
+    get_cities_reviews(cities_dict, bank_name, path)
+
+    logging.info(f'I finished at {datetime.now()}')
+    logging.info(f'Pipeline worked {datetime.now() - start} seconds')
+
+
+
 if __name__ == "__main__":
     # python3 pipeline_review.py -path_type 0 -bank_name alfa_bank 
     parser = argparse.ArgumentParser()
@@ -155,6 +178,8 @@ if __name__ == "__main__":
 
     setup_logging(path)
     start = datetime.now()
+
+    
 
     logging.info(f"start pipeline for {bank_name} at {start}")
 

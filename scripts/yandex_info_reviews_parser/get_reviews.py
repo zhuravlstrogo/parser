@@ -89,7 +89,7 @@ def get_cities_reviews(cities, bank_name, path):
         with open(not_handled_path, 'rb') as f:
             not_handled_reviews = pickle.load(f)
 
-        links_path = Path(f'links/{bank_name}/link_{city_name}.pkl')
+        links_path = Path(f'{path}/links/{bank_name}/link_{city_name}.pkl')
 
         # TODO: поумнее
         try:
@@ -162,7 +162,7 @@ def get_cities_reviews(cities, bank_name, path):
             print(f'ERROR: {e}')
 
         
-        logging.info(f'where are no handled banks in city {city_name} lentgh of {len(not_handled)}: {not_handled}')
+        # logging.info(f'where are no handled banks in city {city_name} lentgh of {len(not_handled)}: {not_handled}')
         
 
 
