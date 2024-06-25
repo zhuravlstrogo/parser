@@ -21,7 +21,6 @@ default_args = {
 }
 
 with DAG(
-    # f'{DAG_NAME}',
     dag_id='08_pipeline_reviews_alfa_bank',
     catchup=False,
     start_date=datetime(2024, 6, 24),

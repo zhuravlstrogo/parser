@@ -64,6 +64,8 @@ def check(city, address):
         city = city.split(' ')[-1]
     except:
         pass
+        
+    # TODO: обрабатывать города по типу Новый Оскол 
 
 
     if bool(re.search(city,  word_list[-1])):
@@ -165,6 +167,8 @@ def merge_all_info(bank_name, path, drop_errors=False):
     with open(f'cities_dict_{bank_name}.pickle', 'rb') as handle:
         cities_dict = pickle.load(handle)
     cities_without_bank = {key:val for key, val in cities_dict.items() if val == 0}
+
+    final_df = final_df.drop_duplicates(subset=['ID', 'address','opening_hours', 'lat', 'lon', 'rating', 'Обслуживание', 'Отношение к клиентам', 'Персонал', 'Время ожидания', 'Кредит', 'Банкомат', 'Расположение', 'Вклад'])
 
     logging.info(f'cities_without_bank {len(cities_without_bank)}')
 
@@ -304,6 +308,6 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    # merge_all_info(bank_name, path, drop_errors=False)
+    merge_all_info(bank_name, path, drop_errors=False)
 
-    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+    # merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)

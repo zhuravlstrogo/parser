@@ -27,13 +27,9 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name, path):
     
     today = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
 
-    print('PATH')
-    print(path)
     directory_name = f'{path}/reviews_outputs/{bank_name}/{city_name}'
     if not os.path.exists(directory_name):
         os.makedirs(directory_name)  
-
-    print("A A A A A ")
 
     if reviews != {} and  'company_reviews' in reviews.keys():
         try: 
@@ -41,7 +37,6 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name, path):
 
             reviews_list = reviews['company_reviews']
             df = pd.DataFrame(reviews_list)
-            # df.drop('icon_href', axis=1, inplace=True)
 
             df['date'] = df['date'].apply(unix_ts_to_readable)
             logging.info(df.head())
@@ -108,14 +103,13 @@ def get_cities_reviews(cities, bank_name, path):
             # TODO: если не обработанных больше, чем не обработанных - 
             handled = {}
 
-    
             # для каждого банка получаем список отзывов 
             for organization_url in bank_links:
-                print(organization_url)
+                logging.info(organization_url)
                 organization_url = organization_url.split(' ')[0]
 
-                print('organization_url AFTER')
-                print(organization_url)
+                logging.info('organization_url AFTER')
+                logging.info(organization_url)
 
                 main_url = f'https://yandex.ru/maps/org/{bank_name}/'
                 yandex_bank_id = organization_url.replace(main_url, '')
@@ -123,7 +117,7 @@ def get_cities_reviews(cities, bank_name, path):
                 try:
                     # проверяем, что отзывы по городу не создана ранее    
                     # already_existing_reviews = []
-                    print(f'yandex_bank_id: {yandex_bank_id}')
+                    logging.info(f'yandex_bank_id: {yandex_bank_id}')
                 
                     existing_link = Path(f'{path}/reviews_outputs/{bank_name}/{city_name}/reviews_{yandex_bank_id}.csv')
                     if not existing_link.is_file(): 
@@ -132,7 +126,7 @@ def get_cities_reviews(cities, bank_name, path):
                         # handled[city_name].append(yandex_bank_id)
 
                     else:
-                        print(f'existing link: {existing_link}')
+                        logging.info((f'existing link: {existing_link}')
                         logging.info(f'review for {yandex_bank_id} in {city_name} already exists')  
                     
                 except Exception as e:
@@ -159,7 +153,7 @@ def get_cities_reviews(cities, bank_name, path):
                 counter -= 1
                 logging.info(f'{counter} items left')
         except Exception as e:
-            print(f'ERROR: {e}')
+            logging.info(f'ERROR in get_cities_reviews for {city_name}: {e}')
 
         
         # logging.info(f'where are no handled banks in city {city_name} lentgh of {len(not_handled)}: {not_handled}')
@@ -179,6 +173,4 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    parse_ans_save_reviews(1066499300, "Москва", bank_name), path
-    
-    cities = {}
+    parse_ans_save_reviews(1066499300, "Москва", bank_name, path)

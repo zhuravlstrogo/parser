@@ -1,0 +1,5 @@
+[2024-06-23 19:21:20,309] p5636 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:169} INFO - cities_without_bank 0
+[2024-06-23 19:21:20,310] p5636 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:176} INFO - final df
+[2024-06-23 19:21:20,320] p5636 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:178} INFO - final_df.shape (3512, 17)
+[2024-06-23 19:21:21,509] p5636 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:191} INFO - 620 unique cities saved
+[2024-06-23 19:21:21,510] p5636 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:207} INFO - not handled 11 cities: {'Железнодорожный', 'Сосновый Бор', 'Вышний Волочёк', 'ст. Талица', 'Лысьва', 'Пыть-Ях', 'Краснознаменск', 'Федоровский', 'д. Жуковка', 'Гусиноозёрск', 'Протвино'}

@@ -103,6 +103,8 @@ def launch_info_pipeline(bank_name, path, cities_list=None, check_existing=False
         #     N = len(duplicated_values)
         #     logging.info(f'duplicated_values: {N}')
         #     update_cities_dict(duplicated_values, bank_name)
+
+    
     if cities_list:
         cities = {k: v for k, v in cities.items() if k in cities_list}
         print(f'len cities_list {len(cities_list)}')
@@ -150,8 +152,8 @@ if __name__ == "__main__":
     logging.info('*********************************************************')
     logging.info(f"launch info pipeline for {bank_name} at {start}")
 
-    cities_list = False
-    # cities_list = ['Ульяновск']
+    # cities_list = False
+    cities_list = ['Пыть-Ях', 'Протвино', 'ст. Талица', 'Железнодорожный', 'Федоровский', 'Гусиноозёрск', 'Сосновый Бор', 'Краснознаменск', 'д. Жуковка', 'Вышний Волочёк']
 
     cities_path = f'{path}/cities_dict_{bank_name}.pickle'
     with open(cities_path, 'rb') as handle:
