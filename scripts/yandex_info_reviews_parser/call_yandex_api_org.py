@@ -311,9 +311,12 @@ def get_cities_dict(bank_name, path, check_existing=True):
         cities_dict = pickle.load(handle)
 
     logging.info(f'cities_dict length for {bank_name} {len(cities_dict)}')
+
     # with open(f'{path}cities.txt') as f:
     #     cities = [x.strip('\n') for x in f ]
 
+    # print('cities ', cities)
+    # TODO: доработать вариант для работы по расписанию 
     with open(f'{path}/cities_1.txt') as f:
         input_cities_1 = [x.strip('\n') for x in f ]
     with open(f'{path}/cities_2.txt') as f:
@@ -328,7 +331,7 @@ def get_cities_dict(bank_name, path, check_existing=True):
         cities= [k for k in cities if k not in list(cities_dict.keys())]
 
     logging.info(f'I will update {len(cities)} cities for {bank_name}')
-    update_cities_dict(cities, bank_name, path)
+    # update_cities_dict(cities, bank_name, path)
 
 
 
@@ -345,11 +348,12 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    # cities_list = ['Балтийск',  'Нижнесортымский', 'п. Мурино', 'Нарьян-Мар', 'Лабытнанги', 'Алексеевка', 'Кинешма', 'Калачинск', 'Елец',  'Озерск',  'Вышний Волочёк']
-    # update_cities_dict(cities_list, bank_name, path)
-    
 
+    # получить id для городов из cities.txt
     get_cities_dict(bank_name, path, check_existing=False)
-    # # handle_duplicates(bank_name, path)
+
+    # получить id для городов из cities_list
+    # cities_list = ['Башкортостан Октябрьский', 'Москва Октябрьский', 'Свердловская Берёзовский', 'Кемеровская Берёзовский']
+    # update_cities_dict(cities_list, bank_name, path)
 
 

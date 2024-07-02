@@ -129,6 +129,8 @@ def get_bank_links(cities, bank_name, path):
         logging.info(f'get links for bank: {bank_name}, city: {city_name}, yndx id: {yndx_id}')
         try:
             yndx_ids = get_yndx_id_from_chain(yndx_id, bank_name)
+            # TODO: убрать 
+            print(yndx_ids)
         except Exception as e:
             logging.info(f'Error in get links for bank: {bank_name}, city: {city_name}, yndx id: {yndx_id}, error: {e}')
             continue
@@ -169,6 +171,8 @@ def get_bank_links(cities, bank_name, path):
 if __name__ == "__main__":
     # python3 get_links.py -path_type 0 -bank_name sberbank 
 
+    # python3 get_links.py -path_type 0 -bank_name vtb 
+
     parser = argparse.ArgumentParser()
     parser.add_argument('-bank_name', type=str)
     parser.add_argument('-path_type', type=int)
@@ -178,5 +182,5 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    cities = {'Нефтеюганск' : 21755334894}
+    cities = {'Санкт-Петербург' : 94020261684}
     get_bank_links(cities, bank_name, path)

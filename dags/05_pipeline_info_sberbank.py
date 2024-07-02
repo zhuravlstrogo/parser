@@ -5,12 +5,23 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 
 
+default_args = {
+    "owner": "anyarulina",
+    "depends_on_past": False,
+    "start_date": datetime(2024, 6, 24),
+    "email": ["al.yarulina@gmail.com"],
+    "email_on_failure": False,
+    "email_on_retry": False,
+    "retries": 1,
+    "retry_delay": timedelta(minutes=5),
+}
+
 with DAG(
     dag_id='05_pipeline_info_sberbank',
-    catchup=False,
-    start_date=datetime(2024, 6, 24),
-    tags=['yandex'],
-    schedule_interval='0 1 * * 5'
+    schedule_interval='0 1 * * 5',
+    default_args=default_args, 
+    catchup=False
+    # tags=['yandex'],
 ) as dag:
     pipeline_info_sberbank = BashOperator(
     task_id = 'pipeline_info_sberbank',

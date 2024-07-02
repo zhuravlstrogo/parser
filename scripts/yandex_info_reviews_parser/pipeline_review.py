@@ -179,7 +179,6 @@ if __name__ == "__main__":
     setup_logging(path)
     start = datetime.now()
 
-    
 
     logging.info(f"start pipeline for {bank_name} at {start}")
 
@@ -227,19 +226,20 @@ if __name__ == "__main__":
     # опции перечитывать конкретные города 
     get_cities_reviews(cities_dict, bank_name, path)
 
+    # # TODO: 
     # funcs = get_all_reviews(cities, bank_name, path, check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True)
 
-    for func in funcs:
-        try:
-            st = datetime.now()
-            func(cities, bank_name, path, check_existing=True)
-            break
-        except Exception as e:
-            logging.info(f'Error in {func}: {e}')
-            logging.info(f'worked {datetime.now() - st} seconds')
-            # # TODO: раскомментить
-            # time.sleep(1800)
-            continue
+    # for func in funcs:
+    #     try:
+    #         st = datetime.now()
+    #         func(cities, bank_name, path, check_existing=True)
+    #         break
+    #     except Exception as e:
+    #         logging.info(f'Error in {func}: {e}')
+    #         logging.info(f'worked {datetime.now() - st} seconds')
+    #         # # TODO: раскомментить
+    #         # time.sleep(1800)
+    #         continue
 
 logging.info(f'I finished at {datetime.now()}')
 logging.info(f'Pipeline worked {datetime.now() - start} seconds')

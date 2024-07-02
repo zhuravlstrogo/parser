@@ -17,7 +17,7 @@ from utils import find_between, search_end_of_str
 
 def handle_C_lon(lon):
     """убирает символ С в начале строки в поле lon"""
-    if lon[0] ==  'C':
+    if type(lon) == str and lon[0] ==  'C':
         return lon[1:]
     else:
         return lon 
@@ -25,7 +25,7 @@ def handle_C_lon(lon):
 
 def handle_C_lat(lat):
     """убирает символ С в начале строки в поле lat"""
-    if lat[0] ==  'C':
+    if type(lat) == str and lat[0] ==  'C':
         return lat[1:]
     else:
         return lat 
@@ -34,8 +34,10 @@ def handle_C_lat(lat):
 def check(city, address):
     """проверяет,что название города в поле city есть в поле address"""
     city = city.lower()
+
     try:
         address = str(address).lower()
+        
     except Exception as e:
         print(f'address {address}, error {e}')
         print('check')
@@ -118,8 +120,8 @@ def merge_all_info(bank_name, path, drop_errors=False):
             
             city_name = find_between(f, first='', last='_info.csv')[0]
             d[city_name] = info_path + f
-        except:
-            print(f'error {city_name}')
+        except Exception as e:
+            print(f'error in {city_name} info files check: {e}')
 
     frames = []
     for city_name, file_path in d.items():
@@ -143,15 +145,28 @@ def merge_all_info(bank_name, path, drop_errors=False):
     else:
         final_df = pd.concat(frames, axis=0)
 
-    # final_df = final_df[final_df['city'].str.contains('Балашиха')]
-    # print('final_df ', final_df)
+    # final_df = final_df[final_df['city'].str.contains('Волочек')]
+
+    print('********')
+    print(final_df.head())
+
+    # print(final_df.info())
+
+    # оставляем только нужный банк 
+    main_name = final_df['name'].value_counts().keys()[0]
+    final_df = final_df[final_df['name'] == main_name]
+
+    print('UNIQUE BANK NAME ', np.unique(final_df['name']))
 
     final_df = final_df[final_df['opening_hours'] != "'mon': выходной, 'tue': выходной, 'wed': выходной, 'thu': выходной, 'fri': выходной, 'sat': выходной, 'sun': выходной"]
 
+    # print('********')
+    # print(final_df[['lat', 'lon']])
+
     final_df = final_df[['ID', 'name', 'city', 'address','opening_hours', 'lat', 'lon', 'rating', 'Обслуживание', 'Отношение к клиентам', 'Персонал', 'Время ожидания', 'Кредит', 'Банкомат', 'Расположение', 'Вклад', 'load_time']]
 
-    final_df['lat'] = final_df['lat'].astype('str')
-    final_df['lon'] = final_df['lon'].astype('str')
+    # final_df['lat'] = final_df['lat'].astype(str)
+    # final_df['lon'] = final_df['lon'].astype(str)
 
     final_df['lon'] = final_df.apply(lambda x: handle_C_lat(x.lon), axis=1)
     final_df['lat'] = final_df.apply(lambda x: handle_C_lat(x.lat), axis=1)
@@ -238,11 +253,6 @@ def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True
     else:
         final_df = pd.concat(frames, axis=0)
 
-        # TODO: убрать 
-        final_df = final_df[final_df['city'] == 'Москва']
-        final_df.to_csv('reviews_Moscow.csv', index=False)
-        print('Moscow reviews saved')
-
     # TODO: set True after give id for all banks in info 
     if filter_by_info_df:
         final_df['id'] = final_df['id'].astype('int')
@@ -308,6 +318,6 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    merge_all_info(bank_name, path, drop_errors=False)
+    # merge_all_info(bank_name, path, drop_errors=False)
 
-    # merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)

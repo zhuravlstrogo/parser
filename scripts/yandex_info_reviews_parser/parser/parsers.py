@@ -23,7 +23,9 @@ class Parser:
             "arguments[0].scrollIntoView();",
             elem
         )
-        time.sleep(10)
+        N = 10
+        print(f'sleep for {N} seconds')
+        time.sleep(N)
         new_elem = self.driver.find_elements(By.CLASS_NAME, "business-reviews-card-view__review")[-1]
         if elem == new_elem:
             return
@@ -136,7 +138,9 @@ class Parser:
         # while True:
         # if len(elements) > 1:
             self.__scroll_to_bottom(elements[-1])
-            time.sleep(20)
+            N = 20
+            print(f'sleep for {N} seconds')
+            time.sleep(N)
             elements = self.driver.find_elements(By.CLASS_NAME, "business-reviews-card-view__review")
             # elements - набор всех отзывов 
             last_len = len(elements)

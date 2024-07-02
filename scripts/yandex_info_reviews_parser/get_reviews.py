@@ -15,8 +15,12 @@ from log import setup_logging
 
 def unix_ts_to_readable(unix_ts):
     """преобразует unix время в 2022-02-02 02:02:02"""
-    timestamp = datetime.fromtimestamp(unix_ts)
-    return timestamp.strftime('%Y-%m-%d %H:%M:%S')
+    if unix_ts is not None:
+        timestamp = datetime.fromtimestamp(unix_ts)
+        timestamp.strftime('%Y-%m-%d %H:%M:%S')
+    else:
+        timestamp = None
+    return timestamp
 
 
 def parse_ans_save_reviews(id_ya, city_name, bank_name, path):
@@ -96,7 +100,7 @@ def get_cities_reviews(cities, bank_name, path):
                 bank_links = [i.replace("{bank_name}", f"{bank_name}") for i in bank_links]
 
             counter = len(links)
-            logging.info(f"I will handle {counter} banks for city {city_name}")
+            logging.info(f"I will handle {counter} org in {city_name} city")
             logging.info(f'links: {links}')
 
             not_handled = {}
@@ -126,7 +130,7 @@ def get_cities_reviews(cities, bank_name, path):
                         # handled[city_name].append(yandex_bank_id)
 
                     else:
-                        logging.info((f'existing link: {existing_link}')
+                        logging.info(f'existing link: {existing_link}')
                         logging.info(f'review for {yandex_bank_id} in {city_name} already exists')  
                     
                 except Exception as e:
@@ -162,7 +166,7 @@ def get_cities_reviews(cities, bank_name, path):
 
 
 if __name__ == "__main__":
-    # python3 get_links.py -path_type 0 -bank_name alfa_bank 
+    # python3 get_reviews.py -path_type 0 -bank_name alfa_bank 
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-bank_name', type=str)
@@ -173,4 +177,5 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    parse_ans_save_reviews(1066499300, "Москва", bank_name, path)
+    # TODO: для 126886788998, "Апшеронск" не подтягивается автор и дата 
+    parse_ans_save_reviews(126886788998, "Апшеронск", bank_name, path)

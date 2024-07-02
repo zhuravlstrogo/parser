@@ -1,3 +1,10 @@
+def handle_hours(opening_hours):
+    hours = opening_hours[:5] + '-' + opening_hours[-5:]
+    if 'выход' in hours:
+        hours = 'выходной'
+    return hours
+
+
 def into_json(org_id, name, address, website, opening_hours, lat, lon, rating, phone, social, business_aspect):
     """ Шаблон файла OUTPUT.json"""
 
@@ -24,13 +31,21 @@ def into_json(org_id, name, address, website, opening_hours, lat, lon, rating, p
         "address": address,
         "website": website,
         "opening_hours": 
-        f"'mon': {opening_hours[0][3:]}, "
-        f"'tue': {opening_hours[1][3:]}, "
-        f"'wed': {opening_hours[2][3:]}, "
-        f"'thu': {opening_hours[3][3:]}, "
-        f"'fri': {opening_hours[4][3:]}, "
-        f"'sat': {opening_hours[5][3:]}, "
-        f"'sun': {opening_hours[6][3:]}",
+        # f"'mon': {opening_hours[0][3:]}, "
+        # f"'tue': {opening_hours[1][3:]}, "
+        # f"'wed': {opening_hours[2][3:]}, "
+        # f"'thu': {opening_hours[3][3:]}, "
+        # f"'fri': {opening_hours[4][3:]}, "
+        # f"'sat': {opening_hours[5][3:]}, "
+        # f"'sun': {opening_hours[6][3:]}",
+
+        f"'mon': {handle_hours(opening_hours[0][3:])}, "
+        f"'tue': {handle_hours(opening_hours[1][3:])}, "
+        f"'wed': {handle_hours(opening_hours[2][3:])}, "
+        f"'thu': {handle_hours(opening_hours[3][3:])}, "
+        f"'fri': {handle_hours(opening_hours[4][3:])}, "
+        f"'sat': {handle_hours(opening_hours[5][3:])}, "
+        f"'sun': {handle_hours(opening_hours[6][3:])}, ",
         "lat": lat,
         "lon": lon,
         "rating": rating,

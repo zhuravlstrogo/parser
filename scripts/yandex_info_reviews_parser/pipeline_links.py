@@ -70,6 +70,11 @@ if __name__ == "__main__":
     cities_path = f'{path}/cities_dict_{bank_name}.pickle'
     with open(cities_path, 'rb') as handle:
         cities = pickle.load(handle)
+
+    needed_list = ['Башкортостан Октябрьский', 'Москва Октябрьский', 'Свердловская Берёзовский', 'Кемеровская Берёзовский']
+    cities = {k: v for k, v in cities.items() if k in needed_list}
+    print(cities)
+
     cities = {k: v for k, v in cities.items() if v != 0}
     logging.info(f'{len(cities)} not null cities')
 

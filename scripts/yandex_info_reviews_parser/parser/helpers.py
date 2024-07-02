@@ -48,12 +48,18 @@ class ParserHelper:
         :param date_string: Дата в формате %Y-%m-%dT%H:%M:%S.%fZ
         :return: Дата в формате Timestamp
         """
-        try:
+        # try:
+        if date_string is not None:
             datetime_object = datetime.strptime(date_string, "%Y-%m-%dT%H:%M:%S.%fZ")
             datetime_object = datetime_object.timestamp()
-        except Exception as e:
-            print(f'Error in form_date: {e}')
+        # except Exception as e:
+    
+        else:
+            # print(f'Error in form_date: {e}')
+            print('date_string')
+            print(date_string)
             datetime_object = None
+            # pass 
         return datetime_object
 
     @staticmethod

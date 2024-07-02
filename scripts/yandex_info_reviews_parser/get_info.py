@@ -119,6 +119,8 @@ class Parser:
                     #     logging.info('assert ', df.shape, len(outputs))
                 
                 df['load_time'] = today
+
+                print(f'PATH: {path}/{directory_name}/{city_name}_info.csv')
                 df.to_csv(f'{path}/{directory_name}/{city_name}_info.csv')
                 logging.info(f'df info saved')
                 counter -= 1 
@@ -208,5 +210,5 @@ if __name__ == "__main__":
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
 
-    cities = {'Кострома':99532788218}
+    cities = {'Владимир':1032361820}
     get_cities_info(cities, bank_name, path)
