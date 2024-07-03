@@ -6,6 +6,10 @@ import numpy as np
 import smtplib
 import ssl
 
+from pathlib import Path
+from os import listdir
+from os.path import isfile, join
+
 
 from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
@@ -40,7 +44,6 @@ def send_mail(send_from, send_to, subject, text, user_nm, user_x, host, port, fi
     msg.attach(MIMEText(text))
     for f in files or []:
 
-        print('File')
         print(f)
 
         with open(f, 'rb') as fil:
@@ -66,47 +69,54 @@ def send_mail(send_from, send_to, subject, text, user_nm, user_x, host, port, fi
 
 if __name__ == "__main__":
 
-    send_from = 'vtb_sender_uus@mail.ru'
-    send_to = ['anyarulina@vtb.ru', 'ymp@vtb.ru', 'mineugomonov@vtb.ru']
-    # send_to = ['anyarulina@vtb.ru']
-    subject = 'yandex parsing info'
-    info_files=[f'{path}yandex_info_reviews_parser/info_all/sberbank_info_all.xlsx', f'{path}yandex_info_reviews_parser/info_all/alfa_bank_info_all.xlsx']
     host='smtp.mail.ru'
     port=25
 
+    send_from = 'vtb_sender_uus@mail.ru'
+    send_to = ['anyarulina@vtb.ru', 'ymp@vtb.ru', 'mineugomonov@vtb.ru']
+    # send_to = ['al.yarulin@gmail.com']
+    # send_to = ['anyarulina@vtb.ru']
+    # subject = 'yandex parsing info'
+    # text = """
+    # Парсер яндекса: информация об отделениях банка
+    # """
+
+    # info_files=[f'{path}yandex_info_reviews_parser/info_all/sberbank_info_all.xlsx', f'{path}yandex_info_reviews_parser/info_all/alfa_bank_info_all.xlsx']
+    
+    # send_mail(send_from=send_from, send_to=send_to, subject=subject, text=text, user_nm=user_nm, user_x=user_x, host=host, port=port, files=info_files)
+    # time.sleep(30)
+
+    subject = 'yandex parsing reviews'
     text = """
-    Парсер яндекса: информация о банках 
-    """
+        Парсер яндекса: отзывы об отделениях банка
+        """
 
-    send_mail(send_from=send_from, send_to=send_to, subject=subject, text=text, user_nm=user_nm, user_x=user_x, host=host, port=port, files=info_files)
-    time.sleep(30)
+    slitted_reviews_path  =f'splitted_reviews'
+    reviews_files = [f for f in listdir(slitted_reviews_path) if isfile(join(slitted_reviews_path, f))]
 
-    # TODO: делить отзывы на 2, отзывы отправлять по одному ?
-    # f'{path}yandex_info_reviews_parser/reviews_all/alfa_bank_reviews_all.xlsx',
-    # f'{path}yandex_info_reviews_parser/reviews_all/alfa_bank_reviews_all.xlsx'
-    # review_files=[  f'{path}yandex_info_reviews_parser/reviews_all/alfa_bank_reviews_all.xlsx']
+    reviews_files.remove('.DS_Store')
 
-    # for f in review_files:
-    #     f = [f]
-    #     # name = f.replace(f'{path}yandex_info_reviews_parser/reviews_all/', '')[:-9]
-    #     # print(name)
-    #     # df = pd.read_excel(f)
-    #     # N = len(df)
+    
+    
+    print(f'I will send {len(reviews_files)} letters')
 
-    #     # print(f'N: {N}')
+    counter = 0
+    # TODO: только xlsx файлы 
+    for f in reviews_files:
+        counter +=1
+        print(counter)
 
-    #     # df.iloc[:, :N].to_csv(f'splitted_reviews/{name}_part_1.csv', index=False)
-    #     # df.iloc[:, N:].to_csv(f'splitted_reviews/{name}_part_2.csv', index=False)
+        f = [f'splitted_reviews/{f}']
+        
+        # TODO: читаем все файлы в папке splitted_reviews/ отправляем и удаляем 
 
 
-    #     text = """
-    #     Парсер яндекса: отзывы 
-    #     """
+        send_mail(send_from=send_from, send_to=send_to, subject=subject, text=text, user_nm=user_nm, user_x=user_x, host=host, port=port, files=f)
+        
 
-    # # TODO: читаем все файлы в папке splitted_reviews/ отправляем и удаляем 
-    # # TODO: sleep как отрабатывает 
-
-    #     send_mail(send_from=send_from, send_to=send_to, subject=subject, text=text, user_nm=user_nm, user_x=user_x, host=host, port=port, files=f)
-    #     N = 30
-    #     print(f'sleep for {N} second')
-    #     time.sleep(30)
+        # if counter == 1:
+        #     break
+        
+        N = 30
+        print(f'sleep for {N} second')
+        time.sleep(60)
