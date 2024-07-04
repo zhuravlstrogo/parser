@@ -90,7 +90,7 @@ def get_not_handled_reviews(bank_name, path):
 
 
 # @timing
-def get_all_reviews(cities, bank_name, path, check_existing=True):
+def get_all_reviews(cities, bank_name, path, check_existing=False):
     """формирует datafram-ы с информацией по всем банкам по всем городам в /info_output/bank_name/
         Args:
             cities (list): список городов
@@ -105,34 +105,37 @@ def get_all_reviews(cities, bank_name, path, check_existing=True):
     if check_existing:
         cities_dict = get_not_handled_reviews(bank_name, path)
 
-        cities_dict = {k:v for k,v in cities_dict.items() if k in cities and v != []}
+        # cities_dict = {k:v for k,v in cities_dict.items() if k in cities and v != []}
+
+        cities = [k for k,v in cities_dict.items() if k in cities]
 
         main_url = f'https://yandex.ru/maps/org/{bank_name}/'
 
-        for k, v in cities_dict.items():
-            cities_dict[k] = [main_url + i for i in v] 
+        # for k, v in cities_dict.items():
+        #     cities_dict[k] = [main_url + i for i in v] 
 
-    else:
-        # default-ный список 
-        cities_dict = {}
-        for city_name in cities:
-            links_path = Path(f'{path}/links/{bank_name}/link_{city_name}.pkl')
-            # TODO: поумнее 
-            try:
-                with open(links_path, 'rb') as f:
-                    links = pickle.load(f)
-            except:
-                links = None
-            # TODO: тип лист? 
-            cities_dict[city_name] = links
+    # else:
+    #     # default-ный список 
+    #     cities_dict = {}
+    #     for city_name in cities:
+    #         links_path = Path(f'{path}/links/{bank_name}/link_{city_name}.pkl')
+    #         # TODO: поумнее 
+    #         try:
+    #             with open(links_path, 'rb') as f:
+    #                 links = pickle.load(f)
+    #         except:
+    #             links = None
+    #         # TODO: тип лист? 
+    #         cities_dict[city_name] = links
 
     # print('cities_dict  ********** ')
     # print(cities_dict)
 
-    logging.info(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
+    # logging.info(f'I will get reviews for {sum(len(v) for k,v in cities_dict.items())} banks')
+    logging.info(f'I will get reviews for {len(cities)} banks')
 
-    # передаём словарь город - список адресов банков
-    get_cities_reviews(cities_dict, bank_name, path)
+    # передаём список городов 
+    get_cities_reviews(cities, bank_name, path, check_existing=check_existing)
 
     # print("Абинск' in cities_dict 2")
     # print('Абинск' in cities_dict.keys())
@@ -140,26 +143,26 @@ def get_all_reviews(cities, bank_name, path, check_existing=True):
     logging.info(f'Got info for in {datetime.now() - start} seconds')
 
 
-def pipeline_review_alfa_bank():
-    path_type = 1
-    bank_name = 'alfa_bank'
-    print(f"bank_name {bank_name}")
+# def pipeline_review_alfa_bank():
+#     path_type = 1
+#     bank_name = 'alfa_bank'
+#     print(f"bank_name {bank_name}")
     
-    homyak = os.path.expanduser('~')
-    path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
+#     homyak = os.path.expanduser('~')
+#     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
 
-    setup_logging(path)
-    start = datetime.now()
+#     setup_logging(path)
+#     start = datetime.now()
 
-    cities_path = f'{path}/cities_dict_{bank_name}.pickle'
-    with open(cities_path, 'rb') as handle:
-        cities_dict = pickle.load(handle)
+#     cities_path = f'{path}/cities_dict_{bank_name}.pickle'
+#     with open(cities_path, 'rb') as handle:
+#         cities_dict = pickle.load(handle)
 
-    logging.info(f"start pipeline for {bank_name} at {start}")
-    get_cities_reviews(cities_dict, bank_name, path)
+#     logging.info(f"start pipeline for {bank_name} at {start}")
+#     get_cities_reviews(cities, bank_name, path)
 
-    logging.info(f'I finished at {datetime.now()}')
-    logging.info(f'Pipeline worked {datetime.now() - start} seconds')
+#     logging.info(f'I finished at {datetime.now()}')
+#     logging.info(f'Pipeline worked {datetime.now() - start} seconds')
 
 
 
@@ -171,15 +174,13 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     bank_name = args.bank_name
-    print(f"bank_name {bank_name}")
+    print(f"BANK NAME {bank_name}")
     
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
 
     setup_logging(path)
     start = datetime.now()
-
-
     logging.info(f"start pipeline for {bank_name} at {start}")
 
     # with open('cities.txt') as f:
@@ -218,12 +219,31 @@ if __name__ == "__main__":
     #     cities_dict[k] =new_values
 
     
+
+
+    # excluded_list = ['Башкортостан Октябрьский', 'Москва Октябрьский', 'Свердловская Берёзовский', 'Кемеровская Берёзовский']
+    # cities_dict = {k: v for k, v in cities_dict.items() if k not in excluded_list}
+    
+    # included_list = ['Башкортостан Октябрьский']
+    # cities_dict = {k: v for k, v in cities_dict.items() if k not in included_list}
+
+    # print("CHECK cities_dict")
+    # try:
+    #     print(cities_dict['Башкортостан Октябрьский'])
+    # except Exception as e:
+    #     print(f'error {e}')
+
+
+
     cities_path = f'{path}/cities_dict_{bank_name}.pickle'
     with open(cities_path, 'rb') as handle:
         cities_dict = pickle.load(handle)
 
-    # опции перечитывать конкретные города 
-    get_cities_reviews(cities_dict, bank_name, path)
+
+    cities = list(cities_dict.keys())
+    print(f"LEN cities : {len(cities)}")
+    print(f"example: {cities[10]}")
+    get_all_reviews(cities, bank_name, path, check_existing=False)
 
     # # TODO: 
     # funcs = get_all_reviews(cities, bank_name, path, check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True)

@@ -66,27 +66,28 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name, path):
             # TODO: сюда continue?
 
 
-def get_cities_reviews(cities, bank_name, path):
+def get_cities_reviews(cities, bank_name, path, check_existing=False):
     """
         Args:
-            cities (dict): город - список id банков
+            cities (list): город - список городов
             bank_name (str): 
     
         Returns:
             - 
     """
     
-    for city_name, links in cities.items():
+    for city_name in cities:
+        # здесь был словарь city_name : links
         logging.info(f'starting get reviews for {city_name} city')
 
-        not_handled_path = Path(f'{path}/not_handled_reviews_{bank_name}.pkl')
-        if not not_handled_path.is_file():
-            not_handled_reviews = {}
-            with open(not_handled_path, 'wb') as handle:
-                pickle.dump(not_handled_reviews, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        # not_handled_path = Path(f'{path}/not_handled_reviews_{bank_name}.pkl')
+        # if not not_handled_path.is_file():
+        #     not_handled_reviews = {}
+        #     with open(not_handled_path, 'wb') as handle:
+        #         pickle.dump(not_handled_reviews, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-        with open(not_handled_path, 'rb') as f:
-            not_handled_reviews = pickle.load(f)
+        # with open(not_handled_path, 'rb') as f:
+        #     not_handled_reviews = pickle.load(f)
 
         links_path = Path(f'{path}/links/{bank_name}/link_{city_name}.pkl')
 
@@ -99,9 +100,9 @@ def get_cities_reviews(cities, bank_name, path):
             if '{bank_name}' in bank_links[0]:
                 bank_links = [i.replace("{bank_name}", f"{bank_name}") for i in bank_links]
 
-            counter = len(links)
+            counter = len(bank_links)
             logging.info(f"I will handle {counter} org in {city_name} city")
-            logging.info(f'links: {links}')
+            # logging.info(f'links: {links}')
 
             not_handled = {}
             # TODO: если не обработанных больше, чем не обработанных - 
@@ -110,29 +111,35 @@ def get_cities_reviews(cities, bank_name, path):
             # для каждого банка получаем список отзывов 
             for organization_url in bank_links:
                 logging.info(organization_url)
+
+                # organization_url: https://yandex.ru/maps/org/sberbank/142956405994
                 organization_url = organization_url.split(' ')[0]
 
                 logging.info('organization_url AFTER')
                 logging.info(organization_url)
 
                 main_url = f'https://yandex.ru/maps/org/{bank_name}/'
-                yandex_bank_id = organization_url.replace(main_url, '')
+
+                yandex_bank_id = organization_url.replace(main_url, '') # вытаскиваем id-шних 
                 # yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
                 try:
-                    # проверяем, что отзывы по городу не создана ранее    
-                    # already_existing_reviews = []
-                    logging.info(f'yandex_bank_id: {yandex_bank_id}')
-                
-                    existing_link = Path(f'{path}/reviews_outputs/{bank_name}/{city_name}/reviews_{yandex_bank_id}.csv')
-                    if not existing_link.is_file(): 
+
+                    if check_existing:
+                        # проверяем, что отзывы по городу не создана ранее    
+                        logging.info(f'yandex_bank_id: {yandex_bank_id}')
+                    
+                        existing_reviews = Path(f'{path}/reviews_outputs/{bank_name}/{city_name}/reviews_{yandex_bank_id}.csv')
+                        if not existing_reviews.is_file(): 
+                            logging.info(f'starting get reviews for id {yandex_bank_id}')
+                            parse_ans_save_reviews(yandex_bank_id, city_name, bank_name, path)
+                            # handled[city_name].append(yandex_bank_id)
+
+                        else:
+                            logging.info(f'existing link: {existing_reviews}')
+                            logging.info(f'review for {yandex_bank_id} in {city_name} already exists')  
+                    else:
                         logging.info(f'starting get reviews for id {yandex_bank_id}')
                         parse_ans_save_reviews(yandex_bank_id, city_name, bank_name, path)
-                        # handled[city_name].append(yandex_bank_id)
-
-                    else:
-                        logging.info(f'existing link: {existing_link}')
-                        logging.info(f'review for {yandex_bank_id} in {city_name} already exists')  
-                    
                 except Exception as e:
                     logging.info(f'ERRORed organization_url {organization_url} {e}')
                     logging.info(f'{yandex_bank_id} not handled')
