@@ -19,8 +19,8 @@ default_args = {
 with DAG(
     dag_id='06_pipeline_info_alfa_bank',
     schedule_interval='13 8 * * 1',
-    catchup=False,
     default_args=default_args, 
+    catchup=False
     # tags=['yandex'],
 ) as dag:
     pipeline_info_alfa_bank = BashOperator(
