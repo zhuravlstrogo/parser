@@ -31,9 +31,6 @@ def get_not_handled_reviews(bank_name, path):
         except:
             pass
 
-    # print("Абинск' in existing_reviews.keys()")
-    # print('Абинск' in existing_reviews.keys())
-
     logging.info(f'len existing_reviews  {sum(len(v) for k,v in existing_reviews.items())}')
 
     links_path  =f'{path}/links/{bank_name}/'
@@ -53,9 +50,6 @@ def get_not_handled_reviews(bank_name, path):
             existing_links[k] = v
         except:
             pass
-
-    # print("Абинск' in existing_links.keys()")
-    # print('Абинск' in existing_links.keys())
 
     logging.info(f'len existing_links  {sum(len(v) for k,v in existing_links.items())}')
 
@@ -80,9 +74,6 @@ def get_not_handled_reviews(bank_name, path):
             links = None
 
         not_handled_reviews[city_name] = links
-
-    # print("Абинск' in not_handled_reviews.keys()")
-    # print('Абинск' in not_handled_reviews.keys())
 
     logging.info(f'len not_handled_reviews  {sum(len(v) for k,v in not_handled_reviews.items())}')
     
@@ -143,28 +134,6 @@ def get_all_reviews(cities, bank_name, path, check_existing=False):
     logging.info(f'Got info for in {datetime.now() - start} seconds')
 
 
-# def pipeline_review_alfa_bank():
-#     path_type = 1
-#     bank_name = 'alfa_bank'
-#     print(f"bank_name {bank_name}")
-    
-#     homyak = os.path.expanduser('~')
-#     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
-
-#     setup_logging(path)
-#     start = datetime.now()
-
-#     cities_path = f'{path}/cities_dict_{bank_name}.pickle'
-#     with open(cities_path, 'rb') as handle:
-#         cities_dict = pickle.load(handle)
-
-#     logging.info(f"start pipeline for {bank_name} at {start}")
-#     get_cities_reviews(cities, bank_name, path)
-
-#     logging.info(f'I finished at {datetime.now()}')
-#     logging.info(f'Pipeline worked {datetime.now() - start} seconds')
-
-
 
 if __name__ == "__main__":
     # python3 pipeline_review.py -path_type 0 -bank_name alfa_bank 
@@ -182,43 +151,10 @@ if __name__ == "__main__":
     setup_logging(path)
     start = datetime.now()
     logging.info(f"start pipeline for {bank_name} at {start}")
-
-    # with open('cities.txt') as f:
-    #     cities = [x.strip('\n') for x in f ]
-    # logging.info(f'{len(cities)} cities in input')
-
-#     # review_path  =f'info_output/{bank_name}/'
-#     # review_files = [f for f in listdir(info_path) if isfile(join(info_path, f))]
-
-#     # while len(review_files) - 20 < len(input_cities):
-#         # logging.info("I have work ")
-
-#     # TODO: раскоментить 
-#     # N = 21
-#     # while N > 20:
-#     #     duplicated_values = get_duplicated_ids(bank_name)
-#     #     N = len(duplicated_values)
-#     #     logging.info(f'duplicated_values: {N}')
-#     #     update_cities_dict(duplicated_values, bank_name)
-
     
     # TODO: {path}/
     # with open(f'not_handled_reviews_{bank_name}.pickle', 'rb') as handle:
     #     cities_dict = pickle.load(handle)
-
-
-    # cities_dict= {'Челябинск': [138995344255, 132482659526, 1030580735, 1034159938]}
-    # main_url = f'https://yandex.ru/maps/org/{bank_name}/'
-
-    # for k, v in cities_dict.items():
-    #     new_values = []
-    #     for i in range(len(v)):
-
-    #         new_values.append(main_url + str(v[i]))
-
-    #     cities_dict[k] =new_values
-
-    
 
 
     # excluded_list = ['Башкортостан Октябрьский', 'Москва Октябрьский', 'Свердловская Берёзовский', 'Кемеровская Берёзовский']
@@ -233,8 +169,6 @@ if __name__ == "__main__":
     # except Exception as e:
     #     print(f'error {e}')
 
-
-
     cities_path = f'{path}/cities_dict_{bank_name}.pickle'
     with open(cities_path, 'rb') as handle:
         cities_dict = pickle.load(handle)
@@ -245,23 +179,9 @@ if __name__ == "__main__":
     print(f"example: {cities[10]}")
     get_all_reviews(cities, bank_name, path, check_existing=False)
 
-    # # TODO: 
-    # funcs = get_all_reviews(cities, bank_name, path, check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True), get_all_reviews(cities, bank_name, path,check_existing=True)
 
-    # for func in funcs:
-    #     try:
-    #         st = datetime.now()
-    #         func(cities, bank_name, path, check_existing=True)
-    #         break
-    #     except Exception as e:
-    #         logging.info(f'Error in {func}: {e}')
-    #         logging.info(f'worked {datetime.now() - st} seconds')
-    #         # # TODO: раскомментить
-    #         # time.sleep(1800)
-    #         continue
-
-logging.info(f'I finished at {datetime.now()}')
-logging.info(f'Pipeline worked {datetime.now() - start} seconds')
+    logging.info(f'I finished at {datetime.now()}')
+    logging.info(f'Pipeline worked {datetime.now() - start} seconds')
 
 
 
