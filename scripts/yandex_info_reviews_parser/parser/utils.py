@@ -23,12 +23,10 @@ class YandexParser:
         driver.get(url)
         return parser
 
-    def parse(self, type_parse: str = 'default') -> dict:
+    def parse(self, type_parse: str = 'default', limit=False) -> dict:
         """
         Функция получения данных в виде
         @param type_parse: Тип данных, принимает значения:
-            default - получает все данные по аккаунту
-            company - получает данные по компании
             reviews - получает данные по отчетам
         @return: Данные по запрошенному типу
         """
@@ -36,12 +34,8 @@ class YandexParser:
         page = self.__open_page()
         time.sleep(4)
         try:
-            if type_parse == 'default':
-                result = page.parse_all_data()
-            if type_parse == 'company':
-                result = page.parse_company_info()
             if type_parse == 'reviews':
-                result = page.parse_reviews()
+                result = page.parse_reviews(limit=limit)
         except Exception as e:
             print(e)
             return result

@@ -63,15 +63,24 @@ def check(city, address):
     # print('city ', city)
 
     try:
-        city = city.split(' ')[-1]
+        city = city.split(' ')[-1].strip('\n\r').strip(' ')
+        print(f'CiTY: {city}')
     except:
         pass
-        
+    
+    last_word = word_list[-1].strip('\n\r').strip(' ')
     # TODO: обрабатывать города по типу Новый Оскол 
+    print(f'word_list[-1] {last_word}')
 
+    import difflib
 
-    if bool(re.search(city,  word_list[-1])):
-        # print("I am OK")
+    output_list = [li for li in difflib.ndiff(city, last_word) if li[0] != ' ']
+    print("DIFF: ", output_list)
+    print("CHECK")
+    print(city == last_word)
+
+    if bool(re.search(city,  last_word)) or city == last_word:
+        print("I am OK")
         return True
     else:
         return False
@@ -119,6 +128,9 @@ def merge_all_info(bank_name, path, drop_errors=False):
         try:
             
             city_name = find_between(f, first='', last='_info.csv')[0]
+            # if city_name == 'Башкортостан Октябрьский':
+            #     print(city_name)
+            #     print(info_path + f)
             d[city_name] = info_path + f
         except Exception as e:
             print(f'error in {city_name} info files check: {e}')
@@ -145,7 +157,9 @@ def merge_all_info(bank_name, path, drop_errors=False):
     else:
         final_df = pd.concat(frames, axis=0)
 
-    # final_df = final_df[final_df['city'].str.contains('Волочек')]
+    final_df = final_df[final_df['city'].str.contains('Башкортостан')]
+
+    # final_df = final_df[final_df['city'] == 'Башкортостан Октябрьский']
 
     print('********')
     print(final_df.head())
@@ -157,14 +171,15 @@ def merge_all_info(bank_name, path, drop_errors=False):
     final_df = final_df[final_df['name'] == main_name]
 
     print('UNIQUE BANK NAME ', np.unique(final_df['name']))
+    # TODO: uncomment
+    # final_df = final_df[final_df['opening_hours'] != "'mon': выходной, 'tue': выходной, 'wed': выходной, 'thu': выходной, 'fri': выходной, 'sat': выходной, 'sun': выходной"]
+    # final_df = final_df[['ID', 'name', 'city', 'address','opening_hours', 'lat', 'lon', 'rating', 'Обслуживание', 'Отношение к клиентам', 'Персонал', 'Время ожидания', 'Кредит', 'Банкомат', 'Расположение', 'Вклад', 'load_time']]
 
-    final_df = final_df[final_df['opening_hours'] != "'mon': выходной, 'tue': выходной, 'wed': выходной, 'thu': выходной, 'fri': выходной, 'sat': выходной, 'sun': выходной"]
 
     # print('********')
     # print(final_df[['lat', 'lon']])
 
-    final_df = final_df[['ID', 'name', 'city', 'address','opening_hours', 'lat', 'lon', 'rating', 'Обслуживание', 'Отношение к клиентам', 'Персонал', 'Время ожидания', 'Кредит', 'Банкомат', 'Расположение', 'Вклад', 'load_time']]
-
+ 
     # final_df['lat'] = final_df['lat'].astype(str)
     # final_df['lon'] = final_df['lon'].astype(str)
 
@@ -318,6 +333,6 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    # merge_all_info(bank_name, path, drop_errors=False)
+    merge_all_info(bank_name, path, drop_errors=False)
 
-    merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
+    # merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)

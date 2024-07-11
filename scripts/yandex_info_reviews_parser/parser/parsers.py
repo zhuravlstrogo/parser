@@ -19,17 +19,23 @@ class Parser:
         :param driver: Драйвер undetected_chromedriver
         :return: None
         """
+
         self.driver.execute_script(
             "arguments[0].scrollIntoView();",
             elem
         )
         N = 10
-        print(f'sleep for {N} seconds')
+        print(f'scroll_to_bottom: sleep for {N} seconds')
         time.sleep(N)
+
         new_elem = self.driver.find_elements(By.CLASS_NAME, "business-reviews-card-view__review")[-1]
+
         if elem == new_elem:
             return
+
         self.__scroll_to_bottom(new_elem)
+
+
 
     def __get_data_item(self, elem):
         """
@@ -128,26 +134,34 @@ class Parser:
         )
         return asdict(item)
 
-    def __get_data_reviews(self) -> list:
+    def __get_data_reviews(self, limit=False) -> list:
+        """основная функция"""
         reviews = []
         elements = self.driver.find_elements(By.CLASS_NAME, "business-reviews-card-view__review")
         seen = []
 
         available_reviews = True
         while available_reviews:
-        # while True:
-        # if len(elements) > 1:
+  
             self.__scroll_to_bottom(elements[-1])
+
             N = 20
-            print(f'sleep for {N} seconds')
+            print(f'after scroll: sleep for {N} seconds')
             time.sleep(N)
             elements = self.driver.find_elements(By.CLASS_NAME, "business-reviews-card-view__review")
+            print(f'len elements: {len(elements)}')
             # elements - набор всех отзывов 
+
+            if limit:
+                elements = elements[:limit]
+
             last_len = len(elements)
             seen.append(last_len)
 
             if len(set(seen)) < len(seen):
+                
                 print(f"I will handle {last_len} reviews")
+                
                 for elem in elements:
                     reviews.append(self.__get_data_item(elem))
                     last_len -= 1
@@ -156,6 +170,8 @@ class Parser:
                     #     print(f'left {last_len} review')
                     if last_len == 0:
                             available_reviews = False 
+                # scroll -= 1
+
         return reviews
 
     def __isinstance_page(self):
@@ -166,33 +182,33 @@ class Parser:
         except NoSuchElementException:
             return False
 
-    def parse_all_data(self) -> dict:
-        """
-        Начинаем парсить данные.
-        :return: Словарь данных
-        {
-             company_info:{
-                    name: str
-                    rating: float
-                    count_rating: int
-                    stars: float
-            },
-            company_reviews:[
-                {
-                  name: str
-                  icon_href: str
-                  date: timestamp
-                  text: str
-                  stars: float
-                }
-            ]
-        }
-        """
-        if not self.__isinstance_page():
-            return {'error': 'Страница не найдена'}
-        return {'company_info': self.__get_data_campaign(), 'company_reviews': self.__get_data_reviews()}
+    # def parse_all_data(self) -> dict:
+    #     """
+    #     Начинаем парсить данные.
+    #     :return: Словарь данных
+    #     {
+    #          company_info:{
+    #                 name: str
+    #                 rating: float
+    #                 count_rating: int
+    #                 stars: float
+    #         },
+    #         company_reviews:[
+    #             {
+    #               name: str
+    #               icon_href: str
+    #               date: timestamp
+    #               text: str
+    #               stars: float
+    #             }
+    #         ]
+    #     }
+    #     """
+    #     if not self.__isinstance_page():
+    #         return {'error': 'Страница не найдена'}
+    #     return {'company_info': self.__get_data_campaign(), 'company_reviews': self.__get_data_reviews()}
 
-    def parse_reviews(self) -> dict:
+    def parse_reviews(self, limit=False) -> dict:
         """
         Начинаем парсить данные только отзывы.
         :return: Массив отзывов
@@ -200,7 +216,6 @@ class Parser:
             company_reviews:[
                 {
                   name: str
-                  icon_href: str
                   date: timestamp
                   text: str
                   stars: float
@@ -211,22 +226,23 @@ class Parser:
         """
         if not self.__isinstance_page():
             return {'error': 'Страница не найдена'}
-        return {'company_reviews': self.__get_data_reviews()}
+        return {'company_reviews': self.__get_data_reviews(limit=limit)}
 
-    def parse_company_info(self) -> dict:
-        """
-        Начинаем парсить данные только данные о компании.
-        :return: Объект компании
-        {
-            company_info:
-                {
-                    name: str
-                    rating: float
-                    count_rating: int
-                    stars: float
-                }
-        }
-        """
-        if not self.__isinstance_page():
-            return {'error': 'Страница не найдена'}
-        return {'company_info': self.__get_data_campaign()}
+
+    # def parse_company_info(self) -> dict:
+    #     """
+    #     Начинаем парсить данные только данные о компании.
+    #     :return: Объект компании
+    #     {
+    #         company_info:
+    #             {
+    #                 name: str
+    #                 rating: float
+    #                 count_rating: int
+    #                 stars: float
+    #             }
+    #     }
+    #     """
+    #     if not self.__isinstance_page():
+    #         return {'error': 'Страница не найдена'}
+    #     return {'company_info': self.__get_data_campaign()}

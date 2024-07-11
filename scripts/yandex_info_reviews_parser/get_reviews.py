@@ -23,11 +23,11 @@ def unix_ts_to_readable(unix_ts):
     return timestamp
 
 
-def parse_ans_save_reviews(id_ya, city_name, bank_name, path):
+def parse_ans_save_reviews(id_ya, city_name, bank_name, path, limit=False):
     """формирует отзывы для одного банка с id яндекс карт id_ya в городе city_name"""
 
     parser = YandexParser(id_ya)
-    reviews = parser.parse(type_parse='reviews')
+    reviews = parser.parse(type_parse='reviews', limit=limit)
     
     today = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -66,7 +66,7 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name, path):
             # TODO: сюда continue?
 
 
-def get_cities_reviews(cities, bank_name, path, check_existing=False):
+def get_cities_reviews(cities, bank_name, path, limit=False, check_existing=False):
     """
         Args:
             cities (list): город - список городов
@@ -131,7 +131,7 @@ def get_cities_reviews(cities, bank_name, path, check_existing=False):
                         existing_reviews = Path(f'{path}/reviews_outputs/{bank_name}/{city_name}/reviews_{yandex_bank_id}.csv')
                         if not existing_reviews.is_file(): 
                             logging.info(f'starting get reviews for id {yandex_bank_id}')
-                            parse_ans_save_reviews(yandex_bank_id, city_name, bank_name, path)
+                            parse_ans_save_reviews(yandex_bank_id, city_name, bank_name, path, limit)
                             # handled[city_name].append(yandex_bank_id)
 
                         else:
@@ -185,4 +185,5 @@ if __name__ == "__main__":
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
     # TODO: для 126886788998, "Апшеронск" не подтягивается автор и дата 
-    parse_ans_save_reviews(126886788998, "Апшеронск", bank_name, path)
+    limit = 60
+    parse_ans_save_reviews(1084179587, "Москва", bank_name, path, limit)
