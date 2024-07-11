@@ -174,3 +174,5 @@ config.py
 *.pickle
 *.pkl
 *.zip
+*.deb
+*.yaml

@@ -1,0 +1,22 @@
+[2024-07-09 09:34:29,766] p1872 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-07-09 09:40:47,105] p2199 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-07-09 09:45:15,091] p2454 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-07-09 09:47:41,288] p2454 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:46} INFO -                name                    date                                               text  stars answer
+0        Татьяна М. 2024-07-04 17:43:04.383  Выражаю слова благодарности Татьяне Березиной....      5   None
+1  Людмила Касурина 2024-04-30 13:40:35.826  Хорошее свободное помещение.Есть где можно пос...      5   None
+2        Евгений Б. 2024-05-17 12:47:59.144  Мне попался прекрасный специалист. Если правил...      5   None
+3    Елена Лякишева 2024-01-14 21:17:38.585  Очень хорошо отлажена работа с клиентами, без ...      5   None
+4    Эдуард Сергеев 2024-02-09 13:56:40.497  Хорошее отделение, несмотря на то, что это Сбе...      5   None
+[2024-07-09 09:47:41,296] p2454 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:47} INFO - (60, 5)
+[2024-07-09 09:47:41,299] p2454 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:51} INFO - ################################################################
+[2024-07-09 09:47:41,300] p2454 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:52} INFO - Saved 60 reviews for 1084179587
+[2024-07-09 09:55:53,197] p2991 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-07-09 09:58:19,028] p2991 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:46} INFO -                name                    date                                               text  stars answer
+0        Татьяна М. 2024-07-04 17:43:04.383  Выражаю слова благодарности Татьяне Березиной....      5   None
+1  Людмила Касурина 2024-04-30 13:40:35.826  Хорошее свободное помещение.Есть где можно пос...      5   None
+2        Евгений Б. 2024-05-17 12:47:59.144  Мне попался прекрасный специалист. Если правил...      5   None
+3    Елена Лякишева 2024-01-14 21:17:38.585  Очень хорошо отлажена работа с клиентами, без ...      5   None
+4    Эдуард Сергеев 2024-02-09 13:56:40.497  Хорошее отделение, несмотря на то, что это Сбе...      5   None
+[2024-07-09 09:58:19,036] p2991 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:47} INFO - (60, 5)
+[2024-07-09 09:58:19,038] p2991 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:51} INFO - ################################################################
+[2024-07-09 09:58:19,038] p2991 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:52} INFO - Saved 60 reviews for 1084179587
