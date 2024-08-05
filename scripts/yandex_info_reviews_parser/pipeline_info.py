@@ -36,15 +36,7 @@ def get_all_info(cities, bank_name, path, check_existing=False):
         
     already_available_links = []    
 
-    print('cities')
-    print(cities)
-
     cities_copy = deepcopy(cities)
-
-    print('cities_copy 1')
-    print(cities_copy)
-    print(cities_copy['Башкортостан Октябрьский'])
-
     # то же самое, но без deepcopy
     # cities_copy = {d: [0, 0] for d in cities} 
     len_cities_input = len(cities_copy)
@@ -53,13 +45,8 @@ def get_all_info(cities, bank_name, path, check_existing=False):
         if k in city_names: # города с существующими links
             already_available_links.append(k)
 
-    print('already_available_links')
-    print(already_available_links)
     # оставляем только города, для которых есть links      
     cities_copy = dict([(key, cities_copy[key]) for key in already_available_links])
-
-    print('cities_copy 2')
-    print(cities_copy['Башкортостан Октябрьский'])
     
     links_to_habdle = len_cities_input-len(already_available_links)
     logging.info(f'{links_to_habdle} links are not available')
@@ -166,7 +153,7 @@ if __name__ == "__main__":
     logging.info(f"launch info pipeline for {bank_name} at {start}")
 
     cities_list = False
-    # cities_list = ['Башкортостан Октябрьский', 'Кемеровская Берёзовский']
+    # cities_list = ['Кемеровская Берёзовский']
 
     cities_path = f'{path}/cities_dict_{bank_name}.pickle'
     with open(cities_path, 'rb') as handle:
@@ -177,6 +164,8 @@ if __name__ == "__main__":
         print(f'len cities_list {len(cities_list)}')
 
     cities = {k: v for k, v in cities.items() if v != 0}
+
+
     logging.info(f'{len(cities)} not null cities')
 
     get_all_info(cities, bank_name, path, check_existing=False)

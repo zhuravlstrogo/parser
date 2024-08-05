@@ -45,7 +45,7 @@ def into_json(org_id, name, address, website, opening_hours, lat, lon, rating, p
         f"'thu': {handle_hours(opening_hours[3][3:])}, "
         f"'fri': {handle_hours(opening_hours[4][3:])}, "
         f"'sat': {handle_hours(opening_hours[5][3:])}, "
-        f"'sun': {handle_hours(opening_hours[6][3:])}, ",
+        f"'sun': {handle_hours(opening_hours[6][3:])}",
         "lat": lat,
         "lon": lon,
         "rating": rating,

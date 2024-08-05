@@ -175,6 +175,17 @@ if __name__ == "__main__":
 
 
     cities = list(cities_dict.keys())
+
+    excluded = ['Башкортостан Октябрьский', 'Москва Октябрьский', 'Свердловская Берёзовский', 'Кемеровская Берёзовский']
+
+    for el in excluded:
+        print('len ', len(cities))
+        cities.remove(el)
+
+    print("check - - - - - - - - - - ")
+    print('Башкортостан Октябрьский' in excluded)
+
+
     print(f"LEN cities : {len(cities)}")
     print(f"example: {cities[10]}")
     get_all_reviews(cities, bank_name, path, check_existing=False)
