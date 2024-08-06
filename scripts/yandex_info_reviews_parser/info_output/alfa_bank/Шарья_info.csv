@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Обслуживание,Персонал,Отношение к клиентам,load_time
-0,1221095843,Россельхозбанк,"Октябрьская ул., 12, Шарья",www.rshb.ru,"'mon': 09:00-17:00, 'tue': 09:00-17:00, 'wed': 09:00-17:00, 'thu': 09:00-17:00, 'fri': 09:00-17:00, 'sat': выходной, 'sun': выходной",58.368603,45.516935,"4,5",['8 (800) 100-01-00Показать телефон'],"['https://ok.ru/rosselhozbank', 'https://t.me/rshb_tg', 'https://vk.com/rshbru']",89,93,91,2024-06-24 04:40:26
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
+0,1221095843,Россельхозбанк,"Октябрьская ул., 12, Шарья",www.rshb.ru,"'mon': 09:00-17:00, 'tue': 09:00-17:00, 'wed': 09:00-17:00, 'thu': 09:00-17:00, 'fri': 09:00-17:00, 'sat': выходной, 'sun': выходной, ",58.368603,45.516935,"4,5",['8 (800) 100-01-00Показать телефон'],"['https://ok.ru/rosselhozbank', 'https://t.me/rshb_tg', 'https://vk.com/rshbru']",2024-07-23 21:57:11

@@ -1,22 +1,30 @@
-[2024-07-09 09:34:29,766] p1872 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-07-09 09:40:47,105] p2199 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-07-09 09:45:15,091] p2454 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-07-09 09:47:41,288] p2454 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:46} INFO -                name                    date                                               text  stars answer
-0        Татьяна М. 2024-07-04 17:43:04.383  Выражаю слова благодарности Татьяне Березиной....      5   None
-1  Людмила Касурина 2024-04-30 13:40:35.826  Хорошее свободное помещение.Есть где можно пос...      5   None
-2        Евгений Б. 2024-05-17 12:47:59.144  Мне попался прекрасный специалист. Если правил...      5   None
-3    Елена Лякишева 2024-01-14 21:17:38.585  Очень хорошо отлажена работа с клиентами, без ...      5   None
-4    Эдуард Сергеев 2024-02-09 13:56:40.497  Хорошее отделение, несмотря на то, что это Сбе...      5   None
-[2024-07-09 09:47:41,296] p2454 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:47} INFO - (60, 5)
-[2024-07-09 09:47:41,299] p2454 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:51} INFO - ################################################################
-[2024-07-09 09:47:41,300] p2454 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:52} INFO - Saved 60 reviews for 1084179587
-[2024-07-09 09:55:53,197] p2991 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-07-09 09:58:19,028] p2991 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:46} INFO -                name                    date                                               text  stars answer
-0        Татьяна М. 2024-07-04 17:43:04.383  Выражаю слова благодарности Татьяне Березиной....      5   None
-1  Людмила Касурина 2024-04-30 13:40:35.826  Хорошее свободное помещение.Есть где можно пос...      5   None
-2        Евгений Б. 2024-05-17 12:47:59.144  Мне попался прекрасный специалист. Если правил...      5   None
-3    Елена Лякишева 2024-01-14 21:17:38.585  Очень хорошо отлажена работа с клиентами, без ...      5   None
-4    Эдуард Сергеев 2024-02-09 13:56:40.497  Хорошее отделение, несмотря на то, что это Сбе...      5   None
-[2024-07-09 09:58:19,036] p2991 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:47} INFO - (60, 5)
-[2024-07-09 09:58:19,038] p2991 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:51} INFO - ################################################################
-[2024-07-09 09:58:19,038] p2991 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_reviews.py:52} INFO - Saved 60 reviews for 1084179587
+[2024-08-05 11:05:52,684] p1964 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 6
+[2024-08-05 11:05:52,685] p1964 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
+[2024-08-05 11:05:52,699] p1964 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (726, 29)
+[2024-08-05 11:05:53,009] p1964 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 443 unique cities saved
+[2024-08-05 11:05:53,010] p1964 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
+[2024-08-05 11:06:02,005] p1995 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 0
+[2024-08-05 11:06:02,005] p1995 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
+[2024-08-05 11:06:02,018] p1995 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (3683, 23)
+[2024-08-05 11:06:03,310] p1995 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 624 unique cities saved
+[2024-08-05 11:06:03,311] p1995 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
+[2024-08-05 11:07:19,402] p2056 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 6
+[2024-08-05 11:07:19,403] p2056 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
+[2024-08-05 11:07:19,417] p2056 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (726, 30)
+[2024-08-05 11:07:19,734] p2056 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 443 unique cities saved
+[2024-08-05 11:07:19,734] p2056 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
+[2024-08-05 11:07:37,279] p2096 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 0
+[2024-08-05 11:07:37,279] p2096 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
+[2024-08-05 11:07:37,292] p2096 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (3683, 24)
+[2024-08-05 11:07:38,654] p2096 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 624 unique cities saved
+[2024-08-05 11:07:38,654] p2096 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
+[2024-08-05 11:53:26,154] p3464 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 6
+[2024-08-05 11:53:26,155] p3464 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
+[2024-08-05 11:53:26,169] p3464 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (726, 30)
+[2024-08-05 11:53:26,540] p3464 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 443 unique cities saved
+[2024-08-05 11:53:26,540] p3464 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
+[2024-08-05 11:53:56,478] p3522 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 0
+[2024-08-05 11:53:56,479] p3522 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
+[2024-08-05 11:53:56,494] p3522 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (3683, 24)
+[2024-08-05 11:53:57,826] p3522 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 624 unique cities saved
+[2024-08-05 11:53:57,827] p3522 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}

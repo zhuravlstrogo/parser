@@ -19,7 +19,7 @@ default_args = {
 
 with DAG(
     dag_id='03_pipeline_links_sberbank',
-    schedule_interval='56 9 17 * *',
+    schedule_interval='56 9 17 * *', # каждое 17-ое число
     catchup=False,
     default_args=default_args
     # tags=['yandex'],   

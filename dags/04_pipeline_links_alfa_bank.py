@@ -18,7 +18,7 @@ default_args = {
 
 with DAG(
     dag_id='04_pipeline_links_alfa_bank',
-    schedule_interval='34 10 20 * *',
+    schedule_interval='34 10 3 * *', # каждое 3-ое число
     catchup=False,
     default_args=default_args
     # tags=['yandex'],

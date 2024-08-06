@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Персонал,Обслуживание,Отношение к клиентам,load_time
-0,1046894389,СберБанк,"5, 1-й микрорайон, п. г. т. Лучегорск",www.sberbank.ru,"'mon': 08:30-17:30, 'tue': 08:30-17:30, 'wed': 08:30-17:30, 'thu': 08:30-17:30, 'fri': 08:30-17:30, 'sat': выходной, 'sun': выходной",C46.44639,134.30323,"4,3",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",74,78,75,2024-06-22 23:53:04
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
+0,sberbank/1046894389,СберБанк,"5, 1-й микрорайон, п. г. т. Лучегорск",www.sberbank.com,"'mon': 08:30-17:30, 'tue': 08:30-17:30, 'wed': 08:30-17:30, 'thu': 08:30-17:30, 'fri': 08:30-17:30, 'sat': выходной, 'sun': выходной, ",C46.44639,134.30324,"4,3",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",2024-07-30 04:58:39

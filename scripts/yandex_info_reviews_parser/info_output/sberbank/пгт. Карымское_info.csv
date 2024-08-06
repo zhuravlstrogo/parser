@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Отношение к клиентам,Обслуживание,Персонал,load_time
-0,1092411608,СберБанк,"Ленинградская ул., 55, п. г. т. Карымское",www.sberbank.ru,"'mon': 09:00-18:00, 'tue': 09:00-18:00, 'wed': 09:00-18:00, 'thu': 09:00-18:00, 'fri': 09:00-18:00, 'sat': выходной, 'sun': выходной",C51.62511,114.34562,"4,2",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",69,77,64,2024-06-23 04:41:18
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
+0,sberbank/1092411608,СберБанк,"Ленинградская ул., 55, п. г. т. Карымское",www.sberbank.com,"'mon': 09:00-18:00, 'tue': 09:00-18:00, 'wed': 09:00-18:00, 'thu': 09:00-18:00, 'fri': 09:00-18:00, 'sat': выходной, 'sun': выходной, ",C51.62511,114.34562,"4,2",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",2024-07-30 09:46:59

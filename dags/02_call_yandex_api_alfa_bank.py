@@ -19,12 +19,19 @@ default_args = {
 
 with DAG(
     dag_id='02_call_yandex_api_alfa_bank',
-    schedule_interval='50 13 3 * *',
+    schedule_interval='50 13 1 * *', # каждое 1-ое число 
     catchup=False,
     default_args=default_args
     # tags=['yandex'],
 ) as dag:
-    call_yandex_api_alfa_bank = BashOperator(
-    task_id = 'call_yandex_api_alfa_bank',
-    bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/call_yandex_api_org.py -path_type 1 -bank_name alfa_bank'
+    call_yandex_api_alfa_bank_1 = BashOperator(
+    task_id = 'call_yandex_api_alfa_bank_1',
+    bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/call_yandex_api_org.py -path_type 1 -bank_name alfa_bank -cities_list_num 1'
 )
+    call_yandex_api_alfa_bank_2 = BashOperator(
+    task_id = 'call_yandex_api_alfa_bank_2',
+    bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/call_yandex_api_org.py -path_type 1 -bank_name alfa_bank -cities_list_num 2',
+)
+
+
+call_yandex_api_alfa_bank_1 >> call_yandex_api_alfa_bank_2

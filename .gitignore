@@ -77,6 +77,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+.ipynb
 
 # IPython
 profile_default/
@@ -160,11 +161,12 @@ cython_debug/
 .idea/
 
 # Logs
+logs/
 logs/*.log.*
-src/logs/*.slog.*
 
 .DS_Store
 config.py
+new_russia.py
 
 *.html
 *.csv

@@ -9,7 +9,21 @@ import numpy as np
 
 from utils import find_between
 
+bank_name= 'gosbank'
+# cities_path = f'cities_dict_{bank_name}.pickle'
+# with open(cities_path, 'rb') as handle:
+#     cities_dict = pickle.load(handle)
 
-cities_path = f'{path}/cities_dict_{bank_name}.pickle'
-with open(cities_path, 'rb') as handle:
-    cities_dict = pickle.load(handle)
+# cities = {'Луганск':112554970597}
+
+# cities_dict.update(cities)
+
+# with open(f'cities_dict_{bank_name}.pickle', 'wb') as handle:
+#     pickle.dump(cities_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+# print(cities_dict)
+
+with open(f'links/link_Мариуполь.pkl', 'rb') as handle:
+    links = pickle.load(handle)
+
+print(links)

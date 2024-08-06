@@ -152,7 +152,10 @@ def get_bank_id_from_city(bank_name, city_name, apikey=apikey):
     # TODO: добавить другие банки при необходимости 
     bank_names_dict = {'sberbank' : 'сбербанк',
                    'vtb_bank' : 'банк втб',
-                   'alfa_bank' : 'альфа банк'}
+                   'alfa_bank' : 'альфа банк',
+                   'gosbank' : 'госбанк',
+                   'crb' :'Центральный республиканский банк'
+                   }
 
     text = f'{bank_names_dict[bank_name]} {city_name}'
     params = dict(
@@ -298,7 +301,7 @@ def handle_duplicates(bank_name, path):
     # update_cities_dict(duplicated_values, bank_name)
 
 
-def get_cities_dict(bank_name, path, check_existing=True):
+def get_cities_dict(bank_name, path, cities_list_num, check_existing=True):
     """основная функция"""
     cities_dict_path = Path(f'{path}cities_dict_{bank_name}.pickle')
 
@@ -314,13 +317,13 @@ def get_cities_dict(bank_name, path, check_existing=True):
 
     # with open(f'{path}cities.txt') as f:
     #     cities = [x.strip('\n') for x in f ]
-
     # print('cities ', cities)
-    # TODO: доработать вариант для работы по расписанию 
-    with open(f'{path}/cities_1.txt') as f:
-        input_cities_1 = [x.strip('\n') for x in f ]
-    with open(f'{path}/cities_2.txt') as f:
-        input_cities_2 = [x.strip('\n') for x in f ]
+    if cities_list_num == 1:
+        with open(f'{path}/cities_1.txt') as f:
+            input_cities_1 = [x.strip('\n') for x in f ]
+    elif cities_list_num == 2:
+        with open(f'{path}/cities_2.txt') as f:
+            input_cities_2 = [x.strip('\n') for x in f ]
     cities = input_cities_1 + input_cities_2
 
     logging.info(f'input cities length {len(cities)}')
@@ -336,24 +339,27 @@ def get_cities_dict(bank_name, path, check_existing=True):
 
 
 if __name__ == "__main__":
-    # python3 call_yandex_api_org.py -path_type 0 -bank_name sberbank 
-    # python3 call_yandex_api_org.py -path_type 0 -bank_name alfa_bank 
+    # python3 call_yandex_api_org.py -path_type 0 -bank_name sberbank -cities_list_num 1
+    # python3 call_yandex_api_org.py -path_type 0 -bank_name alfa_bank -cities_list_num 1
     parser = argparse.ArgumentParser()
     parser.add_argument('-bank_name', type=str)
     parser.add_argument('-path_type', type=int)
+    parser.add_argument('-cities_list_num', type=int)
     args = parser.parse_args()
 
     bank_name = args.bank_name
+    cities_list_num = args.cities_list_num
     print(f"bank_name {bank_name}")
+    print(f"cities_list_num {cities_list_num}")
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
 
-    # получить id для городов из cities.txt
-    get_cities_dict(bank_name, path, check_existing=False)
-
     # получить id для городов из cities_list
     # cities_list = ['Башкортостан Октябрьский', 'Москва Октябрьский', 'Свердловская Берёзовский', 'Кемеровская Берёзовский']
     # update_cities_dict(cities_list, bank_name, path)
+
+    # получить id для городов из cities.txt
+    get_cities_dict(bank_name, path, cities_list_num, check_existing=False)
 
 

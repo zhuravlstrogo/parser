@@ -93,76 +93,79 @@ def get_cities_reviews(cities, bank_name, path, limit=False, check_existing=Fals
 
         # TODO: поумнее
         try:
-            with open(links_path, 'rb') as f:
-                bank_links = pickle.load(f)
+            if links_path.is_file():
+                with open(links_path, 'rb') as f:
+                    bank_links = pickle.load(f)
 
-            # TODO: костыль 
-            if '{bank_name}' in bank_links[0]:
-                bank_links = [i.replace("{bank_name}", f"{bank_name}") for i in bank_links]
+                # TODO: костыль 
+                if '{bank_name}' in bank_links[0]:
+                    bank_links = [i.replace("{bank_name}", f"{bank_name}") for i in bank_links]
 
-            counter = len(bank_links)
-            logging.info(f"I will handle {counter} org in {city_name} city")
-            # logging.info(f'links: {links}')
+                counter = len(bank_links)
+                logging.info(f"I will handle {counter} org in {city_name} city")
+                # logging.info(f'links: {links}')
 
-            not_handled = {}
-            # TODO: если не обработанных больше, чем не обработанных - 
-            handled = {}
+                not_handled = {}
+                # TODO: если не обработанных больше, чем не обработанных - 
+                handled = {}
 
-            # для каждого банка получаем список отзывов 
-            for organization_url in bank_links:
-                logging.info(organization_url)
+                # для каждого банка получаем список отзывов 
+                for organization_url in bank_links:
+                    logging.info(organization_url)
 
-                # organization_url: https://yandex.ru/maps/org/sberbank/142956405994
-                organization_url = organization_url.split(' ')[0]
+                    # organization_url: https://yandex.ru/maps/org/sberbank/142956405994
+                    organization_url = organization_url.split(' ')[0]
 
-                logging.info('organization_url AFTER')
-                logging.info(organization_url)
+                    logging.info('organization_url AFTER')
+                    logging.info(organization_url)
 
-                main_url = f'https://yandex.ru/maps/org/{bank_name}/'
+                    main_url = f'https://yandex.ru/maps/org/{bank_name}/'
 
-                yandex_bank_id = organization_url.replace(main_url, '') # вытаскиваем id-шних 
-                # yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
-                try:
+                    yandex_bank_id = organization_url.replace(main_url, '') # вытаскиваем id-шних 
+                    # yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
+                    try:
 
-                    if check_existing:
-                        # проверяем, что отзывы по городу не создана ранее    
-                        logging.info(f'yandex_bank_id: {yandex_bank_id}')
-                    
-                        existing_reviews = Path(f'{path}/reviews_outputs/{bank_name}/{city_name}/reviews_{yandex_bank_id}.csv')
-                        if not existing_reviews.is_file(): 
-                            logging.info(f'starting get reviews for id {yandex_bank_id}')
-                            parse_ans_save_reviews(yandex_bank_id, city_name, bank_name, path, limit)
-                            # handled[city_name].append(yandex_bank_id)
+                        if check_existing:
+                            # проверяем, что отзывы по городу не создана ранее    
+                            logging.info(f'yandex_bank_id: {yandex_bank_id}')
+                        
+                            existing_reviews = Path(f'{path}/reviews_outputs/{bank_name}/{city_name}/reviews_{yandex_bank_id}.csv')
+                            if not existing_reviews.is_file(): 
+                                logging.info(f'starting get reviews for id {yandex_bank_id}')
+                                parse_ans_save_reviews(yandex_bank_id, city_name, bank_name, path, limit)
+                                # handled[city_name].append(yandex_bank_id)
 
+                            else:
+                                logging.info(f'existing link: {existing_reviews}')
+                                logging.info(f'review for {yandex_bank_id} in {city_name} already exists')  
                         else:
-                            logging.info(f'existing link: {existing_reviews}')
-                            logging.info(f'review for {yandex_bank_id} in {city_name} already exists')  
-                    else:
-                        logging.info(f'starting get reviews for id {yandex_bank_id}')
-                        parse_ans_save_reviews(yandex_bank_id, city_name, bank_name, path)
-                except Exception as e:
-                    logging.info(f'ERRORed organization_url {organization_url} {e}')
-                    logging.info(f'{yandex_bank_id} not handled')
-                    # not_handled[city_name].append(yandex_bank_id)
-                    # not_handled_reviews.update(not_handled)
-                    # with open(not_handled_path, 'wb') as f:
-                    #     pickle.dump(not_handled_reviews, f)
+                            logging.info(f'starting get reviews for id {yandex_bank_id}')
+                            parse_ans_save_reviews(yandex_bank_id, city_name, bank_name, path)
+                    except Exception as e:
+                        logging.info(f'ERRORed organization_url {organization_url} {e}')
+                        logging.info(f'{yandex_bank_id} not handled')
+                        # not_handled[city_name].append(yandex_bank_id)
+                        # not_handled_reviews.update(not_handled)
+                        # with open(not_handled_path, 'wb') as f:
+                        #     pickle.dump(not_handled_reviews, f)
 
-                    directory_name = f'{path}/reviews_outputs/{bank_name}/{city_name}'
-                    if not os.path.exists(directory_name):
-                        os.makedirs(directory_name)  
+                        directory_name = f'{path}/reviews_outputs/{bank_name}/{city_name}'
+                        if not os.path.exists(directory_name):
+                            os.makedirs(directory_name)  
 
-                    # data = {'name': [None],
-                    # 'date': [None],
-                    # 'text': [None],
-                    # 'stars': [None],
-                    # 'answer': [None]}
+                        # data = {'name': [None],
+                        # 'date': [None],
+                        # 'text': [None],
+                        # 'stars': [None],
+                        # 'answer': [None]}
 
-                    # df = pd.DataFrame(data)
-                    # df.to_csv(f'{path}/{directory_name}/reviews_{yandex_bank_id}.csv')
-                    
-                counter -= 1
-                logging.info(f'{counter} items left')
+                        # df = pd.DataFrame(data)
+                        # df.to_csv(f'{path}/{directory_name}/reviews_{yandex_bank_id}.csv')
+                        
+                    counter -= 1
+                    logging.info(f'{counter} items left')
+            else:
+                logging.info(f'no links for {city_name} city')
         except Exception as e:
             logging.info(f'ERROR in get_cities_reviews for {city_name}: {e}')
 

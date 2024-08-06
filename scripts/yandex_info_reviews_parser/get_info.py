@@ -1,6 +1,7 @@
  # -*- coding: utf-8 -*-
 import psutil
 import os
+from pathlib import Path
 import re
 import argparse
 import logging
@@ -33,18 +34,22 @@ class Parser:
         is_captcha = False
         outputs = []
 
-        main_url = f'https://yandex.ru/maps/org/{bank_name}'
+        # TODO: вернуть для текущего варианта !!!!!
+        # main_url = f'https://yandex.ru/maps/org/{bank_name}'
         
-        try:
-            yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
-        except Exception as e:
-            logging.info(e)
-            logging.info('*********')
-            logging.info(f'organization_url {organization_url}')
-            organization_url = organization_url.replace('{bank_name}', f'{bank_name}')
-            yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
+        # try:
+        #     yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
+        # except Exception as e:
+        #     logging.info(e)
+        #     logging.info('*********')
+        #     logging.info(f'organization_url {organization_url}')
+        #     organization_url = organization_url.replace('{bank_name}', f'{bank_name}')
+        #     yandex_bank_id = re.search(f"{main_url}.*?(\d+)", organization_url).group(1)
         
-        self.driver.get(f"{main_url}/{yandex_bank_id}")
+        # self.driver.get(f"{main_url}/{yandex_bank_id}")
+
+        yandex_bank_id = organization_url.replace('https://yandex.ru/maps/org/', '')
+        self.driver.get(organization_url)
 
         sleep(round(random.uniform(7.1, 7.9), 2))
         soup = BeautifulSoup(self.driver.page_source, "lxml")
@@ -150,51 +155,57 @@ def get_cities_info(cities, bank_name, path):
     """получаем инфо по всем банкам/ссылкам по всем городам cities - название, адресс и тд""" 
     counter = len(cities)
     
-    for city_name, yandex_bank_id in cities.items():
-        
-        with open(f'{path}/links/{bank_name}/link_{city_name}.pkl', 'rb') as f:
-            all_hrefs = pickle.load(f)
-        
-        logging.info(f'get info for banks in {city_name} length of {len(all_hrefs)}')
-        logging.info(f'percentage of available memory {psutil.virtual_memory().available * 100 / psutil.virtual_memory().total}')
-        logging.info(f'cpu_percent {psutil.cpu_percent()}')
-        try:
-            opts = undetected_chromedriver.ChromeOptions()
-            opts.add_argument("--disable-renderer-backgrounding")
-            opts.add_argument("--disable-extensions")
-            opts.add_argument('--no-sandbox')
-            opts.add_argument('--disable-dev-shm-usage')
-            opts.add_argument('headless')
-            opts.add_argument('--disable-gpu')
-            driver = undetected_chromedriver.Chrome(options=opts)
+    # for city_name, yandex_bank_id in cities.items():
+    for city_name in cities:
 
-            parser = Parser(driver)
-            parser.parse_data(all_hrefs, city_name, bank_name, path)
-            logging.info("driver closed")
-            driver.close()
-            driver.quit()
+        links_path = Path(f'{path}/links/{bank_name}/link_{city_name}.pkl')
 
-            # # обновляем словарь обработанных городов
-            # new_handled_info[city_name] = yandex_bank_id
-            # with open(f'handled_info_{bank_name}.pickle', 'rb') as handle:
-            #     handled_links = pickle.load(handle)
+        if links_path.is_file():
+
+            with open(links_path, 'rb') as f:
+                all_hrefs = pickle.load(f)
             
-            # handled_links.update(new_handled_info)
-            # with open(f'handled_info_{bank_name}.pickle', 'wb') as handle:
-            #     pickle.dump(handled_links, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            logging.info(f'get info for banks in {city_name} length of {len(all_hrefs)}')
+            logging.info(f'percentage of available memory {psutil.virtual_memory().available * 100 / psutil.virtual_memory().total}')
+            logging.info(f'cpu_percent {psutil.cpu_percent()}')
+            try:
+                opts = undetected_chromedriver.ChromeOptions()
+                opts.add_argument("--disable-renderer-backgrounding")
+                opts.add_argument("--disable-extensions")
+                opts.add_argument('--no-sandbox')
+                opts.add_argument('--disable-dev-shm-usage')
+                opts.add_argument('headless')
+                opts.add_argument('--disable-gpu')
+                driver = undetected_chromedriver.Chrome(options=opts)
+
+                parser = Parser(driver)
+                parser.parse_data(all_hrefs, city_name, bank_name, path)
+                logging.info("driver closed")
+                driver.close()
+                driver.quit()
+
+                # # обновляем словарь обработанных городов
+                # new_handled_info[city_name] = yandex_bank_id
+                # with open(f'handled_info_{bank_name}.pickle', 'rb') as handle:
+                #     handled_links = pickle.load(handle)
                 
-            counter -=1
-            logging.info(f'left {counter} cities')
-            
-            # TODO: was 290.1, 309.9
-            N = round(random.uniform(98.1, 105.9), 2)
-            logging.info(f'sleep for {N} seconds')
-            sleep(N)
-        except Exception as e:
-            # TODO: сохранять пустой df c loadtime ?
-            logging.info(f'Error in get info for banks in {city_name}, error: {e}')
-            continue
-        
+                # handled_links.update(new_handled_info)
+                # with open(f'handled_info_{bank_name}.pickle', 'wb') as handle:
+                #     pickle.dump(handled_links, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                    
+                counter -=1
+                logging.info(f'left {counter} cities')
+                
+                # TODO: was 290.1, 309.9
+                N = round(random.uniform(98.1, 105.9), 2)
+                logging.info(f'sleep for {N} seconds')
+                sleep(N)
+            except Exception as e:
+                # TODO: сохранять пустой df c loadtime ?
+                logging.info(f'Error in get info for banks in {city_name}, error: {e}')
+                continue
+        else:
+            logging.info(f'no links for {city_name} city')
 
 
 if __name__ == "__main__":

@@ -18,7 +18,7 @@ default_args = {
 
 with DAG(
     dag_id='05_pipeline_info',
-    schedule_interval='0 1 * * 5',
+    schedule_interval='0 1 * * 6',
     default_args=default_args, 
     catchup=False
     # tags=['yandex'],
@@ -30,10 +30,14 @@ with DAG(
 )
     pipeline_info_alfa_bank = BashOperator(
     task_id = 'pipeline_info_alfa_bank',
-    bash_command = 'python3 /opt/airflow/scripts/yandex_info_reviews_parser/pipeline_info.py -path_type 1 -bank_name alfa_bank',
+    bash_command = 'python3 /opt/airflow/scripts/yandex_info_reviews_parser/pipeline_info.py -path_type 1 -bank_name alfa_bank'
     # trigger_rule = 'all_success',
     # dag=dag
 )
+    send_yandex_info = BashOperator(
+    task_id = 'send_yandex_info',
+    bash_command='python3 /opt/airflow/scripts/mail_sender/send_yndx_info.py'
+)
 
 
-pipeline_info_sberbank >> pipeline_info_alfa_bank
+pipeline_info_sberbank >> pipeline_info_alfa_bank >> send_yandex_info

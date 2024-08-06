@@ -47,7 +47,10 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
     opts.add_argument('--disable-gpu')
     driver = undetected_chromedriver.Chrome(options=opts)
     
-    url = f'https://yandex.ru/maps/org/{bank_name}/{yndx_bank_id}/chain/'
+    # TODO: chain / related как опция
+    # url = f'https://yandex.ru/maps/org/{bank_name}/{yndx_bank_id}/related/'
+    url = 'https://yandex.ru/maps/org/gosbank/112554970597/related/?ll=39.310262%2C48.552468&mode=search&sll=32.609123%2C46.648940&sspn=0.154459%2C0.065091&tab=related&text=%D0%BB%D1%83%D0%B3%D0%B0%D0%BD%D1%81%D0%BA%20%D0%B1%D0%B0%D0%BD%D0%BA&z=12'
+    # url = 'https://yandex.ru/maps/222/luhansk/category/bank/184105398/?ll=39.376180%2C48.552468&sll=39.376180%2C48.552468&sspn=0.190201%2C0.130831&z=12'
     driver.get(url)
 
     N = round(random.uniform(13.1, 19.9), 2) # was higher
@@ -60,7 +63,7 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
     
     if len(elements) > 1:
 
-
+        
         # без этого не работает
         elements = driver.find_elements(By.CLASS_NAME, t)
     
@@ -182,5 +185,5 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    cities = {'Санкт-Петербург' : 94020261684}
+    cities = {'Луганск' : 112554970597}
     get_bank_links(cities, bank_name, path)

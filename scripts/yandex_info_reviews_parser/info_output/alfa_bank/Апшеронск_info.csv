@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Обслуживание,Отношение к клиентам,load_time
-0,168410569003,Альфа-Банк,"ул. Ворошилова, 8А, Апшеронск",,"'mon': 09:00-18:00, 'tue': 09:00-18:00, 'wed': 09:00-18:00, 'thu': 09:00-18:00, 'fri': 09:00-18:00, 'sat': выходной, 'sun': выходной",44.453901,39.748500,"4,5",['8 (800) 200-00-00Показать телефон'],"['http://vk.com/alfabank', 'https://ok.ru/alfabank', 'https://www.youtube.com/user/alfabankru']",100,100,2024-06-24 09:54:34
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
+0,168410569003,,,,"'mon': выходной, 'tue': выходной, 'wed': выходной, 'thu': выходной, 'fri': выходной, 'sat': выходной, 'sun': выходной, ",55.755863,37.617700,,[],[],2024-07-24 03:03:29

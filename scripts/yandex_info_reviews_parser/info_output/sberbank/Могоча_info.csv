@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Обслуживание,Отношение к клиентам,Персонал,load_time
-0,1119352251,СберБанк,"Клубная ул., 5, Могоча",www.sberbank.ru,"'mon': 08:30-17:30, 'tue': 08:30-17:30, 'wed': 08:30-17:30, 'thu': 08:30-17:30, 'fri': 08:30-17:30, 'sat': выходной, 'sun': выходной",C53.73525,119.75533,"4,3",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",81,79,90,2024-06-23 00:19:43
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
+0,sberbank/1119352251,СберБанк,"Клубная ул., 5, Могоча",www.sberbank.com,"'mon': 08:30-17:30, 'tue': 08:30-17:30, 'wed': 08:30-17:30, 'thu': 08:30-17:30, 'fri': 08:30-17:30, 'sat': выходной, 'sun': выходной, ",C53.73522,119.75550,"4,3",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",2024-07-30 05:25:20

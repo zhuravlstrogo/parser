@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Обслуживание,Персонал,Отношение к клиентам,load_time
-0,232707449079,СберБанк,"ул. Победы, 46, Сковородино",www.sberbank.ru,"'mon': 08:00-17:00, 'tue': 08:00-17:00, 'wed': выходной, 'thu': 08:00-17:00, 'fri': 08:00-17:00, 'sat': выходной, 'sun': выходной",C53.97887,123.94235,"4,2",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",100,100,100,2024-06-23 01:59:16
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
+0,sberbank/232707449079,Сбербанк,"ул. Победы, 46, Сковородино",www.sberbank.com,"'mon': 08:00-17:00, 'tue': 08:00-17:00, 'wed': выходной, 'thu': 08:00-17:00, 'fri': 08:00-17:00, 'sat': выходной, 'sun': выходной, ",C53.97887,123.94235,"4,2",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",2024-07-30 07:02:20

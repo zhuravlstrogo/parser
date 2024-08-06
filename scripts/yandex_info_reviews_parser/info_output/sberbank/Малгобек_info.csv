@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Обслуживание,Персонал,Отношение к клиентам,load_time
-0,1112243337,СберБанк,"ул. Осканова, 7, Малгобек",www.sberbank.ru,"'mon': выходной, 'tue': 08:30-17:30, 'wed': 08:30-17:30, 'thu': 08:30-17:30, 'fri': 08:30-17:30, 'sat': выходной, 'sun': выходной",43.509834,44.585831,"4,7",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",84,76,85,2024-06-23 00:02:43
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
+0,sberbank/1112243337,СберБанк,"ул. Осканова, 7, Малгобек",www.sberbank.com,"'mon': 08:30-17:30, 'tue': 08:30-17:30, 'wed': 08:30-17:30, 'thu': 08:30-17:30, 'fri': 08:30-17:30, 'sat': выходной, 'sun': выходной, ",43.509834,44.585831,"4,6",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",2024-07-30 05:08:18

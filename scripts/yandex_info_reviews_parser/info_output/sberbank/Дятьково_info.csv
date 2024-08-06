@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Персонал,Отношение к клиентам,Обслуживание,load_time
-0,133732950595,СберБанк,"ул. Ленина, 151, Дятьково",www.sberbank.ru,"'mon': 09:00-18:00, 'tue': 09:00-18:00, 'wed': 09:00-18:00, 'thu': 09:00-18:00, 'fri': 09:00-18:00, 'sat': 09:00-14:00, 'sun': выходной",53.597384,34.336089,"4,5",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",69,64,67,2024-06-22 21:19:12
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
+0,sberbank/133732950595,СберБанк,"ул. Ленина, 151А, Дятьково",www.sberbank.com,"'mon': 09:00-18:00, 'tue': 09:00-18:00, 'wed': 09:00-18:00, 'thu': 09:00-18:00, 'fri': 09:00-18:00, 'sat': 09:00-14:00, 'sun': выходной, ",53.597343,34.336062,"4,5",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",2024-07-30 02:24:07

@@ -26,7 +26,7 @@ if __name__ == "__main__":
     Парсер яндекса: информация об отделениях банка
     """
 
-    info_files=[f'{path}yandex_info_reviews_parser/info_all/sberbank_info_all.xlsx', f'{path}yandex_info_reviews_parser/info_all/alfa_bank_info_all.xlsx']
+    info_files=[f'{path}yandex_info_reviews_parser/info_all/yandex_info_sberbank.csv', f'{path}yandex_info_reviews_parser/info_all/yandex_info_alfa_bank.csv']
     
     send_mail(send_from=send_from, send_to=send_to, subject=subject, text=text, host=host, port=port, path=path, files=info_files)
     

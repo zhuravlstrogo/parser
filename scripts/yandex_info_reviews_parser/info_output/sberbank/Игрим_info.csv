@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Отношение к клиентам,Обслуживание,Персонал,load_time
-0,1093638748,СберБанк,"Кооперативная ул., 50Б, п. г. т. Игрим",www.sberbank.ru,"'mon': 09:00-17:15, 'tue': 09:00-17:15, 'wed': 09:00-17:15, 'thu': 09:00-17:15, 'fri': 09:00-17:15, 'sat': выходной, 'sun': выходной",63.196796,64.422796,"4,4",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",82,75,90,2024-06-22 21:49:30
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
+0,sberbank/1093638748,СберБанк,"Кооперативная ул., 50Б, п. г. т. Игрим",www.sberbank.com,"'mon': 09:00-17:15, 'tue': 09:00-17:15, 'wed': 09:00-17:15, 'thu': 09:00-17:15, 'fri': 09:00-17:15, 'sat': выходной, 'sun': выходной, ",63.196760,64.422798,"4,3",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",2024-07-30 02:54:23

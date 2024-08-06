@@ -64,23 +64,23 @@ def check(city, address):
 
     try:
         city = city.split(' ')[-1].strip('\n\r').strip(' ')
-        print(f'CiTY: {city}')
+        # print(f'CiTY: {city}')
     except:
         pass
     
     last_word = word_list[-1].strip('\n\r').strip(' ')
     # TODO: обрабатывать города по типу Новый Оскол 
-    print(f'word_list[-1] {last_word}')
+    # print(f'word_list[-1] {last_word}')
 
     import difflib
 
     output_list = [li for li in difflib.ndiff(city, last_word) if li[0] != ' ']
-    print("DIFF: ", output_list)
-    print("CHECK")
-    print(city == last_word)
+    # print("DIFF: ", output_list)
+    # print("CHECK")
+    # print(city == last_word)
 
     if bool(re.search(city,  last_word)) or city == last_word:
-        print("I am OK")
+        # print("I am OK")
         return True
     else:
         return False
@@ -157,12 +157,17 @@ def merge_all_info(bank_name, path, drop_errors=False):
     else:
         final_df = pd.concat(frames, axis=0)
 
-    final_df = final_df[final_df['city'].str.contains('Башкортостан')]
-
+    # final_df = final_df[final_df['city'].str.contains('Башкортостан')]
     # final_df = final_df[final_df['city'] == 'Башкортостан Октябрьский']
 
     print('********')
     print(final_df.head())
+
+    final_df['city'] = final_df['city'].str.replace('-На-', '-на-')
+    # final_df['city'] = final_df['city'].str.replace('П.', 'п.')
+
+    regions = pd.read_excel(f'{path}city_region.xlsx')
+    final_df = pd.merge(final_df, regions, on='city', how='left')
 
     # print(final_df.info())
 
@@ -171,9 +176,21 @@ def merge_all_info(bank_name, path, drop_errors=False):
     final_df = final_df[final_df['name'] == main_name]
 
     print('UNIQUE BANK NAME ', np.unique(final_df['name']))
-    # TODO: uncomment
+
     # final_df = final_df[final_df['opening_hours'] != "'mon': выходной, 'tue': выходной, 'wed': выходной, 'thu': выходной, 'fri': выходной, 'sat': выходной, 'sun': выходной"]
-    # final_df = final_df[['ID', 'name', 'city', 'address','opening_hours', 'lat', 'lon', 'rating', 'Обслуживание', 'Отношение к клиентам', 'Персонал', 'Время ожидания', 'Кредит', 'Банкомат', 'Расположение', 'Вклад', 'load_time']]
+    
+    final_df.rename(columns={'Персонал':'personal', 
+    'Время ожидания':'time_wait', 'Кредит':'credit', 'Банкомат':'atm', 
+    'Расположение':'location', 'Вклад':'deposit', 'Страхование':'insurance', 
+    'Атмосфера':'atmosphere', 'Чистота':'cleanliness', 'Интерьер':'interior', 
+    'Очереди':'queue', 'Ремонт':'repair', 'Ипотека':'mortgage',
+     'Отношение к клиентам':'attitude_to_customers', 'График работы':'opening_hours',  
+     'Обслуживание':'service'}, inplace=True)
+
+    final_df = final_df[['ID', 'name', 'region', 'city', 'address','opening_hours', 
+    'lat', 'lon', 'rating', 'personal', 'service', 'customer', 'time_wait', 'credit', 'atm', 
+    'location', 'deposit', 'insurance', 'atmosphere', 'cleanliness', 'interior',
+    'queue', 'repair', 'mortgage', 'attitude_to_customers',  'load_time']]
 
 
     # print('********')
@@ -191,14 +208,11 @@ def merge_all_info(bank_name, path, drop_errors=False):
 
     final_df = clean_rows(df=final_df, bank_name=bank_name, drop_errors=drop_errors)
 
-    # final_df = final_df[final_df['city'].str.contains('Балашиха')]
-    # print('final_df ', final_df)
-
-    with open(f'cities_dict_{bank_name}.pickle', 'rb') as handle:
+    with open(f'{path}/cities_dict_{bank_name}.pickle', 'rb') as handle:
         cities_dict = pickle.load(handle)
     cities_without_bank = {key:val for key, val in cities_dict.items() if val == 0}
 
-    final_df = final_df.drop_duplicates(subset=['ID', 'address','opening_hours', 'lat', 'lon', 'rating', 'Обслуживание', 'Отношение к клиентам', 'Персонал', 'Время ожидания', 'Кредит', 'Банкомат', 'Расположение', 'Вклад'])
+    final_df = final_df.drop_duplicates(subset=['ID', 'address','opening_hours', 'lat', 'lon', 'rating' ])
 
     logging.info(f'cities_without_bank {len(cities_without_bank)}')
 
@@ -217,9 +231,8 @@ def merge_all_info(bank_name, path, drop_errors=False):
     if not os.path.exists(directory_name):
         os.makedirs(directory_name) 
 
-    # today = datetime.today().strftime('%Y_%m_%d') 
-    final_df.to_csv(f'{path}/info_all/{bank_name}_info_all.csv', index=False)
-    final_df.to_excel(f'{path}/info_all/{bank_name}_info_all.xlsx', index=False)  
+    final_df.to_csv(f'{path}/info_all/yandex_info_{bank_name}.csv', index=False, sep=';')
+    final_df.to_excel(f'{path}/info_all/yandex_info_{bank_name}.xlsx', index=False)  
 
     unique_cities = set(np.unique(final_df['city']))
     logging.info(f'{len(unique_cities)} unique cities saved')
@@ -289,7 +302,7 @@ def merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True
         not_handled_dict = not_handled_df.groupby('city')['ID'].agg(list).to_dict()
         print(not_handled_dict)
 
-        with open(f'not_handled_reviews_{bank_name}.pickle', 'wb') as handle:
+        with open(f'{path}/not_handled_reviews_{bank_name}.pickle', 'wb') as handle:
             pickle.dump(not_handled_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
         print("not handled reviews SAVED")
         final_df = final_df.loc[final_df['indicator'].isin(info_df['indicator'])].drop(columns=['indicator'])
