@@ -184,14 +184,14 @@ def merge_all_info(bank_name, path, drop_errors=False):
     'Расположение':'location', 'Вклад':'deposit', 'Страхование':'insurance', 
     'Атмосфера':'atmosphere', 'Чистота':'cleanliness', 'Интерьер':'interior', 
     'Очереди':'queue', 'Ремонт':'repair', 'Ипотека':'mortgage',
-     'Отношение к клиентам':'customer', 'График работы':'opening_hours',  
+     'Отношение к клиентам':'customer', 'График работы':'schedule',  
      'Обслуживание':'service', 'Доступность':'availability'}, inplace=True)
 
     print('**********************************')
     print(final_df.columns)
     print('**********************************')
 
-    # TODO: добавить 'availability'
+    # TODO: добавить 'availability', 'schedule'
     col_list = ['ID', 'name', 'region', 'city', 'address','opening_hours', 
     'lat', 'lon', 'rating', 'service', 'customer',  'personal', 'time_wait', 'credit', 'atm', 
     'location', 'deposit', 'insurance', 'atmosphere', 'cleanliness', 'interior', 'queue', 'repair', 'mortgage', 'load_time']
@@ -217,14 +217,13 @@ def merge_all_info(bank_name, path, drop_errors=False):
     print(final_df.sample())
 
     final_df = clean_rows(df=final_df, bank_name=bank_name, drop_errors=drop_errors)
-
-    with open(f'{path}/cities_dict_{bank_name}.pickle', 'rb') as handle:
-        cities_dict = pickle.load(handle)
-    cities_without_bank = {key:val for key, val in cities_dict.items() if val == 0}
-
     final_df = final_df.drop_duplicates(subset=['ID', 'address','opening_hours', 'lat', 'lon', 'rating' ])
 
-    logging.info(f'cities_without_bank {len(cities_without_bank)}')
+    # with open(f'{path}/cities_dict_{bank_name}.pickle', 'rb') as handle:
+    #     cities_dict = pickle.load(handle)
+    # cities_without_bank = {key:val for key, val in cities_dict.items() if val == 0}
+
+    # logging.info(f'cities_without_bank {len(cities_without_bank)}')
 
     # for k, v in cities_without_bank.items():
     #     new_row = {'city': k, 'address': 'банк не найден', 'rating': None, 'lat' : None, 'lon': None}
