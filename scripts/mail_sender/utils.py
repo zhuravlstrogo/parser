@@ -25,7 +25,7 @@ from email.mime.text import MIMEText
 
 
 
-def send_mail(send_from, send_to, subject, text, host, port, path, files=None):
+def send_mail(send_from, send_to, subject, host, port, path, text=None, files=None):
 
     try:
         settings_fn = f"{path}mail_sender/vars.json"
@@ -43,7 +43,9 @@ def send_mail(send_from, send_to, subject, text, host, port, path, files=None):
     msg['To'] = ','.join(send_to)
     msg['Subject'] = subject
 
-    msg.attach(MIMEText(text))
+    if text:
+        msg.attach(MIMEText(text))
+        
     for f in files or []:
 
         print(f)

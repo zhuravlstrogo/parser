@@ -1,30 +1,36 @@
-[2024-08-05 11:05:52,684] p1964 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 6
-[2024-08-05 11:05:52,685] p1964 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
-[2024-08-05 11:05:52,699] p1964 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (726, 29)
-[2024-08-05 11:05:53,009] p1964 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 443 unique cities saved
-[2024-08-05 11:05:53,010] p1964 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
-[2024-08-05 11:06:02,005] p1995 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 0
-[2024-08-05 11:06:02,005] p1995 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
-[2024-08-05 11:06:02,018] p1995 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (3683, 23)
-[2024-08-05 11:06:03,310] p1995 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 624 unique cities saved
-[2024-08-05 11:06:03,311] p1995 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
-[2024-08-05 11:07:19,402] p2056 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 6
-[2024-08-05 11:07:19,403] p2056 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
-[2024-08-05 11:07:19,417] p2056 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (726, 30)
-[2024-08-05 11:07:19,734] p2056 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 443 unique cities saved
-[2024-08-05 11:07:19,734] p2056 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
-[2024-08-05 11:07:37,279] p2096 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 0
-[2024-08-05 11:07:37,279] p2096 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
-[2024-08-05 11:07:37,292] p2096 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (3683, 24)
-[2024-08-05 11:07:38,654] p2096 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 624 unique cities saved
-[2024-08-05 11:07:38,654] p2096 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
-[2024-08-05 11:53:26,154] p3464 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 6
-[2024-08-05 11:53:26,155] p3464 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
-[2024-08-05 11:53:26,169] p3464 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (726, 30)
-[2024-08-05 11:53:26,540] p3464 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 443 unique cities saved
-[2024-08-05 11:53:26,540] p3464 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
-[2024-08-05 11:53:56,478] p3522 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:209} INFO - cities_without_bank 0
-[2024-08-05 11:53:56,479] p3522 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:216} INFO - final df
-[2024-08-05 11:53:56,494] p3522 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:218} INFO - final_df.shape (3683, 24)
-[2024-08-05 11:53:57,826] p3522 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:231} INFO - 624 unique cities saved
-[2024-08-05 11:53:57,827] p3522 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:247} INFO - not handled 1 cities: {'Луганск'}
+[2024-08-07 13:48:35,363] p10381 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/log.py:29} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py", line 348, in <module>
+    merge_all_info(bank_name, path, drop_errors=False)
+  File "/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py", line 190, in merge_all_info
+    final_df = final_df[['ID', 'name', 'region', 'city', 'address','opening_hours',
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 5845, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['deposit', 'insurance', 'atmosphere', 'cleanliness', 'interior', 'queue'] not in index"
+[2024-08-07 13:49:58,684] p10492 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/log.py:29} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py", line 351, in <module>
+    merge_all_info(bank_name, path, drop_errors=False)
+  File "/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py", line 193, in merge_all_info
+    final_df = final_df[['ID', 'name', 'region', 'city', 'address','opening_hours',
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 5845, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['deposit', 'insurance', 'atmosphere', 'cleanliness', 'interior', 'queue'] not in index"
+[2024-08-07 13:52:56,170] p10681 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:227} INFO - cities_without_bank 0
+[2024-08-07 13:52:56,170] p10681 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:234} INFO - final df
+[2024-08-07 13:52:56,184] p10681 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:236} INFO - final_df.shape (3683, 26)
+[2024-08-07 13:52:57,543] p10681 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:248} INFO - 624 unique cities saved
+[2024-08-07 13:52:57,544] p10681 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:264} INFO - not handled 11 cities: {'Башкортостан Октябрьский', 'Лысьва', 'Железнодорожный', 'Вышний Волочёк', 'д. Жуковка', 'Гусиноозёрск', 'Сосновый Бор', 'Сковородино', 'р.п. Краснообск', 'Кемеровская Берёзовский', 'Федоровский'}
+[2024-08-07 13:53:44,015] p10754 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:227} INFO - cities_without_bank 6
+[2024-08-07 13:53:44,015] p10754 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:234} INFO - final df
+[2024-08-07 13:53:44,028] p10754 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:236} INFO - final_df.shape (732, 26)
+[2024-08-07 13:53:44,304] p10754 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:248} INFO - 444 unique cities saved
+[2024-08-07 13:53:44,304] p10754 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/after_work.py:264} INFO - not handled 197 cities: {'п. Айхал', 'Кушва', 'Славгород', 'Заинск', 'Тайга', 'Нижнесортымский', 'Заполярный', 'Бронницы', 'пгт. Карымское', 'Вилючинск', 'Гагарин', 'Зубова Поляна', 'Фролово', 'пгт. Новая Чара', 'Таштагол', 'Ейск', 'Первомайск', 'Котельнич', 'Свободный', 'Шилка', 'Ершов', 'Буинск', 'Ува', 'п. Междуреченский', 'Грозный', 'п. Магдагачи', 'Вышний Волочёк', 'Фурманов', 'Гусиноозёрск', 'Исилькуль', 'Дедовск', 'Трёхгорный', 'Донецк', 'п. Новоорск', 'Райчихинск', 'Красноармейск', 'Муравленко', 'Железногорск-Илимский', 'Болотное', 'Дальнереченск', 'Тамань', 'Назрань', 'Завитинск', 'Аргун', 'Козьмодемьянск', 'Бологое', 'Избербаш', 'Прохладный', 'Талдом', 'Балабаново', 'Алдан', 'Кировск', 'Полярные зори', 'Губаха', 'п. Новый Ургал', 'Советский', 'Егорьевск', 'Снежинск', 'Луховицы', 'Сегежа', 'Ленск', 'Сортавала', 'Миллерово', 'Сальск', 'Кизляр', 'Топки', 'Кемь', 'Московский', 'Хотьково', 'Вихоревка', 'Кулебаки', 'Светлоград', 'Гуково', 'Сковородино', 'Тулун', 'Баксан', 'Фокино', 'д. Жуковка', 'Горноправдинск', 'Северобайкальск', 'Гудермес', 'Льгов', 'Буй', 'Мыски', 'Каспийск', 'Сергиев Посад', 'Новый Уренгой', 'Тербуны', 'Строитель', 'п. Придорожный', 'Североуральск', 'ЗАТО Сибирский', 'Ряжск', 'Мариинск', 'Свердловская Берёзовский', 'п. Таксимо', 'п. Мурино', 'Куровское', 'Нальчик', 'п. Светлый', 'Иланский', 'Черноголовка', 'Лесной', 'Краснознаменск', 'Холмск', 'Озерск', 'Малгобек', 'Заозёрск', 'р.п. Сенной', 'с. Красноселькуп', 'пос. Персиановский', 'Кызыл', 'пгт. Чернышевск', 'п. Ерофей Павлович', 'Тарко-Сале', 'Шаховская', 'пгт. Забайкальск', 'Советская Гавань', 'Гусев', 'Элиста', 'Кингисепп', 'Дербент', 'Башкортостан Октябрьский', 'Пущино', 'Карталы', 'Покачи', 'Петровск-Забайкальский', 'Удачный', 'Борзя', 'Апшеронск', 'Шали', 'Минеральные воды', 'Кимовск', 'п. Голышманово', 'Звенигово', 'Жирновск', 'п. Тазовский', 'п. Ванино', 'Амурск', 'Алейск', 'Городец', 'Железнодорожный', 'Могоча', 'Карабулак', 'Оса', 'Лотошино', 'Шахунья', 'Игрим', 'Суворов', 'Бирск', 'Хилок', 'п. Излучинск', 'Шимановск', 'Коряжма', 'Йошкар-Ола', 'Анадырь', 'Александров', 'Урус-Мартан', 'Берёзово', 'Черкесск', 'Федоровский', 'Кукмор', 'Сосногорск', 'Шумерля', 'пос. Саянский', 'ст. Талица', 'Зима', 'Саров', 'Зарайск', 'Воркута', 'Урюпинск', 'Лучегорск', 'Дзержинский', 'Норильск', 'Ноябрьск', 'Агрыз', 'п. Свободный', 'Алексеевка', 'Боготол', 'Кяхта', 'Полярный', 'Колпашево', 'Малиновский', 'Жуков', 'Моздок', 'Белоярский', 'Хасавюрт', 'Арск', 'ст. Павловская', 'Артёмовский', 'Семёнов', 'Шарья', 'Балтийск', 'Агинское', 'Старая Русса', 'Барабинск', 'Камышлов'}

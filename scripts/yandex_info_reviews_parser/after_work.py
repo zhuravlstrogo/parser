@@ -184,13 +184,23 @@ def merge_all_info(bank_name, path, drop_errors=False):
     'Расположение':'location', 'Вклад':'deposit', 'Страхование':'insurance', 
     'Атмосфера':'atmosphere', 'Чистота':'cleanliness', 'Интерьер':'interior', 
     'Очереди':'queue', 'Ремонт':'repair', 'Ипотека':'mortgage',
-     'Отношение к клиентам':'attitude_to_customers', 'График работы':'opening_hours',  
-     'Обслуживание':'service'}, inplace=True)
+     'Отношение к клиентам':'customer', 'График работы':'opening_hours',  
+     'Обслуживание':'service', 'Доступность':'availability'}, inplace=True)
 
-    final_df = final_df[['ID', 'name', 'region', 'city', 'address','opening_hours', 
-    'lat', 'lon', 'rating', 'personal', 'service', 'customer', 'time_wait', 'credit', 'atm', 
-    'location', 'deposit', 'insurance', 'atmosphere', 'cleanliness', 'interior',
-    'queue', 'repair', 'mortgage', 'attitude_to_customers',  'load_time']]
+    print('**********************************')
+    print(final_df.columns)
+    print('**********************************')
+
+    # TODO: добавить 'availability'
+    col_list = ['ID', 'name', 'region', 'city', 'address','opening_hours', 
+    'lat', 'lon', 'rating', 'service', 'customer',  'personal', 'time_wait', 'credit', 'atm', 
+    'location', 'deposit', 'insurance', 'atmosphere', 'cleanliness', 'interior', 'queue', 'repair', 'mortgage', 'load_time']
+
+    for col_name in col_list:
+        if col_name not in final_df.columns:
+            final_df[col_name] = None
+
+    final_df = final_df[col_list]
 
 
     # print('********')
@@ -231,8 +241,8 @@ def merge_all_info(bank_name, path, drop_errors=False):
     if not os.path.exists(directory_name):
         os.makedirs(directory_name) 
 
-    final_df.to_csv(f'{path}/info_all/yandex_info_{bank_name}.csv', index=False, sep=';')
-    final_df.to_excel(f'{path}/info_all/yandex_info_{bank_name}.xlsx', index=False)  
+    final_df.to_csv(f'{path}/info_all/yndx_info_{bank_name}.csv', index=False, sep=';')
+    final_df.to_excel(f'{path}/info_all/yndx_info_{bank_name}.xlsx', index=False)  
 
     unique_cities = set(np.unique(final_df['city']))
     logging.info(f'{len(unique_cities)} unique cities saved')
