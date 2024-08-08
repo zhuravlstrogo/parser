@@ -217,7 +217,15 @@ def merge_all_info(bank_name, path, drop_errors=False):
     print(final_df.sample())
 
     final_df = clean_rows(df=final_df, bank_name=bank_name, drop_errors=drop_errors)
-    final_df = final_df.drop_duplicates(subset=['ID', 'address','opening_hours', 'lat', 'lon', 'rating' ])
+    final_df = final_df.drop_duplicates(subset=['ID', 'address','opening_hours', 'lat', 'lon', 'rating'])
+
+    final_df['rating'] = final_df['rating'].str.replace(',', '.')
+    final_df['rating'] = final_df['rating'].astype(float)
+    final_df['load_time'] = final_df['load_time'].astype(str)
+
+    obj_cols = ['ID', 'name', 'region', 'city', 'address', 'opening_hours']
+    for col in obj_cols:
+        final_df[col] = np.where(final_df[col].isna() == True, "Отсутствует", final_df[col])
 
     # with open(f'{path}/cities_dict_{bank_name}.pickle', 'rb') as handle:
     #     cities_dict = pickle.load(handle)

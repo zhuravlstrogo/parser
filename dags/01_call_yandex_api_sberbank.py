@@ -29,7 +29,7 @@ with DAG(
     bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/call_yandex_api_org.py -path_type 1 -bank_name sberbank -cities_list_num 1',
 )
     call_yandex_api_sberbank_2 = BashOperator(
-    task_id = 'call_yandex_api_sberbank_1',
+    task_id = 'call_yandex_api_sberbank_2',
     bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/call_yandex_api_org.py -path_type 1 -bank_name sberbank -cities_list_num 2',
 )
 

@@ -361,5 +361,6 @@ if __name__ == "__main__":
 
     # получить id для городов из cities.txt
     get_cities_dict(bank_name, path, cities_list_num, check_existing=False)
+    time.sleep(86500)
 
 
