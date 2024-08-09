@@ -18,14 +18,9 @@ if __name__ == "__main__":
     send_from = 'vtb_sender_uus@mail.ru'
     # send_to = ['ymp@vtb.ru', 'mineugomonov@vtb.ru']
     send_to = [ 'anyarulina@vtb.ru']
-    subject = 'Pointer week data'
-    files=[f'{path}pointer_api/comm.csv', f'{path}pointer_api/reit.csv']
+    subject = 'airflow_dataset_from_csv'
+    files=[f'{path}pointer_api/pointer_comm.csv', f'{path}pointer_api/pointer_reit.csv']
     host='smtp.mail.ru'
     port=25
 
-
-    text = """
-    Еженедельная отправка данных из геосервиса
-    """
-
-    send_mail(send_from=send_from, send_to=send_to, subject=subject, text=text, host=host, port=port, path=path, files=files)
+    send_mail(send_from=send_from, send_to=send_to, subject=subject, host=host, port=port, path=path, files=files)
