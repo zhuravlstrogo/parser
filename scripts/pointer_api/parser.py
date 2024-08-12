@@ -14,7 +14,7 @@ pd.set_option('max_colwidth', None)
 pd.options.display.expand_frame_repr = False
 
 
-def run_pointer_api(path, N=75):
+def run_pointer_api(path, N=75): # 75 3650
 
     cur_day = date.today()
     cur_day = cur_day - timedelta(days=N) # N - поставить нужное кол-во дней для пересчёта 
@@ -143,7 +143,7 @@ def run_pointer_api(path, N=75):
                                     )
 
     df.drop(columns=['avg_rating_1', 'provider_id_1', 'avg_rating_2', 'provider_id_2', 'avg_rating_3', 'provider_id_3', 'level'], inplace=True)
-    df.to_csv(f'{path}pointer_reit.csv', sep=';', encoding = 'utf-8', index=False)
+    df.to_csv(f'{path}pointer_reit_all.csv', sep=';', encoding = 'utf-8', index=False)
     print('reit saved')
 
     time.sleep(1)
@@ -205,8 +205,13 @@ def run_pointer_api(path, N=75):
     comments = pd.concat([comments, comments['reply'].apply(pd.Series)], axis=1)
     comments.drop(columns=['reply'], inplace=True)
     comments['provider_id'] = comments['provider_id'].apply(lambda x: providers[x])
+    comments['id'] = comments['id'].astype(str)
+
+    obj_cols = ['author', 'company_uuid', 'provider_id', 'published_at_author', 'text_author', 'tags', 'created_at', 'is_editable', 'is_removable', 'published_at', 'text' ]
+    for col in obj_cols:
+        comments[col] = np.where(comments[col].isna() == True, "Отсутствует", comments[col])
   
-    comments.to_csv(f'{path}pointer_comm.csv', sep=';', encoding = 'utf-8', index=False)
+    comments.to_csv(f'{path}pointer_comm_all.csv', sep=';', encoding = 'utf-8', index=False)
     print('comm saved')
     print('Finish')
 
@@ -225,7 +230,7 @@ if __name__ == "__main__":
     start = datetime.now()
     print(f"launch pointer at {start}")
 
-    run_pointer_api(path, N=75) # 75
+    run_pointer_api(path, N=3650) # 75
 
     print(f'I finished at {datetime.now()}')
     print(f'Pointer worked {datetime.now() - start} seconds')
