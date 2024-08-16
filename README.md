@@ -20,17 +20,20 @@
 Результат главной функции данного этапа: сформированный pickle файл со словарем, содержащим наименование города из передаваемого списка городов и yandex_id первого найденного банкомата.
 
 Пример содержания pickle файла:
+
 ![alt text](https://github.com/zhuravlstrogo/parser/blob/main/img/dict.png)
 
 
 По данным из pickle файла с помощью библиотеки Selenium собирается весь список банкоматов, представленных в городе из раздела chain на сайте Яндекс Карт, url = f'https://yandex.ru/maps/org/{bank_name}/{yndx_bank_id}/chain/', результатом главной функции является сохранение данных в pickle файл в виде ссылок на каждый отдельный банкомат в городе в разрезе города и банкомата.
 
 Пример содержания pickle файла:
-![alt text](https://github.com/zhuravlstrogo/parser/blob/main/img/links.png)
+
+![alt text](https://github.com/zhuravlstrogo/parser/blob/main/img/links.png =250x250)
 
 Парсинг данных по банкоматам с использованием библиотеки для парсинга HTML и XML документов BeautifulSoup по найденным на предыдущем шаге ссылкам на банкоматы. Сохранение распарсенных данных в csv файл. 
 
-Пример вывода данных после парсинга::
+Пример вывода данных после парсинга:
+
 ![alt text](https://github.com/zhuravlstrogo/parser/blob/main/img/df.png)
 
 Периодичность: Еженедельное обновление.
