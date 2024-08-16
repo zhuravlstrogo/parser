@@ -28,7 +28,7 @@
 
 Пример содержания pickle файла:
 
-![alt text](https://github.com/zhuravlstrogo/parser/blob/main/img/links.png =250x250)
+![alt text](https://github.com/zhuravlstrogo/parser/blob/main/img/links.png)
 
 Парсинг данных по банкоматам с использованием библиотеки для парсинга HTML и XML документов BeautifulSoup по найденным на предыдущем шаге ссылкам на банкоматы. Сохранение распарсенных данных в csv файл. 
 
