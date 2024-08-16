@@ -29,6 +29,8 @@ class Parser:
         
     def parse_info(self, organization_url, bank_name):
 
+        print('organization_url ', organization_url)
+
         """получаем инфо по 1 банку/ссылке organization_url - название, адресс и тд"""
         
         is_captcha = False
@@ -49,6 +51,7 @@ class Parser:
         # self.driver.get(f"{main_url}/{yandex_bank_id}")
 
         yandex_bank_id = organization_url.replace('https://yandex.ru/maps/org/', '')
+        print('IIII yandex_bank_id  ', yandex_bank_id)
         self.driver.get(organization_url)
 
         sleep(round(random.uniform(7.1, 7.9), 2))
@@ -61,6 +64,8 @@ class Parser:
         ypage = self.driver.current_url
         try:
             idx = re.search(f"{'ll='}.*?(\d+)", ypage).start(1)
+
+            print('idx ', idx)
             lat, lon = ypage[idx+12:idx+21], ypage[idx:idx+9]
         except:
             if "captcha"  in ypage: 
@@ -73,6 +78,7 @@ class Parser:
         social = self.soup_parser.get_social(soup)
         phone = self.soup_parser.get_phone(soup)
 
+        print('yandex_bank_id ', yandex_bank_id)
         output = json_pattern.into_json(yandex_bank_id, name, address, website, opening_hours, lat, 
                                         lon, rating, phone, social, business_aspect)
         outputs.append(output)
@@ -103,6 +109,8 @@ class Parser:
                     os.makedirs(directory_name) 
                     
                 df = pd.json_normalize(outputs)
+
+                print(df.head())
 
                     # # TODO: проверка на пустые строки с перезапуском?
                     # df_null = df[df['address'].isnull()]
@@ -221,5 +229,5 @@ if __name__ == "__main__":
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
 
-    cities = {'Владимир':1032361820}
+    cities = {'Астрахань':97853639834}
     get_cities_info(cities, bank_name, path)

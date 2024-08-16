@@ -1,10 +1,20 @@
+import os
+from datetime import  timedelta, date, datetime
+import argparse
+
+# from utils import send_mail
+
 import json
 import os
 import pandas as pd
-from tabulate import tabulate
+import time
 import numpy as np
 import smtplib
 import ssl
+
+from pathlib import Path
+from os import listdir
+from os.path import isfile, join
 
 
 from email.mime.application import MIMEApplication
@@ -12,27 +22,35 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 
-try:
-    settings_fn = "/opt/airflow/scripts/mail_sender/vars.json"
-    with open(settings_fn, 'r') as f:
-        config = json.loads(f.read())
-        print('Настройки получены')
-except Exception:
-    print('Настройки не получены')
 
+def send_mail(send_from, send_to, subject, host, port, path, text=None, files=None):
 
-user_nm = config['Credentials']['login']
-user_x = config['Credentials']['password']
+    try:
+        settings_fn = f"{path}mail_sender/vars.json"
 
-def send_mail(send_from, send_to, subject, text, user_nm, user_x, host, port, files=None):
+        print('PATH')
+        print(settings_fn)
+        with open(settings_fn, 'r') as f:
+            config = json.loads(f.read())
+            print('Настройки получены')
+    except Exception as e:
 
+        print(f'Настройки не получены, ошибка: {e}')
+
+    user_nm = config['Credentials']['login']
+    user_x = config['Credentials']['password']
+    
     msg = MIMEMultipart()
     msg['From'] = send_from
     msg['To'] = ','.join(send_to)
     msg['Subject'] = subject
 
-    msg.attach(MIMEText(text))
+    if text:
+        msg.attach(MIMEText(text))
+        
     for f in files or []:
+
+        print(f)
 
         with open(f, 'rb') as fil:
 
@@ -50,22 +68,33 @@ def send_mail(send_from, send_to, subject, text, user_nm, user_x, host, port, fi
     server.login(user_nm, user_x)
     server.sendmail(send_from, send_to, msg.as_string())
     server.quit()
-    print('Письмо отправлено')
+    print(f'Письмо отправлено: {send_to}')
 
 
-send_from = 'vtb_sender_uus@mail.ru'
-send_to = ['anyarulina@vtb.ru'] # 'steckii-popovskii@vtb.ru'
-subject = 'Server reminder yandex parser'
-files=[]
-host='smtp.mail.ru'
-port=25
+if __name__ == "__main__":
+    # python3 reminder.py -path_type 0 
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-path_type', type=int)
+    args = parser.parse_args()
+
+    homyak = os.path.expanduser('~')
+    path = f'{homyak}/parser/scripts/' if args.path_type==0 else '/opt/airflow/scripts/'
 
 
+    send_from = 'vtb_sender_uus@mail.ru'
+    send_to = ['anyarulina@vtb.ru'] # 'steckii-popovskii@vtb.ru'
+    subject = 'Напоминание: пополнить сервер'
+    files=[]
+    host='smtp.mail.ru'
+    port=25
 
-text = """
-Напоминание!
+    text = """
+    Напоминание!
 
-Необходимо пополнить счет сервера immers.cloud (яндекс парсер)
-"""
+    Необходимо пополнить счет сервера на сайте https://immers.cloud
 
-send_mail(send_from=send_from, send_to=send_to, subject=subject, text=text, user_nm=user_nm, user_x=user_x, host=host, port=port, files=files)
+    1750
+    """
+    
+    send_mail(send_from=send_from, send_to=send_to, subject=subject,  text=text, host=host, port=port, path=path, files=files)

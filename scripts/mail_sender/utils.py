@@ -16,24 +16,20 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 
-# homyak = os.path.expanduser('~')
-
-# # TODO: путь передавать 
-# path = f"{homyak}/parser/scripts/"
-# # path = "/opt/airflow/scripts/"
-
-
-
 
 def send_mail(send_from, send_to, subject, host, port, path, text=None, files=None):
 
     try:
         settings_fn = f"{path}mail_sender/vars.json"
+
+        print('PATH')
+        print(settings_fn)
         with open(settings_fn, 'r') as f:
             config = json.loads(f.read())
             print('Настройки получены')
-    except Exception:
-        print('Настройки не получены')
+    except Exception as e:
+
+        print(f'Настройки не получены, ошибка: {e}')
 
     user_nm = config['Credentials']['login']
     user_x = config['Credentials']['password']
@@ -66,4 +62,4 @@ def send_mail(send_from, send_to, subject, host, port, path, text=None, files=No
     server.login(user_nm, user_x)
     server.sendmail(send_from, send_to, msg.as_string())
     server.quit()
-    print('Письмо отправлено')
+    print(f'Письмо отправлено: {send_to}')

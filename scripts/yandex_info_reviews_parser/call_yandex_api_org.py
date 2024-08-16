@@ -22,8 +22,8 @@ def similar(a, b):
 
 def remove_cities(cities, bank_name):
     """удаляет ссылки банков и информацию по банкам для городов cities"""
-    info_path  =f'info_output/{bank_name}/'
-    links_path  =f'links/{bank_name}/'
+    info_path = f'info_output/{bank_name}/'
+    links_path = f'links/{bank_name}/'
 
     info_counter = 0
     links_counter = 0
@@ -321,10 +321,11 @@ def get_cities_dict(bank_name, path, cities_list_num, check_existing=True):
     if cities_list_num == 1:
         with open(f'{path}/cities_1.txt') as f:
             input_cities_1 = [x.strip('\n') for x in f ]
+            cities = input_cities_1 
     elif cities_list_num == 2:
         with open(f'{path}/cities_2.txt') as f:
             input_cities_2 = [x.strip('\n') for x in f ]
-    cities = input_cities_1 + input_cities_2
+            cities = input_cities_2
 
     logging.info(f'input cities length {len(cities)}')
 
@@ -334,7 +335,8 @@ def get_cities_dict(bank_name, path, cities_list_num, check_existing=True):
         cities= [k for k in cities if k not in list(cities_dict.keys())]
 
     logging.info(f'I will update {len(cities)} cities for {bank_name}')
-    # update_cities_dict(cities, bank_name, path)
+    update_cities_dict(cities, bank_name, path)
+    logging.info(f'{len(cities)} cities updated for {bank_name}')
 
 
 

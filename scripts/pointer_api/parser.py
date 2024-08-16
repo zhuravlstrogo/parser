@@ -230,7 +230,7 @@ if __name__ == "__main__":
     start = datetime.now()
     print(f"launch pointer at {start}")
 
-    run_pointer_api(path, N=3650) # 75
+    run_pointer_api(path, N=75) # 75
 
     print(f'I finished at {datetime.now()}')
     print(f'Pointer worked {datetime.now() - start} seconds')

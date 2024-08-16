@@ -9,7 +9,7 @@ import numpy as np
 
 from utils import find_between
 
-bank_name= 'gosbank'
+bank_name= 'alfa_bank'
 # cities_path = f'cities_dict_{bank_name}.pickle'
 # with open(cities_path, 'rb') as handle:
 #     cities_dict = pickle.load(handle)
@@ -23,7 +23,7 @@ bank_name= 'gosbank'
 
 # print(cities_dict)
 
-with open(f'links/link_Мариуполь.pkl', 'rb') as handle:
+with open(f'links/{bank_name}/link_Воронеж.pkl', 'rb') as handle:
     links = pickle.load(handle)
 
 print(links)

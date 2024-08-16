@@ -25,5 +25,5 @@ with DAG(
 ) as dag:
     reminder = BashOperator(
     task_id = 'reminder',
-    bash_command = 'python3 /opt/airflow/scripts/mail_sender/reminder.py'
+    bash_command = 'python3 /opt/airflow/scripts/mail_sender/reminder.py -path_type 0'
 )
