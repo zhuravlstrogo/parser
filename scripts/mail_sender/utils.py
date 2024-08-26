@@ -5,6 +5,7 @@ import time
 import numpy as np
 import smtplib
 import ssl
+from pathlib import Path
 
 from pathlib import Path
 from os import listdir
@@ -20,13 +21,12 @@ from email.mime.text import MIMEText
 def send_mail(send_from, send_to, subject, host, port, path, text=None, files=None):
 
     try:
-        settings_fn = f"{path}mail_sender/vars.json"
+        settings_fn = Path(f"{path}mail_sender/vars.json")
+        if settings_fn.is_file():
 
-        print('PATH')
-        print(settings_fn)
-        with open(settings_fn, 'r') as f:
-            config = json.loads(f.read())
-            print('Настройки получены')
+            with open(settings_fn, 'r') as f:
+                config = json.loads(f.read())
+                print('Настройки получены')
     except Exception as e:
 
         print(f'Настройки не получены, ошибка: {e}')

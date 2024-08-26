@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     send_from = 'vtb_sender_uus@mail.ru'
     # send_to = ['ymp@vtb.ru', 'mineugomonov@vtb.ru']
-    send_to = [ 'anyarulina@vtb.ru']
+    send_to = [ 'anyarulina@vtb.ru', 'mineugomonov@vtb.ru']
     subject = 'airflow_dataset_from_csv'
     files=[f'{path}pointer_api/pointer_comm.csv', f'{path}pointer_api/pointer_reit.csv']
     host='smtp.mail.ru'

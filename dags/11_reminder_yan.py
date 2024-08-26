@@ -18,12 +18,14 @@ default_args = {
 
 with DAG(
     dag_id='10_yan_reminder',
-    schedule_interval='0 7 15 * *',
+    schedule_interval='0 7 20 * *',
     catchup=False,
     default_args=default_args
     # tags=['yandex'],
 ) as dag:
     reminder = BashOperator(
-    task_id = 'reminder',
-    bash_command = 'python3 /opt/airflow/scripts/mail_sender/reminder.py -path_type 0'
+    task_id = 'yan_reminder',
+    bash_command = 'python3 /opt/airflow/scripts/mail_sender/reminder.py -path_type 1',
+    dag=dag,
+    cwd=dag.folder
 )

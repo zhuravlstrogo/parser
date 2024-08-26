@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
 
     send_from = 'vtb_sender_uus@mail.ru'
-    send_to = ['anyarulina@vtb.ru'] # 'steckii-popovskii@vtb.ru'
+    send_to = ['anyarulina@vtb.ru','steckii-popovskii@vtb.ru']
     subject = 'Напоминание: пополнить сервер'
     files=[]
     host='smtp.mail.ru'
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     text = """
     Напоминание!
 
-    Необходимо пополнить счет сервера на сайте https://immers.cloud
+    Необходимо пополнить счет сервера immers.cloud
 
     1750
     """
