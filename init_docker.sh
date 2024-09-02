@@ -4,4 +4,4 @@
 # sudo chmod -R 777 logs dags plugins
 docker compose up airflow-init &&
 docker compose up -d &&
-docker exec -it  --user root work-airflow-worker-1 bash
+docker exec -it  --user root parser-airflow-worker-1 bash

@@ -48,7 +48,10 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
     driver = undetected_chromedriver.Chrome(options=opts)
     
     # TODO: chain / related как опция
-    url = f'https://yandex.ru/maps/org/{bank_name}/{yndx_bank_id}/chain/'
+    # url = f'https://yandex.ru/maps/org/{bank_name}/{yndx_bank_id}/related/'
+
+    city_code = "213/moscow/"
+    url = f"https://yandex.ru/maps/{city_code}"
     driver.get(url)
 
     N = round(random.uniform(13.1, 19.9), 2) # was higher
@@ -182,5 +185,5 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    cities = {'Воркута' : 224592002320}
+    cities = {'Воронеж' : 136744294126}
     get_bank_links(cities, bank_name, path)

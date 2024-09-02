@@ -5,5 +5,5 @@ yes Y | sudo apt-get install -f &&
 yes Y | sudo apt install python3-pip && 
 cat requirements.txt | xargs -n 1 pip install &&
 pip3 install selenium
-
+# google-chrome --version
 # https://askubuntu.com/questions/118749/package-system-is-broken-how-to-fix-it
