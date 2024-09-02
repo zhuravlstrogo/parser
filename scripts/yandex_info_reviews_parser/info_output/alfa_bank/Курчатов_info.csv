@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Время ожидания,Персонал,load_time
-0,alfa_bank/48520319242,Альфа-Банк,"Садовая ул., 11А, Курчатов",,"'mon': 10:00-19:00, 'tue': 10:00-19:00, 'wed': 10:00-19:00, 'thu': 10:00-19:00, 'fri': 10:00-19:00, 'sat': выходной, 'sun': выходной",51.653193,35.684955,"4,7",['8 (800) 200-00-00Показать телефон'],"['http://vk.com/alfabank', 'https://ok.ru/alfabank', 'https://www.youtube.com/user/alfabankru']",90,90,2024-08-07 01:30:37
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Персонал,Время ожидания,load_time
+0,alfa_bank/48520319242,Альфа-Банк,"Садовая ул., 11А, Курчатов",,"'mon': 10:00-19:00, 'tue': 10:00-19:00, 'wed': 10:00-19:00, 'thu': 10:00-19:00, 'fri': 10:00-19:00, 'sat': выходной, 'sun': выходной",51.653193,35.684955,"4,7",['8 (800) 200-00-00Показать телефон'],"['https://ok.ru/alfabank', 'https://vk.com/alfabank', 'https://www.youtube.com/user/alfabankru']",92,92,2024-08-26 09:42:04

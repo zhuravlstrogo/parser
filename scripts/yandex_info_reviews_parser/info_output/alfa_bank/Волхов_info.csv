@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
-0,alfa_bank/127973638659,Альфа-Банк,"Молодёжная ул., 18, Волхов",,"'mon': 10:00-19:00, 'tue': 10:00-19:00, 'wed': 10:00-19:00, 'thu': 10:00-19:00, 'fri': 10:00-19:00, 'sat': выходной, 'sun': выходной",59.893733,32.353103,"4,4",['8 (800) 200-00-00Показать телефон'],"['http://vk.com/alfabank', 'https://ok.ru/alfabank', 'https://www.youtube.com/user/alfabankru']",2024-08-07 00:24:12
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Персонал,Время ожидания,load_time
+0,alfa_bank/127973638659,Альфа-Банк,"Молодёжная ул., 18, Волхов",,"'mon': 10:00-19:00, 'tue': 10:00-19:00, 'wed': 10:00-19:00, 'thu': 10:00-19:00, 'fri': 10:00-19:00, 'sat': выходной, 'sun': выходной",59.893733,32.353103,"4,4",['8 (800) 200-00-00Показать телефон'],"['http://vk.com/alfabank', 'https://ok.ru/alfabank', 'https://www.youtube.com/user/alfabankru']",83,75,2024-08-26 08:35:02

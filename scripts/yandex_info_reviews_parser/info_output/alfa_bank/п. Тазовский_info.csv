@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Обслуживание,Отношение к клиентам,Персонал,load_time
-0,1003536983,СберБанк,"Спортивная ул., 7, посёлок Тазовский",www.sberbank.com,"'mon': 09:00-18:00, 'tue': 09:00-18:00, 'wed': 09:00-18:00, 'thu': 09:00-18:00, 'fri': 09:00-17:30, 'sat': выходной, 'sun': выходной",67.472967,78.715568,"4,2",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",88,90,94,2024-07-02 22:45:58
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
+0,alfa_bank/1003536983,СберБанк,"Спортивная ул., 7, посёлок Тазовский",www.sberbank.com,"'mon': 09:00-17:30, 'tue': 09:00-17:30, 'wed': 09:00-17:30, 'thu': 09:00-17:30, 'fri': 09:00-17:30, 'sat': выходной, 'sun': выходной",67.472967,78.715568,"4,2",['8 (800) 555-55-50Показать телефон'],"['http://ok.ru/sberbank', 'https://vk.com/sberbank']",2024-08-12 02:20:03

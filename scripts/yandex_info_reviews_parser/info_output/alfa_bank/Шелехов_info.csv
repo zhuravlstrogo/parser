@@ -1,2 +1,2 @@
-,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,load_time
-0,alfa_bank/66608770531,Альфа-Банк,"30А, 6-й квартал, Шелехов",,"'mon': 09:00-18:00, 'tue': 09:00-18:00, 'wed': 09:00-18:00, 'thu': 09:00-18:00, 'fri': 09:00-18:00, 'sat': выходной, 'sun': выходной",C52.20904,104.09253,"4,4",['8 (800) 200-00-00Показать телефон'],"['http://vk.com/alfabank', 'https://ok.ru/alfabank', 'https://www.youtube.com/user/alfabankru']",2024-08-07 00:02:40
+,ID,name,address,website,opening_hours,lat,lon,rating,phone,social,Персонал,Время ожидания,load_time
+0,alfa_bank/66608770531,Альфа-Банк,"30А, 6-й квартал, Шелехов",,"'mon': 09:00-18:00, 'tue': 09:00-18:00, 'wed': 09:00-18:00, 'thu': 09:00-18:00, 'fri': 09:00-18:00, 'sat': выходной, 'sun': выходной",C52.20904,104.09253,"4,6",['8 (800) 200-00-00Показать телефон'],"['http://vk.com/alfabank', 'https://ok.ru/alfabank', 'https://www.youtube.com/user/alfabankru']",95,100,2024-08-26 08:13:27
