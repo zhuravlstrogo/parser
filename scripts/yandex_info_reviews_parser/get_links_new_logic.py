@@ -34,7 +34,7 @@ def get_id_from_page(page, bank_name):
     return yndx_idx
 
 
-def get_yndx_id_from_chain(yndx_bank_id, bank_name):
+def get_links_from_city_code(city_code):
 
     """формирует список ссыллок-банков для текущего банка id из яндекс карт из раздела Филиалы"""
     
@@ -47,10 +47,10 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
     opts.add_argument('--disable-gpu')
     driver = undetected_chromedriver.Chrome(options=opts)
     
-    # TODO: chain / related как опция
-    # url = f'https://yandex.ru/maps/org/{bank_name}/{yndx_bank_id}/related/'
-
+    # TODO: где брать коды и латиницы городов ?
     city_code = "213/moscow/"
+    city_name = city_code.split('/')[1]
+
     url = f"https://yandex.ru/maps/{city_code}"
     driver.get(url)
 
@@ -58,7 +58,7 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
     logging.info(f'sleep for {N}')
     time.sleep(N)
     
-    t = 'business-tab-wrapper' 
+    t = 'search-snippet-view'
     elements = driver.find_elements(By.CLASS_NAME, t)
     print(f'LEN {len(elements)}')
     
@@ -83,14 +83,24 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
                 logging.info(f'sleep again for {T}')
                 time.sleep(T)
     
-            page3 = elements[3].get_attribute('innerHTML')
-            yndx_idx = get_id_from_page(page3, bank_name)
-            
-            last_size = len(yndx_idx)
-            seen.append(last_size)
-            
-            if len(set(seen)) < len(seen):
+            for i, e in enumerate(elements):
+                print(f'* {i} *')
+                link = e.find_element(By.XPATH, ".//a[@class='search-snippet-view__link-overlay _focusable']").get_attribute('href')
+                print('link', link)
+                links.add(link)
+
+            last_len = len(elements)
+            print('LAST LEN ', last_len)
+            seen.append(last_len)
+            # print('SEEN ', seen)
+
+            with open(f'{path}/links/links_{city_name}.pickle', 'wb') as handle:
+                pickle.dump(links, handle)
+
+            if len(seen) > 2 and seen[-2] == last_len:
+                logging.info(f"{len(links)} links saved for {city_name} city")
                 break
+            
     
     else:
         logging.info('driver stopped')
@@ -100,14 +110,14 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
     driver.close()
     driver.quit() 
     
-    return yndx_idx
+    # return yndx_idx
 
 
-def get_bank_links(cities, bank_name, path):
+def get_links_for_cities(cities, path):
 
     """
         Args:
-            cities (dict): список городов
+            cities (list): список городов
             bank_name (str): 
     
         Returns:
@@ -116,53 +126,41 @@ def get_bank_links(cities, bank_name, path):
     
     new_handled_links = {}
 
-    directory_name = f'{path}/links/{bank_name}'
-    if not os.path.exists(directory_name):
-        os.makedirs(directory_name) 
+    # directory_name = f'{path}/links/{bank_name}'
+    # if not os.path.exists(directory_name):
+    #     os.makedirs(directory_name) 
         
     counter = len(cities)
     logging.info(f"I will get links for {counter} cities")
     
-    for city_name, yndx_id in cities.items():
-        print('input yndx_id ', yndx_id)
+    for city_name in cities:
+
+        cities_code_dict = {'Москва и область' : '1/moscow-and-moscow-oblast',
+                            'Санкт-Петербург' : '2/saint-petersburg',
+                            'Белгород' : '4/belgorod',
+                            'Калуга' : '6/kaluga', 
+                            'Самара' : '51/samara',
+                            'Воронеж':'193/voronezh', 
+                            'Ульяновск' : '195/ulyanovsk',
+
+                            "Москва":"213/moscow", 
+                            "Абакан" : "1095/abakan",
+                            "Воркута" : "10940/vorkuta"}
+
+        city_code = cities_code_dict[city_name]
+    
         N = round(random.uniform(20.1, 40.9), 2)
         logging.info(f'sleeping for {N} seconds')
         time.sleep(N)
         
-        logging.info(f'get links for bank: {bank_name}, city: {city_name}, yndx id: {yndx_id}')
+        logging.info(f'get links for city: {city_name}')
         try:
-            yndx_ids = get_yndx_id_from_chain(yndx_id, bank_name)
-            # TODO: убрать 
-            print(yndx_ids)
+            get_links_from_city_code(city_code)
+    
         except Exception as e:
-            logging.info(f'Error in get links for bank: {bank_name}, city: {city_name}, yndx id: {yndx_id}, error: {e}')
+            logging.info(f'Error in get links for city: {city_name}, error: {e}')
             continue
-        yndx_ids.append(str(yndx_id))
-        yndx_ids = list(set(yndx_ids))
-
-        # print('yndx_ids ',yndx_ids)
-        
-        links = []
- 
-        main_url = f'https://yandex.ru/maps/org/{bank_name}/'
-        for l in yndx_ids:
-            links.append(main_url + l)
-
-        # print('links ',links)
-
-        with open(f'{directory_name}/link_{city_name}.pkl', 'wb') as f:
-            pickle.dump(links, f)
-        logging.info(f"{len(links)} links saved for {city_name} city")
-        
-        # # обновляем словарь обработанных городов
-        # new_handled_links[city_name] = yndx_id
-        # with open(f'handled_links_{bank_name}.pickle', 'rb') as handle:
-        #     handled_links = pickle.load(handle)
-        
-        # handled_links.update(new_handled_links)
-        # with open(f'handled_links_{bank_name}.pickle', 'wb') as handle:
-        #     pickle.dump(handled_links, handle, protocol=pickle.HIGHEST_PROTOCOL)
-        
+       
         counter -=1
         if counter % 10 == 0:
             time.sleep(round(random.uniform(30.1, 39.9), 2))
@@ -172,18 +170,14 @@ def get_bank_links(cities, bank_name, path):
 
 
 if __name__ == "__main__":
-    # python3 get_links.py -path_type 0 -bank_name sberbank 
-
-    # python3 get_links.py -path_type 0 -bank_name alfa_bank
+    # python3 get_links_new_logic.py -path_type 0
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-bank_name', type=str)
     parser.add_argument('-path_type', type=int)
     args = parser.parse_args()
 
-    bank_name = args.bank_name
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    cities = {'Воронеж' : 136744294126}
-    get_bank_links(cities, bank_name, path)
+    cities = ['Воронеж']
+    get_links_for_cities(cities, path)

@@ -18,7 +18,7 @@ default_args = {
 
 with DAG(
     dag_id='05_pipeline_info',
-    schedule_interval='0 1 * * 6',
+    schedule_interval='0 1 * * 4',
     default_args=default_args, 
     catchup=False
     # tags=['yandex'],

@@ -16,10 +16,9 @@ if __name__ == "__main__":
     path = f'{homyak}/parser/scripts/' if args.path_type==0 else '/opt/airflow/scripts/'
 
     send_from = 'vtb_sender_uus@mail.ru'
-    # send_to = ['ymp@vtb.ru', 'mineugomonov@vtb.ru']
     send_to = [ 'anyarulina@vtb.ru', 'mineugomonov@vtb.ru']
     subject = 'airflow_dataset_from_csv'
-    files=[f'{path}pointer_api/pointer_comm.csv', f'{path}pointer_api/pointer_reit.csv']
+    files=[f'{path}pointer_api/pointer_comm_all.csv', f'{path}pointer_api/pointer_reit_all.csv']
     host='smtp.mail.ru'
     port=25
 

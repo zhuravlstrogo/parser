@@ -17,3 +17,24 @@
 [2024-09-02 10:53:36,085] p4511 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links.py:32} INFO - loaded 13 ids
 [2024-09-02 10:53:36,334] p4511 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links.py:152} INFO - 13 links saved for Воркута city
 [2024-09-02 10:54:09,349] p4511 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links.py:166} INFO - left 0 cities
+[2024-09-02 16:03:49,620] p8672 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/log.py:29} ERROR - Logging an uncaught exception
+Traceback (most recent call last):
+  File "/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py", line 169, in <module>
+    get_links_for_cities(cities, path)
+  File "/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py", line 129, in get_links_for_cities
+    directory_name = f'{path}/links/{bank_name}'
+NameError: name 'bank_name' is not defined
+[2024-09-02 16:04:05,346] p8700 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:134} INFO - I will get links for 1 cities
+[2024-09-02 16:04:05,346] p8700 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:139} INFO - sleeping for 29.65 seconds
+[2024-09-02 16:04:35,001] p8700 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:142} INFO - get links for city: Воронеж
+[2024-09-02 16:04:35,001] p8700 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:147} INFO - Error in get links for city: Воронеж, error: name 'yndx_id' is not defined
+[2024-09-02 16:07:01,566] p8794 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:134} INFO - I will get links for 1 cities
+[2024-09-02 16:07:01,566] p8794 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:144} INFO - sleeping for 38.69 seconds
+[2024-09-02 16:07:40,260] p8794 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:147} INFO - get links for city: Воронеж
+[2024-09-02 16:07:42,714] p8794 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2024-09-02 16:07:47,913] p8794 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:58} INFO - sleep for 14.34
+[2024-09-02 16:08:02,268] p8794 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:106} INFO - driver stopped
+[2024-09-02 16:08:02,554] p8794 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104402430>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/81f888b222eec2eb3fac8e09b33a3991/window
+[2024-09-02 16:08:02,554] p8794 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1044026d0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/81f888b222eec2eb3fac8e09b33a3991/window
+[2024-09-02 16:08:02,555] p8794 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/urllib3/connectionpool.py:780} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104402790>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/81f888b222eec2eb3fac8e09b33a3991/window
+[2024-09-02 16:08:02,556] p8794 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:152} INFO - Error in get links for city: Воронеж, error: HTTPConnectionPool(host='localhost', port=52157): Max retries exceeded with url: /session/81f888b222eec2eb3fac8e09b33a3991/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104402910>: Failed to establish a new connection: [Errno 61] Connection refused'))
