@@ -166,7 +166,9 @@ logs/*.log.*
 
 .DS_Store
 config.py
-new_russia.py
+scripts/mail_sender/config.py
+scripts/yandex_info_reviews_parser/config.py
+
 
 *.html
 *.csv

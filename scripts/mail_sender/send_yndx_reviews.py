@@ -3,6 +3,8 @@ from datetime import  timedelta, date, datetime
 import argparse
 
 from utils import send_mail
+from config import max_mail, my_mail
+
 
 
 if __name__ == "__main__":
@@ -19,8 +21,7 @@ if __name__ == "__main__":
     port=25
 
     send_from = 'vtb_sender_uus@mail.ru'
-    send_to = ['anyarulina@vtb.ru', 'ymp@vtb.ru', 'mineugomonov@vtb.ru']
-    # send_to = ['al.yarulin@gmail.com']
+    send_to = [my_mail, max_mail]
 
     # subject = 'yandex parsing reviews'
     # text = """
