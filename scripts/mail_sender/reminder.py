@@ -2,7 +2,7 @@ import os
 from datetime import  timedelta, date, datetime
 import argparse
 
-# from utils import send_mail
+from config import max_mail, yan_mail
 
 import json
 import os
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
 
     send_from = 'vtb_sender_uus@mail.ru'
-    send_to = ['anyarulina@vtb.ru','steckii-popovskii@vtb.ru']
+    send_to = [max_mail, yan_mail]
     subject = 'Напоминание: пополнить сервер'
     files=[]
     host='smtp.mail.ru'
