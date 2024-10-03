@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 from log import setup_logging
 
 
-def get_links_from_city_code(city_name):
+def get_links_from_city_code(city_name, path):
 
     """формирует список ссыллок-банков для текущего банка id из яндекс карт из раздела Филиалы"""
     
@@ -27,7 +27,7 @@ def get_links_from_city_code(city_name):
     opts.add_argument('--disable-gpu')
     driver = undetected_chromedriver.Chrome(options=opts)
 
-    with open(f'cities_code_dict.pickle', 'rb') as handle:
+    with open(f'{path}cities_code_dict.pickle', 'rb') as handle:
             cities_code_dict = pickle.load(handle)
 
     city_code = cities_code_dict[city_name]
@@ -130,14 +130,13 @@ def get_links_for_cities(cities, path):
         logging.info(f'I will get links for {city_name} city')
 
         
-    
         N = round(random.uniform(20.1, 40.9), 2)
         logging.info(f'sleeping for {N} seconds')
         time.sleep(N)
         
         logging.info(f'get links for city: {city_name}')
         try:
-            get_links_from_city_code(city_name)
+            get_links_from_city_code(city_name, path)
     
         except Exception as e:
             logging.info(f'Error in get links for city: {city_name}, error: {e}')
@@ -161,14 +160,8 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    cities = ['Воронеж']
-    cities = ['Санкт-Петербург' ,
-                            'Белгород',
-                            'Калуга' ,
-                            'Самара',
-                            'Ульяновск',
-                            "Москва", 
-                            "Абакан",
+
+    cities = [ "Москва", "Абакан",
                             "Воркута",
                             'Владивосток'
 ]
