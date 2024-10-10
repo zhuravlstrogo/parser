@@ -161,9 +161,15 @@ if __name__ == "__main__":
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
 
-    cities = [ "Москва", "Абакан",
-                            "Воркута",
-                            'Владивосток'
-]
+#     cities = [ "Москва", "Абакан",
+#                             "Воркута",
+#                             'Владивосток'
+# ]
+
     # TODO: читать список городов из файла 
+    with open(f'{path}cities.txt') as f:
+        cities = [x.strip('\n') for x in f ]
+
+    print(f'len cities {len(cities)}')
+
     get_links_for_cities(cities, path)

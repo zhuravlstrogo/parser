@@ -172,6 +172,9 @@ def get_cities_info(cities, bank_name, path):
 
             with open(links_path, 'rb') as f:
                 all_hrefs = pickle.load(f)
+
+            # # TODO: убрать 
+            # all_hrefs = ['https://yandex.ru/maps/org/sberbank/1006432309']
             
             logging.info(f'get info for banks in {city_name} length of {len(all_hrefs)}')
             logging.info(f'percentage of available memory {psutil.virtual_memory().available * 100 / psutil.virtual_memory().total}')
@@ -217,7 +220,7 @@ def get_cities_info(cities, bank_name, path):
 
 
 if __name__ == "__main__":
-    # python3 get_info.py -path_type 0 -bank_name alfa_bank 
+    # python3 get_info.py -path_type 0 -bank_name sberbank 
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-bank_name', type=str)
@@ -229,5 +232,5 @@ if __name__ == "__main__":
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
 
-    cities = {'Астрахань':97853639834}
+    cities = ['Москва']
     get_cities_info(cities, bank_name, path)
