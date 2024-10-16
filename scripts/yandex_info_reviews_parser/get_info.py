@@ -158,7 +158,7 @@ class Parser:
                 self.driver.get(f"{main_url}/{yandex_bank_id}")
         
         
-def get_cities_info(cities, bank_name, path):
+def get_cities_info(cities, bank_name, path, org_type='bank'):
     # TODO: cities -> cities_dict 
     """получаем инфо по всем банкам/ссылкам по всем городам cities - название, адресс и тд""" 
     counter = len(cities)
@@ -166,7 +166,7 @@ def get_cities_info(cities, bank_name, path):
     # for city_name, yandex_bank_id in cities.items():
     for city_name in cities:
 
-        links_path = Path(f'{path}/links/{bank_name}/link_{city_name}.pkl')
+        links_path = Path(f'{path}/links/{org_type}/{bank_name}/link_{city_name}.pkl')
 
         if links_path.is_file():
 

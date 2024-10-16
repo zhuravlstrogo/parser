@@ -18,7 +18,7 @@ from get_reviews import parse_ans_save_reviews, get_cities_reviews
 from utils import find_between, search_end_of_str
 
 
-def get_not_handled_reviews(bank_name, path):
+def get_not_handled_reviews(bank_name, path, org_type='bank'):
     """возвращает словарь город - id банков без отзывов"""
     reviews_path  =f'{path}/reviews_outputs/{bank_name}/'
 
@@ -33,7 +33,7 @@ def get_not_handled_reviews(bank_name, path):
 
     logging.info(f'len existing_reviews  {sum(len(v) for k,v in existing_reviews.items())}')
 
-    links_path  =f'{path}/links/{bank_name}/'
+    links_path  =f'{path}/links/{org_type}/{bank_name}/'
     only_links_files = [f for f in listdir(links_path) if isfile(join(links_path, f))]
 
     existing_links = {}
@@ -65,7 +65,7 @@ def get_not_handled_reviews(bank_name, path):
     # добавляем города, для которых нет отзывов 
     not_handled_cities = list(set(existing_links.keys()).difference(set(existing_reviews.keys())))
     for city_name in not_handled_cities:
-        links_path = Path(f'links/{bank_name}/link_{city_name}.pkl')
+        links_path = Path(f'links/{org_type}/{bank_name}/link_{city_name}.pkl')
         # TODO: поумнее
         try:
             with open(links_path, 'rb') as f:
@@ -109,7 +109,7 @@ def get_all_reviews(cities, bank_name, path, check_existing=False):
     #     # default-ный список 
     #     cities_dict = {}
     #     for city_name in cities:
-    #         links_path = Path(f'{path}/links/{bank_name}/link_{city_name}.pkl')
+    #         links_path = Path(f'{path}/links/{org_type}/{bank_name}/link_{city_name}.pkl')
     #         # TODO: поумнее 
     #         try:
     #             with open(links_path, 'rb') as f:

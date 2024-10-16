@@ -100,7 +100,7 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
     return yndx_idx
 
 
-def get_bank_links(cities, bank_name, path):
+def get_bank_links(cities, bank_name, path, org_type='bank'):
 
     """
         Args:
@@ -113,7 +113,7 @@ def get_bank_links(cities, bank_name, path):
     
     new_handled_links = {}
 
-    directory_name = f'{path}/links/{bank_name}'
+    directory_name = f'{path}/links/{org_type}/{bank_name}'
     if not os.path.exists(directory_name):
         os.makedirs(directory_name) 
         

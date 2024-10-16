@@ -66,7 +66,7 @@ def parse_ans_save_reviews(id_ya, city_name, bank_name, path, limit=False):
             # TODO: сюда continue?
 
 
-def get_cities_reviews(cities, bank_name, path, limit=False, check_existing=False):
+def get_cities_reviews(cities, bank_name, path, limit=False, check_existing=False, org_type='bank'):
     """
         Args:
             cities (list): город - список городов
@@ -89,7 +89,7 @@ def get_cities_reviews(cities, bank_name, path, limit=False, check_existing=Fals
         # with open(not_handled_path, 'rb') as f:
         #     not_handled_reviews = pickle.load(f)
 
-        links_path = Path(f'{path}/links/{bank_name}/link_{city_name}.pkl')
+        links_path = Path(f'{path}/links/{org_type}/{bank_name}/link_{city_name}.pkl')
 
         # TODO: поумнее
         try:

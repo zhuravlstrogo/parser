@@ -25,7 +25,7 @@ from log import setup_logging
 
 
 
-def get_all_links(cities, bank_name, path, check_existing=False):       
+def get_all_links(cities, bank_name, path, check_existing=False, org_type='bank'):       
     """формирует список банков-ссылок для всех городов и сохраняет в /links/bank_name/"""     
     start = datetime.now()
     logging.info(f"start get links for {bank_name} at {start}")
@@ -37,7 +37,7 @@ def get_all_links(cities, bank_name, path, check_existing=False):
         existing_links = []
         for key in cities_keys:
             # проверка на то, что файл links для этого города уже существует 
-            existing_link = Path(f'{path}/links/{bank_name}/link_{key}.pkl')
+            existing_link = Path(f'{path}/links/{org_type}/{bank_name}/link_{key}.pkl')
             
             if existing_link.is_file():
                 existing_links.append(key)

@@ -21,13 +21,13 @@ from log import setup_logging
 
 
 
-def get_all_info(cities, bank_name, path, check_existing=False):
+def get_all_info(cities, bank_name, path, check_existing=False, org_type='bank'):
     """формирует datafram-ы с информацией по всем банкам по всем городам в /info_output/bank_name/""" 
     start = datetime.now()
     logging.info(f"start get info for {bank_name} at {start}")
     
     # проверяем, что список links для городов есть 
-    mypath =f'{path}/links/{bank_name}/'
+    mypath =f'{path}/links/{org_type}/{bank_name}/'
     onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
     city_names = []
     for f in onlyfiles:
