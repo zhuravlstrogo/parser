@@ -3,7 +3,7 @@ from datetime import  timedelta, date, datetime
 import argparse
 
 from utils import send_mail
-from config import my_mail, max_mail
+from config import max_mail, sender_mail
 
 
 if __name__ == "__main__":
@@ -16,8 +16,8 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/' if args.path_type==0 else '/opt/airflow/scripts/'
 
-    send_from = 'vtb_sender_uus@mail.ru'
-    send_to = [my_mail, max_mail]
+    send_from = sender_mail
+    send_to = [max_mail]
     subject = 'airflow_dataset_from_csv'
     files=[f'{path}pointer_api/pointer_comm_all.csv', f'{path}pointer_api/pointer_reit_all.csv']
     host='smtp.mail.ru'

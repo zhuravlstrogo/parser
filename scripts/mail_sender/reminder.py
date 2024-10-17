@@ -2,7 +2,7 @@ import os
 from datetime import  timedelta, date, datetime
 import argparse
 
-from config import max_mail, yan_mail
+from config import max_mail, yan_mail, sender_mail
 
 import json
 import os
@@ -82,7 +82,7 @@ if __name__ == "__main__":
     path = f'{homyak}/parser/scripts/' if args.path_type==0 else '/opt/airflow/scripts/'
 
 
-    send_from = 'vtb_sender_uus@mail.ru'
+    send_from = sender_mail
     send_to = [max_mail, yan_mail]
     subject = 'Напоминание: пополнить сервер'
     files=[]
