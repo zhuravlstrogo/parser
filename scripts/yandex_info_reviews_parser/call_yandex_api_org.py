@@ -20,10 +20,10 @@ def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
 
 
-def remove_cities(cities, bank_name):
+def remove_cities(cities, bank_name, org_type='bank'):
     """удаляет ссылки банков и информацию по банкам для городов cities"""
-    info_path = f'info_output/{bank_name}/'
-    links_path = f'links/{bank_name}/'
+    info_path = f'info_output/{org_type}/{bank_name}/'
+    links_path = f'links/{org_type}/{bank_name}/'
 
     info_counter = 0
     links_counter = 0

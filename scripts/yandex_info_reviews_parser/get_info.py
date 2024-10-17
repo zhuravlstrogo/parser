@@ -86,7 +86,7 @@ class Parser:
         return outputs, is_captcha
 
 
-    def parse_data(self, hrefs, city_name, bank_name, path):
+    def parse_data(self, hrefs, city_name, bank_name, path, org_type='bank'):
         """получаем инфо по всем банкам/ссылкам в городе hrefs - название, адресс и тд"""
         self.driver.maximize_window()
         self.driver.get('https://yandex.ru/maps')
@@ -104,7 +104,7 @@ class Parser:
                 
                 outputs.append(output[0])
 
-                directory_name = f'info_output/{bank_name}'
+                directory_name = f'info_output/{org_type}/{bank_name}'
                 if not os.path.exists(directory_name):
                     os.makedirs(directory_name) 
                     
@@ -166,15 +166,16 @@ def get_cities_info(cities, bank_name, path, org_type='bank'):
     # for city_name, yandex_bank_id in cities.items():
     for city_name in cities:
 
-        links_path = Path(f'{path}/links/{org_type}/{bank_name}/link_{city_name}.pkl')
+        links_path = Path(f'{path}/new_links/{org_type}/links_{city_name}.pickle')
+
+        print('links_path ', links_path)
 
         if links_path.is_file():
 
             with open(links_path, 'rb') as f:
                 all_hrefs = pickle.load(f)
 
-            # # TODO: убрать 
-            # all_hrefs = ['https://yandex.ru/maps/org/sberbank/1006432309']
+            all_hrefs = list(all_hrefs)
             
             logging.info(f'get info for banks in {city_name} length of {len(all_hrefs)}')
             logging.info(f'percentage of available memory {psutil.virtual_memory().available * 100 / psutil.virtual_memory().total}')
@@ -190,7 +191,7 @@ def get_cities_info(cities, bank_name, path, org_type='bank'):
                 driver = undetected_chromedriver.Chrome(options=opts)
 
                 parser = Parser(driver)
-                parser.parse_data(all_hrefs, city_name, bank_name, path)
+                parser.parse_data(all_hrefs, city_name, bank_name, path, org_type)
                 logging.info("driver closed")
                 driver.close()
                 driver.quit()
@@ -232,5 +233,5 @@ if __name__ == "__main__":
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
 
-    cities = ['Москва']
-    get_cities_info(cities, bank_name, path)
+    cities = ['Иркутск']
+    get_cities_info(cities, bank_name, path, org_type='atm')

@@ -58,7 +58,7 @@ def get_all_info(cities, bank_name, path, check_existing=False, org_type='bank')
         already_exist_info = []
         for key in cities_keys:
             # TODO: файлы могут записываться не полностью 
-            existing_link = Path(f'{path}/info_output/{bank_name}/{key}_info.csv')
+            existing_link = Path(f'{path}/info_output/{org_type}/{bank_name}/{key}_info.csv')
             if existing_link.is_file():
                 already_exist_info.append(key)
                 del cities_copy[key]
@@ -74,7 +74,7 @@ def get_all_info(cities, bank_name, path, check_existing=False, org_type='bank')
     logging.info(f'Got info for in {datetime.now() - start} seconds')
 
 
-def launch_info_pipeline(bank_name, path, cities_list=None, check_existing=False):
+def launch_info_pipeline(bank_name, path, cities_list=None, check_existing=False, org_type='bank'):
     start = datetime.now()
     logging.info('*********************************************************')
     logging.info(f"launch info pipeline for {bank_name} at {start}")
@@ -128,21 +128,23 @@ def launch_info_pipeline(bank_name, path, cities_list=None, check_existing=False
             # time.sleep(1800)
             continue
 
-    merge_all_info(bank_name, path)
+    merge_all_info(bank_name, path, org_type)
     logging.info(f'I finished at {datetime.now()}')
     logging.info(f'Pipeline worked {datetime.now() - start} seconds')
 
 
 
 if __name__ == "__main__":
-    # python3 pipeline_info.py -path_type 0 -bank_name alfa_bank 
+    # python3 pipeline_info.py -path_type 0 -bank_name alfa_bank -org_type bank
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-bank_name', type=str)
     parser.add_argument('-path_type', type=int)
+    parser.add_argument('-bank_name', type=str)
+    parser.add_argument('-org_type', type=str)
     args = parser.parse_args()
 
     bank_name = args.bank_name
+    org_type = args.org_type
 
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
@@ -165,11 +167,10 @@ if __name__ == "__main__":
 
     cities = {k: v for k, v in cities.items() if v != 0}
 
-
     logging.info(f'{len(cities)} not null cities')
 
-    get_all_info(cities, bank_name, path, check_existing=False)
+    get_all_info(cities, bank_name, path, org_type, check_existing=False)
+    merge_all_info(bank_name, path, org_type)
 
-    merge_all_info(bank_name, path)
     logging.info(f'I finished at {datetime.now()}')
     logging.info(f'Pipeline worked {datetime.now() - start} seconds')

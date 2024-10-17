@@ -1,41 +1,4 @@
-[2024-10-16 16:36:24,509] p14304 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/log.py:29} ERROR - Logging an uncaught exception
-Traceback (most recent call last):
-  File "/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py", line 242, in <module>
-    print(f'len cities {len(cities)}')
-NameError: name 'cities' is not defined
-[2024-10-16 16:36:35,862] p14326 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/log.py:29} ERROR - Logging an uncaught exception
-Traceback (most recent call last):
-  File "/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py", line 247, in <module>
-    get_links_for_cities(cities, path, org_type)
-NameError: name 'org_type' is not defined
-[2024-10-16 16:36:53,319] p14352 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:127} INFO - I will get links for 1 cities
-[2024-10-16 16:36:53,319] p14352 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:131} INFO - I will get links for Воркута city
-[2024-10-16 16:36:53,319] p14352 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:135} INFO - sleeping for 40.84 seconds
-[2024-10-16 16:37:34,163] p14352 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:138} INFO - get links for city: Воркута
-[2024-10-16 16:37:36,914] p14352 {/Users/anyarulina/miniconda3/envs/main/lib/python3.9/site-packages/undetected_chromedriver/patcher.py:346} INFO - patching driver executable /Users/anyarulina/Library/Application Support/undetected_chromedriver/undetected_chromedriver
-[2024-10-16 16:37:46,392] p14352 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_links_new_logic.py:143} INFO - Error in get links for city: Воркута, error: Message: session not created: cannot connect to chrome at 127.0.0.1:59770
-from session not created: This version of ChromeDriver only supports Chrome version 130
-Current browser version is 129.0.6668.101
-Stacktrace:
-0   undetected_chromedriver             0x0000000104846a58 undetected_chromedriver + 8141400
-1   undetected_chromedriver             0x000000010483e94a undetected_chromedriver + 8108362
-2   undetected_chromedriver             0x00000001040e3f60 undetected_chromedriver + 397152
-3   undetected_chromedriver             0x000000010412004b undetected_chromedriver + 643147
-4   undetected_chromedriver             0x000000010411f0a2 undetected_chromedriver + 639138
-5   undetected_chromedriver             0x0000000104114bbb undetected_chromedriver + 596923
-6   undetected_chromedriver             0x000000010416074f undetected_chromedriver + 907087
-7   undetected_chromedriver             0x000000010415fd46 undetected_chromedriver + 904518
-8   undetected_chromedriver             0x0000000104154523 undetected_chromedriver + 857379
-9   undetected_chromedriver             0x0000000104123012 undetected_chromedriver + 655378
-10  undetected_chromedriver             0x0000000104123fee undetected_chromedriver + 659438
-11  undetected_chromedriver             0x000000010480b7c0 undetected_chromedriver + 7899072
-12  undetected_chromedriver             0x000000010480f714 undetected_chromedriver + 7915284
-13  undetected_chromedriver             0x00000001047ed597 undetected_chromedriver + 7775639
-14  undetected_chromedriver             0x000000010481019e undetected_chromedriver + 7917982
-15  undetected_chromedriver             0x00000001047dc874 undetected_chromedriver + 7706740
-16  undetected_chromedriver             0x000000010482cd98 undetected_chromedriver + 8035736
-17  undetected_chromedriver             0x000000010482cf56 undetected_chromedriver + 8036182
-18  undetected_chromedriver             0x000000010483e558 undetected_chromedriver + 8107352
-19  libsystem_pthread.dylib             0x00007ff80593f253 _pthread_start + 99
-20  libsystem_pthread.dylib             0x00007ff80593abef thread_start + 15
-
+[2024-10-17 14:41:39,802] p7897 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_info.py:219} INFO - no links for Иркутск city
+[2024-10-17 14:42:19,435] p7933 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_info.py:221} INFO - no links for Иркутск city
+[2024-10-17 14:54:08,242] p11612 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_info.py:221} INFO - no links for Иркутск city
+[2024-10-17 14:54:32,777] p11648 {/Users/anyarulina/parser/scripts/yandex_info_reviews_parser/get_info.py:221} INFO - no links for Иркутск city

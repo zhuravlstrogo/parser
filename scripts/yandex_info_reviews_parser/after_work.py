@@ -118,9 +118,9 @@ def clean_rows(df, bank_name, drop_errors=False):
     return true_row_df
 
 
-def merge_all_info(bank_name, path, drop_errors=False):
+def merge_all_info(bank_name, path, drop_errors=False, org_type='bank'):
     """соединяет отдельные datafram-ы с банками по городам в один dataframe"""
-    info_path  =f'{path}/info_output/{bank_name}/'
+    info_path  =f'{path}/info_output/{org_type}/{bank_name}/'
     only_info_files = [f for f in listdir(info_path) if isfile(join(info_path, f))]
 
     d = {}
@@ -363,6 +363,6 @@ if __name__ == "__main__":
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
-    merge_all_info(bank_name, path, drop_errors=False)
+    merge_all_info(bank_name, path, drop_errors=False, org_type='bank')
 
     # merge_all_reviews(bank_name, path, drop_errors=False, filter_by_info_df=True)
