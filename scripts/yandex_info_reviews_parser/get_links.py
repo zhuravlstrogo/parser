@@ -100,7 +100,7 @@ def get_yndx_id_from_chain(yndx_bank_id, bank_name):
     return yndx_idx
 
 
-def get_bank_links(cities, bank_name, path, org_type='bank'):
+def get_bank_links(cities, bank_name, path, org_type):
 
     """
         Args:
@@ -174,13 +174,16 @@ if __name__ == "__main__":
     # python3 get_links.py -path_type 0 -bank_name alfa_bank
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-bank_name', type=str)
+    
     parser.add_argument('-path_type', type=int)
+    parser.add_argument('-bank_name', type=str)
+    parser.add_argument('-org_type', type=str)
     args = parser.parse_args()
 
     bank_name = args.bank_name
+    org_type = args.org_type
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
     cities = {'Воркута' : 224592002320}
-    get_bank_links(cities, bank_name, path)
+    get_bank_links(cities, bank_name, path, org_type)

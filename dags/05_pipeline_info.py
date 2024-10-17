@@ -25,12 +25,12 @@ with DAG(
 ) as dag:
     pipeline_info_sberbank = BashOperator(
     task_id = 'pipeline_info_sberbank',
-    bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/pipeline_info.py -path_type 1 -bank_name sberbank'
+    bash_command='python3 /opt/airflow/scripts/yandex_info_reviews_parser/pipeline_info.py -path_type 1 -bank_name sberbank -org_type bank'
     # dag=dag
 )
     pipeline_info_alfa_bank = BashOperator(
     task_id = 'pipeline_info_alfa_bank',
-    bash_command = 'python3 /opt/airflow/scripts/yandex_info_reviews_parser/pipeline_info.py -path_type 1 -bank_name alfa_bank'
+    bash_command = 'python3 /opt/airflow/scripts/yandex_info_reviews_parser/pipeline_info.py -path_type 1 -bank_name alfa_bank -org_type bank'
     # trigger_rule = 'all_success',
     # dag=dag
 )

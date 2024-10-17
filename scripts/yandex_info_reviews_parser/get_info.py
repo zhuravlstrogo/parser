@@ -51,7 +51,7 @@ class Parser:
         # self.driver.get(f"{main_url}/{yandex_bank_id}")
 
         yandex_bank_id = organization_url.replace('https://yandex.ru/maps/org/', '')
-        print('IIII yandex_bank_id  ', yandex_bank_id)
+        # print('IIII yandex_bank_id  ', yandex_bank_id)
         self.driver.get(organization_url)
 
         sleep(round(random.uniform(7.1, 7.9), 2))
@@ -86,7 +86,7 @@ class Parser:
         return outputs, is_captcha
 
 
-    def parse_data(self, hrefs, city_name, bank_name, path, org_type='bank'):
+    def parse_data(self, hrefs, city_name, bank_name, path, org_type):
         """получаем инфо по всем банкам/ссылкам в городе hrefs - название, адресс и тд"""
         self.driver.maximize_window()
         self.driver.get('https://yandex.ru/maps')
@@ -158,7 +158,7 @@ class Parser:
                 self.driver.get(f"{main_url}/{yandex_bank_id}")
         
         
-def get_cities_info(cities, bank_name, path, org_type='bank'):
+def get_cities_info(cities, bank_name, path, org_type):
     # TODO: cities -> cities_dict 
     """получаем инфо по всем банкам/ссылкам по всем городам cities - название, адресс и тд""" 
     counter = len(cities)
@@ -175,7 +175,13 @@ def get_cities_info(cities, bank_name, path, org_type='bank'):
             with open(links_path, 'rb') as f:
                 all_hrefs = pickle.load(f)
 
+            # TODO: в фильтре по банкам имя банка по-другому брать  
             all_hrefs = list(all_hrefs)
+            all_hrefs = [link for link in all_hrefs if bank_name[:4] in link]
+
+            if len(all_hrefs) == 0:
+                logging.info(f'where is no links for {bank_name} {org_type} in {city_name}')
+                
             
             logging.info(f'get info for banks in {city_name} length of {len(all_hrefs)}')
             logging.info(f'percentage of available memory {psutil.virtual_memory().available * 100 / psutil.virtual_memory().total}')
@@ -221,17 +227,19 @@ def get_cities_info(cities, bank_name, path, org_type='bank'):
 
 
 if __name__ == "__main__":
-    # python3 get_info.py -path_type 0 -bank_name sberbank 
+    # python3 get_info.py -path_type 0 -bank_name sberbank -org_type bank
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-bank_name', type=str)
     parser.add_argument('-path_type', type=int)
+    parser.add_argument('-bank_name', type=str)
+    parser.add_argument('-org_type', type=str)
     args = parser.parse_args()
 
     bank_name = args.bank_name
+    org_type = args.org_type
     homyak = os.path.expanduser('~')
     path = f'{homyak}/parser/scripts/yandex_info_reviews_parser/' if args.path_type==0 else '/opt/airflow/scripts/yandex_info_reviews_parser/'
     setup_logging(path)
 
     cities = ['Иркутск']
-    get_cities_info(cities, bank_name, path, org_type='atm')
+    get_cities_info(cities, bank_name, path, org_type)

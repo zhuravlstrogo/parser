@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 from log import setup_logging
 
 
-def get_links_from_city_code(city_name, path, org_type='bank'):
+def get_links_from_city_code(city_name, path, org_type):
 
     """формирует список ссыллок-банков для текущего банка id из яндекс карт из раздела Филиалы"""
     
@@ -107,7 +107,7 @@ def get_links_from_city_code(city_name, path, org_type='bank'):
     # return yndx_idx
 
 
-def get_links_for_cities(cities, path, org_type='bank'):
+def get_links_for_cities(cities, path, org_type):
 
     """
         Args:

@@ -21,7 +21,7 @@ from log import setup_logging
 
 
 
-def get_all_info(cities, bank_name, path, check_existing=False, org_type='bank'):
+def get_all_info(cities, bank_name, path, check_existing=False, org_type):
     """формирует datafram-ы с информацией по всем банкам по всем городам в /info_output/bank_name/""" 
     start = datetime.now()
     logging.info(f"start get info for {bank_name} at {start}")
@@ -74,7 +74,7 @@ def get_all_info(cities, bank_name, path, check_existing=False, org_type='bank')
     logging.info(f'Got info for in {datetime.now() - start} seconds')
 
 
-def launch_info_pipeline(bank_name, path, cities_list=None, check_existing=False, org_type='bank'):
+def launch_info_pipeline(bank_name, path, cities_list=None, check_existing=False, org_type):
     start = datetime.now()
     logging.info('*********************************************************')
     logging.info(f"launch info pipeline for {bank_name} at {start}")
